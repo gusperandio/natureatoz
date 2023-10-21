@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.none {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: var(--gray-700);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .itens {
+    margin: 0 1rem 1rem 1rem;
+    border-bottom: 1.2px solid #222;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .itemF {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 390px;
+      height: 108px;
+
+      .text {
+        margin-left: 1rem;
+        width: 250px;
+        text-align: start;
+        h4 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+        p {
+          font-size: 1rem;
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .footerfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  }
+
+  .modalLista {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .b {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 100;
+    }
+
+    .g {
+      color: var(--yellow-500);
+      text-decoration: none;
+      font-weight: 100;
+    }
+
+    li {
+      p {
+        padding: 0.5rem 1.2rem;
+      }
+
+      p:hover {
+        background-color: #5252522a;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media (width <= 520px) {
+  .footer {
+    height: 500px;
+    width: 100%;
+    background-color: var(--gray-700);
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .itens {
+      margin: 0 1rem 1rem 1rem;
+      border-bottom: 1.2px solid #222;
+      .itemF {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 12vh;
+
+        .text {
+          margin-left: 1rem;
+          width: 250px;
+          text-align: start;
+          h4 {
+            font-size: 1.2rem;
+            margin: 0;
+          }
+          p {
+            font-size: 0.9rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .footerfooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 730px;
+    }
+
+    .modalLista {
+      list-style: none;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .b {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 100;
+      }
+
+      .g {
+        color: var(--yellow-500);
+        text-decoration: none;
+        font-weight: 100;
+      }
+
+      li {
+        p {
+          padding: 0rem 1.2rem;
+        }
+
+        p:hover {
+          background-color: #5252522a;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+.buttonWApp {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.buttonEmail {
+  background-color: #fff;
+  color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.buttonWApp:hover {
+  background-color: #1e7e34;
+}
+
+.buttonEmail:hover {
+  background-color: whitesmoke;
+}

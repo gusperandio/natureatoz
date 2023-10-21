@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+ 
+  --white: #fff;
+  --gray-100: #AFAFAF;
+  --gray-200: #525252;
+  --gray-700: #15171b;
+  --gray-900: #111113;
+
+  --blue-900: #1fa4e5;
+  --yellow-500: #FFBE16;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #F5F9F9;
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  html{
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html{
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  html{
+    font-size: 80%;
+  }
+}

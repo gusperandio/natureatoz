@@ -1,0 +1,50 @@
+.headerContainer {
+  height: 12rem;
+  border-bottom: 3px solid var(--yellow-500);
+  background: var(--gray-700);
+}
+
+.headerContext {
+  max-width: 1120px;
+  height: 12rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    padding: 6px 2rem;
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+    transition: color 0.2s;
+    font-weight: 500;
+
+    & + a {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      background-color: #5252520b;
+      border-radius: 4px;
+    }
+
+    &:active {
+      color: var(--yellow-500);
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+@media (width <= 430px) {
+  .headerContext {
+    a {
+      & + a {
+        margin: 0.4rem 0rem;
+      }
+    }
+  }
+}
