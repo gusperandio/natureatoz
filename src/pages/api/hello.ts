@@ -1,12 +1,23 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
- 
+import type { NextApiRequest, NextApiResponse } from 'next';
+
 type ResponseData = {
-  message: string
-}
- 
+  message: string;
+  data: { item: string }[];
+};
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
-  res.status(200).json({ message: 'Hello from Next.js teste!' })
+  const responseData: ResponseData = {
+    message: 'Exemplo de mensagem',
+    data: [
+      { item: "Arara" },
+      { item: "Sabugo" },
+      { item: "Jujuba" },
+      { item: "Árvore" },
+    ],
+  };
+
+  res.status(200).json(responseData);
 }
