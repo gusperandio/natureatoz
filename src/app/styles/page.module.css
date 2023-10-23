@@ -7,7 +7,15 @@
   min-height: 100vh;
   font-family: 'Oxygen';
   background-image: url('../../../public/arara.png');
-  background-size: 100%;
+  background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+}
+
+
+
+@media (width <= 518px) {
+  .main {
+    background-position: -340px center;
+  }
 }
