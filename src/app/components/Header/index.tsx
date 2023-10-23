@@ -8,13 +8,13 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContext}>
         <Link href="/" legacyBehavior>
-            <Image src={logo} alt="Nature A to Z" height={200} />
+            <Image src={logo} alt="Nature A to Z" height={200} priority />
         </Link>
         <nav>
           <Link href="/" legacyBehavior>
             <a>Inicio</a>
           </Link>
-          <Link href="/" legacyBehavior>
+          <Link href="/docs" legacyBehavior>
             <a>Documentos</a>
           </Link>
           <Link href="https://www.buymeacoffee.com/natureatoz" legacyBehavior passHref>
