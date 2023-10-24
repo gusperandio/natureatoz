@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import logo from "../../../../public/logo.png";
 import Link from "next/link";
+import LanguageSelector from "../LanguageSelector";
 
 export function Header() {
   return (
@@ -20,6 +21,7 @@ export function Header() {
           <Link href="https://www.buymeacoffee.com/natureatoz" legacyBehavior passHref>
             <a id="textSupport" target="_blank" rel="noopener noreferrer">Apoiar</a>
           </Link>
+          <LanguageSelector />
         </nav>
       </div>
     </header>
