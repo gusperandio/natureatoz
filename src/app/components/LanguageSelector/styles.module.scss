@@ -1,0 +1,70 @@
+.divSelect {
+  display: flex;
+  flex-direction: row;
+  width: 12rem;
+  justify-content: space-around;
+}
+
+.opt {
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  font-family: "Oxygen";
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+  border: 1px solid #fff;
+}
+
+.selected {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: inherit;
+  box-shadow: none;
+}
+.selected::-ms-expand {
+  display: none;
+}
+
+.labelSelect {
+  position: relative;
+  display: flex;
+  width: 8rem;
+  background: linear-gradient(to left, #34495e 3rem, #2c3e50 3rem);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  // Select style
+  .selected {
+    flex: 1;
+    padding: 1em;
+    cursor: pointer;
+  }
+  // Arrow style
+  &::after {
+    content: "\25BC";
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    transition: 0.25s all ease;
+    pointer-events: none; // IMPORTANT to click on arrow
+  }
+  // Arrow hover
+  &:hover::after {
+    color: #f39c12;
+    animation: bounce 0.5s infinite;
+  }
+}
+
+@media (width <= 518px) {
+    .opt {
+        font-size: 10px;
+        background-color: #333;
+        color: #fff;
+        font-family: "Oxygen";
+        font-weight: lighter;
+        letter-spacing: 1.2px;
+        margin: 2rem;
+        padding: 2rem;
+      }
+}
