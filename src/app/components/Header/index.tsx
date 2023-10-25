@@ -5,7 +5,12 @@ import Link from "next/link";
 import LanguageSelector from "../LanguageSelector";
 
 export function Header() {
+  const [selectedLanguage, setSelectedLanguage] = useState("En-US");
 
+  const handleLanguageChange = (newLanguage) => {
+    setSelectedLanguage(newLanguage);
+    // Aqui você pode realizar qualquer lógica adicional com base no novo idioma selecionado.
+  };
 
   return (
     <header className={styles.headerContainer}>
@@ -24,7 +29,7 @@ export function Header() {
             <a id="textSupport" target="_blank" rel="noopener noreferrer">Apoiar</a>
           </Link>
           <a style={{backgroundColor: "#15171b"}}>
-            <LanguageSelector />
+            <LanguageSelector onLanguageChange={handleLanguageChange} />
           </a>
         </nav>
       </div>

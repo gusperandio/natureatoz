@@ -5,7 +5,7 @@ import brazil from "../../../../public/icons/brazil.svg";
 import eua from "../../../../public/icons/eua.svg";
 import Image from "next/image";
 
-export default function LanguageSelector(){
+export default function LanguageSelector({ onLanguageChange }){
   const [selected, setSelected] = useState("En-US");
 
   const img =
@@ -15,11 +15,11 @@ export default function LanguageSelector(){
       <Image src={eua} width={38} height={38} alt="flag" />
     );
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLanguage = e.target.value;
-    setSelected(newLanguage);
-  };
-
+    const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      const newLanguage = e.target.value;
+      setSelected(newLanguage);
+      onLanguageChange(newLanguage); 
+    };
 
 
   return (
