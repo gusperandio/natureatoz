@@ -30,6 +30,10 @@
       border-radius: 4px;
     }
 
+    .noBackground:hover {
+      background-color: var(--gray-700);
+    }
+
     &:active {
       color: var(--yellow-500);
       font-weight: bold;
@@ -37,10 +41,13 @@
   }
 }
 
-
-
 @media (width <= 518px) {
+  .headerContainer {
+    height: 15rem;
+  }
+
   .headerContext {
+    height: 15rem;
     a {
       & + a {
         margin: 0.4rem 0rem;

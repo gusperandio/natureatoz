@@ -5,6 +5,8 @@ import Link from "next/link";
 import LanguageSelector from "../LanguageSelector";
 
 export function Header() {
+
+
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContext}>
@@ -21,7 +23,9 @@ export function Header() {
           <Link href="https://www.buymeacoffee.com/natureatoz" legacyBehavior passHref>
             <a id="textSupport" target="_blank" rel="noopener noreferrer">Apoiar</a>
           </Link>
-          <LanguageSelector />
+          <a style={{backgroundColor: "#15171b"}}>
+            <LanguageSelector />
+          </a>
         </nav>
       </div>
     </header>
