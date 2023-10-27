@@ -6,9 +6,11 @@ import Link from "next/link";
 import LanguageSelector from "../LanguageSelector";
 
 export function Header() {
-  let language: string = "En-Us";
-  language = localStorage.getItem("language") || "En-Us";
+  let language = "En-Us";
 
+  if (typeof localStorage !== "undefined" && localStorage.getItem("language")) {
+    language = localStorage.getItem("language") || "En-US";
+  }
   const aa = language === "Pt-BR" ? <a>Inicio</a> : <a>Home</a>;
   const dc = language === "Pt-BR" ? <a>Documentos</a> : <a>Docs</a>;
   const sup =
