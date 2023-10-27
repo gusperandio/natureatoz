@@ -1,12 +1,12 @@
-"use client";
 import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import brazil from "../../../../public/icons/brazil.svg";
 import eua from "../../../../public/icons/eua.svg";
 import Image from "next/image";
 
-export default function LanguageSelector({ onLanguageChange }){
-  const [selected, setSelected] = useState("En-US");
+export default function LanguageSelector(){
+  const language: string = localStorage.getItem("language") || "En-Us";
+  const [selected, setSelected] = useState(language);
 
   const img =
     selected === "Pt-BR" ? (
@@ -17,8 +17,8 @@ export default function LanguageSelector({ onLanguageChange }){
 
     const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       const newLanguage = e.target.value;
-      setSelected(newLanguage);
-      onLanguageChange(newLanguage); 
+      localStorage.setItem("language", newLanguage);
+      window.location.reload();
     };
 
 

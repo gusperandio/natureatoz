@@ -9,8 +9,8 @@
   font-size: 16px;
   background-color: #333;
   color: #fff;
-  font-family: "Oxygen";
-  font-weight: lighter;
+  font-family: "Roboto";
+  font-weight: bold;
   letter-spacing: 1.2px;
   border: 1px solid #fff;
 }
@@ -57,14 +57,14 @@
 }
 
 @media (width <= 518px) {
-    .opt {
-        font-size: 10px;
-        background-color: #333;
-        color: #fff;
-        font-family: "Oxygen";
-        font-weight: lighter;
-        letter-spacing: 1.2px;
-        margin: 2rem;
-        padding: 2rem;
-      }
+  .opt {
+    font-size: 10px;
+    background-color: #333;
+    color: #fff;
+    font-family: "Oxygen";
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+    margin: 2rem;
+    padding: 2rem;
+  }
 }
