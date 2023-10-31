@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { LanguageProvider } from "./LanguageContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +32,11 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

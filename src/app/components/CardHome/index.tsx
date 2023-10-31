@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import styles from "./styles.module.scss";
@@ -5,10 +6,10 @@ import refreshIcon from "../../../../public/icons/refresh-line.svg";
 import { useState } from "react";
 import axios from "axios";
 import Loader from "../Loader";
+import { useLanguage } from "@/app/LanguageContext";
 
 export default function CardHome() {
-  let language: string = "En-Us";
-  language = localStorage.getItem("language") || "En-Us";
+  const { selectedLanguage } = useLanguage();
   const [name, setName] = useState("Teste 01");
   const [desc, setDesc] = useState(
     "Uma arara é uma ave exótica de grande porte, conhecida por suas cores vibrantes e pela capacidade de imitar sons. "
@@ -37,7 +38,7 @@ export default function CardHome() {
       } catch (error) {
         console.error("Erro na requisição", error);
       }
-    }, 2000);
+    }, 1000);
   };
 
   const first = "{";
@@ -65,7 +66,7 @@ export default function CardHome() {
           <p className={styles.desc}>{desc}</p>
         </div>
         <div className={styles.footer}>
-          <p className={styles.tag}>#ATOZ </p>
+          <p className={styles.tag}>#ATOZ</p>
           <button type="button" className={styles.action} onClick={fetchData}>
             <Image
               src={refreshIcon}
@@ -74,7 +75,7 @@ export default function CardHome() {
               alt="refresh"
               style={{ marginRight: "4px" }}
             />{" "}
-            {language == "Pt-BR" ? <p>BUSCAR</p> : <p>FETCH</p>}
+            {selectedLanguage == "Pt-BR" ? <p>BUSCAR</p> : <p>FETCH</p>}
           </button>
         </div>
       </div>
@@ -98,7 +99,6 @@ export default function CardHome() {
             <p className={styles.value}>&quot;{imgUrl}&quot;</p>
             <br />
           </div>
-          <br />
           {second}
         </pre>
       </div>

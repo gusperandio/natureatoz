@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  a {
+  .aa {
     padding: 6px 2rem;
     display: inline-block;
     position: relative;
@@ -21,7 +21,7 @@
     transition: color 0.2s;
     font-weight: 500;
 
-    & + a {
+    & + .aa {
       margin-left: 1rem;
     }
 
@@ -37,6 +37,299 @@
     &:active {
       color: var(--yellow-500);
       font-weight: bold;
+    }
+  }
+
+  .divDonations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 38rem;
+    .notification {
+      display: flex;
+      flex-direction: column;
+      isolation: isolate;
+      position: relative;
+      width: 18rem;
+      height: 8rem;
+      background: #31353d;
+      border-radius: 1rem;
+      overflow: hidden;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 16px;
+
+      --gradient: linear-gradient(
+        to bottom,
+        #fffd2e 0%,
+        #ffdd00 48%,
+        #f0c34f 100%
+      );
+
+      --color: #f0c34f;
+      cursor: pointer;
+    }
+
+    .notification:before {
+      position: absolute;
+      content: "";
+      inset: 0.0625rem;
+      border-radius: 0.9375rem;
+      background: #18181b;
+      z-index: 2;
+    }
+
+    .notification:after {
+      position: absolute;
+      content: "";
+      width: 0.25rem;
+      inset: 0.65rem auto 0.65rem 0.5rem;
+      border-radius: 0.125rem;
+      background: var(--gradient);
+      transition: transform 300ms ease;
+      z-index: 4;
+    }
+
+    .notification:hover:after {
+      transform: translateX(0.15rem);
+    }
+
+    .notititle {
+      display: flex;
+      align-items: center;
+      color: var(--color);
+      padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+    }
+
+    .notification:hover .notititle {
+      transform: translateX(0.15rem);
+    }
+
+    .notibody {
+      color: #99999d;
+      padding: 0 1.25rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+    }
+
+    .notification:hover .notibody {
+      transform: translateX(0.25rem);
+    }
+
+    .notiglow,
+    .notiborderglow {
+      position: absolute;
+      width: 20rem;
+      height: 20rem;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(
+        circle closest-side at center,
+        white,
+        transparent
+      );
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    .notiglow {
+      z-index: 3;
+    }
+
+    .notiborderglow {
+      z-index: 1;
+    }
+
+    .notification:hover .notiglow {
+      opacity: 0.1;
+    }
+
+    .notification:hover .notiborderglow {
+      opacity: 0.1;
+    }
+
+    .note {
+      color: var(--color);
+      position: fixed;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 0.9rem;
+      width: 75%;
+    }
+
+    .notificationPay {
+      display: flex;
+      flex-direction: column;
+      isolation: isolate;
+      position: relative;
+      width: 18rem;
+      height: 8rem;
+      background: #31353d;
+      border-radius: 1rem;
+      overflow: hidden;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 16px;
+      --gradientPaypal: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+      --colorPaypal: #32a6ff;
+      cursor: pointer;
+    }
+
+    .notificationPay:before {
+      position: absolute;
+      content: "";
+      inset: 0.0625rem;
+      border-radius: 0.9375rem;
+      background: #18181b;
+      z-index: 2;
+    }
+
+    .notificationPay:after {
+      position: absolute;
+      content: "";
+      width: 0.25rem;
+      inset: 0.65rem auto 0.65rem 0.5rem;
+      border-radius: 0.125rem;
+      background: var(--gradientPaypal);
+      transition: transform 300ms ease;
+      z-index: 4;
+    }
+
+    .notificationPay:hover:after {
+      transform: translateX(0.15rem);
+    }
+
+    .notititlePay {
+      display: flex;
+      align-items: center;
+      color: var(--colorPaypal);
+      padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+    }
+
+    .notificationPay:hover .notititlePay {
+      transform: translateX(0.15rem);
+    }
+
+    .notibodyPay {
+      color: #99999d;
+      padding: 0 1.25rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+    }
+
+    .notificationPay:hover .notibodyPay {
+      transform: translateX(0.25rem);
+    }
+
+    .notiglowPay,
+    .notiborderglowPay {
+      position: absolute;
+      width: 20rem;
+      height: 20rem;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(
+        circle closest-side at center,
+        white,
+        transparent
+      );
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    .notiglowPay {
+      z-index: 3;
+    }
+
+    .notiborderglowPay {
+      z-index: 1;
+    }
+
+    .notificationPay:hover .notiglowPay {
+      opacity: 0.1;
+    }
+
+    .notificationPay:hover .notiborderglowPay {
+      opacity: 0.1;
+    }
+
+    .notePay {
+      color: var(--colorPaypal);
+      position: fixed;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 0.9rem;
+      width: 75%;
+    }
+
+    .bitcoin {
+      margin-top: 2rem;
+      padding: 0 1rem;
+      width: auto;
+      height: 60px;
+      color: #fff;
+      border-radius: 12px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 16px;
+      background-color: #31353d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        padding: 0 12px;
+      }
+    }
+
+    .copy {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: auto;
+    }
+
+    .copy .tooltiptext {
+      visibility: hidden;
+      width: 140px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -75px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .copy .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    .copy:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

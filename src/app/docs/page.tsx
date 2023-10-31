@@ -1,13 +1,16 @@
 "use client";
+import { useLanguage } from "../LanguageContext";
 import Loader from "../components/Loader";
 import styles from "../styles/page.module.css";
 import { useState, useEffect } from "react";
+import Modal from '../components/Modal';
+
 
 export default function Page() {
-  let language: string = "En-Us";
-  language = localStorage.getItem("language") || "En-Us";
+  const { selectedLanguage } = useLanguage();
 
   const [showLoader, setShowLoader] = useState(false);
+  
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -19,12 +22,11 @@ export default function Page() {
     };
   }, []);
 
-  const aa = language === "Pt-BR" ? <a>Documentos</a> : <a>Docs</a>;
+  const aa = selectedLanguage === "Pt-BR" ? <a>Documentos</a> : <a>Docs</a>;
   return (
     <div>
-      <main className={styles.main}>
-        {showLoader ? <div>Carregado docs</div> : <Loader />}
-      </main>
-    </div>
+
+   
+  </div>
   );
 }

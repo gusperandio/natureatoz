@@ -43,6 +43,14 @@ export default function handler(
     },
   ];
 
+  let desc = arrayBixos[random].desc;
+  
+  if (desc.length > 110) {
+    desc = desc.substring(0, 100) + '...';
+  } 
+
+  arrayBixos[random].desc = desc;
+  
   const responseData: ResponseData = arrayBixos[random];
 
   res.status(200).json(responseData);
