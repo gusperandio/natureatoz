@@ -5,14 +5,7 @@ import logo from "../../../../public/logo.png";
 import Link from "next/link";
 import { useLanguage } from "@/app/LanguageContext";
 export function Footer() {
-
-   const { selectedLanguage } = useLanguage();
-   const init = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Inicio</p> : <p style={{fontWeight: "bold"}}>Home</p>;
-   const cont = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Contato</p> : <p style={{fontWeight: "bold"}}>Contact</p>;
-   const about = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Sobre</p> : <p style={{fontWeight: "bold"}}>About</p>;
-   const priv = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Privacidade</p> : <p style={{fontWeight: "bold"}}>Privacy</p>;
-   const license = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Licença</p> : <p style={{fontWeight: "bold"}}>License</p>;
-   const sup = selectedLanguage === "Pt-BR" ? <p style={{fontWeight: "bold"}}>Apoiar</p> : <p style={{fontWeight: "bold"}}>Support Us</p>;
+  const { selectedLanguage } = useLanguage();
 
   return (
     <div
@@ -34,7 +27,9 @@ export function Footer() {
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-               {init}
+                <p style={{ fontWeight: "bold" }}>
+                  {selectedLanguage === "Pt-BR" ? "Inicio" : "Home"}
+                </p>
               </Link>
             </li>
             <li className={styles.b}>
@@ -42,7 +37,9 @@ export function Footer() {
                 href={"/contact"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                {cont}
+                <p style={{ fontWeight: "bold" }}>
+                  {selectedLanguage === "Pt-BR" ? "Contato" : "Contact"}
+                </p>
               </Link>
             </li>
             <li className={styles.g}>
@@ -50,7 +47,9 @@ export function Footer() {
                 href={"/about"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                {about}
+                <p style={{ fontWeight: "bold" }}>
+                  {selectedLanguage === "Pt-BR" ? "Sobre" : "About"}
+                </p>
               </Link>
             </li>
             <li className={styles.b}>
@@ -58,7 +57,9 @@ export function Footer() {
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                {priv}
+                <p style={{ fontWeight: "bold" }}>
+                  {selectedLanguage === "Pt-BR" ? "Privacidade" : "Privacy"}
+                </p>
               </Link>
             </li>
             <li className={styles.g}>
@@ -66,7 +67,10 @@ export function Footer() {
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-               {license}
+                <p style={{ fontWeight: "bold" }}>
+                  {" "}
+                  {selectedLanguage === "Pt-BR" ? "Licença" : "License"}
+                </p>
               </Link>
             </li>
             <li className={styles.b}>
@@ -74,7 +78,9 @@ export function Footer() {
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                {sup}
+                <p style={{ fontWeight: "bold" }}>
+                  {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support Us"}
+                </p>
               </Link>
             </li>
           </ul>

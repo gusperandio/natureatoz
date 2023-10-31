@@ -87,7 +87,7 @@ export function Header() {
       <span className={styles.tooltiptext} id="myTooltip">
         {isCopied ? (
           <p>
-            Copiado <Image src={check} width={18} height={18} alt="check" />
+            {"Copiado "} <Image src={check} width={16} height={16} alt="check" />
           </p>
         ) : (
           "Copiar"
@@ -97,11 +97,11 @@ export function Header() {
       <span className={styles.tooltiptext} id="myTooltip">
         {isCopied ? (
           <p>
-            Copy to clipboard{" "}
-            <Image src={check} width={18} height={18} alt="check" />
+            {"Copied "}
+            <Image src={check} width={16} height={16} alt="check" />
           </p>
         ) : (
-          "Copied"
+          "Copy to clipboard"
         )}
       </span>
     );
