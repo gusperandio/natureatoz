@@ -5,9 +5,8 @@ interface PropsPrivacy {
 }
 
 export default function ModalPrivacy(props: PropsPrivacy) {
-  console.log(props.selectedLanguage);
   return (
-    <div>
+    <div className={styles.divPrivacy}>
       <h1 className={styles.titles}>
         {props.selectedLanguage == "Pt-BR"
           ? "Política de Privacidade"
@@ -20,7 +19,7 @@ export default function ModalPrivacy(props: PropsPrivacy) {
           : "Natureatoz.com takes your privacy seriously. We are committed to protecting your personal information and ensuring that your experience on our website is safe and satisfactory. Our privacy policy aims to provide clear information about how we collect, use and protect your data."}
       </p>
       <br />
-      <h2 className={styles.titles}>2. Google Analytics:</h2>
+      <h2 className={styles.titles}>1. Google Analytics</h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
           ? "Utilizamos o Google Analytics para analisar o tráfego do site e obter informações de referência dos usuários. Isso nos ajuda a compreender melhor nosso público e aprimorar nossos produtos e serviços. O rastreamento é realizado pelo servidor do Google e está sujeito às políticas de privacidade da própria Google. Para obter mais informações sobre como o Google Analytics trata seus dados, consulte a política de privacidade do Google."
@@ -29,8 +28,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <h2 className={styles.titles}>
         {props.selectedLanguage == "Pt-BR"
-          ? "3. Armazenamento de Dados:"
-          : "3. Data Storage:"}
+          ? "2. Armazenamento de Dados"
+          : "2. Data Storage"}
       </h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
@@ -40,8 +39,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <h2 className={styles.titles}>
         {props.selectedLanguage == "Pt-BR"
-          ? "4. Links para Terceiros:"
-          : "4. Links to Third Parties:"}
+          ? "3. Links para Terceiros"
+          : "3. Links to Third Parties"}
       </h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
@@ -51,8 +50,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <h2 className={styles.titles}>
         {props.selectedLanguage == "Pt-BR"
-          ? "5. Alterações na Política de Privacidade:"
-          : "5. Changes to the Privacy Policy:"}
+          ? "4. Alterações na Política de Privacidade"
+          : "4. Changes to the Privacy Policy"}
       </h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
@@ -65,10 +64,12 @@ export default function ModalPrivacy(props: PropsPrivacy) {
           ? "Agradecemos por escolher o Natureatoz.com como sua fonte de informações. Continuaremos a proteger sua privacidade e aprimorar nossas práticas à medida que as tecnologias evoluem."
           : "Thank you for choosing Natureatoz.com as your information source. We will continue to protect your privacy and improve our practices as technologies evolve."}
       </p>
-      {props.selectedLanguage == "Pt-BR"
-        ? "Atenciosamente,"
-        : "Yours sincerely,"}
-      <p className={styles.texts}></p>
+      <br />
+      <p className={styles.texts}>
+        {props.selectedLanguage == "Pt-BR"
+          ? "Atenciosamente,"
+          : "Yours sincerely,"}
+      </p>
       <br />
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"

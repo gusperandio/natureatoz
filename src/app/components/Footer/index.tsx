@@ -8,30 +8,25 @@ import Modal from "../Modal";
 import ModalSup from "../ModalSup";
 import { useState } from "react";
 import ModalPrivacy from "../ModalPrivacy";
+import ModalContact from "../ModalContact";
+import ModalLicense from "../ModalLicense";
 
-export function Footer() {
-  const { selectedLanguage } = useLanguage();
+interface FooterProps {
+  selectedLanguage: string;
+}
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+export function Footer({ selectedLanguage }: FooterProps) {
+  const { isOpen, openModal, closeModal, modalConfig } =
+    useModal(selectedLanguage);
 
   return (
-    <div
-      className={`${styles.footer} animate__animated animate__fadeIn animate__delay-1s`}
-    >
+    <div className={styles.footer}>
       <div className={styles.footerfooter}>
         <div>
           <ul className={styles.modalLista}>
             <li className={styles.g}>
               <Link
-                href={"/"}
+                href="/"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <Image src={logo} alt="Nature A to Z" height={90} />
@@ -39,54 +34,37 @@ export function Footer() {
             </li>
             <li className={styles.g}>
               <Link
-                href={"/"}
+                href="/"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <p style={{ fontWeight: "bold" }}>
-                  {selectedLanguage === "Pt-BR" ? "Inicio" : "Home"}
+                  {selectedLanguage === "Pt-BR" ? "Início" : "Home"}
                 </p>
               </Link>
             </li>
             <li className={styles.b}>
-              <Link
-                href={"/contact"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  {selectedLanguage === "Pt-BR" ? "Contato" : "Contact"}
-                </p>
-              </Link>
+              <p style={{ fontWeight: "bold" }} onClick={() => openModal(1)}>
+                {selectedLanguage === "Pt-BR" ? "Contato" : "Contact"}
+              </p>
             </li>
             <li className={styles.g}>
-              <Link
-                href={"/"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  {selectedLanguage === "Pt-BR" ? "Privacidade" : "Privacy"}
-                </p>
-              </Link>
+              <p style={{ fontWeight: "bold" }} onClick={() => openModal(2)}>
+                {selectedLanguage === "Pt-BR" ? "Privacidade" : "Privacy"}
+              </p>
             </li>
             <li className={styles.b}>
-              <Link
-                href={"/"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  {" "}
-                  {selectedLanguage === "Pt-BR" ? "Licença" : "License"}
-                </p>
-              </Link>
+              <p style={{ fontWeight: "bold" }} onClick={() => openModal(3)}>
+                {" "}
+                {selectedLanguage === "Pt-BR" ? "Licença" : "License"}
+              </p>
             </li>
             <li className={styles.g}>
-              <Link
-                href={"/"}
-                style={{ textDecoration: "none", color: "inherit" }}
+              <p
+                style={{ fontWeight: "bold", cursor: "pointer" }}
+                onClick={() => openModal(4)}
               >
-                <p style={{ fontWeight: "bold", cursor: "pointer" }} onClick={openModal}>
-                  {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support Us"}
-                </p>
-              </Link>
+                {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support Us"}
+              </p>
             </li>
           </ul>
         </div>
@@ -94,10 +72,63 @@ export function Footer() {
         <br />
       </div>
 
-        <Modal isOpen={modalIsOpen} onClose={closeModal}>
-          {/* <ModalSup selectedLanguage={selectedLanguage}/> */}
-          <ModalPrivacy selectedLanguage={selectedLanguage}/>
-        </Modal>
+      <Modal isOpen={isOpen} onClose={closeModal} {...modalConfig} />
     </div>
   );
+}
+
+function useModal(selectedLanguage: string) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalConfig, setModalConfig] = useState({
+    margin: "15% auto",
+    height: "320px",
+    width: "640px",
+    children: <ModalSup selectedLanguage={selectedLanguage} />,
+  });
+
+  const openModal = (n: number) => {
+    switch (n) {
+      case 1:
+        setModalConfig({
+          margin: "17% auto",
+          height: "200px",
+          width: "200px",
+          children: <ModalContact selectedLanguage={selectedLanguage} />
+        });
+
+        break;
+      case 2:
+        setModalConfig({
+          margin: "6% auto",
+          height: selectedLanguage === "Pt-BR" ? "640px" : "620px",
+          width: "620px",
+          children: <ModalPrivacy selectedLanguage={selectedLanguage} />
+        });
+        break;
+      case 3:
+        setModalConfig({
+          margin: "15% auto",
+          height: "300px",
+          width: "300px",
+          children: <ModalLicense selectedLanguage={selectedLanguage} />
+        });
+        break;
+      default:
+        setModalConfig({
+          margin: "15% auto",
+          height: "320px",
+          width: "640px",
+          children: <ModalSup selectedLanguage={selectedLanguage} />,
+        });
+        break;
+    }
+
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  return { isOpen, openModal, closeModal, modalConfig };
 }

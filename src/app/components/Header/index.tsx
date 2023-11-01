@@ -68,7 +68,7 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContext}>
         <Link href="/" legacyBehavior>
-          <Image src={logo} alt="Nature A to Z" height={200} priority />
+          <Image src={logo} alt="Nature A to Z" height={200} priority style={{cursor: "pointer"}} />
         </Link>
         <nav>
           <Link href="/" legacyBehavior>
@@ -82,7 +82,7 @@ export function Header() {
             <LanguageSelector />
           </a>
         </nav>
-        <Modal isOpen={modalIsOpen} onClose={closeModal}>
+        <Modal isOpen={modalIsOpen} onClose={closeModal} margin="15% auto" height="320px" width="640px">
           <ModalSup selectedLanguage={selectedLanguage}/>
         </Modal>
       </div>
