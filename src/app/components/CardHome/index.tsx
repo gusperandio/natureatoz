@@ -23,9 +23,7 @@ export default function CardHome() {
 
     setTimeout(async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/hello"
-        );
+        const response = await axios.get("http://localhost:3000/api/hello");
         if (response.status === 200) {
           const data = response.data;
           setName(data.name);
@@ -48,7 +46,7 @@ export default function CardHome() {
       <div className={styles.card}>
         <div className={styles.header}>
           {loader ? (
-            <div style={{marginLeft: "2rem"}}>
+            <div style={{ marginLeft: "2rem" }}>
               <Loader />
             </div>
           ) : (
@@ -86,16 +84,16 @@ export default function CardHome() {
           <br />
           <div className={styles.notP}>
             <p className={styles.key}>&quot;name&quot;</p>&nbsp;:&nbsp;
-            <p className={styles.value}>&quot;{name}&quot;</p>
+            <p className={styles.value}>&quot;{name}&quot;</p>&#44;
             <br />
           </div>
           <div className={styles.notP}>
-            <p className={styles.key}>&quot;desc&quot;</p>&nbsp;:&nbsp;
-            <p className={styles.value}>&quot;{desc}&quot;</p>
+            <p className={styles.key}>&quot;description&quot;</p>&nbsp;:&nbsp;
+            <p className={styles.value}>&quot;{desc}&quot;</p>&#44;
             <br />
           </div>
           <div className={styles.notP}>
-            <p className={styles.key}>&quot;img&quot;</p>&nbsp;:&nbsp;
+            <p className={styles.key}>&quot;image&quot;</p>&nbsp;:&nbsp;
             <p className={styles.value}>&quot;{imgUrl}&quot;</p>
             <br />
           </div>
