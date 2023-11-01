@@ -4,8 +4,23 @@ import styles from "./styles.module.scss";
 import logo from "../../../../public/logo.png";
 import Link from "next/link";
 import { useLanguage } from "@/app/LanguageContext";
+import Modal from "../Modal";
+import ModalSup from "../ModalSup";
+import { useState } from "react";
+import ModalPrivacy from "../ModalPrivacy";
+
 export function Footer() {
   const { selectedLanguage } = useLanguage();
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <div
@@ -44,16 +59,6 @@ export function Footer() {
             </li>
             <li className={styles.g}>
               <Link
-                href={"/about"}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  {selectedLanguage === "Pt-BR" ? "Sobre" : "About"}
-                </p>
-              </Link>
-            </li>
-            <li className={styles.b}>
-              <Link
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
@@ -62,7 +67,7 @@ export function Footer() {
                 </p>
               </Link>
             </li>
-            <li className={styles.g}>
+            <li className={styles.b}>
               <Link
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
@@ -73,12 +78,12 @@ export function Footer() {
                 </p>
               </Link>
             </li>
-            <li className={styles.b}>
+            <li className={styles.g}>
               <Link
                 href={"/"}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <p style={{ fontWeight: "bold" }}>
+                <p style={{ fontWeight: "bold", cursor: "pointer" }} onClick={openModal}>
                   {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support Us"}
                 </p>
               </Link>
@@ -88,6 +93,11 @@ export function Footer() {
 
         <br />
       </div>
+
+        <Modal isOpen={modalIsOpen} onClose={closeModal}>
+          {/* <ModalSup selectedLanguage={selectedLanguage}/> */}
+          <ModalPrivacy selectedLanguage={selectedLanguage}/>
+        </Modal>
     </div>
   );
 }

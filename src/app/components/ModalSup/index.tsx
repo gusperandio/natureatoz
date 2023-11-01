@@ -6,16 +6,17 @@ import paypal from "../../../../public/icons/paypal.svg";
 import coffee from "../../../../public/icons/coffee.svg";
 import filetype from "../../../../public/icons/file-copy.svg";
 import check from "../../../../public/icons/check-line.svg";
+import check2 from "../../../../public/icons/check.svg";
 import codeQR from "../../../../public/qrCode.png";
 import copy from "clipboard-copy";
-import styles from './style.module.scss'
+import styles from './styles.module.scss'
 import Link from "next/link";
 
-interface ModalProps{
+interface PropsSup{
   selectedLanguage: string
 }
 
-export default function ModalSup(props : ModalProps){
+export default function ModalSup(props : PropsSup){
 
   const [isCopied, setIsCopied] = useState(false);
   const handleCopyToClipboard = () => {
@@ -39,7 +40,7 @@ export default function ModalSup(props : ModalProps){
       {isCopied ? (
         <p>
           {"Copiado "}{" "}
-          <Image src={check} width={16} height={16} alt="check" />
+          <Image src={check2} width={16} height={16} alt="check" />
         </p>
       ) : (
         "Copiar"
@@ -50,7 +51,7 @@ export default function ModalSup(props : ModalProps){
       {isCopied ? (
         <p>
           {"Copied "}
-          <Image src={check} width={16} height={16} alt="check" />
+          <Image src={check2} width={16} height={16} alt="check" />
         </p>
       ) : (
         "Copy to clipboard"
