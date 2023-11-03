@@ -25,8 +25,9 @@ export default function Page() {
   const aa = selectedLanguage === "Pt-BR" ? <a>Documentos</a> : <a>Docs</a>;
   return (
     <div>
-
-   
+    <main className={styles.main}>
+        
+    </main>
   </div>
   );
 }

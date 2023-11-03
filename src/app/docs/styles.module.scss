@@ -1,0 +1,21 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Oxygen';
+    background-image: url('../../../public/arara.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  @media (width <= 518px) {
+    .main {
+      background-position: -340px center;
+    }
+  }

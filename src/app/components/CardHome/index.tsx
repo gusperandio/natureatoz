@@ -7,9 +7,13 @@ import { useState } from "react";
 import axios from "axios";
 import Loader from "../Loader";
 import { useLanguage } from "@/app/LanguageContext";
+import fileTypeIcon from "../../../../public/icons/file-copy.svg";
+import copy from "clipboard-copy";
+import checkIcon from "../../../../public/icons/check.svg";
 
 export default function CardHome() {
   const { selectedLanguage } = useLanguage();
+  const [isCopied, setIsCopied] = useState(false);
   const [name, setName] = useState("Teste 01");
   const [desc, setDesc] = useState(
     "Uma arara é uma ave exótica de grande porte, conhecida por suas cores vibrantes e pela capacidade de imitar sons. "
@@ -38,6 +42,37 @@ export default function CardHome() {
       }
     }, 1000);
   };
+
+  const handleCopyToClipboard = () => {
+    let textToCopy = "3DnyPiwLLrqs95FdSXgDb2TRqE86DHN2WS";
+
+    copy(textToCopy)
+      .then(() => {
+        setIsCopied(true);
+
+        setTimeout(() => {
+          setIsCopied(false);
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Erro ao copiar para a área de transferência", error);
+      });
+  };
+  const copyClipText =
+    selectedLanguage === "Pt-BR" ? "Copiar" : "Copy to clipboard";
+
+  const copyClip = (
+    <span className={styles.tooltiptext} id="myTooltip">
+      {isCopied ? (
+        <p>
+          {selectedLanguage === "Pt-BR" ? "Copiado" : "Copied"}{" "}
+          <Image src={checkIcon} width={16} height={16} alt="check" />
+        </p>
+      ) : (
+        copyClipText
+      )}
+    </span>
+  );
 
   const first = "{";
   const second = "}";
@@ -77,28 +112,46 @@ export default function CardHome() {
           </button>
         </div>
       </div>
-
-      <div className={styles.cardJson}>
-        <pre>
-          {first}
-          <br />
-          <div className={styles.notP}>
-            <p className={styles.key}>&quot;name&quot;</p>&nbsp;:&nbsp;
-            <p className={styles.value}>&quot;{name}&quot;</p>&#44;
-            <br />
+      <div className={styles.secondColum}>
+        <div className={styles.input_group}>
+          <div className={styles.input}>
+            <p>https://natureatoz.com.br/api/hello</p>
           </div>
-          <div className={styles.notP}>
-            <p className={styles.key}>&quot;description&quot;</p>&nbsp;:&nbsp;
-            <p className={styles.value}>&quot;{desc}&quot;</p>&#44;
+          <button className={styles.button_submit} type="button">
+            <div className={styles.copy}>
+              {copyClip}
+              <Image
+                src={fileTypeIcon}
+                width={18}
+                height={18}
+                alt="bitcoin"
+                onClick={handleCopyToClipboard}
+              />
+            </div>
+          </button>
+        </div>
+        <div className={styles.cardJson}>
+          <pre>
+            {first}
             <br />
-          </div>
-          <div className={styles.notP}>
-            <p className={styles.key}>&quot;image&quot;</p>&nbsp;:&nbsp;
-            <p className={styles.value}>&quot;{imgUrl}&quot;</p>
-            <br />
-          </div>
-          {second}
-        </pre>
+            <div className={styles.notP}>
+              <p className={styles.key}>&quot;name&quot;</p>&nbsp;:&nbsp;
+              <p className={styles.value}>&quot;{name}&quot;</p>&#44;
+              <br />
+            </div>
+            <div className={styles.notP}>
+              <p className={styles.key}>&quot;description&quot;</p>&nbsp;:&nbsp;
+              <p className={styles.value}>&quot;{desc}&quot;</p>&#44;
+              <br />
+            </div>
+            <div className={styles.notP}>
+              <p className={styles.key}>&quot;image&quot;</p>&nbsp;:&nbsp;
+              <p className={styles.value}>&quot;{imgUrl}&quot;</p>
+              <br />
+            </div>
+            {second}
+          </pre>
+        </div>
       </div>
     </div>
   );
