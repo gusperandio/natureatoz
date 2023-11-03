@@ -5,6 +5,7 @@ interface PropsPrivacy {
 }
 
 export default function ModalPrivacy(props: PropsPrivacy) {
+  console.log(props.selectedLanguage)
   return (
     <div className={styles.divPrivacy}>
       <h1 className={styles.titles}>

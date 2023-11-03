@@ -5,6 +5,7 @@ import "./styles/globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./LanguageContext";
+import FloatingButton from "./components/FloatingButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <LanguageProvider>
           <Header />
+          <FloatingButton />
           {children}
           <Footer />
         </LanguageProvider>

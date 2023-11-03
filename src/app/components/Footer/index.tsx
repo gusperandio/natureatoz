@@ -11,11 +11,8 @@ import ModalPrivacy from "../ModalPrivacy";
 import ModalContact from "../ModalContact";
 import ModalLicense from "../ModalLicense";
 
-interface FooterProps {
-  selectedLanguage: string;
-}
-
-export function Footer({ selectedLanguage }: FooterProps) {
+export function Footer() {
+  const { selectedLanguage } = useLanguage();
   const { isOpen, openModal, closeModal, modalConfig } =
     useModal(selectedLanguage);
 
@@ -91,18 +88,18 @@ function useModal(selectedLanguage: string) {
       case 1:
         setModalConfig({
           margin: "17% auto",
-          height: "200px",
-          width: "200px",
-          children: <ModalContact selectedLanguage={selectedLanguage} />
+          height: "300px",
+          width: "460px",
+          children: <ModalContact selectedLanguage={selectedLanguage} />,
         });
 
         break;
       case 2:
         setModalConfig({
           margin: "6% auto",
-          height: selectedLanguage === "Pt-BR" ? "640px" : "620px",
+          height: selectedLanguage === "Pt-BR" ? "680px" : "620px",
           width: "620px",
-          children: <ModalPrivacy selectedLanguage={selectedLanguage} />
+          children: <ModalPrivacy selectedLanguage={selectedLanguage} />,
         });
         break;
       case 3:
@@ -110,7 +107,7 @@ function useModal(selectedLanguage: string) {
           margin: "15% auto",
           height: "300px",
           width: "300px",
-          children: <ModalLicense selectedLanguage={selectedLanguage} />
+          children: <ModalLicense selectedLanguage={selectedLanguage} />,
         });
         break;
       default:
