@@ -27,7 +27,7 @@ export default function CardHome() {
 
     setTimeout(async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/hello");
+        const response = await axios.get("http://localhost:3000/api/v1/random");
         if (response.status === 200) {
           const data = response.data;
           setName(data.name);
@@ -44,7 +44,7 @@ export default function CardHome() {
   };
 
   const handleCopyToClipboard = () => {
-    let textToCopy = "3DnyPiwLLrqs95FdSXgDb2TRqE86DHN2WS";
+    let textToCopy = "https://natureatoz.com.br/api/v1/random";
 
     copy(textToCopy)
       .then(() => {
@@ -77,7 +77,7 @@ export default function CardHome() {
   const first = "{";
   const second = "}";
   return (
-    <div className={styles.mainCards}>
+    <div className={`${styles.mainCards} animate__animated animate__fadeInUp`}>
       <div className={styles.card}>
         <div className={styles.header}>
           {loader ? (
@@ -115,10 +115,10 @@ export default function CardHome() {
       <div className={styles.secondColum}>
         <div className={styles.input_group}>
           <div className={styles.input}>
-            <p>https://natureatoz.com.br/api/hello</p>
+            <p>https://natureatoz.com.br/api/v1/random</p>
           </div>
           <button className={styles.button_submit} type="button">
-            <div className={styles.copy}>
+            <div className={styles.copy} onClick={handleCopyToClipboard}>
               {copyClip}
               <Image
                 src={fileTypeIcon}
