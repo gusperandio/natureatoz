@@ -82,7 +82,7 @@ export function Header() {
             <LanguageSelector />
           </a>
         </nav>
-        <Modal isOpen={modalIsOpen} onClose={closeModal} margin="15% auto" height="320px" width="640px">
+        <Modal isOpen={modalIsOpen} onClose={closeModal} margin="10% auto" height="320px" width="640px">
           <ModalSup selectedLanguage={selectedLanguage}/>
         </Modal>
       </div>

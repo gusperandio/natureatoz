@@ -87,7 +87,7 @@ function useModal(selectedLanguage: string) {
     switch (n) {
       case 1:
         setModalConfig({
-          margin: "17% auto",
+          margin: "10% auto",
           height: "300px",
           width: "460px",
           children: <ModalContact selectedLanguage={selectedLanguage} />,
@@ -96,23 +96,23 @@ function useModal(selectedLanguage: string) {
         break;
       case 2:
         setModalConfig({
-          margin: "6% auto",
-          height: selectedLanguage === "Pt-BR" ? "680px" : "620px",
+          margin: "4% auto",
+          height: selectedLanguage === "Pt-BR" ? "700px" : "620px",
           width: "620px",
           children: <ModalPrivacy selectedLanguage={selectedLanguage} />,
         });
         break;
       case 3:
         setModalConfig({
-          margin: "15% auto",
-          height: "300px",
-          width: "300px",
+          margin: "10% auto",
+          height: "500px",
+          width: "500px",
           children: <ModalLicense selectedLanguage={selectedLanguage} />,
         });
         break;
       default:
         setModalConfig({
-          margin: "15% auto",
+          margin: "10% auto",
           height: "320px",
           width: "640px",
           children: <ModalSup selectedLanguage={selectedLanguage} />,

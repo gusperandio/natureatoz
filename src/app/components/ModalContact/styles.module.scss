@@ -14,19 +14,16 @@
   overflow: hidden;
   position: relative;
   padding: 0.875rem 72px 0.875rem 1.75rem;
-  background-color: #039be5;
-  background-image: linear-gradient(to top right, #039be5,#29b6f6);
   color: #ffffff;
   font-size: 15px;
   line-height: 1.25rem;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
   vertical-align: middle;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   gap: 0.75rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f;
   border: none;
   transition: all .6s  ease;
   text-align: center;
@@ -35,8 +32,44 @@
   justify-content: center;
 }
 
-.btn .spann {
-  background-color: rgb(3 155 229);
+
+.btnEmail{
+  background-color: #ea4335;
+  background-image: linear-gradient(to top right,#fbbc05, #ea4335);
+}
+
+.btnEmail .spanEmail{
+  background-color: #fbbc05;
+  display: grid;
+  position: absolute;
+  right: 0;
+  place-items: center;
+  width: 3rem;
+  height: 100%;
+}
+
+
+.btnGitHub{
+  background-color: #272b33;
+  background-image: linear-gradient(to top right,#0a0c10, #272b33);
+}
+
+.btnGitHub .spanGit{
+  background-color: #0a0c10;
+  display: grid;
+  position: absolute;
+  right: 0;
+  place-items: center;
+  width: 3rem;
+  height: 100%;
+}
+
+.btnLinkedin{
+  background-image: linear-gradient(to top right, #0a66c2,#039be5);
+}
+
+.btnLinkedin .spann {
+  background-color: #0a66c2;
   display: grid;
   position: absolute;
   right: 0;
@@ -51,5 +84,5 @@
 }
 
 .btn:hover {
-  box-shadow: 0 4px 30px  rgba(4, 175, 255, .1), 0 2px 30px rgba(11, 158, 255, 0.06);
+  box-shadow: 0 4px 30px  #04afff1a, 0 2px 30px #0b9eff0f;
 }
