@@ -34,7 +34,7 @@ export function Header() {
     selectedLanguage === "Pt-BR" ? (
       <a className={styles.aa}>Documentos</a>
     ) : (
-      <a className={styles.aa}>Docs</a>
+      <a className={styles.aa}>Documents</a>
     );
 
   const sup =

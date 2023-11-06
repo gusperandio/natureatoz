@@ -3,40 +3,32 @@ import { FC } from "react";
 import styles from './styles.module.scss';
 
 const Parallax: FC = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [isFrozen, setIsFrozen] = useState(false);
-    const [imageSize, setImageSize] = useState(100);
-  
-    // const handleScroll = () => {
-    //   const currentScrollPosition = window.scrollY;
-    //   setScrollPosition(currentScrollPosition);
-    //     console.log(currentScrollPosition)
-   
-    //   const scrollPositionLimit = 465; 
-  
-    //   if (currentScrollPosition >= scrollPositionLimit) {
-    //     setIsFrozen(true);
-    //   } else {
-    //     setIsFrozen(false);
-    //   }
-  
-      
-    //   if (!isFrozen) {
-    //     const newSize = Math.max(minBackgroundSize, (window.outerHeight - currentScrollPosition) / 3);
-    //     setImageSize(newSize);
-    //   }
-    // };
-  
-    // useEffect(() => {
-    //   window.addEventListener("scroll", handleScroll, { passive: true });
-  
-    //   return () => {
-    //     window.removeEventListener("scroll", handleScroll);
-    //   };
-    // }, [isFrozen]);
-  
-    // // Define a minimum background size (e.g., 10%)
-    // const minBackgroundSize = 10;
+
+  // Foto de Braulio Espinoza Sánchez: https://www.pexels.com/pt-br/foto/animais-bichos-passarinhos-passaro-16975490/
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [imageSize, setImageSize] = useState(100); // Tamanho inicial da imagem (como porcentagem)
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.scrollY;
+    setScrollPosition(currentScrollPosition);
+
+    // Define um limite mínimo e máximo para o tamanho da imagem
+    const minSize = 10; // Tamanho mínimo da imagem (como porcentagem)
+    const maxSize = 100; // Tamanho máximo da imagem (como porcentagem)
+
+    // Calcula o tamanho da imagem com base na posição de rolagem
+    const newSize = Math.min(maxSize, Math.max(minSize, 100 - currentScrollPosition / 10)); // Ajuste os valores como necessário
+
+    setImageSize(newSize);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   
   return (
     <div className={styles.main}>
