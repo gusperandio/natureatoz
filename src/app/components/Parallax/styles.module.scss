@@ -1,50 +1,74 @@
-.main{
-    .banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: url("../../../../public/bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 70%;
-        height: 600px;
-        transition: 0.1s linear;
-      }
-      
-      .banner h2 {
-        font-size: 48px;
-        color: #f8f8f8;
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-      
-      .banner button {
-        border: 0;
-        background: #ffffff;
-        color: #222222;
-        padding: 10px 24px;
-        border-radius: 30px;
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 600;
-      }
-      
-      .container {
-        padding: 0 10%;
-      }
-      
-      section {
-        background: #ffffff;
-      }
-      
-      section h2 {
-        margin-top: 0;
-        padding-top: 60px;
-      }
-      
-      section p:last-child {
-        padding-bottom: 60px;
-      }
+.main {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../../../public/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    height: 600px;
+    transition: 0.1s linear;
+  }
+
+  .banner h2 {
+    font-size: 48px;
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .divButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+  }
+
+  .banner button {
+    border: 0;
+    background: #fff;
+    color: #222222;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .container {
+    padding: 0 4rem;
+    
+    h2 {
+      font-size: 32px;
+      color: var(--yellow-500);
+      padding-top: 1rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 1rem;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+  }
+
+  section {
+    background: #ffffff;
+  }
+
+  section h2 {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+
+  section p:last-child {
+    padding-bottom: 60px;
+  }
 }
