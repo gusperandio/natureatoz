@@ -10,12 +10,11 @@ export default function Parallax(props: PropsParallax) {
   return (
     <div className={styles.main}>
       <section
-        style={{
-          backgroundSize: `${100}%`,
-        }}
         className={`${styles.banner}`}
       >
-        <h2>Documents</h2>
+        <h2>{props.selectedLanguage == "Pt-BR"
+            ? "Documentação"
+            : "Documents"}</h2>
         <div className={styles.divButtons}>
           <button>{props.selectedLanguage == "Pt-BR"
             ? "Introdução"

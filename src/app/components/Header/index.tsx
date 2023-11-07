@@ -74,7 +74,7 @@ export function Header() {
           <Link href="/" legacyBehavior>
             {aa}
           </Link>
-          <Link href="/docs" legacyBehavior>
+          <Link href="/intro" legacyBehavior>
             {dc}
           </Link>
           {sup}
