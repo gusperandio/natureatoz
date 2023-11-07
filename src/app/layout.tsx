@@ -34,10 +34,10 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <LanguageProvider>
-          {/* <Header /> */}
+          <Header />
           <FloatingButton />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </LanguageProvider>
       </body>
     </html>

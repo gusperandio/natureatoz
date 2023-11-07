@@ -2,7 +2,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   min-height: 100vh;
   font-family: 'Oxygen';
@@ -12,6 +12,79 @@
   background-repeat: no-repeat;
 }
 
+.divBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.Btn {
+  width: 180px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
+  cursor: default;
+  background-color: transparent;
+}
+
+.leftContainer {
+  width: 60%;
+  height: 100%;
+  background-color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.leftContainer .like {
+  color: white;
+  font-weight: 600;
+}
+
+.likeCount {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-700);
+  font-weight: 600;
+  position: relative;
+  background-color: white;
+}
+
+.likeCount::before {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+.Btn:hover .leftContainer {
+  background-color: var(--yellow-500);
+}
+
+.Btn:active .leftContainer {
+  background-color: var(--yellow-500);
+}
+
+.Btn:active .leftContainer svg {
+  transform: scale(1.15);
+  transform-origin: top;
+}
 
 
 @media (width <= 518px) {

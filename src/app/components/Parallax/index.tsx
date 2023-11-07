@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import { FC } from "react";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 interface PropsParallax {
   selectedLanguage: string;
 }
 
 export default function Parallax(props: PropsParallax) {
+  const scrollToIntroduction = () => {
+    const introductionSection = document.getElementById('introduction-section');
+    if (introductionSection) {
+      introductionSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <div className={styles.main}>
       <section
@@ -16,15 +25,17 @@ export default function Parallax(props: PropsParallax) {
             ? "Documentação"
             : "Documents"}</h2>
         <div className={styles.divButtons}>
-          <button>{props.selectedLanguage == "Pt-BR"
+          <button onClick={scrollToIntroduction}>{props.selectedLanguage == "Pt-BR"
             ? "Introdução"
             : "Introduction"}</button>
+          <Link href="/docs" legacyBehavior>
           <button>{props.selectedLanguage == "Pt-BR"
             ? "Iniciar"
             : "Get Started"}</button>
+          </Link>
         </div>
       </section>
-      <section className={`${styles.container}`}>
+      <section className={`${styles.container}`} id="introduction-section">
         <h2>
           {props.selectedLanguage == "Pt-BR"
             ? "Introdução"

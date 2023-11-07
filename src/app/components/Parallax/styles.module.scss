@@ -42,7 +42,7 @@
   }
 
   .container {
-    padding: 0 4rem;
+    padding: 0 12rem;
     
     h2 {
       font-size: 32px;
@@ -54,7 +54,8 @@
 
     p {
       text-align: justify;
-      padding: 1rem;
+      padding: 1.2rem;
+      font-size: 1.2rem;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
     }
@@ -72,5 +73,12 @@
 
   section p:last-child {
     padding-bottom: 60px;
+  }
+}
+
+
+@media (width <= 518px) {
+  .container {
+    padding: 0 4rem;
   }
 }

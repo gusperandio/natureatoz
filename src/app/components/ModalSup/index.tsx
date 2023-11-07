@@ -11,46 +11,13 @@ import paypalIcon from "../../../../public/icons/paypal.svg";
 import coffeeIcon from "../../../../public/icons/coffee.svg";
 import fileTypeIcon from "../../../../public/icons/file-copy.svg";
 import checkIcon from "../../../../public/icons/check.svg";
+import CopyButton from "../CopyButton";
 
 interface PropsSup {
   selectedLanguage: string;
 }
 
 export default function ModalSup(props: PropsSup) {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const handleCopyToClipboard = () => {
-    let textToCopy = "3DnyPiwLLrqs95FdSXgDb2TRqE86DHN2WS";
-
-    copy(textToCopy)
-      .then(() => {
-        setIsCopied(true);
-
-        setTimeout(() => {
-          setIsCopied(false);
-        }, 3000);
-      })
-      .catch((error) => {
-        console.error("Erro ao copiar para a área de transferência", error);
-      });
-  };
-
-  const copyClipText =
-    props.selectedLanguage === "Pt-BR" ? "Copiar" : "Copy to clipboard";
-
-  const copyClip = (
-    <span className={styles.tooltiptext} id="myTooltip">
-      {isCopied ? (
-        <p>
-          {props.selectedLanguage === "Pt-BR" ? "Copiado" : "Copied"}{" "}
-          <Image src={checkIcon} width={16} height={16} alt="check" />
-        </p>
-      ) : (
-        copyClipText
-      )}
-    </span>
-  );
-
   return (
     <div className={styles.divDonations}>
       <Link
@@ -96,15 +63,8 @@ export default function ModalSup(props: PropsSup) {
       <div className={styles.bitcoin}>
         <Image src={bitcoinIcon} width={42} height={32} alt="bitcoin" />
         <p>3DnyPiwLLrqs95FdSXgDb2TRqE86DHN2WS</p>
-        <div className={styles.copy}>
-          {copyClip}
-          <Image
-            src={fileTypeIcon}
-            width={18}
-            height={18}
-            alt="bitcoin"
-            onClick={handleCopyToClipboard}
-          />
+        <div>
+          <CopyButton selectedLanguage={props.selectedLanguage} text="3DnyPiwLLrqs95FdSXgDb2TRqE86DHN2WS"/>
         </div>
       </div>
     </div>
