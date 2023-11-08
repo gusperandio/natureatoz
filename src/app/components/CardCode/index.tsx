@@ -1,9 +1,11 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
+import CopyButton from "../CopyButton";
+import { useLanguage } from "@/app/LanguageContext";
 
 export default function CardCode() {
   const [activeTab, setActiveTab] = useState(1);
-
+  const { selectedLanguage } = useLanguage();
   const handleTabChange = (tabIndex: number) => {
     setActiveTab(tabIndex);
   };
@@ -82,6 +84,10 @@ export default function CardCode() {
             Ruby
           </label>
           <span className={styles.glider}></span>
+        </div>
+
+        <div className={styles.copy}>
+          <CopyButton selectedLanguage={selectedLanguage} text="texto" />
         </div>
       </div>
     </div>
