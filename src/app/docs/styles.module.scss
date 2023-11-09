@@ -4,32 +4,10 @@
   height: 100vh;
   font-family: "Oxygen";
  
-  .bgOnca{
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 65%,
-      rgba(240, 194, 79, 1) 100%
-    );
-  }
   
-  .bgTurtle{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(0,67,149,1) 100%);
-  }
+  
+  
 
-  .bgBird{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,149,70,0.65) 100%, rgba(255,255,255,1) 100%);
-  }  
-  .bgWater{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,149,70,0.65) 100%, rgba(255,255,255,1) 100%);
-  }  
-  .bgBird{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,149,70,0.65) 100%, rgba(255,255,255,1) 100%);
-  }  
 
   ul {
     list-style: none;
@@ -70,7 +48,6 @@
     width: 250px;
     background-size: 250%;
     background-repeat: no-repeat;
-    background-position: 30% 20%;
     color: #fff;
     padding: 20px;
     height: auto;

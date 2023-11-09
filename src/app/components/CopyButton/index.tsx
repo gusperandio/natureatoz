@@ -7,6 +7,7 @@ interface PropsCopy{
 }
 
 export default function CopyButton(props: PropsCopy){
+    console.log(props.selectedLanguage)
     const copyClipText = props.selectedLanguage === "Pt-BR" ? "Copiar" : "Copy to clipboard";
 
     const copied = props.selectedLanguage === "Pt-BR" ? "Copiado!" : "Copied!" 
