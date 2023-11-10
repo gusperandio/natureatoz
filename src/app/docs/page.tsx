@@ -12,7 +12,6 @@ import arrowRight from "../../../public/icons/arrow-right.svg";
 export default function Page() {
   const { selectedLanguage } = useLanguage();
   const [language, setLanguage] = useState("");
-  
 
   const authors = [
     {
@@ -53,46 +52,101 @@ export default function Page() {
     },
   ];
 
-  const textContent = 
-    {
-      title: selectedLanguage == "Pt-BR" ? "Documentação API" : "API Documentation",
-      textIntro: selectedLanguage == "Pt-BR" ? "Bem-vindo à documentação da API A to Z, sua porta de entrada para explorar e interagir com uma vasta gama de informações e serviços relacionados ao meio ambiente, abrangendo desde tópicos que começam com a letra A até aqueles que terminam com a letra Z. Nossa API foi projetada para fornecer acesso fácil e flexível a dados e recursos que podem ser valiosos para pesquisadores, conservacionistas, empresas e qualquer pessoa interessada em proteger e entender o nosso planeta." : "Welcome to the A to Z API documentation, your gateway to exploring and interacting with a wide range of environmental-related information and services, ranging from topics starting with the letter A to those ending with the letter Z. Our API is designed to provide easy and flexible access to data and resources that can be valuable to researchers, conservationists, businesses and anyone interested in protecting and understanding our planet.",
-      subTitle : selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
-      textStart : selectedLanguage == "Pt-BR" ? "Nossa API de A to Z oferece um repositório de informações valiosas que abrange tópicos que vão desde a biodiversidade até as zonas de proteção ambiental. Com recursos acessíveis via HTTP e documentação completa, estamos comprometidos em facilitar a colaboração e o acesso a dados que podem fazer a diferença na conservação de nosso planeta." : "Our A to Z API provides a repository of valuable information covering topics ranging from biodiversity to environmental protection zones. With resources accessible via HTTP and complete documentation, we are committed to facilitating collaboration and access to data that can make a difference in conserving our planet.",
-      guides : selectedLanguage == "Pt-BR" ? "Guias" : "Guides",
-    
-    }
-  
+  const textContent = {
+    title:
+      selectedLanguage == "Pt-BR" ? "Documentação API" : "API Documentation",
+    textIntro:
+      selectedLanguage == "Pt-BR"
+        ? "Bem-vindo à documentação da API A to Z, sua porta de entrada para explorar e interagir com uma vasta gama de informações e serviços relacionados ao meio ambiente, abrangendo desde tópicos que começam com a letra A até aqueles que terminam com a letra Z. Nossa API foi projetada para fornecer acesso fácil e flexível a dados e recursos que podem ser valiosos para pesquisadores, conservacionistas, empresas e qualquer pessoa interessada em proteger e entender o nosso planeta."
+        : "Welcome to the A to Z API documentation, your gateway to exploring and interacting with a wide range of environmental-related information and services, ranging from topics starting with the letter A to those ending with the letter Z. Our API is designed to provide easy and flexible access to data and resources that can be valuable to researchers, conservationists, businesses and anyone interested in protecting and understanding our planet.",
+    subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
+    textStart:
+      selectedLanguage == "Pt-BR"
+        ? "Nossa API de A to Z oferece um repositório de informações valiosas que abrange tópicos que vão desde a biodiversidade até as zonas de proteção ambiental. Com recursos acessíveis via HTTP e documentação completa, estamos comprometidos em facilitar a colaboração e o acesso a dados que podem fazer a diferença na conservação de nosso planeta."
+        : "Our A to Z API provides a repository of valuable information covering topics ranging from biodiversity to environmental protection zones. With resources accessible via HTTP and complete documentation, we are committed to facilitating collaboration and access to data that can make a difference in conserving our planet.",
+    guides: selectedLanguage == "Pt-BR" ? "Guias" : "Guides",
+    guides1: selectedLanguage == "Pt-BR" ? "Autenticação" : "Authentication",
+    guides1Sub:
+      selectedLanguage == "Pt-BR"
+        ? "Domine as técnicas de autenticação de solicitação de API."
+        : "Master API request authentication techniques.",
+    guides2: selectedLanguage == "Pt-BR" ? "Aleatório" : "Random",
+    guides2Sub:
+      selectedLanguage == "Pt-BR"
+        ? "Explore o nossa ampla API de forma aleatória"
+        : "Explore our extensive API at random",
+    guides3: selectedLanguage == "Pt-BR" ? "Alfabética" : "Alphabetical",
+    guides3Sub:
+      selectedLanguage == "Pt-BR"
+        ? "Solicite todos os dados por ordem alfabética"
+        : "Request all data in alphabetical order",
+    guides4: selectedLanguage == "Pt-BR" ? "Específico" : "Especific",
+    guides4Sub:
+      selectedLanguage == "Pt-BR"
+        ? "Solicite um dado específico pelo ID"
+        : "Request specific data by ID",
+    guides5: selectedLanguage == "Pt-BR" ? "Paginação" : "Pagination",
+    guides5Sub:
+      selectedLanguage == "Pt-BR"
+        ? "Solicite um método de paginação com os itens disponíveis"
+        : "Request a paging method with available items",
+    readMore: selectedLanguage == "Pt-BR" ? "Ler mais" : "Read more",
+  };
+
+  const textAuth = {
+    title: selectedLanguage === "Pt-BR" ? "Autenticação" : "Authentication",
+    textIntro:
+      selectedLanguage === "Pt-BR"
+        ? "A autenticação de API é um processo crucial para garantir a segurança e o acesso controlado aos dados e serviços disponibilizados por uma aplicação. Um exemplo prático desse processo pode ser observado na API do NatureAtoz, que requer uma chave de autenticação para acessar suas funcionalidades."
+        : "API authentication is a critical process to ensure security and controlled access to data and services provided by an application. A practical example of this process can be seen in the NatureAtoz API, which requires an authentication key to access its functionalities.",
+    subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
+    textStart:
+      selectedLanguage == "Pt-BR"
+        ? "Para começar a utilizar a API do NatureAtoz, o primeiro passo é solicitar uma chave de acesso. Isso pode ser feito através do link: https://natureatoz.com.br/v1/key. Ao acessar esse link, você será guiado por um processo de registro e autenticação, onde receberá uma chave exclusiva associada à sua conta."
+        : "To begin using the NatureAtoz API, the first step is to request an access key. This can be done through the link: https://natureatoz.com.br/v1/key. When accessing this link, you will be guided through a registration and authentication process, where you will receive a unique key associated with your account.",
+    textStart2:
+      selectedLanguage == "Pt-BR"
+        ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis. Esse método de autenticação baseado em chave é uma prática comum para proteger as APIs, garantindo que apenas usuários autorizados tenham acesso aos dados e serviços oferecidos pela plataforma NatureAtoz."
+        : "With the key in hand, you can incorporate it into your API requests, ensuring the necessary authentication to access the available resources. This key-based authentication method is a common practice to secure APIs, ensuring that only authorized users have access to the data and services offered by the NatureAtoz platform.",
+  };
+
+  const textRandom = {
+    title : selectedLanguage === "Pt-BR" ? "Aleatório" : "Random",
+    textIntro : selectedLanguage === "Pt-BR" ? "Nesta página, vamos nos aprofundar alguns pontos de requisição em que você pode gerenciar as requisições sem um exato controle, onde você faz a requisição e recebe dados surpresa" : "On this page, we will delve deeper into some request points where you can manage requests without exact control, where you make the request and receive surprise data",
+    subTitle : selectedLanguage === "Pt-BR" ? "Modelo aleatório" : "Random model",
+    textStart : selectedLanguage === "Pt-BR" ? "O modelo aleatório contém todas as informações sobre algo específico do meio ambiente desde que informado a rota utilizando a chave de acesso." : "The random model contains all information about something specific in the environment as long as the route is informed using the access key.",
+  }
+
+  const textAlphabetical = {
+
+  }
+
+  const textSpecific = {
+
+  }
+
+  const textPagination = {
+
+  }
 
   const auth = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>Auth</h1>
-      <p>
-        Bem-vindo à documentação da API A to Z, sua porta de entrada para
-        explorar e interagir com uma vasta gama de informações e serviços
-        relacionados ao meio ambiente, abrangendo desde tópicos que começam com
-        a letra A até aqueles que terminam com a letra Z. Nossa API foi
-        projetada para fornecer acesso fácil e flexível a dados e recursos que
-        podem ser valiosos para pesquisadores, conservacionistas, empresas e
-        qualquer pessoa interessada em proteger e entender o nosso planeta.
-      </p>
+      <h1 className={styles.title}>{textAuth.title}</h1>
+      <p>{textAuth.textIntro}</p>
       <br />
 
-      <h3>Iniciando</h3>
+      <h3>{textAuth.subTitle}</h3>
 
-      <p>
-        Nossa API de A to Z oferece um repositório de informações valiosas que
-        abrange tópicos que vão desde a biodiversidade até as zonas de proteção
-        ambiental. Com recursos acessíveis via HTTP e documentação completa,
-        estamos comprometidos em facilitar a colaboração e o acesso a dados que
-        podem fazer a diferença na conservação de nosso planeta.
-      </p>
+      <p>{textAuth.textStart}</p>
+      <p>{textAuth.textStart2}</p>
     </div>
   );
 
   const random = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>{language === "Pt-BR" ? "Aleatório" : "Search Random"}</h1>
+      <h1 className={styles.title}>
+        {language === "Pt-BR" ? "Aleatório" : "Search Random"}
+      </h1>
       <p>
         Bem-vindo à documentação da API A to Z, sua porta de entrada para
         explorar e interagir com uma vasta gama de informações e serviços
@@ -115,7 +169,7 @@ export default function Page() {
       </p>
     </div>
   );
-  
+
   const alfabetical = (
     <div id="content" className={`${styles.content}`}>
       <h1 className={styles.title}>Alphabetical</h1>
@@ -194,10 +248,10 @@ export default function Page() {
     </div>
   );
 
-  const labels = (destiny: React.JSX.Element) => {
+  const labels = (destiny: React.JSX.Element, n: number, read: string) => {
     return (
-      <label onClick={() => alterContent(destiny, 1)}>
-        Read more <Image src={arrowRight} width={12} height={12} alt="arrow" />
+      <label onClick={() => alterContent(destiny, n)}>
+        {read} <Image src={arrowRight} width={12} height={12} alt="arrow" />
       </label>
     );
   };
@@ -205,56 +259,63 @@ export default function Page() {
   const intro = (
     <div id="content" className={`${styles.content}`}>
       <h1 className={styles.title}>{textContent.title}</h1>
-      <p>
-       {textContent.textIntro}
-      </p>
+      <p>{textContent.textIntro}</p>
       <br />
 
       <h3>{textContent.subTitle}</h3>
 
-      <p>
-        {textContent.textStart}
-      </p>
+      <p>{textContent.textStart}</p>
+
+      <CardCode tabs={false} link="https://natureatoz.com.br/v1" />
       <div className={styles.guides}>
         <h3>{textContent.guides}</h3>
         <div className={styles.subGuides}>
           <div className={styles.d1}>
-            <h4>Authentication</h4>
-            <p>Learn how to authenticate your API requests. </p>
-            {labels(auth)}
+            <h4>{textContent.guides1}</h4>
+            <p>{textContent.guides1Sub}</p>
+            {labels(auth, 1, textContent.readMore)}
           </div>
           <div className={styles.d1}>
-            <h4>Random</h4>
-            <p>Learn how to authenticate your API requests. </p>
-            {labels(random)}
+            <h4>{textContent.guides2}</h4>
+            <p>{textContent.guides2Sub}</p>
+            {labels(random, 2, textContent.readMore)}
           </div>
           <div className={styles.d1}>
-            <h4>Alphabetical</h4>
-            <p>Learn how to authenticate your API requests. </p>
-            {labels(alfabetical)}
+            <h4>{textContent.guides3}</h4>
+            <p>{textContent.guides3Sub}</p>
+            {labels(alfabetical, 3, textContent.readMore)}
           </div>
           <div className={styles.d1}>
-            <h4>Especific</h4>
-            <p>Learn how to authenticate your API requests. </p>
-            {labels(specific)}
+            <h4>{textContent.guides4}</h4>
+            <p>{textContent.guides4Sub}</p>
+            {labels(specific, 4, textContent.readMore)}
           </div>
           <div className={styles.d1}>
-            <h4>Pagination</h4>
-            <p>Learn how to authenticate your API requests. </p>
-            {labels(pagination)}
+            <h4>{textContent.guides5}</h4>
+            <p>{textContent.guides5Sub}</p>
+            {labels(pagination, 5, textContent.readMore)}
           </div>
         </div>
       </div>
     </div>
   );
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Adiciona um efeito de rolagem suave
+    });
+  };
+
   const alterContent = (actual: React.JSX.Element, n: number) => {
     setContent(actual);
     setI(n);
     if (n == 2 || n == 3) {
-      let percent = n == 2 ? "50% 40%" : "50% 20%"
+      let percent = n == 2 ? "50% 40%" : "50% 20%";
       setPosition(percent);
     }
+
+    scrollToTop();
   };
 
   const [content, setContent] = useState(intro);
@@ -262,10 +323,10 @@ export default function Page() {
   const [position, setPosition] = useState("30% 20%");
 
   useEffect(() => {
-    setContent(intro)
+    setContent(intro);
     setI(0);
   }, [selectedLanguage]);
-  
+
   return (
     <div className={styles.body}>
       <div
@@ -294,7 +355,9 @@ export default function Page() {
         <br />
         <div className={styles.intro} onClick={() => alterContent(intro, 0)}>
           <button className={styles.Btn}>
-            <p className={styles.text}>{selectedLanguage === "Pt-BR" ? "Introdução" : "Introduction"}</p>
+            <p className={styles.text}>
+              {selectedLanguage === "Pt-BR" ? "Introdução" : "Introduction"}
+            </p>
             <span className={styles.BG}></span>
           </button>
         </div>

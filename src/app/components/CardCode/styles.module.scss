@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Manrope:wght@200;300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 .cardCode {
   width: 460px;
   height: 200px;
@@ -5,6 +6,13 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+
+  .linkp {
+    font-size: smaller;
+    font-family: 'Fira Code';
+    padding: 0 1rem;
+    color: #fff;
+  }
 }
 
 .headerCoder {
@@ -114,6 +122,10 @@
   border-radius: 99px;
   transition: 0.2s ease-out;
 }
+
+
+
+
 
 @media (max-width: 700px) {
   .tabs {

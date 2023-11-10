@@ -1,13 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 .body {
   display: flex;
-  height: 100vh;
+  height: 120vh;
   font-family: "Oxygen";
- 
-  
-  
-  
-
 
   ul {
     list-style: none;
@@ -51,7 +46,6 @@
     color: #fff;
     padding: 20px;
     height: auto;
-    
     .intro{
       .Btn {
         position: relative;
@@ -106,7 +100,7 @@
 
     .list {
       list-style: none;
-      font-weight: 700;
+      font-weight: 200;
       font-size: 1rem;
       padding: 0;
       text-align: start;
@@ -245,5 +239,24 @@
   }
   .active {
     background-color: #555;
+  }
+}
+
+
+@media (width <= 1275px) {
+  .body{
+    height: 140vh;
+  }
+}
+
+
+@media (width <= 580px) {
+  .body{
+    height: 180vh;
+    display: block;
+  }
+
+  .sidebar{
+    display: none;
   }
 }

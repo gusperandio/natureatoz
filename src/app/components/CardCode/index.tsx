@@ -3,7 +3,13 @@ import styles from "./styles.module.scss";
 import CopyButton from "../CopyButton";
 import { useLanguage } from "@/app/LanguageContext";
 
-export default function CardCode() {
+interface PropsCardCode{
+  code? : number
+  link: string
+  tabs: boolean
+}
+
+export default function CardCode(props : PropsCardCode) {
   const [activeTab, setActiveTab] = useState(1);
   const { selectedLanguage } = useLanguage();
   const handleTabChange = (tabIndex: number) => {
@@ -11,8 +17,8 @@ export default function CardCode() {
   };
   return (
     <div className={styles.cardCode}>
-      <div className={styles.container}>
-        <div className={styles.tabs}>
+      <div className={styles.container} style={{justifyContent: `${props.tabs ? 'space-between' : 'flex-end'}`}}>
+        <div className={styles.tabs} style={{display: `${props.tabs ? 'block' : 'none'}`}}>
           <input
             type="radio"
             id="radio-1"
@@ -87,9 +93,11 @@ export default function CardCode() {
         </div>
 
         <div className={styles.copy}>
-          <CopyButton selectedLanguage={selectedLanguage} text="texto" />
+          <CopyButton selectedLanguage={selectedLanguage} text={props.link} />
         </div>
       </div>
+
+      <p style={{marginLeft: "1rem", color: "#fff", fontFamily: "Fira Code", padding: "0 0 1rem 1rem", fontSize: "14px"}}>{props.link}</p>
     </div>
   );
 }
