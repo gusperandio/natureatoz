@@ -3,7 +3,7 @@
   display: flex;
   height: 120vh;
   font-family: "Oxygen";
-
+  background-image: url("/background.png");
   ul {
     list-style: none;
     padding: 0;
@@ -46,55 +46,56 @@
     color: #fff;
     padding: 20px;
     height: auto;
-    .intro{
-      .Btn {
-        position: relative;
-        background-color: transparent;
-        border: none;
-        width: 100%;
-        height: 40px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all .3s;
-        z-index: 1;
-      }
-      
-      .text {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(230, 230, 230, 0.466);
-        border: none;
-        border-radius: 7px;
-        backdrop-filter: blur(5px);
-        color: rgb(26, 26, 26);
-        display: flex;
-        font-weight: 600;
+    .intro {
+      display: flex;
+      justify-content: center;
+
+      .button_name {
         align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+          rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 48px;
         justify-content: center;
-        letter-spacing: 0.8px;
-        z-index: 1;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
       }
-      
-      .BG {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(147deg, #FFE53B, #FF2525);
-        z-index: -1;
-        left: 6px;
-        top: 6px;
-        border-radius: 7px;
-        pointer-events: none;
-        transition: all .3s;
+
+      .button_name:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
       }
-      
-      .Btn:hover {
+
+      .button_name:hover {
+        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+          rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
         transform: translateY(-2px);
       }
-      
-      .Btn:hover .BG {
-        transform: translateY(-1px);
+
+      .button_name:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
       }
     }
 
@@ -110,7 +111,7 @@
       margin-top: 1rem;
 
       li {
-        background-color: #2c3e50;
+        background-color: #222;
         border-radius: 5px;
         width: 100%;
         display: flex;
@@ -124,27 +125,39 @@
         .get {
           margin-right: 1rem;
           background: #eafbf5;
-          color: #19bc86;
+          color: #61affe;
           padding: 6px;
           border-radius: 2.5px;
           font-size: 12px;
           display: flex;
           align-items: center;
           height: 20px;
-          border: 2px solid #32c891;
+          border: 2px solid #76b9fd;
         }
-
-        
       }
+
+      li:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+      }
+
       li:hover {
-        background-color: var(--blue-900);
-       
+        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+          rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        background-color: var(--white);
+
         border-radius: 6px;
         cursor: pointer;
-          p{
-            color: #18181b;
-          }
-        
+        p {
+          color: #18181b;
+          font-weight: bold;
+        }
+      }
+
+      li:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
       }
     }
   }
@@ -242,21 +255,19 @@
   }
 }
 
-
 @media (width <= 1275px) {
-  .body{
+  .body {
     height: 140vh;
   }
 }
 
-
 @media (width <= 580px) {
-  .body{
+  .body {
     height: 180vh;
     display: block;
   }
 
-  .sidebar{
+  .sidebar {
     display: none;
   }
 }

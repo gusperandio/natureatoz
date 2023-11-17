@@ -333,11 +333,11 @@ export default function Page() {
         id="sidebar"
         className={styles.sidebar}
         style={{
-          backgroundImage: `url(${authors[I].backgrounds})`,
+         
           backgroundPosition: `${position}`,
         }}
       >
-        <Link href={authors[I].link} legacyBehavior passHref>
+        {/* <Link href={authors[I].link} legacyBehavior passHref>
           <a target="_blank" rel="noopener noreferrer">
             <p className={styles.author}>
               {selectedLanguage === "Pt-BR" ? "Foto de" : "Photo by"}{" "}
@@ -351,15 +351,16 @@ export default function Page() {
               />
             </p>
           </a>
-        </Link>
+        </Link> */}
         <br />
         <div className={styles.intro} onClick={() => alterContent(intro, 0)}>
-          <button className={styles.Btn}>
+          {/* <button className={styles.Btn}>
             <p className={styles.text}>
-              {selectedLanguage === "Pt-BR" ? "Introdução" : "Introduction"}
+             
             </p>
             <span className={styles.BG}></span>
-          </button>
+          </button> */}
+          <button role="button" className={styles.button_name}> {selectedLanguage === "Pt-BR" ? "Introdução" : "Introduction"}</button>
         </div>
         <ul className={styles.list}>
           <li onClick={() => alterContent(auth, 1)}>
