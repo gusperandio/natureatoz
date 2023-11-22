@@ -21,9 +21,6 @@ export default function Parallax(props: PropsParallax) {
       <section
         className={`${styles.banner}`}
       >
-        <h2>{props.selectedLanguage == "Pt-BR"
-            ? "Documentação"
-            : "Documents"}</h2>
         <div className={styles.divButtons}>
           <button onClick={scrollToIntroduction}>{props.selectedLanguage == "Pt-BR"
             ? "Introdução"

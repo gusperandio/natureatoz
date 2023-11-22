@@ -18,7 +18,7 @@ export default function CardCode(props : PropsCardCode) {
   return (
     <div className={styles.cardCode}>
       <div className={styles.container} style={{justifyContent: `${props.tabs ? 'space-between' : 'flex-end'}`}}>
-        <div className={styles.tabs} style={{display: `${props.tabs ? 'block' : 'none'}`}}>
+        <div className={styles.tabs} style={{display: `${props.tabs ? 'flex' : 'none'}`}}>
           <input
             type="radio"
             id="radio-1"
@@ -97,7 +97,11 @@ export default function CardCode(props : PropsCardCode) {
         </div>
       </div>
 
-      <p style={{marginLeft: "1rem", color: "#fff", fontFamily: "Fira Code", padding: "0 0 1rem 1rem", fontSize: "14px"}}>{props.link}</p>
+      <div className={styles.linkparag}>
+
+      <p style={{margin: "1rem", color: "#fff", fontFamily: "Fira Code", padding: "0 0 1rem 1rem", fontSize: "14px"}} >{props.link}</p>
+  
+      </div>
     </div>
   );
 }

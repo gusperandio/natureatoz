@@ -44,7 +44,7 @@ export default function CardHome() {
   };
 
   const handleCopyToClipboard = () => {
-    let textToCopy = "https://natureatoz.com.br/api/v1/random";
+    let textToCopy = "https://natureatoz.com.br/api/v1/random/random";
 
     copy(textToCopy)
       .then(() => {

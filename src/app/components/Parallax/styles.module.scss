@@ -1,6 +1,4 @@
-
 .main {
-  
   .banner {
     display: flex;
     justify-content: center;
@@ -43,7 +41,7 @@
 
   .container {
     padding: 0 12rem;
-    
+
     h2 {
       font-size: 32px;
       color: var(--yellow-500);
@@ -51,14 +49,13 @@
       margin-top: 0;
       margin-bottom: 10px;
     }
-    
+
     p {
       text-align: justify;
       padding: 1.2rem;
       font-size: 1.2rem;
       font-family: "Roboto";
     }
-
   }
 
   section {
@@ -75,9 +72,34 @@
   }
 }
 
-
 @media (width <= 518px) {
-  .container {
-    padding: 0 4rem;
+  .main {
+
+    .divButtons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 320px;
+    }
+
+    .container {
+      padding: 0 2rem;
+
+      h2 {
+        font-size: 32px;
+        color: var(--yellow-500);
+        padding-top: 1rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: justify;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        font-family: "Roboto";
+      }
+    }
   }
 }

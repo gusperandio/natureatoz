@@ -18,6 +18,30 @@
   border-radius: 8px;
 }
 
+.modal_contact{
+  height: 300px;
+  width: 460px;
+  margin: 10% auto;
+}
+
+.modal_privacy{
+  height: 700px; 
+  width: 620px;
+  margin: 3% auto;
+}
+
+.modal_license{
+  height: 500px;
+  width: 500px;
+  margin: 5% auto;
+}
+
+.modal_support{
+  height: 320px;
+  width: 640px;
+  margin: 10% auto;
+}
+
 .close {
   background-color: #292c33;
   float: right;
@@ -30,4 +54,32 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+@media (width <= 580px) {
+  .modal_contact{
+    height: 300px;
+    width: 310px;
+    margin: 50% auto;
+  }
+  
+  .modal_privacy{
+    height: 670px; 
+    width: 320px;
+    margin: 3% auto;
+  }
+  
+  .modal_license{
+    height: 480px;
+    width: 300px;
+    margin: 30% auto;
+  }
+  
+  .modal_support{
+    height: 420px;
+    width: 340px;
+    margin: 30% auto;
+  }
+
 }

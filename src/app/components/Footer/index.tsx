@@ -77,9 +77,7 @@ export function Footer() {
 function useModal(selectedLanguage: string) {
   const [isOpen, setIsOpen] = useState(false);
   const [modalConfig, setModalConfig] = useState({
-    margin: "15% auto",
-    height: "320px",
-    width: "640px",
+    classToUse: "modal_support",
     children: <ModalSup selectedLanguage={selectedLanguage} />,
   });
 
@@ -87,34 +85,26 @@ function useModal(selectedLanguage: string) {
     switch (n) {
       case 1:
         setModalConfig({
-          margin: "10% auto",
-          height: "300px",
-          width: "460px",
+          classToUse: "modal_contact",
           children: <ModalContact selectedLanguage={selectedLanguage} />,
         });
 
         break;
       case 2:
         setModalConfig({
-          margin: "4% auto",
-          height: selectedLanguage === "Pt-BR" ? "700px" : "620px",
-          width: "620px",
+          classToUse: "modal_privacy",
           children: <ModalPrivacy selectedLanguage={selectedLanguage} />,
         });
         break;
       case 3:
         setModalConfig({
-          margin: "10% auto",
-          height: "500px",
-          width: "500px",
+          classToUse: "modal_license",
           children: <ModalLicense selectedLanguage={selectedLanguage} />,
         });
         break;
       default:
         setModalConfig({
-          margin: "10% auto",
-          height: "320px",
-          width: "640px",
+          classToUse: "modal_support",
           children: <ModalSup selectedLanguage={selectedLanguage} />,
         });
         break;

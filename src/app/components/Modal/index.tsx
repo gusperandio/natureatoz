@@ -6,12 +6,10 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
-  width: string;
-  height: string;
-  margin: string;
+  classToUse: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, margin, width, height }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, classToUse }) => {
   const modalOverlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,9 +34,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, margin, width,
       {isOpen && (
         <div className={styles.modal}>
           <div
-            className={`${styles.modal_content} animate__animated animate__fadeIn`}
+            className={`${styles.modal_content} ${styles[classToUse]} animate__animated animate__fadeIn`}
             ref={modalOverlayRef}
-            style={{margin: `${margin}`, height: `${height}`, width: `${width}`}}
           >
             <a onClick={onClose} className={styles.close}>
               <Image src={close} width={28} height={28} alt="close" />
