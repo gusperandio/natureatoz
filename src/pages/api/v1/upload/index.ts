@@ -1,11 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { DB } from "../../../../../services/DB";
+import Item from "../../../../../models/item";
 
 type ResponseData = {
   title: string;
   description: string;
 };
-const dbInstance = new DB('../../../../../tsconfig.json')
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -15,12 +15,9 @@ export default async function handler(
     try {
       const data = req.body;
 
-      data.forEach((obj: any) => {
-        if (obj.title)
-          obj.title = obj.title.charAt(0).toUpperCase() + obj.title.slice(1);
-      });
+      let newItem = await Item.create(data)
 
-      res.status(200).json({ instance : dbInstance.test('testeeeee')});
+      res.status(201).json({ success: true, data: newItem })
     } catch (error) {
       console.error("Erro:", error);
       res.status(500).json({ error: "Erro ao processar a requisição." });

@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = {
-    images: {
-      domains: ['cdn.dribbble.com'], // Adicione o host da imagem aqui
-    },
+const nextConfig = {
+  images: {
+    domains: ["cdn.dribbble.com"], 
+  },
+  env: {
+    NEXT_PUBLIC_MONGODB_URI: process.env.NEXT_PUBLIC_MONGODB_URI,
   }
+};
+
+module.exports = nextConfig
