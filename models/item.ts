@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 interface Item extends mongoose.Document {
   title: string;
   description: string;
+  letter: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z';
 }
 
 const ItemSchema = new mongoose.Schema<Item>({
@@ -13,6 +14,11 @@ const ItemSchema = new mongoose.Schema<Item>({
   description: {
     type: String,
     required: [true, "Please provide the item description"],
+  },
+  letter: {
+    type: String,
+    enum: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
+    required: [true, "Please identify the letter"],
   },
 });
 

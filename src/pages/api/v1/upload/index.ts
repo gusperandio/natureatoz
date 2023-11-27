@@ -14,7 +14,6 @@ export default async function handler(
   if (req.method === "POST") {
     try {
       const data = req.body;
-
       let newItem = await Item.create(data)
 
       res.status(201).json({ success: true, data: newItem })
