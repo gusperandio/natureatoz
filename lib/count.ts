@@ -1,19 +1,27 @@
 import mongoose, { Document, Schema } from "mongoose";
-import Request from "../models/count";
+import Request from "../models/request";
 
-const updateReqCount = async () => {
-  try {
-    const request = await Request.findOne();
-    console.log("=====================COUNT++=====================");
-    if (request) {
-      await Request.updateOne({}, { $inc: { counter: 1 } });
-    } else {
-      const newRequest = new Request();
-      await newRequest.save();
+export class Counter {
+  updateReqCount = async (n: number) => {
+    try {
+      const request = await Request.findOne();
+      if (request) {
+        await Request.updateOne({}, { counter: n });
+      } else {
+        const newRequest = new Request();
+        await newRequest.save();
+      }
+    } catch (error) {
+      console.error("Erro ao atualizar e buscar o valor:", error);
     }
-  } catch (error) {
-    console.error("Erro ao atualizar e buscar o valor:", error);
-  }
-};
+  };
 
-export default updateReqCount;
+  getReqCount = async () => {
+    try {
+      const request = await Request.findOne();
+      return request ? request.counter : 0;
+    } catch (error) {
+      console.error("Erro ao buscar o valor de requisições:", error);
+    }
+  };
+}

@@ -7,7 +7,7 @@ interface Requests extends mongoose.Document {
 const requestSchema = new Schema({
     counter: {
     type: Number,
-    default: 0,
+    default: 1,
   },
 });
 

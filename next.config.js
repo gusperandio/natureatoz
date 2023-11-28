@@ -2,11 +2,13 @@
 
 const nextConfig = {
   images: {
-    domains: ["cdn.dribbble.com"], 
+    domains: ["cdn.dribbble.com"],
   },
   env: {
-    NEXT_PUBLIC_MONGODB_URI: process.env.NEXT_PUBLIC_MONGODB_URI,
-  }
+    PUBLIC_MONGODB_URI: process.env.PUBLIC_MONGODB_URI,
+    USER_MONGODB_URI: process.env.USER_MONGODB_URI,
+    PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI
+  },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;

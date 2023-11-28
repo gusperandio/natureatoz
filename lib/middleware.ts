@@ -1,32 +1,38 @@
-// lib/middleware.ts
 import { NextApiRequest, NextApiResponse } from "next";
 import { DB } from "../config/dbConnect";
-import updateReqCount from "./count";
-
+import { Cache } from "./caching";
+import { CountRequest } from "./count_sqlite";
 const database = new DB();
+const cache = new Cache();
+const countSqlite = new CountRequest();
 
 const middleware = (
-  handler: (req: NextApiRequest, res: NextApiResponse) => Promise<void>
+  handler: (
+    req: NextApiRequest,
+    res: NextApiResponse,
+    cached: Cache,
+    url: string
+  ) => Promise<void>
 ) => {
   return async (req: NextApiRequest, res: NextApiResponse) => {
-    res.setHeader("Access-Control-Allow-Credentials", "true");
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-    res.setHeader(
-      "Access-Control-Allow-Headers",
-      "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-    );
+    countSqlite.addRequestNum();
 
     if (req.method === "OPTIONS") {
-      res.status(200).json({status: "ONLINE"});
+      res.status(200).json({ status: "ONLINE" });
       return;
     }
 
-    await database.connect();
+    const url = req.url ? req.url.split("/")[3] : "v1";
+    const getCache = cache.find(url);
+
+    if (getCache) {
+      res.status(200).json(getCache);
+      return;
+    }
 
     try {
-      await handler(req, res);
-      await updateReqCount();
+      await database.connect();
+      await handler(req, res, cache, url);
     } finally {
       await database.disconnect();
     }
