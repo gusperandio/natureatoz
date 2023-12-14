@@ -7,7 +7,8 @@ const nextConfig = {
   env: {
     PUBLIC_MONGODB_URI: process.env.PUBLIC_MONGODB_URI,
     USER_MONGODB_URI: process.env.USER_MONGODB_URI,
-    PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI
+    PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI,
+    KEY_TO_POST: process.env.KEY_TO_POST
   },
 };
 

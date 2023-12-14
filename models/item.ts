@@ -4,6 +4,7 @@ interface Item extends mongoose.Document {
   title: string;
   description: string;
   letter: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z';
+  image: string;
 }
 
 const ItemSchema = new mongoose.Schema<Item>({
@@ -20,6 +21,10 @@ const ItemSchema = new mongoose.Schema<Item>({
     enum: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
     required: [true, "Please identify the letter"],
   },
+  image: {
+    type: String,
+    required: false
+  }
 });
 
 export default mongoose.models.Item || mongoose.model<Item>("Item", ItemSchema);

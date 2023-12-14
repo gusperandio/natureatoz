@@ -16,20 +16,22 @@ const middleware = (
 ) => {
   return async (req: NextApiRequest, res: NextApiResponse) => {
     countSqlite.addRequestNum();
-
-    if (req.method === "OPTIONS") {
+    const url = req.url ? req.url.split("/")[3] : "v1";
+    console.log(url)
+    if(req.method === "OPTIONS"){
       res.status(200).json({ status: "ONLINE" });
       return;
     }
 
-    const url = req.url ? req.url.split("/")[3] : "v1";
-    const getCache = cache.find(url);
-
-    if (getCache) {
-      res.status(200).json(getCache);
-      return;
+    if(req.method === "GET"){
+      const getCache = cache.find(url);
+      
+      if (getCache) {
+        res.status(200).json(getCache);
+        return;
+      }
     }
-
+      
     try {
       await database.connect();
       await handler(req, res, cache, url);

@@ -1162,5 +1162,85 @@
   {
     "title": "Cutícula",
     "description": "Fina camada impermeável que protege a planta contra os agentes do meio."
+  },
+  {
+    "title": "Cajueiro",
+    "description": "Árvore tropical que produz o caju, fruto conhecido por sua castanha e suco suculento."
+  },
+  {
+    "title": "Coruja",
+    "description": "Ave de rapina noturna conhecida por sua visão aguçada e vocalizações distintivas."
+  },
+  {
+    "title": "Cipó",
+    "description": "Planta trepadeira comum em florestas tropicais, utilizada por sua fibra e propriedades medicinais."
+  },
+  {
+    "title": "Cacto",
+    "description": "Planta suculenta adaptada a ambientes áridos, com muitas espécies apresentando espinhos."
+  },
+  {
+    "title": "Camaleão",
+    "description": "Réptil conhecido por sua habilidade de mudar de cor para se camuflar no ambiente."
+  },
+  {
+    "title": "Café",
+    "description": "Bebida popular feita a partir dos grãos torrados da planta de café, originária da Etiópia."
+  },
+  {
+    "title": "Cedro",
+    "description": "Árvore de madeira aromática frequentemente usada na construção e produção de móveis."
+  },
+  {
+    "title": "Canguru",
+    "description": "Marsupial herbívoro encontrado principalmente na Austrália, conhecido por saltar longas distâncias."
+  },
+  {
+    "title": "Cerejeira",
+    "description": "Árvore frutífera que produz cerejas, apreciadas por seu sabor doce e aroma."
+  },
+  {
+    "title": "Cascavel",
+    "description": "Serpente venenosa conhecida por sua cauda chocalhante e padrão de escamas em forma de diamante."
+  },
+  {
+    "title": "Castanheiro",
+    "description": "Árvore que produz castanhas, comumente encontrada em regiões temperadas."
+  },
+  {
+    "title": "Camarão",
+    "description": "Crustáceo marinho amplamente consumido, com diversas espécies utilizadas na culinária."
+  },
+  {
+    "title": "Cipó-de-são-joão",
+    "description": "Planta trepadeira com flores amarelas, comum em regiões tropicais da América do Sul."
+  },
+  {
+    "title": "Cavalo-marinho",
+    "description": "Peixe marinho de corpo alongado e cabeça em formato de cavalo, pertencente à família Syngnathidae."
+  },
+  {
+    "title": "Coqueiro",
+    "description": "Árvore tropical conhecida por produzir cocos, com utilidade em diversos produtos e alimentos."
+  },
+  {
+    "title": "Cobra-coral",
+    "description": "Serpente venenosa reconhecida por seu padrão de cores vibrantes e veneno potente."
+  },
+  {
+    "title": "Cerejeira-do-japão",
+    "description": "Árvore ornamental originária do Japão, apreciada por suas flores rosa ou brancas."
+  },
+  {
+    "title": "Carvalho",
+    "description": "Árvore de madeira dura e durável, comum em florestas temperadas."
+  },
+  {
+    "title": "Curió",
+    "description": "Ave passeriforme conhecida por seu canto melodioso, popular entre criadores de pássaros."
+  },
+  {
+    "title": "Calango",
+    "description": "Réptil da família dos lagartos, comum em áreas de cerrado e caatinga."
   }
 ]

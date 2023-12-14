@@ -23,7 +23,10 @@ export class DB {
         return;
       }
 
-      await mongoose.connect(this.MONGODB_URI);
+      await mongoose.connect(this.MONGODB_URI, {
+        serverSelectionTimeoutMS: 60000
+      });
+      
       console.log("Conexão com o MongoDB estabelecida com sucesso");
     } catch (error) {
       console.error("Erro ao conectar ao MongoDB:", error);

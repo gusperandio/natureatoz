@@ -40,11 +40,6 @@ export class CountRequest {
     try {
       const actual = await this.lastRequestNum();
       const novoValor = actual + 1;
-      console.log(
-        novoValor,
-        "Novo-----------------------------------------actual",
-        actual
-      );
       await new Promise<void>((resolve, reject) => {
         this.db.run(
           "INSERT INTO TB_Request (valor_numerico) VALUES (?)",
