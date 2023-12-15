@@ -1,7 +1,15 @@
 [
   {
+    "title": "CAA",
+    "description": "Lei norte-americana, Clean Air Act, que estabelece os padrões para emissão de poluentes na atmosfera."
+  },
+  {
+    "title": "Caatinga",
+    "description": "Bioma adaptado ao clima quente e seco, de vegetação arbórea- arbustiva, com folhas pequenas, presente no Nordeste do Brasil."
+  },
+  {
     "title": "Cabeceira",
-    "description": "Caalei norte-americana, clean air act, que estabelece os padrões para emissão de poluentes na atmosfera.caatingabioma adaptado ao clima quente e seco, de vegetação arbórea-arbustiva, com folhas pequenas, presente no nordeste do brasil.lugar onde nasce um curso d'água, também chamado de nascente, fonte, mina ou manancial."
+    "description": "Lugar onde nasce um curso d'água, também chamado de nascente, fonte, mina ou manancial."
   },
   {
     "title": "Cabo",
@@ -17,7 +25,11 @@
   },
   {
     "title": "Cactáceas",
-    "description": "Família de plantas peculiarmente destituídas de folhas e que têm o caule muito engrossado, em virtude de amplas reservas de água. quase sempre possuem espinhos. flores ornamentais, dotadas de numerosas pétalas e estames, com frutos por vezes comestíveis (resolução conama n.º 012/94).cadeia alimentaro mesmo que cadeia trófica. é a seqüência de obtenção de energia e nutrientes, em que uma espécie viva se alimenta de outra que a antecede na cadeia, antes de ser comida por aquela que a segue (transferência de energia e matéria)."
+    "description": "Família de plantas peculiarmente destituídas de folhas e que têm o caule muito engrossado, em virtude de amplas reservas de água. quase sempre possuem espinhos. flores ornamentais, dotadas de numerosas pétalas e estames, com frutos por vezes comestíveis (resolução conama n.º 012/94)."
+  },
+  {
+    "title": "Cadeia alimentar",
+    "description": "O mesmo que cadeia trófica. é a seqüência de obtenção de energia e nutrientes, em que uma espécie viva se alimenta de outra que a antecede na cadeia, antes de ser comida por aquela que a segue (transferência de energia e matéria)."
   },
   {
     "title": "Cadeia trófica",
@@ -369,7 +381,11 @@
   },
   {
     "title": "Celulose",
-    "description": "Substância orgânica que forma as paredes das células vegetais, proporcionando-lhes rigidez e resistência. a celulose é extraída do algodão e da polpa da madeira de várias plantas (eucalipto, pinheiro, bambu), para ser utilizada na fabricação de papel, diversos tipos de tecidos (linho, algodão), verniz e outros.cemavecentro de estudos de migração de aves, órgão do ibama, que tem como objetivo coordenar o sistema de anilhamento das aves no país, analisar as informações obtidas e fornecer o embasamento técnico necessário para a conservação de nossas aves silvestres, bem como dos ambientes dos quais elas dependem."
+    "description": "Substância orgânica que forma as paredes das células vegetais, proporcionando-lhes rigidez e resistência. a celulose é extraída do algodão e da polpa da madeira de várias plantas (eucalipto, pinheiro, bambu), para ser utilizada na fabricação de papel, diversos tipos de tecidos (linho, algodão), verniz e outros."
+  },
+  {
+    "title": "CEMAVE",
+    "description": "centro de estudos de migração de aves, órgão do ibama, que tem como objetivo coordenar o sistema de anilhamento das aves no país, analisar as informações obtidas e fornecer o embasamento técnico necessário para a conservação de nossas aves silvestres, bem como dos ambientes dos quais elas dependem."
   },
   {
     "title": "Central geotérmica",

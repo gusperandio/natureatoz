@@ -17,7 +17,7 @@ const middleware = (
   return async (req: NextApiRequest, res: NextApiResponse) => {
     countSqlite.addRequestNum();
     const url = req.url ? req.url.split("/")[3] : "v1";
-    console.log(url)
+    
     if(req.method === "OPTIONS"){
       res.status(200).json({ status: "ONLINE" });
       return;

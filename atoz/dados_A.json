@@ -13,7 +13,8 @@
   },
   {
     "title": "Abastecimento de água",
-    "description": "Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano."
+    "description": "Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.",
+    "image": "https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1"
   },
   {
     "title": "Abastecimento nacional de carvão",
@@ -25,7 +26,11 @@
   },
   {
     "title": "Abertura hidrotérmica",
-    "description": "Abertura ou fenda da crosta terrestre por onde escapa material fluido (água) do seu interior em alta temperatura.abessigla da associação brasileira de engenharia sanitária."
+    "description": "Abertura ou fenda da crosta terrestre por onde escapa material fluido (água) do seu interior em alta temperatura."
+  },
+  {
+    "title": "ABES",
+    "description": "Sigla da associação brasileira de engenharia sanitária."
   },
   {
     "title": "Abiocenose",
@@ -49,10 +54,14 @@
   },
   {
     "title": "Ablaquear",
-    "description": "Ação de retirada de terra em torno de uma planta.abntsigla da associação brasileira de normas técnicas."
+    "description": "Ação de retirada de terra em torno de uma planta."
   },
   {
-    "title": "Aborigine",
+    "title": "ABNT",
+    "description": "Sigla da associação brasileira de normas técnicas."
+  },
+  {
+    "title": "Aborígine",
     "description": "Habitante autóctone, indígena ou nativo, original do território, país ou região em que vive."
   },
   {
@@ -177,7 +186,11 @@
   },
   {
     "title": "Acidulante.",
-    "description": "Substância que acidifica produtos alimentícios processados, visando sua conservação de forma controlada, sendo elas: \\nh.i....... ácido adípico \\nh.ll...... ácido cítrico \\nh.iii...... ácido fosfórico \\nh.iv...... ácido fumárico \\nh.v...... ácido glicônico \\nh.vi...... ácido glicólico \\nh.vii...... ácido lático \\nh.viii...... ácido málico \\nh.ix...... ácido tartárico \\nh.x...... glucoma deltalactonaaciespsigla para a academia de ciências do estado de são paulo."
+    "description": "Substância que acidifica produtos alimentícios processados, visando sua conservação de forma controlada, sendo elas: \\nh.i....... ácido adípico \\nh.ll...... ácido cítrico \\nh.iii...... ácido fosfórico \\nh.iv...... ácido fumárico \\nh.v...... ácido glicônico \\nh.vi...... ácido glicólico \\nh.vii...... ácido lático \\nh.viii...... ácido málico \\nh.ix...... ácido tartárico \\nh.x...... glucoma deltalactona"
+  },
+  {
+    "title": "ACIESP",
+    "description": "Sigla para a academia de ciências do estado de São Paulo."
   },
   {
     "title": "Aclimatação",
@@ -189,7 +202,11 @@
   },
   {
     "title": "Aclorofilada",
-    "description": "Planta sem pigmentação verde, desprovida de clorofila.acordo internacionalconvenção assinada entre dois ou mais países que têm como objetivo enfrentar conjuntamente problemas comuns a todos os signatários, através do estabelecimento, em comum acordo, de prescrições, condutas, obrigações e/ou compromissos. no âmbito do ambientalismo, refere-se a convenções firmadas com o objetivo de resolver ou minimizar questões socioambientais de caráter planetário. países que compartilham um acordo internacional compartilham responsabilidade de resultados, mas podem agir de forma independente com respeito às suas diferentes culturas, capacidades e limites."
+    "description": "Planta sem pigmentação verde, desprovida de clorofila."
+  },
+  {
+    "title": "Acordo Internacional",
+    "description": "Convenção assinada entre dois ou mais países que têm como objetivo enfrentar conjuntamente problemas comuns a todos os signatários, através do estabelecimento, em comum acordo, de prescrições, condutas, obrigações e/ou compromissos. no âmbito do ambientalismo, refere-se a convenções firmadas com o objetivo de resolver ou minimizar questões socioambientais de caráter planetário. países que compartilham um acordo internacional compartilham responsabilidade de resultados, mas podem agir de forma independente com respeito às suas diferentes culturas, capacidades e limites."
   },
   {
     "title": "Açude",
@@ -317,11 +334,23 @@
   },
   {
     "title": "Aeração do solo",
-    "description": "Relacionado ao grau de circulação do ar através da porosidade do solo. troca de gases entre o solo e o ar atmosférico.aeróbico (ambiente)termo utilizado para definir um local com oxigênio disponível.aeróbio (organismos)organismo que precisa de oxigênio para viver e crescer."
+    "description": "Relacionado ao grau de circulação do ar através da porosidade do solo. troca de gases entre o solo e o ar atmosférico."
+  },
+  {
+    "title": "Aeróbico",
+    "description": "Termo utilizado para definir um local com oxigênio disponível."
+  },
+  {
+    "title": "Aeróbio",
+    "description": "Organismo que precisa de oxigênio para viver e crescer."
   },
   {
     "title": "Aerobiose",
-    "description": "Vida em presença do oxigênio livre.aerofotogrametriamapeamento topográfico aéreo, por fotos aéreas oblíquas ou verticais em relação ao solo que permitem obter medidas e confeccionar mapas mais precisos e detalhados da superfície terrestre."
+    "description": "Vida em presença do oxigênio livre."
+  },
+  {
+    "title": "Aerofotogrametria",
+    "description": "Mapeamento topográfico aéreo, por fotos aéreas oblíquas ou verticais em relação ao solo que permitem obter medidas e confeccionar mapas mais precisos e detalhados da superfície terrestre."
   },
   {
     "title": "Aerogerador",
@@ -365,11 +394,27 @@
   },
   {
     "title": "Ágata",
-    "description": "Quartzo criptocristalino com bandas coloridas, em geral depositada em cavidades nas rochas.agência de água prinstância executiva descentralizada de apoio ao comitê de bacia hidrográfica, prevista na lei nacional de recursos hídricos e leis estaduais correlatas; na lei estadual n.º 12.726/99, que institui a política estadual de recursos hídricos do paraná, a agência de água responde pelo planejamento e pela formulação do plano de bacia hidrográfica e pelo suporte técnico, administrativo e financeiro, incluindo a cobrança dos direitos de uso dos recursos hídricos em sua área de atuação, dentre outras atribuições explicitadas no texto da lei."
+    "description": "Quartzo criptocristalino com bandas coloridas, em geral depositada em cavidades nas rochas."
+  },
+  {
+    "title": "Agência de Água - PR",
+    "description": "instância executiva descentralizada de apoio ao comitê de bacia hidrográfica, prevista na lei nacional de recursos hídricos e leis estaduais correlatas; na lei estadual n.º 12.726/99, que institui a política estadual de recursos hídricos do paraná, a agência de água responde pelo planejamento e pela formulação do plano de bacia hidrográfica e pelo suporte técnico, administrativo e financeiro, incluindo a cobrança dos direitos de uso dos recursos hídricos em sua área de atuação, dentre outras atribuições explicitadas no texto da lei."
   },
   {
     "title": "Agências multilaterais de desenvolvimento",
-    "description": "Instituições constituídas pelos governos nacionais, regionais ou mundiais, que atuam como bancos de desenvolvimento.agenda 21documento elaborado, em 1992, durante conferência das nações unidas sobre meio ambiente e desenvolvimento (cnuced) que ficou conhecida como eco 92. trata-se de uma proposta de ação planetária conjunta para o século xxi, que objetiva viabilizar a adoção de um desenvolvimento sustentável e ecologicamente correto em todos os países que o adotem. nesse sentido, a agenda 21 constitui um roteiro-guia para a implementação de um modelo de sustentabilidade para o desenvolvimento, no que se refere ao manejo dos recursos naturais, tendo em vista a preservação da sociobiodiversidade. com esse enfoque, o desenvolvimento previsto deve respeitar a justiça social e os valores das culturas locais, tanto nas relações econômicas como na distribuição das riquezas, nacional e internacionalmente. para que tais ideais sejam concretizados, a agenda 21\" preconiza o envolvimento participativo crescente das diferentes comunidades e sociedades em sua definição, implementação e avaliação. a agenda 21 global prevê a planificação de agendas nacionais por todos os países signatários, sempre articuladas às agendas locais referentes aos diferentes socioambientes que constituem cada país.agenda 21 brasileirao brasil, como um dos países participantes da eco-92 e signatário da agenda 21 e da carta da terra com esta adesão, assumiu o compromisso de elaborar e implementar sua própria agenda 21. as discussões relativas a essa questão realizadas no brasil são coordenadas pela comissão de políticas de desenvolvimento sustentável e da agenda 21 nacional (cpds).agenda 21 locala agenda 21 brasileira assenta- se sobre a criação de agendas 21 locais. propõe-se que cada cidade, comunidade ou coletivo faça a sua agenda 21 local envolvendo a participação da sociedade civil na sua elaboração e implementação. assim como nas agendas nacionais, a definição de agendas locais parte da realidade socioambiental para identificar os problemas locais e buscar soluções para os mesmos no âmbito de um desenvolvimento sustentável."
+    "description": "Instituições constituídas pelos governos nacionais, regionais ou mundiais, que atuam como bancos de desenvolvimento."
+  },
+  {
+    "title": "Agenda 21",
+    "description": "Documento elaborado, em 1992, durante conferência das nações unidas sobre meio ambiente e desenvolvimento (cnuced) que ficou conhecida como eco 92. trata-se de uma proposta de ação planetária conjunta para o século xxi, que objetiva viabilizar a adoção de um desenvolvimento sustentável e ecologicamente correto em todos os países que o adotem. nesse sentido, a agenda 21 constitui um roteiro-guia para a implementação de um modelo de sustentabilidade para o desenvolvimento, no que se refere ao manejo dos recursos naturais, tendo em vista a preservação da sociobiodiversidade. Com esse enfoque, o desenvolvimento previsto deve respeitar a justiça social e os valores das culturas locais, tanto nas relações econômicas como na distribuição das riquezas, nacional e internacionalmente, para que tais ideais sejam concretizados, a agenda 21\" preconiza o envolvimento participativo crescente das diferentes comunidades e sociedades em sua definição, implementação e avaliação. a agenda 21 global prevê a planificação de agendas nacionais por todos os países signatários, sempre articuladas às agendas locais referentes aos diferentes socioambientes que constituem cada país."
+  },
+  {
+    "title": "Agenda 21 Brasileira",
+    "description": "O brasil, como um dos países participantes da ECO-92 e signatário da agenda 21 e da carta da terra com esta adesão, assumiu o compromisso de elaborar e implementar sua própria agenda 21. As discussões relativas a essa questão realizadas no brasil são coordenadas pela comissão de políticas de desenvolvimento sustentável e da agenda 21 nacional (CPDS)."
+  },
+  {
+    "title": "agenda 21 local",
+    "description": "A agenda 21 brasileira assenta- se sobre a criação de agendas 21 locais. propõe-se que cada cidade, comunidade ou coletivo faça a sua agenda 21 local envolvendo a participação da sociedade civil na sua elaboração e implementação. assim como nas agendas nacionais, a definição de agendas locais parte da realidade socioambiental para identificar os problemas locais e buscar soluções para os mesmos no âmbito de um desenvolvimento sustentável."
   },
   {
     "title": "Agente biológico de controle",
@@ -724,10 +769,6 @@
     "description": "Existência de uma determinada substância química em diferentes formas num mesmo estado (sólido, líquido ou gasoso). por exemplo, o 0, é a forma comum do gás oxigênio, enquanto que o 0, (ozônio) é uma outra forma alotrópica do oxigênio, também encontrado na atmosfera."
   },
   {
-    "title": "Alqueire",
-    "description": "Unidade de medida de superfície (área) de imóveis rurais, variando de região para região. em minas gerais, rio de janeiro e goiás, o alqueire corresponde a 4,84 hectares (48.400 m2). nas demais regiões prevalecem o alqueire paulista que equivale a 2,42 hectares (24.200 m2). abreviação: alq."
-  },
-  {
     "title": "Alporquia",
     "description": "O mesmo que mergulhia, que é a forma de obter mudas de plantas, dobrando e enterrando uma parte de seus ramos."
   },
@@ -797,7 +838,15 @@
   },
   {
     "title": "Amarilidáceas",
-    "description": "Família botânica à qual pertencem, entre outras, as açucenas (resolução conama n.º 012/94). amazônia região que se estende desde o maciço das guianas até o planalto brasileiro como, também, desde o atlântico até os andes. possui uma superfície extensa, com cerca de 7 milhões de km2, clima predominantemente equatorial, solo pouco profundo, sendo atravessada pelo rio amazonas e seus inúmeros afluentes. é um ecossistema sustentável que está situado em 9 países: guiana francesa, suriname, guiaņa, venezuela, colômbia, equador, peru, bolívia e brasil. neste último, possui uma área com cerca de 40% de seu território espalhado por 7 estados: acre, pará, amazonas, rondônia, amapá, roraima e tocantins. nesta região se encontra a maior floresta tropical úmida do mundo em torno da mais extensa rede fluvial e com o maior volume de água doce do planeta. ver o anexo sobre os biomas brasileiros: floresta amazônica.amazônia legalregião do território brasileiro, definida pela lei n.º 1.806 de 1953 que, atualmente, compreende os estados do acre, pará, amazonas, rondônia, amapá, roraima, tocantins, norte do mato grosso e oeste do maranhão. a amazônia legal corresponde grande parte da região norte do brasil e foi instituída como fruto de um conceito político, e não de um imperativo geográfico, a partir da necessidade do governo de planejar e promover o desenvolvimento regional. ver anexo sobre os biomas brasileiros: floresta amazônica."
+    "description": "Família botânica à qual pertencem, entre outras, as açucenas (resolução conama n.º 012/94). "
+  },
+  {
+    "title": "Amazônia",
+    "description": "Região que se estende desde o maciço das guianas até o planalto brasileiro como, também, desde o atlântico até os andes. possui uma superfície extensa, com cerca de 7 milhões de km2, clima predominantemente equatorial, solo pouco profundo, sendo atravessada pelo rio amazonas e seus inúmeros afluentes. É um ecossistema sustentável que está situado em 9 países: guiana francesa, suriname, guiaņa, venezuela, colômbia, equador, peru, bolívia e brasil. neste último, possui uma área com cerca de 40% de seu território espalhado por 7 estados: acre, pará, amazonas, rondônia, amapá, roraima e tocantins. nesta região se encontra a maior floresta tropical úmida do mundo em torno da mais extensa rede fluvial e com o maior volume de água doce do planeta."
+  },
+  {
+    "title": "Amazônia Legal",
+    "description": "Região do território brasileiro, definida pela lei n.º 1.806 de 1953 que, atualmente, compreende os estados do acre, pará, amazonas, rondônia, amapá, roraima, tocantins, norte do mato grosso e oeste do maranhão. A amazônia legal corresponde grande parte da região norte do brasil e foi instituída como fruto de um conceito político, e não de um imperativo geográfico, a partir da necessidade do governo de planejar e promover o desenvolvimento regional."
   },
   {
     "title": "Âmbar",
@@ -837,11 +886,15 @@
   },
   {
     "title": "Amebíase",
-    "description": "Parasitose intestinal. nos seres humanos, é uma doença causada pela ameba entamoeba histolytica, muito propagada em regiões tropicais. é transmitida de várias formas, entre elas, pela água e por alimentos frescos contaminados."
+    "description": "Parasitose intestinal. nos seres humanos, é uma doença causada pela ameba Entamoeba histolytica, muito propagada em regiões tropicais. É transmitida de várias formas, entre elas, pela água e por alimentos frescos contaminados."
   },
   {
     "title": "Amensalismo",
-    "description": "Relação entre espécies onde uma espécie produz uma substância que inibe ou prejudica o desenvolvimento de outra espécie, que por sua vez não prejudica a primeira.amiantovariedade mais pura do asbesto, é um silicato fibroso, extraído da terra, utilizado como material de construção, material de isolação e como proteção contra fogo e calor. o seu uso envolve altos riscos, em todos os níveis de exposição."
+    "description": "Relação entre espécies onde uma espécie produz uma substância que inibe ou prejudica o desenvolvimento de outra espécie, que por sua vez não prejudica a primeira."
+  },
+  {
+    "title": "Amianto",
+    "description": "Variedade mais pura do asbesto, é um silicato fibroso, extraído da terra, utilizado como material de construção, material de isolação e como proteção contra fogo e calor. o seu uso envolve altos riscos, em todos os níveis de exposição."
   },
   {
     "title": "Amilases",
@@ -865,7 +918,15 @@
   },
   {
     "title": "Amplitude da maré",
-    "description": "Altura da água, em metros, entre uma preamar e uma baixa-mar com duração de 6 horas. a amplitude de marés varia conforme a posição dos astros (sol e lua) em relação à terra.amplitude térmicadiferença entre a menor e a maior temperatura assinalada. sua medição pode ser diária, mensal ou anual.anasigla para agência nacional de águas. entidade federal de implementação da política nacional de recursos hídricos e de coordenação do sistema nacional de gerenciamento de recursos hídricos. regulamentada pela lei n.º 9.984/00, a ana tem como funções: disciplinar o uso dos recursos hídricos, mediante a política nacional dos recursos hídricos, e planejar a articulação nacional, estadual, regional e setorial dos mesmos. ver mma."
+    "description": "Altura da água, em metros, entre uma preamar e uma baixa-mar com duração de 6 horas. a amplitude de marés varia conforme a posição dos astros (sol e lua) em relação à Terra."
+  },
+  {
+    "title": "Amplitude térmica",
+    "description": "Diferença entre a menor e a maior temperatura assinalada. sua medição pode ser diária, mensal ou anual.z"
+  },
+  {
+    "title": "ANA",
+    "description": "sigla para agência nacional de águas. entidade federal de implementação da política nacional de recursos hídricos e de coordenação do sistema nacional de gerenciamento de recursos hídricos. regulamentada pela lei n.º 9.984/00, a ana tem como funções: disciplinar o uso dos recursos hídricos, mediante a política nacional dos recursos hídricos, e planejar a articulação nacional, estadual, regional e setorial dos mesmos"
   },
   {
     "title": "Anabiose",
@@ -893,9 +954,11 @@
   },
   {
     "title": "Anaerobiose",
-    "description": "Vida na ausência de oxigênio livre. análise ambiental exame detalhado de um sistema ambiental, por meio do estudo da qualidade de seus fatores, componentes ou elementos, assim como dos processos e interações que nele possam ocorrer, com a finalidade de entender sua natureza e determinar suas características essenciais (feema, 1997)."
+    "description": "Vida na ausência de oxigênio livre."
   },
-  {
+  {"title" : "Análise ambiental",
+  "description" :  "Exame detalhado de um sistema ambiental, por meio do estudo da qualidade de seus fatores, componentes ou elementos, assim como dos processos e interações que nele possam ocorrer, com a finalidade de entender sua natureza e determinar suas características essenciais (feema, 1997)."
+  },{
     "title": "Análise de gradiente",
     "description": "Denominação referente à análise de composição das espécies de uma comunidade vegetal, ao longo das mudanças das condições ambientais."
   },
@@ -909,17 +972,21 @@
   },
   {
     "title": "Análise do solo",
-    "description": "Estudo de amostras do solo em laboratório, onde se identificam os componentes do solo e seu ph (potencial hidrogeniônico)anammasigla para associação nacional de municípios e meio ambiente."
+    "description": "Estudo de amostras do solo em laboratório, onde se identificam os componentes do solo e seu ph (potencial hidrogeniônico)"
   },
+  {"title" : "ANAMMA" ,
+  "description" : "Sigla para associação nacional de municípios e meio ambiente."},
   {
     "title": "Androceu",
     "description": "Parte masculina da flor, essencialmente os estames.aneelsigla para agência nacional de energia elétrica. instituída pela lei n.º 9.427/96, a aneel vincula-se ao ministério das minas e energia, tendo por finalidade regular e fiscalizar a produção, a transmissão, a distribuição e a comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e políticas do governo federal."
   },
   {
     "title": "Anéis anuais",
-    "description": "Tecido vegetal divisor do xilema e floema, no caule das plantas, formando círculos entre os vasos - cada 2 anéis correspondem a 1 ano de vida da planta.anel de malpighitambém denominado de anel de descascamento, é um processo muito utilizado pelos silvicultores para matar árvores. trata-se da retirada da casca da árvore e dos tecidos vivos subjacentes a ela, resultando na morte da árvore."
+    "description": "Tecido vegetal divisor do xilema e floema, no caule das plantas, formando círculos entre os vasos - cada 2 anéis correspondem a 1 ano de vida da planta."
   },
-  {
+  {"title" : "Anel de malpighi",
+  "description" : "Também denominado de anel de descascamento, é um processo muito utilizado pelos silvicultores para matar árvores. trata-se da retirada da casca da árvore e dos tecidos vivos subjacentes a ela, resultando na morte da árvore."
+  },{
     "title": "Anemômetro",
     "description": "Instrumento utilizado para medir a velocidade e a força do vento."
   },
@@ -949,13 +1016,17 @@
   },
   {
     "title": "Anóxia",
-    "description": "Condição orgânica decorrente da falta de oxigênio nos tecidos vivos. pode levar à morte o organismo, se não for corrigida a tempo. a carência de oxigênio, mesmo que temporária, pode causar lesões irreversíveis no tecido nervoso.anipsigla para associação nacional da indústria de pneumáticos. fundada em 1960, a anip congrega todos os fabricantes de pneumáticos e câmaras de ar no território nacional. desde 1999, com a implementação do programa nacional de coleta e destinação de pneus inservíveis, a anip vem incentivando e apoiando a reciclagem e destinação correta de pneus, câmaras de ar e todos os rejeitos deste setor. recentemente, os fabricantes nacionais criaram a reciclanip, entidade voltada exclusivamente para a coleta e destinação de pneus inservíveis, uma importante iniciativa da indústria brasileira na área de pós-consumo. ver pneus e reciclagem de pneus."
+    "description": "Condição orgânica decorrente da falta de oxigênio nos tecidos vivos. pode levar à morte o organismo, se não for corrigida a tempo. a carência de oxigênio, mesmo que temporária, pode causar lesões irreversíveis no tecido nervoso."
   },
-  {
+  {"title" : "ANIP",
+  "description" : "Sigla para associação nacional da indústria de pneumáticos. fundada em 1960, a anip congrega todos os fabricantes de pneumáticos e câmaras de ar no território nacional. desde 1999, com a implementação do programa nacional de coleta e destinação de pneus inservíveis, a anip vem incentivando e apoiando a reciclagem e destinação correta de pneus, câmaras de ar e todos os rejeitos deste setor. recentemente, os fabricantes nacionais criaram a reciclanip, entidade voltada exclusivamente para a coleta e destinação de pneus inservíveis, uma importante iniciativa da indústria brasileira na área de pós-consumo. ver pneus e reciclagem de pneus."
+  },{
     "title": "Ânodo",
-    "description": "Eletrodo no qual ocorre o processo de oxidação (perda de elétrons) de uma espécie química. numa pilha, constitui o polo de menor potencial, isto é, o polo negativo. num processo de eletrólise, constitui o polo positivo.anpsigla para agência nacional do petróleo. autarquia vinculada ao ministério de minas e energia, a anp tem por finalidade promover a regulação, a contratação e a fiscalização das atividades econômicas, integrantes da indústria do petróleo, de acordo com o estabelecido na lei n.º 9.478/97."
+    "description": "Eletrodo no qual ocorre o processo de oxidação (perda de elétrons) de uma espécie química. numa pilha, constitui o polo de menor potencial, isto é, o polo negativo. num processo de eletrólise, constitui o polo positivo."
   },
-  {
+  {"title" : "ANP",
+  "description" : "Sigla para agência nacional do petróleo. autarquia vinculada ao ministério de minas e energia, a anp tem por finalidade promover a regulação, a contratação e a fiscalização das atividades econômicas, integrantes da indústria do petróleo, de acordo com o estabelecido na lei n.º 9.478/97."
+  },{
     "title": "Antagonismo",
     "description": "Tipo de associação relativa à antibiose, que ocorre entre os microrganismos onde um impede o desenvolvimento ou mata o outro, através da produção de substâncias antagônicas ao seu crescimento."
   },
@@ -1017,8 +1088,10 @@
   },
   {
     "title": "Anuros",
-    "description": "Grupo de anfíbios pertencentes à ordem anura que, entre outras características, apresenta adaptações para saltar e não possuem caudas. exs.: sapo e rãs.apaárea de proteção ambiental."
+    "description": "Grupo de anfíbios pertencentes à ordem anura que, entre outras características, apresenta adaptações para saltar e não possuem caudas. exs.: sapo e rãs."
   },
+  {"title" : "APA",
+  "description" : "Área de proteção ambiental."}, ERRO
   {
     "title": "Apagão florestal",
     "description": "Assim se diz quando a demanda por madeira, retirada de florestas cultivadas para essa finalidade, é maior do que a produção da área."
@@ -1185,7 +1258,7 @@
   },
   {
     "title": "Área de relevante interesse ecológico - ARIE",
-    "description":  "unidade de conservação de uso sustentável, em geral de pequena extensão, com pouca ou nenhuma ocupação humana, com características naturais extraordinárias ou que abriga exemplares raros da biota regional. tem como objetivo manter os ecossistemas naturais de importância regional ou local e regular o uso admissível dessas áreas, de modo a compatibilizá-lo com os objetivos de conservação da natureza (lei federal n.º 9.985/00, que instituiu o sistema nacional de unidades de conservação - snuc). até dezembro de 2006 havia 17 aries no brasil. "
+    "description": "unidade de conservação de uso sustentável, em geral de pequena extensão, com pouca ou nenhuma ocupação humana, com características naturais extraordinárias ou que abriga exemplares raros da biota regional. tem como objetivo manter os ecossistemas naturais de importância regional ou local e regular o uso admissível dessas áreas, de modo a compatibilizá-lo com os objetivos de conservação da natureza (lei federal n.º 9.985/00, que instituiu o sistema nacional de unidades de conservação - snuc). até dezembro de 2006 havia 17 aries no brasil. "
   },
   {
     "title": "Áreas críticas de poluição",

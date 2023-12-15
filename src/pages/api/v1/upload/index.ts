@@ -36,25 +36,24 @@ const removeAccents = (input: string): string => {
   return normalized.replace(/[\u0300-\u036F]/g, '');
 };
 
+
 const handler = async (req: NextApiRequest, res: NextApiResponse, cacheado: Cache, url: string) => {
 
   if (req.method === "POST") {
     try {
-      const data: InsertDatas[] = JSON.parse(req.body);
-      const keyNatureValue = req.headers['keynature'];
       const KEY = process.env.KEY_TO_POST || "";
-
-      if(keyNatureValue !== KEY){
-        res.status(405).json("Turn around baby");
+      
+      if (req.headers['keynature'] !== KEY) {
+        return res.status(405).json("GET OUT!");
       }
-
-      // let newItem = await Item.create(processLetter(data));
-
-      // res.status(200).json({ success: true, inserts: newItem });
-      res.status(200);
+    
+      const requestData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+      const newItem = await Item.create(processLetter(requestData));
+    
+      res.status(200).json({ success: true, inserts: newItem });
     } catch (error) {
       console.error("Erro:", error);
-      res.status(500).json({ error: "Erro ao processar a requisição." });
+      return res.status(500).json({ error: "Erro ao processar a requisição." });
     }
   } else {
     res.status(405).json({ error: "Método não permitido." });

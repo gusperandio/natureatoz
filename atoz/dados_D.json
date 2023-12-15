@@ -21,7 +21,11 @@
   },
   {
     "title": "Datação por radioatividade",
-    "description": "Processo de determinação da idade de materiais ou um ser por meio da radioatividade.ddto mais conhecido e mais usado inseticida de hidrocarboneto clorado. pouquíssimo solúvel em água, ácidos diluídos e álcalis, mas solúvel em muitos solventes orgânicos. acumula-se na cadeia alimentar, sendo considerado uma substância potencialmente cancerígena. foi proibido em vários países, inclusive no brasil."
+    "description": "Processo de determinação da idade de materiais ou um ser por meio da radioatividade."
+  },
+  {
+    "title": "DDT",
+    "description": "O mais conhecido e mais usado inseticida de hidrocarboneto clorado. pouquíssimo solúvel em água, ácidos diluídos e álcalis, mas solúvel em muitos solventes orgânicos. acumula-se na cadeia alimentar, sendo considerado uma substância potencialmente cancerígena. foi proibido em vários países, inclusive no brasil."
   },
   {
     "title": "Decídua",
@@ -97,7 +101,11 @@
   },
   {
     "title": "Democracia",
-    "description": "Forma de governo, doutrina ou regime político baseado nos princípios da soberania popular e na distribuição equitativa do poder. trata-se de regime de governo que se caracteriza, em essência, pela liberdade com que a sociedade elege a forma de divisão dos poderes e o controle da autoridade, isto é, dos poderes de decisão e de execução das decisões governamentais. suas duas principais vertentes são: a democracia direta, forma de organização política em que o povo controla diretamente a gestão da sociedade, sem delegar poderes significativos ou conceder autonomia de ação a representantes ou mandatários; e a democracia representativa, organização social em que o povo, através de eleições, outorga mandatos a representantes que passarão a exercer autoridade em seu nome.democracia planetáriatrata-se de uma forma de democracia, cunhada contemporaneamente, a partir do acirramento das problemáticas socioambientais, que se assenta sobre a percepção da existência, do sentido e do destino comum da humanidade. nesse sentido, a democracia planetária preconiza que as várias nações e continentes do planeta estejam engajadas na constituição conjunta de instituições globais, voltadas para a educação e para a cidadania terrenas, visando o desenvolvimento de uma cultura política planetária, complementar às culturas políticas comunitárias e societárias."
+    "description": "Forma de governo, doutrina ou regime político baseado nos princípios da soberania popular e na distribuição equitativa do poder. trata-se de regime de governo que se caracteriza, em essência, pela liberdade com que a sociedade elege a forma de divisão dos poderes e o controle da autoridade, isto é, dos poderes de decisão e de execução das decisões governamentais. suas duas principais vertentes são: a democracia direta, forma de organização política em que o povo controla diretamente a gestão da sociedade, sem delegar poderes significativos ou conceder autonomia de ação a representantes ou mandatários; e a democracia representativa, organização social em que o povo, através de eleições, outorga mandatos a representantes que passarão a exercer autoridade em seu nome."
+  },
+  {
+    "title": "Democracia planetária",
+    "description": "Trata-se de uma forma de democracia, cunhada contemporaneamente, a partir do acirramento das problemáticas socioambientais, que se assenta sobre a percepção da existência, do sentido e do destino comum da humanidade. nesse sentido, a democracia planetária preconiza que as várias nações e continentes do planeta estejam engajadas na constituição conjunta de instituições globais, voltadas para a educação e para a cidadania terrenas, visando o desenvolvimento de uma cultura política planetária, complementar às culturas políticas comunitárias e societárias."
   },
   {
     "title": "Demoecologia",
@@ -317,7 +325,7 @@
   },
   {
     "title": "Diálise",
-    "description": "Processo no qual duas soluções, separadas por uma membrana semipermeável, alteram sua composição pela migração de solvente que atravessa a membrana. o princípio envolvido visa igualar as concentrações de ambas as soluções, tornando o sistema equilibrado."
+    "description": "Processo no qual duas soluções, separadas por uma membrana semipermeável, alteram sua composição pela migração de solvente que atravessa a membrana. O princípio envolvido visa igualar as concentrações de ambas as soluções, tornando o sistema equilibrado."
   },
   {
     "title": "Diapausa",
@@ -329,7 +337,11 @@
   },
   {
     "title": "Dicotiledôneas",
-    "description": "Plantas que têm dois cotilédones.dieldrininseticida de hidrocarboneto clorado. é altamente persistente e se acumula nos organismos aquáticos utilizados na alimentação humana, sendo considerada uma substância química potencialmente cancerígena."
+    "description": "Plantas que têm dois cotilédones."
+  },
+  {
+    "title": "Dieldrin",
+    "description": "Inseticida de hidrocarboneto clorado. É altamente persistente e se acumula nos organismos aquáticos utilizados na alimentação humana, sendo considerada uma substância química potencialmente cancerígena."
   },
   {
     "title": "Difusão atmosférica",
@@ -337,11 +349,7 @@
   },
   {
     "title": "Digestor",
-    "description": "Denominação referente a uma instalação utilizada no tratamento secundário da água de esgoto. compõe-se de um tanque no qual a ação bacteriana transforma o material orgânico em componentes mais simples, como um dispositivo que utiliza bactérias anaeróbicas para gerar o biogás"
-  },
-  {
-    "title": "(metano).",
-    "description": ""
+    "description": "Denominação referente a uma instalação utilizada no tratamento secundário da água de esgoto. Compõe-se de um tanque no qual a ação bacteriana transforma o material orgânico em componentes mais simples, como um dispositivo que utiliza bactérias anaeróbicas para gerar o biogás"
   },
   {
     "title": "Diluente",
@@ -353,15 +361,15 @@
   },
   {
     "title": "Dióxido de carbono",
-    "description": "Substância gasosa, produto final da respiração e do consumo de compostos orgânicos que ingerimos, além da queima de combustíveis fósseis. poluente responsável pelo efeito estufa, uma vez que esta substância armazena parte da radiação emitida pela superfície terrestre aquecida pela radiação solar, impedindo que o calor se dissipe, aumentando a temperatura. quando na fase sólida é chamado de gelo seco. fórmula: co₂."
+    "description": "Substância gasosa, produto final da respiração e do consumo de compostos orgânicos que ingerimos, além da queima de combustíveis fósseis. Poluente responsável pelo efeito estufa, uma vez que esta substância armazena parte da radiação emitida pela superfície terrestre aquecida pela radiação solar, impedindo que o calor se dissipe, aumentando a temperatura. Quando na fase sólida é chamado de gelo seco. Fórmula: CO₂."
   },
   {
     "title": "Dióxido de enxofre",
-    "description": "Gás incolor, tóxico e não inflamável. produto da combustão de compostos orgânicos contendo átomos de enxofre, decomposição de matéria animal e vegetal, também é expelido pelos vulcões e liberado pelas instalações industriais que obtêm minérios de ferro e cobre. é usado como conservante em alimentos e bebidas, fórmula: so ₂."
+    "description": "Gás incolor, tóxico e não inflamável. produto da combustão de compostos orgânicos contendo átomos de enxofre, decomposição de matéria animal e vegetal, também é expelido pelos vulcões e liberado pelas instalações industriais que obtêm minérios de ferro e cobre. é usado como conservante em alimentos e bebidas, Fórmula: so ₂."
   },
   {
     "title": "Dióxido de nitrogênio",
-    "description": "Gás formado na combustão de motores de automóveis e aviões, de cor avermelhada, um dos responsáveis pelo smog. fórmula: no₂."
+    "description": "Gás formado na combustão de motores de automóveis e aviões, de cor avermelhada, um dos responsáveis pelo smog. Fórmula: NO₂."
   },
   {
     "title": "Dioxina",
@@ -377,7 +385,11 @@
   },
   {
     "title": "Dique",
-    "description": "O mesmo que uma barragem.direito ambientalconjunto de normas que regulamentam as atividades humanas as quais, direta ou indiretamente, podem afetar o meio ambiente do planeta, visando estabelecer um desenvolvimento sadio e sustentável para as atuais e futuras gerações. ramo do direito surgido no brasil na década de 1970."
+    "description": "O mesmo que uma barragem."
+  },
+  {
+    "title": "Direito Ambiental",
+    "description": "Conjunto de normas que regulamentam as atividades humanas as quais, direta ou indiretamente, podem afetar o meio ambiente do planeta, visando estabelecer um desenvolvimento sadio e sustentável para as atuais e futuras gerações. ramo do direito surgido no brasil na década de 1970."
   },
   {
     "title": "Dispersão",
@@ -429,11 +441,11 @@
   },
   {
     "title": "Diversidade genética",
-    "description": "Coleção de genes de indivíduos de cada espécie, que compõe a formação genética entre um grupo de indivíduos que habitam uma localidade. também denominado de variabilidade genética."
+    "description": "Coleção de genes de indivíduos de cada espécie, que compõe a formação genética entre um grupo de indivíduos que habitam uma localidade. Também denominado de variabilidade genética."
   },
   {
     "title": "Divisor de águas",
-    "description": "Linha que divide o sentido para onde fluem as águas pluviais, ou bacias de drenagem. as montanhas são um exemplo de divisor de água."
+    "description": "Linha que divide o sentido para onde fluem as águas pluviais, ou bacias de drenagem. As montanhas são um exemplo de divisor de água."
   },
   {
     "title": "Doença",
@@ -441,15 +453,23 @@
   },
   {
     "title": "Doença de carência",
-    "description": "Doença causada por falta de nutriente essencial no solo ou na dieta em plantas ou animais.doença de minamataé um envenenamento por mercúrio, ocasionado pela ingestão de peixe contaminado identificado pela primeira vez na baía de minamata, na costa ocidental da ilha de kyushu, no japão. o mercúrio era proveniente da uma fábrica de acetaldeído e de pvc da corporação chisso, onde era usado como catalisador. na inglaterra houve o caso de insanidade em pessoas que ficavam expostas à contaminação pelo mercúrio, pelo uso de chapéus de feltro em cuja fabricação foi utilizado mercúrio, denominando-se \"doença do chapeleiro louco\"."
+    "description": "Doença causada por falta de nutriente essencial no solo ou na dieta em plantas ou animais."
+  },
+  {
+    "title": "Doença de Minamata",
+    "description": "É um envenenamento por mercúrio, ocasionado pela ingestão de peixe contaminado identificado pela primeira vez na baía de minamata, na costa ocidental da ilha de kyushu, no japão. O mercúrio era proveniente da uma fábrica de acetaldeído e de pvc da corporação chisso, onde era usado como catalisador. Na inglaterra houve o caso de insanidade em pessoas que ficavam expostas à contaminação pelo mercúrio, pelo uso de chapéus de feltro em cuja fabricação foi utilizado mercúrio, denominando-se \"doença do chapeleiro louco\"."
   },
   {
     "title": "Doença de radiação",
-    "description": "Uma doença causada pela exposição à radiação tanto acidentais quanto subsequente a tratamentos medicamentosos. a exposição prolongada pode produzir anemia, esterilidade e prejuízo na formação de células sanguíneas (supressão da função óssea-medular), provocando baixa resistência a infecções, catarata e cânceres ou leucemia."
+    "description": "Uma doença causada pela exposição à radiação tanto acidentais quanto subsequente a tratamentos medicamentosos. A exposição prolongada pode produzir anemia, esterilidade e prejuízo na formação de células sanguíneas (supressão da função óssea-medular), provocando baixa resistência a infecções, catarata e cânceres ou leucemia."
   },
   {
     "title": "Doença do olmo holandês",
-    "description": "Foi introduzida na américa do norte no início do século passado por uma infecção fúngica causada pelo ceratocystis ulmi, que pode matar os olmos em poucas semanas, tendo se espalhado por todas as variedades naturais dos olmos. disseminou-se pelo besouro da casca do olmo e mudou radicalmente a paisagem cultivada de muitas cidades e vilas, pois os olmos eram plantados em muitas ruas na virada do século.dominância de espéciesgrau em que determinadas espécies dominam em uma comunidade, devido ao tamanho, abundância ou cobertura, e que afeta a potencialidade das demais espécies (resolução conama n.º 12/94)."
+    "description": "Foi introduzida na américa do norte no início do século passado por uma infecção fúngica causada pelo ceratocystis ulmi, que pode matar os olmos em poucas semanas, tendo se espalhado por todas as variedades naturais dos olmos. Disseminou-se pelo besouro da casca do olmo e mudou radicalmente a paisagem cultivada de muitas cidades e vilas, pois os olmos eram plantados em muitas ruas na virada do século."
+  },
+  {
+    "title": "Dominância de espécies",
+    "description": "Grau em que determinadas espécies dominam em uma comunidade, devido ao tamanho, abundância ou cobertura, e que afeta a potencialidade das demais espécies (resolução conama n.º 12/94)."
   },
   {
     "title": "Dormência",
@@ -457,15 +477,23 @@
   },
   {
     "title": "Dose diária aceitável",
-    "description": "Também denominada de \"ingestão diária aceitável\"; significa a quantidade máxima de uma substância que pode ser absorvida ou consumida diariamente ao longo da vida, sem apresentar risco à saúde.dose letal-50quantidade de substância química que, administrada em uma única dose por via oral, expressa em massa da substância por massa de animal, produz a morte de 50% dos animais expostos dentro de um período de observação de 14 dias. dl₅₀ (cetesb)."
+    "description": "Também denominada de \"ingestão diária aceitável\"; significa a quantidade máxima de uma substância que pode ser absorvida ou consumida diariamente ao longo da vida, sem apresentar risco à saúde."
+  },
+  {
+    "title": "Dose letal-50",
+    "description": "Quantidade de substância química que, administrada em uma única dose por via oral, expressa em massa da substância por massa de animal, produz a morte de 50% dos animais expostos dentro de um período de observação de 14 dias. DL₅₀ (cetesb)."
   },
   {
     "title": "Dose limite",
-    "description": "Nível mínimo que uma droga necessita para gerar o efeito fisiológico pretendido. o termo também pode ser usado para se referir ao nível máximo permitido de radiação para um determinado poluente ou droga, no intuito de não haver efeitos negativos notáveis. também denominado de dose de tolerância."
+    "description": "Nível mínimo que uma droga necessita para gerar o efeito fisiológico pretendido. O termo também pode ser usado para se referir ao nível máximo permitido de radiação para um determinado poluente ou droga, no intuito de não haver efeitos negativos notáveis. Também denominado de dose de tolerância."
   },
   {
     "title": "Dossel",
-    "description": "Parte formada pela copa das árvores que formam o estrato superior da floresta (resolução conama n.º 12/94). dossel fechado trata-se de florestas nas quais as copas das árvores crescem de forma a sombrear mais de 20% do solo, tornando-se atraentes para a retirada comercial de madeira."
+    "description": "Parte formada pela copa das árvores que formam o estrato superior da floresta (resolução conama n.º 12/94)."
+  },
+  {
+    "title": "Dossel fechado",
+    "description": "Trata-se de florestas nas quais as copas das árvores crescem de forma a sombrear mais de 20% do solo, tornando-se atraentes para a retirada comercial de madeira."
   },
   {
     "title": "Draga",
@@ -473,11 +501,11 @@
   },
   {
     "title": "Dragagem",
-    "description": "Processo de limpar com draga. técnica que retira com dragas, montadas sobre uma plataforma flutuante, terra e materiais do fundo de rios, lagos e portos marítimos. a dragagem é utilizada para transformar os rios em vias navegáveis; para extrair minerais e amostras da vida marinha, entre outros fins."
+    "description": "Processo de limpar com draga. Técnica que retira com dragas, montadas sobre uma plataforma flutuante, terra e materiais do fundo de rios, lagos e portos marítimos. A dragagem é utilizada para transformar os rios em vias navegáveis; para extrair minerais e amostras da vida marinha, entre outros fins."
   },
   {
     "title": "Drenagem",
-    "description": "Extração por meio natural ou artificial da água superficial e/ou subterrânea de determinada região. refere-se ao ato de retirar o excesso de água por meio de canais, galerias, escoadouros, valas e quaisquer outros sistemas que recolhem e transportam a água através de bombas ou por força da gravidade."
+    "description": "Extração por meio natural ou artificial da água superficial e/ou subterrânea de determinada região. Refere-se ao ato de retirar o excesso de água por meio de canais, galerias, escoadouros, valas e quaisquer outros sistemas que recolhem e transportam a água através de bombas ou por força da gravidade."
   },
   {
     "title": "Duna",
@@ -485,11 +513,15 @@
   },
   {
     "title": "Duna costeira",
-    "description": "Unidade geomorfológica de constituição predominantemente arenosa, com aparência de cômoro ou colina, produzida pela ação dos ventos, situada no litoral ou no interior do continente, podendo estar recoberta, ou não, por vegetação (resolução conama n.º 303/2002). duna de deflação acumulações de areia derivadas de \"bacias\" de deflação, principalmente quando as acumulações apresentam grandes dimensões e erguem-se acima da cota da área fonte."
+    "description": "Unidade geomorfológica de constituição predominantemente arenosa, com aparência de cômoro ou colina, produzida pela ação dos ventos, situada no litoral ou no interior do continente, podendo estar recoberta, ou não, por vegetação (resolução conama n.º 303/2002)."
+  },
+  {
+    "title": "Duna de deflação",
+    "description": "Acumulações de areia derivadas de \"bacias\" de deflação, principalmente quando as acumulações apresentam grandes dimensões e erguem-se acima da cota da área fonte."
   },
   {
     "title": "Duna fixa",
-    "description": "Depósito areno-quartzoso marinho fixado, cuja cobertura vegetal é representada pela floresta perenifólia de restinga. o relevo é, de modo geral, suavemente ondulado e representa uma série de pequenas depressões hidromórficas com declives de até 4°30', podendo apresentar, em alguns trechos, alinhamentos paralelos de bancos arenosos, com vegetação herbácea onde podem ocorrer espécies aquáticas (portaria ibama n.º 31-n/91)."
+    "description": "Depósito areno-quartzoso marinho fixado, cuja cobertura vegetal é representada pela floresta perenifólia de restinga. O relevo é, de modo geral, suavemente ondulado e representa uma série de pequenas depressões hidromórficas com declives de até 4°30', podendo apresentar, em alguns trechos, alinhamentos paralelos de bancos arenosos, com vegetação herbácea onde podem ocorrer espécies aquáticas (portaria ibama n.º 31-n/91)."
   },
   {
     "title": "Duna viva",
