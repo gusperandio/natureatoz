@@ -19,11 +19,11 @@ export class Cache {
     measure: string
   ): void {
     if (typeof key !== "string" || key.trim() === "") {
-      throw new Error("A chave deve ser uma string não vazia.");
+      throw new Error("Key is not a string");
     }
 
     if (typeof ttlSeconds !== "number" || ttlSeconds <= 0) {
-      throw new Error("O tempo de vida deve ser um número positivo.");
+      throw new Error("Number incorrect");
     }
 
     let calculatedMeasure =

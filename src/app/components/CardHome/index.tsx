@@ -81,7 +81,7 @@ export default function CardHome() {
       <div className={styles.card}>
         <div className={styles.header}>
           {loader ? (
-            <div style={{ marginLeft: "2rem" }}>
+            <div>
               <Loader />
             </div>
           ) : (

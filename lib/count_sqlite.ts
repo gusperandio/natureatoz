@@ -46,7 +46,7 @@ export class CountRequest {
           [novoValor],
           (err) => {
             if (err) {
-              console.error("Erro ao atualizar valor numérico:", err.message);
+              console.error("Error to update number:", err.message);
               reject(err);
             } else {
               resolve();
@@ -55,7 +55,7 @@ export class CountRequest {
         );
       });
     } catch (err) {
-      console.error("Erro ao atualizar valor numérico:", err);
+      console.error("Error to update number:", err);
     }
   };
 

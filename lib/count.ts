@@ -12,7 +12,7 @@ export class Counter {
         await newRequest.save();
       }
     } catch (error) {
-      console.error("Erro ao atualizar e buscar o valor:", error);
+      console.error("Error to search and update values:", error);
     }
   };
 
@@ -21,7 +21,7 @@ export class Counter {
       const request = await Request.findOne();
       return request ? request.counter : 0;
     } catch (error) {
-      console.error("Erro ao buscar o valor de requisições:", error);
+      console.error("Error on values requisition:", error);
     }
   };
 }
