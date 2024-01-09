@@ -32,10 +32,10 @@ export default function Home() {
         );
         console.log(response.data)
         setRandomData(response.data.requests);
-        setLoading(false); // Indica que a requisição foi concluída
+        setLoading(false); 
       } catch (error) {
         console.error("Erro ao obter dados:", error);
-        setLoading(false); // Mesmo em caso de erro, indica que a requisição foi concluída
+        setLoading(false); 
       }
     };
 

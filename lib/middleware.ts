@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { DB } from "../config/dbConnect";
 import { Cache } from "./caching";
 import { CountRequest } from "./count_sqlite";
+
 const database = new DB();
 const cache = new Cache();
 const countSqlite = new CountRequest();
@@ -16,12 +17,14 @@ const middleware = (
 ) => {
   return async (req: NextApiRequest, res: NextApiResponse) => {
     countSqlite.addRequestNum();
-    const url = req.url ? req.url.split("/")[3] : "v1";
-    
+
     if(req.method === "OPTIONS"){
       res.status(200).json({ status: "ONLINE" });
       return;
     }
+
+    const url = req.url ? req.url.split("/")[3] : "v1";
+    
 
     if(req.method === "GET"){
       const getCache = cache.find(url);

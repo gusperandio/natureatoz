@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 .body {
   display: flex;
-  height: 120vh;
+  height: 135vh;
   font-family: "Oxygen";
   background-image: url("/background.png");
   ul {
@@ -166,18 +166,31 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 20rem 2rem 2rem;
     height: 100vh;
     font-family: "Manrope";
 
     .title {
       font-size: x-large;
+      display: flex;
+      align-items: center;
+
+      .version{
+        text-align: center;
+        color: #777777;
+        border: 1px solid #777777;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: lighter;
+        padding: 0.2rem 1rem;
+        margin-left: 1rem;
+       }
     }
 
     h1,
     h2,
     h3 {
-      padding: 0 1rem;
+      padding: 0;
       color: #18181b;
     }
 
@@ -226,6 +239,8 @@
         }
       }
     }
+
+   
   }
 
   .api_info {
@@ -260,8 +275,17 @@
   .body {
     height: 180vh;
     display: block;
-  }
+    .content{
+      padding: 2rem;
 
+      .steps{
+        .cardStep{
+          height: 50px;
+          width: 120px;
+        }
+      }
+    }
+  }
   .sidebar {
     display: none;
   }

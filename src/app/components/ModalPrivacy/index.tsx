@@ -22,8 +22,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <h2 className={styles.titles}>1. Google Analytics</h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
-          ? "Utilizamos o Google Analytics para analisar o tráfego do site e obter informações de referência dos usuários. Isso nos ajuda a compreender melhor nosso público e aprimorar nossos produtos e serviços. O rastreamento é realizado pelo servidor do Google e está sujeito às políticas de privacidade da própria Google. Para obter mais informações sobre como o Google Analytics trata seus dados, consulte a política de privacidade do Google."
-          : "We use Google Analytics to analyze website traffic and obtain user referral information. This helps us better understand our audience and improve our products and services. Tracking is carried out by Google's server and is subject to Google's own privacy policies. For more information about how Google Analytics handles your data, see Google's privacy policy."}
+          ? "Utilizamos o Google Analytics para analisar o tráfego do site, compreender nosso público e aprimorar produtos e serviços. O rastreamento é feito pelo servidor do Google, sujeito às políticas de privacidade da empresa. Consulte a política de privacidade do Google para mais informações sobre o tratamento de dados pelo Google Analytics."
+          : "We use Google Analytics to analyze website traffic, understand our audience, and enhance our products and services. Tracking is done by Google's server, subject to the company's privacy policies. For more information on how Google Analytics handles your data, please refer to Google's privacy policy."}
       </p>
       <br />
       <h2 className={styles.titles}>

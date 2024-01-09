@@ -57,7 +57,7 @@ export default function Page() {
       selectedLanguage == "Pt-BR" ? "Documentação API" : "API Documentation",
     textIntro:
       selectedLanguage == "Pt-BR"
-        ? "Bem-vindo à documentação da API A to Z, sua porta de entrada para explorar e interagir com uma vasta gama de informações e serviços relacionados ao meio ambiente, abrangendo desde tópicos que começam com a letra A até aqueles que terminam com a letra Z. Nossa API foi projetada para fornecer acesso fácil e flexível a dados e recursos que podem ser valiosos para pesquisadores, conservacionistas, empresas e qualquer pessoa interessada em proteger e entender o nosso planeta."
+        ? "Bem-vindo à documentação da API de A a Z, sua porta de entrada para explorar e interagir com uma vasta gama de informações e serviços relacionados ao meio ambiente, abrangendo desde tópicos que começam com a letra A até aqueles que terminam com a letra Z. Nossa API foi projetada para fornecer acesso fácil e flexível a dados e recursos que podem ser valiosos para pesquisadores, conservacionistas, empresas e qualquer pessoa interessada em proteger e entender o nosso planeta."
         : "Welcome to the A to Z API documentation, your gateway to exploring and interacting with a wide range of environmental-related information and services, ranging from topics starting with the letter A to those ending with the letter Z. Our API is designed to provide easy and flexible access to data and resources that can be valuable to researchers, conservationists, businesses and anyone interested in protecting and understanding our planet.",
     subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
     textStart:
@@ -102,32 +102,44 @@ export default function Page() {
     subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
     textStart:
       selectedLanguage == "Pt-BR"
-        ? "Para começar a utilizar a API do NatureAtoz, o primeiro passo é solicitar uma chave de acesso. Isso pode ser feito através do link: https://natureatoz.com.br/v1/key. Ao acessar esse link, você será guiado por um processo de registro e autenticação, onde receberá uma chave exclusiva associada à sua conta."
-        : "To begin using the NatureAtoz API, the first step is to request an access key. This can be done through the link: https://natureatoz.com.br/v1/key. When accessing this link, you will be guided through a registration and authentication process, where you will receive a unique key associated with your account.",
+        ? "Para começar a utilizar a API do NatureAtoz, o primeiro passo é solicitar uma chave de acesso. Isso pode ser feito através do URL"
+        : "To begin using the NatureAtoz API, the first step is to request an access key. This can be done through the URL",
     textStart2:
       selectedLanguage == "Pt-BR"
-        ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis. Esse método de autenticação baseado em chave é uma prática comum para proteger as APIs, garantindo que apenas usuários autorizados tenham acesso aos dados e serviços oferecidos pela plataforma NatureAtoz."
-        : "With the key in hand, you can incorporate it into your API requests, ensuring the necessary authentication to access the available resources. This key-based authentication method is a common practice to secure APIs, ensuring that only authorized users have access to the data and services offered by the NatureAtoz platform.",
+        ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis.\n Lembrando que a chave por padrão vem com 30 dias de uso."
+        : "With the key in hand, you can incorporate it into your API requests, ensuring the necessary authentication to access the available resources.",
+    text1:
+      selectedLanguage == "Pt-BR"
+        ? "Você pode solicitar uma quantidade de dias de duração da sua chave de acesso maior que o padrão de dias, a quantidade máxima de dias para uso são de 120 dias."
+        : "You can request a duration for your access key that is greater than the standard number of days; the maximum allowed duration for usage is 120 days.",
   };
 
   const textRandom = {
-    title : selectedLanguage === "Pt-BR" ? "Aleatório" : "Random",
-    textIntro : selectedLanguage === "Pt-BR" ? "Nesta página, vamos nos aprofundar alguns pontos de requisição em que você pode gerenciar as requisições sem um exato controle, onde você faz a requisição e recebe dados surpresa" : "On this page, we will delve deeper into some request points where you can manage requests without exact control, where you make the request and receive surprise data",
-    subTitle : selectedLanguage === "Pt-BR" ? "Modelo aleatório" : "Random model",
-    textStart : selectedLanguage === "Pt-BR" ? "O modelo aleatório contém todas as informações sobre algo específico do meio ambiente desde que informado a rota utilizando a chave de acesso." : "The random model contains all information about something specific in the environment as long as the route is informed using the access key.",
-  }
+    title: selectedLanguage === "Pt-BR" ? "Aleatório" : "Random",
+    textIntro:
+      selectedLanguage === "Pt-BR"
+        ? "Nesta página, vamos nos aprofundar alguns pontos de requisição em que você pode gerenciar as requisições sem um exato controle, onde você faz a requisição e recebe dados surpresa"
+        : "On this page, we will delve deeper into some request points where you can manage requests without exact control, where you make the request and receive surprise data",
+    subTitle:
+      selectedLanguage === "Pt-BR" ? "Modelo aleatório" : "Random model",
+    textStart:
+      selectedLanguage === "Pt-BR"
+        ? "O modelo aleatório contém todas as informações sobre algo específico do meio ambiente desde que informado a rota utilizando a chave de acesso."
+        : "The random model contains all information about something specific in the environment as long as the route is informed using the access key.",
+  };
 
-  const textAlphabetical = {
+  const textAlphabetical = {};
 
-  }
+  const textSpecific = {};
 
-  const textSpecific = {
-
-  }
-
-  const textPagination = {
-
-  }
+  const textPagination = {};
+  const labels = (destiny: React.JSX.Element, n: number, read: string) => {
+    return (
+      <label onClick={() => alterContent(destiny)}>
+        {read} <Image src={arrowRight} width={18} height={18} alt="arrow" style={{marginTop : "2px"}}/>
+      </label>
+    );
+  };
 
   const auth = (
     <div id="content" className={`${styles.content}`}>
@@ -137,8 +149,11 @@ export default function Page() {
 
       <h3>{textAuth.subTitle}</h3>
 
-      <p>{textAuth.textStart}</p>
-      <p>{textAuth.textStart2}</p>
+      <p>{textAuth.textStart} <br/>
+      {textAuth.textStart2}</p>
+      <CardCode tabs={false} link="https://natureatoz.com.br/v1/auth" />
+      <p>{textAuth.text1}</p>
+      <CardCode tabs={false} link="https://natureatoz.com.br/v1/auth?days=120" />
     </div>
   );
 
@@ -248,17 +263,9 @@ export default function Page() {
     </div>
   );
 
-  const labels = (destiny: React.JSX.Element, n: number, read: string) => {
-    return (
-      <label onClick={() => alterContent(destiny, n)}>
-        {read} <Image src={arrowRight} width={12} height={12} alt="arrow" />
-      </label>
-    );
-  };
-
   const intro = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>{textContent.title}</h1>
+      <h1 className={styles.title}>{textContent.title} <span className={styles.version}>v 1.0</span></h1>
       <p>{textContent.textIntro}</p>
       <br />
 
@@ -307,24 +314,17 @@ export default function Page() {
     });
   };
 
-  const alterContent = (actual: React.JSX.Element, n: number) => {
+  const alterContent = (actual: React.JSX.Element) => {
     setContent(actual);
-    setI(n);
-    if (n == 2 || n == 3) {
-      let percent = n == 2 ? "50% 40%" : "50% 20%";
-      setPosition(percent);
-    }
 
     scrollToTop();
   };
 
   const [content, setContent] = useState(intro);
-  const [I, setI] = useState(0);
   const [position, setPosition] = useState("30% 20%");
 
   useEffect(() => {
     setContent(intro);
-    setI(0);
   }, [selectedLanguage]);
 
   return (
@@ -333,7 +333,6 @@ export default function Page() {
         id="sidebar"
         className={styles.sidebar}
         style={{
-         
           backgroundPosition: `${position}`,
         }}
       >
@@ -353,30 +352,27 @@ export default function Page() {
           </a>
         </Link> */}
         <br />
-        <div className={styles.intro} onClick={() => alterContent(intro, 0)}>
-          {/* <button className={styles.Btn}>
-            <p className={styles.text}>
-             
-            </p>
-            <span className={styles.BG}></span>
-          </button> */}
-          <button role="button" className={styles.button_name}> {selectedLanguage === "Pt-BR" ? "Introdução" : "Introduction"}</button>
+        <div className={styles.intro} onClick={() => alterContent(intro)}>
+          <button role="button" className={styles.button_name}>
+            {" "}
+            DOCS
+          </button>
         </div>
         <ul className={styles.list}>
-          <li onClick={() => alterContent(auth, 1)}>
-            <p>/authentication</p> <span className={styles.get}>GET</span>
+          <li onClick={() => alterContent(auth)}>
+            <p>/auth</p> <span className={styles.get}>GET</span>
           </li>
-          <li onClick={() => alterContent(random, 2)}>
+          <li onClick={() => alterContent(random)}>
             <p>/random</p> <span className={styles.get}>GET</span>
           </li>
-          <li onClick={() => alterContent(alfabetical, 3)}>
+          <li onClick={() => alterContent(alfabetical)}>
             <p>/alphabetical</p> <span className={styles.get}>GET</span>
           </li>
-          <li onClick={() => alterContent(specific, 4)}>
+          <li onClick={() => alterContent(specific)}>
             <p>/specific/&#123;id&#125;</p>{" "}
             <span className={styles.get}>GET</span>
           </li>
-          <li onClick={() => alterContent(pagination, 5)}>
+          <li onClick={() => alterContent(pagination)}>
             <p>/pagination</p> <span className={styles.get}>GET</span>
           </li>
         </ul>

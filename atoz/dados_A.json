@@ -1100,7 +1100,10 @@
     "title": "Anuros",
     "description": "Grupo de anfíbios pertencentes à ordem anura que, entre outras características, apresenta adaptações para saltar e não possuem caudas. Exs.: sapo e rãs."
   },
-  { "title": "APA", "description": "Área de proteção ambiental." },
+  {
+    "title": "APA",
+    "description": "Área de proteção ambiental."
+  },
   {
     "title": "Apagão florestal",
     "description": "Assim se diz quando a demanda por madeira, retirada de florestas cultivadas para essa finalidade, é maior do que a produção da área."
