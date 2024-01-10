@@ -11,6 +11,12 @@
 
   --blue-900: #1fa4e5;
   --yellow-500: #FFBE16;
+
+  --greenCode: #6ee7b7;
+  --purpleCode: #c4b5fd;
+  --redCode: #fda8a8;
+  --blueCode: #7acef6;
+  --whiteCode: #f0f0f0;
 }
 @font-face {
   font-family: 'Oxygen';
@@ -39,6 +45,10 @@ button{
 a{
   color: inherit;
   text-decoration: none;
+}
+
+code{
+  font-size: 13px;
 }
 
 @media (max-width: 1080px) {

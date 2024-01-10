@@ -151,9 +151,9 @@ export default function Page() {
 
       <p>{textAuth.textStart} <br/>
       {textAuth.textStart2}</p>
-      <CardCode tabs={false} link="https://natureatoz.com.br/v1/auth" />
+      <CardCode tabs={false} link="https://natureatoz.com.br/api/v1/auth" />
       <p>{textAuth.text1}</p>
-      <CardCode tabs={false} link="https://natureatoz.com.br/v1/auth?days=120" />
+      <CardCode tabs={false} link="https://natureatoz.com.br/api/v1/auth?days=120" />
     </div>
   );
 
@@ -273,7 +273,7 @@ export default function Page() {
 
       <p>{textContent.textStart}</p>
 
-      <CardCode tabs={false} link="https://natureatoz.com.br/v1" />
+      <CardCode tabs={true} link="/api/v1" method={"OPTIONS"}/>
       <div className={styles.guides}>
         <h3>{textContent.guides}</h3>
         <div className={styles.subGuides}>
