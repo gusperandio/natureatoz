@@ -151,9 +151,9 @@ export default function Page() {
 
       <p>{textAuth.textStart} <br/>
       {textAuth.textStart2}</p>
-      <CardCode tabs={false} link="https://natureatoz.com.br/api/v1/auth" />
+      <CardCode tabs={true} link="/api/v1/auth" method="GET"/>
       <p>{textAuth.text1}</p>
-      <CardCode tabs={false} link="https://natureatoz.com.br/api/v1/auth?days=120" />
+      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET"/>
     </div>
   );
 
@@ -163,13 +163,10 @@ export default function Page() {
         {language === "Pt-BR" ? "Aleatório" : "Search Random"}
       </h1>
       <p>
-        Bem-vindo à documentação da API A to Z, sua porta de entrada para
-        explorar e interagir com uma vasta gama de informações e serviços
-        relacionados ao meio ambiente, abrangendo desde tópicos que começam com
-        a letra A até aqueles que terminam com a letra Z. Nossa API foi
-        projetada para fornecer acesso fácil e flexível a dados e recursos que
-        podem ser valiosos para pesquisadores, conservacionistas, empresas e
-        qualquer pessoa interessada em proteger e entender o nosso planeta.
+        Solicitar nossas informações em um formato aleatório, é bem simples e fácil. 
+      </p>
+      <p>
+        Solicitar nossas informações em um formato aleatório, é bem simples e fácil. 
       </p>
       <br />
 

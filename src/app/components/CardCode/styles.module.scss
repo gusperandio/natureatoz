@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Manrope:wght@200;300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .cardCode {
-  width: 460px;
+  width: 600px;
   height: auto;
   background-color: #18181b;
   border-radius: 20px;
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    padding-top: 4px;
     span {
       color: var(--gray-100);
       padding-left: 6px;
@@ -94,30 +94,31 @@
   }
 
   .codeContent {
-    color: #fff;
+    color: var(--whiteCode);
     padding: 1.2rem;
     //font-family: "JetBrains Mono";
     border-top: 1px solid #35353b;
     font-size: 12px;
 
-    .blue {
+    .b {
       color: var(--blueCode);
     }
 
-    .green {
+    .g {
       color: var(--greenCode);
     }
 
-    .purple {
+    .p {
       color: var(--purpleCode);
     }
 
-    .white {
-      color: var(--whiteCode);
-    }
-
-    .red{
+    .r{
       color: var(--redCode);
+    }
+    
+    .bg{
+      color: var(--bigredCode);
+      font-weight: bold;
     }
   }
 }

@@ -82,6 +82,10 @@ export function Header() {
             <LanguageSelector />
           </a>
         </nav>
+        <Link href="/login" legacyBehavior>
+          <a style={{color : "#15171b"}}>logar</a>
+        </Link>
+
         <Modal isOpen={modalIsOpen} onClose={closeModal} classToUse="modal_support">
           <ModalSup selectedLanguage={selectedLanguage}/>
         </Modal>

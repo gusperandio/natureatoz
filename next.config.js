@@ -9,7 +9,8 @@ const nextConfig = {
     USER_MONGODB_URI: process.env.USER_MONGODB_URI,
     PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI,
     GA_KEY: process.env.GA_KEY,
-    KEY_TO_POST: process.env.KEY_TO_POST
+    KEY_TO_POST: process.env.KEY_TO_POST,
+    KEY_USER_MANUTENCE: process.env.KEY_USER_MANUTENCE,
   },
 };
 
