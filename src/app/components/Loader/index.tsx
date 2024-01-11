@@ -10,7 +10,7 @@ export default function Loader() {
           x2="128"
           y2="64"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -19,7 +19,7 @@ export default function Loader() {
           x2="173.3"
           y2="82.7"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -28,7 +28,7 @@ export default function Loader() {
           x2="192"
           y2="128"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -37,7 +37,7 @@ export default function Loader() {
           x2="173.3"
           y2="173.3"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -46,7 +46,7 @@ export default function Loader() {
           x2="128"
           y2="192"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -55,7 +55,7 @@ export default function Loader() {
           x2="82.7"
           y2="173.3"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -64,7 +64,7 @@ export default function Loader() {
           x2="64"
           y2="128"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
         <line
@@ -73,7 +73,7 @@ export default function Loader() {
           x2="82.7"
           y2="82.7"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           stroke-width="24"
         ></line>
       </svg>
