@@ -5,6 +5,7 @@ interface Item extends mongoose.Document {
   description: string;
   letter: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z';
   image: string;
+  itemId: number;
 }
 
 const ItemSchema = new mongoose.Schema<Item>({
@@ -24,7 +25,9 @@ const ItemSchema = new mongoose.Schema<Item>({
   image: {
     type: String,
     required: false
-  }
+  },
+  itemId: Number,
 });
+
 
 export default mongoose.models.Item || mongoose.model<Item>("Item", ItemSchema);

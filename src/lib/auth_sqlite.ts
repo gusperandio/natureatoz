@@ -12,7 +12,10 @@ export class KeyDatabase {
 
   constructor() {
     this.db = new sqlite3.Database("requests.db");
+    this.createTable();
+  }
 
+  private createTable() {
     this.db.run(`
     CREATE TABLE IF NOT EXISTS TB_Auth (
         ID INTEGER PRIMARY KEY,
@@ -21,14 +24,15 @@ export class KeyDatabase {
         Expire_At TIMESTAMP,
         CHECK (length(Key) = 36)
       );
-    `);
+  `);
   }
 
-  public async searchKey(key: string): Promise<boolean> {
+  public async searchKey(key: string): Promise<boolean | RequestKey> {
     return new Promise((resolve, reject) => {
       this.db.serialize(() => {
+        const query = `SELECT * FROM TB_Auth WHERE Key = ?`;
         this.db.get<RequestKey>(
-          `SELECT * FROM TB_Auth WHERE Key = ?`,
+          query,
           [key],
           (err, row) => {
             if (err) {
@@ -36,7 +40,6 @@ export class KeyDatabase {
               reject(err);
               return;
             }
-            console.log(row)
             if (!row) {
               resolve(false);
               return;
@@ -47,34 +50,63 @@ export class KeyDatabase {
             } else {
               resolve(true);
             }
+
           }
         );
       });
     });
   }
 
+  public getAllKeys(): Promise<RequestKey[]> {
+    const selectQuery = `
+      SELECT *
+      FROM TB_Auth;
+    `;
+    try {
+
+      return new Promise<RequestKey[]>((resolve, reject) => {
+        this.db.all<RequestKey>(selectQuery, (err, rows) => {
+          if (err) {
+            console.error("Error fetching keys:", err);
+            reject(err);
+          } else {
+            resolve(rows);
+          }
+        });
+      });
+    } finally{
+      this.close();
+    }
+  }
+
   public async addNewKey(key: string, days: number) {
     const date = new Date();
     const expireAt = new Date(date.getTime() + days * 24 * 60 * 60 * 1000);
-    try {
-      const insertQuery: string = `
-            INSERT INTO TB_Auth (Key, Expire_At)
-            VALUES (?, ?);
-        `;
-      this.db.run(insertQuery, [key, expireAt.toString()], (err) => {
-        if (err) {
-          console.error("Error to create your key:", err);
-        }
-      });
 
-      
+    try {
+      await new Promise<void>((resolve, reject) => {
+        const insertQuery: string = `
+          INSERT INTO TB_Auth (Key, Expire_At)
+          VALUES (?, ?);
+        `;
+
+        this.db.run(insertQuery, [key, expireAt.toString()], (err) => {
+          if (err) {
+            console.error("Error to create your key:", err);
+            reject(err);
+          } else {
+            resolve();
+          }
+        });
+      });
     } catch (err) {
       console.error("Error to create your key:", err);
-    } finally{
+    } finally {
       let formatExpireAt = expireAt.toLocaleString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
       return [key, formatExpireAt.toString()];
     }
   }
+
 
   public async delDisableKey() {
     try {
@@ -100,7 +132,7 @@ export class KeyDatabase {
     }
   }
 
-  public close(){
+  public close() {
     this.db.close();
   }
 }

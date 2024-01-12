@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 export class DB {
   private MONGODB_URI: string;
   constructor() {
@@ -18,11 +17,12 @@ export class DB {
 
   connect = async () => {
     try {
+      
       if (mongoose.connection.readyState === 1) {
         console.log("Já conectado ao MongoDB. Pulando a conexão.");
         return;
       }
-
+      
       await mongoose.connect(this.MONGODB_URI, {
         serverSelectionTimeoutMS: 60000
       });

@@ -1,8 +1,8 @@
-import { Counter } from "./../../../../../lib/count";
+import { Counter } from "../../../../lib/count";
 import { NextApiRequest, NextApiResponse } from "next";
-import middleware from "../../../../../lib/middleware";
-import { Cache } from "../../../../../lib/caching";
-import { CountRequest } from "../../../../../lib/count_sqlite";
+import middleware from "../../../../lib/middleware";
+import { Cache } from "../../../../lib/caching";
+import { CountRequest } from "../../../../lib/count_sqlite";
 
 const handler = async (
   req: NextApiRequest,

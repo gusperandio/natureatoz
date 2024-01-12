@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { DB } from "../config/dbConnect";
+import { DB } from "../../config/dbConnect";
 import { Cache } from "./caching";
 import { CountRequest } from "./count_sqlite";
 

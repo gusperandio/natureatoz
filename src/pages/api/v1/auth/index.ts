@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { generateGuid } from "../../../../../lib/guid";
-import { Cache } from "../../../../../lib/caching";
-import { KeyDatabase } from "../../../../../lib/auth_sqlite";
-import { CountRequest } from "../../../../../lib/count_sqlite";
+import { generateGuid } from "../../../../lib/guid";
+import { Cache } from "../../../../lib/caching";
+import { KeyDatabase } from "../../../../lib/auth_sqlite";
+import { CountRequest } from "../../../../lib/count_sqlite";
 
 
 export default async function handler(

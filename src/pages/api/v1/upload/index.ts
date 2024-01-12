@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Item from "../../../../../models/item";
 import unorm from 'unorm';
-import { Cache } from "../../../../../lib/caching";
-import middleware from "../../../../../lib/middleware";
+import { Cache } from "../../../../lib/caching";
+import middleware from "../../../../lib/middleware";
 
 type ResponseData = {
   title: string;

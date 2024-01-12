@@ -1,6 +1,6 @@
 
-import { Cache } from "../../../../../lib/caching";
-import middleware from "../../../../../lib/middleware";
+import { Cache } from "../../../../lib/caching";
+import middleware from "../../../../lib/middleware";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse, cacheado: Cache, url: string) => {
