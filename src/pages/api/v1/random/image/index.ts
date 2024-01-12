@@ -1,7 +1,7 @@
-import { Cache } from "../../../../lib/caching";
-import middleware from "../../../../lib/middleware";
+import { Cache } from "../../../../../lib/caching";
+import middleware from "../../../../../lib/middleware";
 import { NextApiRequest, NextApiResponse } from "next";
-import Item from "../../../../../models/item";
+import Item from "../../../../../../models/item";
 
 const handler = async (
   req: NextApiRequest,
@@ -10,7 +10,7 @@ const handler = async (
   url: string
 ) => {
   const items = await Item.aggregate([
-    { $match: {} },
+    { $match: { image: { $exists: true } } },
     { $sample: { size: 1 } }
   ]).cursor();
 

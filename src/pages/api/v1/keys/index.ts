@@ -1,8 +1,4 @@
-import { Counter } from "../../../../lib/count";
 import { NextApiRequest, NextApiResponse } from "next";
-import middleware from "../../../../lib/middleware";
-import { Cache } from "../../../../lib/caching";
-import { CountRequest } from "../../../../lib/count_sqlite";
 import { KeyDatabase } from "../../../../lib/auth_sqlite";
 
 export default async function handler(
@@ -16,7 +12,6 @@ export default async function handler(
   }
   
   const dbKey = new KeyDatabase();
-
   const allKeys = await dbKey.getAllKeys();
 
   res.status(200).json(allKeys);

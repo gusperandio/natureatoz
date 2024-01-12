@@ -27,7 +27,7 @@ export class KeyDatabase {
   `);
   }
 
-  public async searchKey(key: string): Promise<boolean | RequestKey> {
+  public async searchKey(key: string): Promise<boolean> {
     return new Promise((resolve, reject) => {
       this.db.serialize(() => {
         const query = `SELECT * FROM TB_Auth WHERE Key = ?`;

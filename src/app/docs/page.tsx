@@ -366,7 +366,7 @@ export default function Page() {
             <p>/alphabetical</p> <span className={styles.get}>GET</span>
           </li>
           <li onClick={() => alterContent(specific)}>
-            <p>/specific/&#123;id&#125;</p>{" "}
+            <p>/specific/&#123;title&#125;</p>{" "}
             <span className={styles.get}>GET</span>
           </li>
           <li onClick={() => alterContent(pagination)}>

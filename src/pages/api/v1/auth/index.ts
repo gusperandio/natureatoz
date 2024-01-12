@@ -3,14 +3,16 @@ import { generateGuid } from "../../../../lib/guid";
 import { Cache } from "../../../../lib/caching";
 import { KeyDatabase } from "../../../../lib/auth_sqlite";
 import { CountRequest } from "../../../../lib/count_sqlite";
+import middleware from "@/lib/middleware";
 
 
-export default async function handler(
+const handler = async (
   req: NextApiRequest,
-  res: NextApiResponse
-) {
+  res: NextApiResponse,
+  cached: Cache,
+  url: string
+) => {
   try {
-    const cached = new Cache();
     const dbKey = new KeyDatabase();
     const newGuid = generateGuid();
     const countSqlite = new CountRequest();
@@ -25,16 +27,17 @@ export default async function handler(
     days = Math.min(120, days);
 
     countSqlite.addRequestNum();
-    cached.save(newGuid, { key: newGuid }, days, "Day");
-
+    
     const [key, expireIn] = await dbKey.addNewKey(newGuid, days);
     dbKey.delDisableKey();
-
+    
     const keyExists = await dbKey.searchKey(newGuid);
     dbKey.close();
-
+    
+    cached.save(key, key, 30, "Day");
+    const keyCached = cached.find(key);
     if (keyExists) {
-      res.status(200).send({ key, expireIn, days });
+      res.status(200).send({ keyCached, expireIn, days });
     } else {
       res.status(404).send({ key: "KEY ERROR" });
     }
@@ -45,3 +48,6 @@ export default async function handler(
     });
   }
 }
+
+export default middleware(handler);
+

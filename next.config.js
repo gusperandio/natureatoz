@@ -12,6 +12,9 @@ const nextConfig = {
     KEY_TO_POST: process.env.KEY_TO_POST,
     KEY_USER_MANUTENCE: process.env.KEY_USER_MANUTENCE,
   },
+  api: {
+    responseLimit: '8mb',
+  },
 };
 
 module.exports = nextConfig;

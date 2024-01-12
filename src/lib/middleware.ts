@@ -25,7 +25,6 @@ const middleware = (
 
     const url = req.url ? req.url.split("/")[3] : "v1";
     
-
     if(req.method === "GET"){
       const getCache = cache.find(url);
       

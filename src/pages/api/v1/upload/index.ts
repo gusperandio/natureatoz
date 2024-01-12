@@ -4,29 +4,27 @@ import unorm from 'unorm';
 import { Cache } from "../../../../lib/caching";
 import middleware from "../../../../lib/middleware";
 
-type ResponseData = {
-  title: string;
-  description: string;
-};
-
 interface InsertDatas {
   title: string;
   description: string;
+  id: number
 }
 
-interface ProcessDatas extends InsertDatas {
-  letter: string;
-}
 
 const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
   const uniqueDatas = Array.from(new Set(dados.map(item => item.title))).map(title => dados.find(item => item.title === title)!);
-
+  let n = 1;
   const processedDatas = uniqueDatas
     .sort((a, b) => a.title.localeCompare(b.title))
     .map(item => ({
       ...item,
       letter: removeAccents(item.title.charAt(0).toUpperCase()),
     }));
+
+  // const increment = processedDatas.map((item) => {
+  //   item.id = n++;
+  //   return item;
+  // });
 
   return processedDatas;
 };
@@ -42,14 +40,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse, cacheado: Cach
   if (req.method === "POST") {
     try {
       const KEY = process.env.KEY_TO_POST || "";
-      
+
       if (req.headers['keynature'] !== KEY) {
         return res.status(405).json("GET OUT!");
       }
-    
+
       const requestData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
       const newItem = await Item.create(processLetter(requestData));
-    
+
       res.status(200).json({ success: true, inserts: newItem });
     } catch (error) {
       console.error("Erro:", error);

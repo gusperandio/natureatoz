@@ -1,7 +1,7 @@
 import NodeCache from "node-cache";
 
 interface CacheValue {
-  data: { title: string; description: string }[] | { requests: number } | {key: string};
+  data: { title: string; description: string }[] | { requests: number } | string;
   timestamp: number;
 }
 
@@ -14,7 +14,7 @@ export class Cache {
 
   save(
     key: string,
-    datas: { title: string; description: string }[] | { requests: number } | {key: string},
+    datas: { title: string; description: string }[] | { requests: number } | string,
     ttlSeconds: number,
     measure: string
   ): void {
@@ -30,8 +30,8 @@ export class Cache {
       measure === "Day"
         ? Date.now() + ttlSeconds * 1000 * 60 * 60 * 24
         : measure === "Hour"
-        ? Date.now() + ttlSeconds * 1000 * 60 * 60
-        : Date.now() + ttlSeconds * 1000;
+          ? Date.now() + ttlSeconds * 1000 * 60 * 60
+          : Date.now() + ttlSeconds * 1000 * 60;
 
     const cacheValue: CacheValue = {
       data: datas,
@@ -46,14 +46,12 @@ export class Cache {
   ):
     | { title: string; description: string }[]
     | { requests: number }
-    | { key: string }
+    | string
     | undefined {
     const cacheValue = this.cache.get(key) as CacheValue | undefined;
-
     if (cacheValue && cacheValue.timestamp > Date.now()) {
       return cacheValue.data;
     }
-
     this.cache.del(key);
     return undefined;
   }
