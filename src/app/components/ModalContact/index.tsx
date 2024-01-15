@@ -3,6 +3,7 @@ import email from "../../../../public/icons/email.svg";
 import Image from "next/image";
 import linkedin from "../../../../public/icons/linkedin.svg";
 import Link from "next/link";
+
 interface PropsContact {
   selectedLanguage: string;
 }
@@ -69,7 +70,7 @@ export default function ModalContact(props: PropsContact) {
                 width="24"
                 height="24"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
