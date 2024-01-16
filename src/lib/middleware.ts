@@ -19,7 +19,8 @@ const middleware = (
     countSqlite.addRequestNum();
 
     if(req.method === "OPTIONS"){
-      res.status(200).json({ status: "ONLINE" });
+      console.log("OPTIONS=========================")
+      res.status(200).end().json({ status: "ONLINE" });
       return;
     }
 

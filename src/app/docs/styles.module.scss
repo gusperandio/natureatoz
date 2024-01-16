@@ -240,7 +240,26 @@
       }
     }
 
-   
+    .reqWithImg{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      
+      .gridImage{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 2rem;
+
+        .gridItem {
+          padding: 0 1px;
+        }
+      }
+
+      // .image{
+      //   border-radius: 12px;
+      //   margin-left: 6px;
+      // }
+    }
   }
 
   .api_info {

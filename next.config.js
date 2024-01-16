@@ -2,7 +2,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["cdn.dribbble.com"],
+    domains: ["cdn.dribbble.com", "images.pexels.com"]
   },
   env: {
     PUBLIC_MONGODB_URI: process.env.PUBLIC_MONGODB_URI,
@@ -14,7 +14,7 @@ const nextConfig = {
   },
   api: {
     responseLimit: '8mb',
-  },
+  }
 };
 
 module.exports = nextConfig;

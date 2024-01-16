@@ -10,7 +10,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "OPTIONS") {
-      res.status(202).end();
+    res.status(202).end();
   } else {
     res.status(404).end();
   }

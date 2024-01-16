@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useLanguage } from "../LanguageContext";
@@ -8,6 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import camera from "../../../public/icons/camera-fill.svg";
 import arrowRight from "../../../public/icons/arrow-right.svg";
+import CardHome from "../components/CardHome";
 
 export default function Page() {
   const { selectedLanguage } = useLanguage();
@@ -15,41 +17,29 @@ export default function Page() {
 
   const authors = [
     {
-      autor: "Lucas Vinícius",
-      link: "https://www.pexels.com/pt-br/foto/fotografia-animal-fotografia-de-animais-grande-enorme-5855497/",
-      backgrounds:
-        "https://images.pexels.com/photos/5855497/pexels-photo-5855497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      autor: "Felix Mittermeier",
+      link: "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg",
+      styles:
+        "10px 0 0 0",
     },
     {
-      autor: "Daniel Torobekov",
-      link: "https://www.pexels.com/pt-br/foto/grande-tartaruga-aquatica-nadando-no-mar-azul-5560909/",
-      backgrounds:
-        "https://images.pexels.com/photos/5560909/pexels-photo-5560909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      autor: "Alex Andrews",
+      link: "https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      styles:
+        "0 10px 0 0",
     },
     {
-      autor: "Magali Guimarães",
-      link: "https://www.pexels.com/pt-br/foto/adoravel-passaro-exotico-galbulidae-sentado-em-um-galho-de-arvore-na-floresta-5583910/",
-      backgrounds:
-        "https://images.pexels.com/photos/5583910/pexels-photo-5583910.jpeg",
+      autor: "GEORGE DESIPRIS",
+      link: "https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      styles:
+        "0 0 0 10px",
     },
     {
-      autor: "David Selbert",
-      link: "https://www.pexels.com/pt-br/foto/animal-bicho-biologia-borrao-7896214/",
-      backgrounds:
-        "https://images.pexels.com/photos/7896214/pexels-photo-7896214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      autor: "Daniel Torobekov",
-      link: "https://www.pexels.com/pt-br/foto/golfinho-solitario-na-agua-azul-4886378/",
-      backgrounds:
-        "https://images.pexels.com/photos/4886378/pexels-photo-4886378.jpeg",
-    },
-    {
-      autor: "Matthew M.",
-      link: "https://www.pexels.com/pt-br/foto/pinheiros-verdes-1179229/",
-      backgrounds:
-        "https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
+      autor: "Eberhard grossgasteiger",
+      link: "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      styles:
+        "0 0 10px 0",
+    }
   ];
 
   const textContent = {
@@ -118,14 +108,24 @@ export default function Page() {
     title: selectedLanguage === "Pt-BR" ? "Aleatório" : "Random",
     textIntro:
       selectedLanguage === "Pt-BR"
-        ? "Nesta página, vamos nos aprofundar alguns pontos de requisição em que você pode gerenciar as requisições sem um exato controle, onde você faz a requisição e recebe dados surpresa"
-        : "On this page, we will delve deeper into some request points where you can manage requests without exact control, where you make the request and receive surprise data",
-    subTitle:
-      selectedLanguage === "Pt-BR" ? "Modelo aleatório" : "Random model",
+        ? "Nesta página, vamos nos aprofundar alguns pontos de requisição em que você pode gerenciar as requisições sem um exato controle, onde você faz a requisição e recebe dados surpresa."
+        : "On this page, we will delve deeper into some request points where you can manage requests without exact control, where you make the request and receive surprise data.",
+    textIntro2:
+      selectedLanguage === "Pt-BR"
+        ? "Solicitar nossas informações em um formato aleatório, é bem simples e fácil."
+        : "Requesting our information in a random format is very simple and easy.",
+
     textStart:
       selectedLanguage === "Pt-BR"
         ? "O modelo aleatório contém todas as informações sobre algo específico do meio ambiente desde que informado a rota utilizando a chave de acesso."
         : "The random model contains all information about something specific in the environment as long as the route is informed using the access key.",
+    subTitle:
+      selectedLanguage === "Pt-BR" ? "Sem imagens" : "Without images",
+    subTitle2:
+      selectedLanguage === "Pt-BR" ? "Com imagens" : "With images",
+    text1: selectedLanguage === "Pt-BR" ? "Esse tipo de requisição, consegue lhe fornecer dados abstratos, onde não são fornecidos nenhum tipo de imagem, mas sim toda a informação necessária." : "This request can provide you with abstract data, where no images are provided, but rather all the necessary information is given.",
+    text2: selectedLanguage === "Pt-BR" ? "Já esta requisição você solicita algo tangível, onde é fornecido toda a descrição e uma imagem junto ao dados solicitados." : "In this request, you ask for something tangible, where a complete description and an image are provided along with the requested data.",
+
   };
 
   const textAlphabetical = {};
@@ -133,10 +133,11 @@ export default function Page() {
   const textSpecific = {};
 
   const textPagination = {};
+
   const labels = (destiny: React.JSX.Element, n: number, read: string) => {
     return (
       <label onClick={() => alterContent(destiny)}>
-        {read} <Image src={arrowRight} width={18} height={18} alt="arrow" style={{marginTop : "2px"}}/>
+        {read} <Image src={arrowRight} width={18} height={18} alt="arrow" style={{ marginTop: "2px" }} />
       </label>
     );
   };
@@ -149,36 +150,47 @@ export default function Page() {
 
       <h3>{textAuth.subTitle}</h3>
 
-      <p>{textAuth.textStart} <br/>
-      {textAuth.textStart2}</p>
-      <CardCode tabs={true} link="/api/v1/auth" method="GET"/>
+      <p>{textAuth.textStart} <br />
+        {textAuth.textStart2}</p>
+      <CardCode tabs={true} link="/api/v1/auth" method="GET" />
       <p>{textAuth.text1}</p>
-      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET"/>
+      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" />
     </div>
   );
 
   const random = (
     <div id="content" className={`${styles.content}`}>
       <h1 className={styles.title}>
-        {language === "Pt-BR" ? "Aleatório" : "Search Random"}
+        {textRandom.title}
       </h1>
       <p>
-        Solicitar nossas informações em um formato aleatório, é bem simples e fácil. 
+        {textRandom.textIntro}&nbsp;
+        {textRandom.textIntro2}
       </p>
       <p>
-        Solicitar nossas informações em um formato aleatório, é bem simples e fácil. 
+        {textRandom.textStart}
       </p>
       <br />
 
-      <h3>Iniciando</h3>
+      <h3>{textRandom.subTitle}</h3>
+      <p>{textRandom.text1}</p>
+      <CardCode link="/api/v1/random" tabs={true} method="GET" />
+      <br />
 
-      <p>
-        Nossa API de A to Z oferece um repositório de informações valiosas que
-        abrange tópicos que vão desde a biodiversidade até as zonas de proteção
-        ambiental. Com recursos acessíveis via HTTP e documentação completa,
-        estamos comprometidos em facilitar a colaboração e o acesso a dados que
-        podem fazer a diferença na conservação de nosso planeta.
-      </p>
+      <h3>{textRandom.subTitle2}</h3>
+      <p>{textRandom.text2}</p>
+      <div className={styles.reqWithImg}>
+        <CardCode link="/api/v1/random/image" tabs={true} method="GET" />
+        <div className={styles.gridImage}>
+          {authors.map((e) => {
+            return (
+              <div className={styles.gridItem} key={e.autor}><img className={styles.image} width={190} height={150} src={e.link} alt={e.autor} style={{borderRadius : `${e.styles}`}}/>
+              </div>
+            )
+          })}
+        </div>
+
+      </div>
     </div>
   );
 
@@ -270,7 +282,7 @@ export default function Page() {
 
       <p>{textContent.textStart}</p>
 
-      <CardCode tabs={true} link="/api/v1" method={"OPTIONS"}/>
+      <CardCode tabs={true} link="/api/v1" method={"OPTIONS"} />
       <div className={styles.guides}>
         <h3>{textContent.guides}</h3>
         <div className={styles.subGuides}>
