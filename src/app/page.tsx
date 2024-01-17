@@ -23,7 +23,6 @@ export default function Home() {
       return num.toString();
     }
   };
-  
 
   const [loading, setLoading] = useState(true);
   const [randomData, setRandomData] = useState(0);
@@ -35,12 +34,9 @@ export default function Home() {
           "http://localhost:3000/api/v1/requests"
         );
         setRandomData(response.data.requests);
-        setLoading(false); 
+        setLoading(false);
       } catch (error) {
-        log(analytics, 'Request Home', {
-          typeError: error,
-        });
-        setLoading(false); 
+        setLoading(false);
       }
     };
 
@@ -58,9 +54,9 @@ export default function Home() {
               <Image src={req} width={22} height={22} alt="requistion" />
               <span className={styles.like}>Requests</span>
             </span>
-            
+
             <span className={styles.likeCount}>
-              {loading ? (<Loader />) : formatNumber(randomData) }
+              {loading ? (<Loader />) : formatNumber(randomData)}
             </span>
           </button>
         </div>

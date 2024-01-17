@@ -8,11 +8,7 @@ const generateToken = async (guid: string, days: number): Promise<string> => {
 
 const verifyToken = (token: string): boolean => {
   try {
-    const decoded = verify(token.replace("Bearer ", ""), secretKey);
-    if (decoded)
-      return true
-    else
-      return false;
+    return verify(token.replace("Bearer ", ""), secretKey) ? true : false;
   } catch (error) {
     return false;
   }

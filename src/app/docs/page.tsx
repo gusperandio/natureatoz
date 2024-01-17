@@ -65,11 +65,11 @@ export default function Page() {
       selectedLanguage == "Pt-BR"
         ? "Explore o nossa ampla API de forma aleatória"
         : "Explore our extensive API at random",
-    guides3: selectedLanguage == "Pt-BR" ? "Alfabética" : "Alphabetical",
+    guides3: selectedLanguage == "Pt-BR" ? "Alfabética" : "Letter",
     guides3Sub:
       selectedLanguage == "Pt-BR"
         ? "Solicite todos os dados por ordem alfabética"
-        : "Request all data in alphabetical order",
+        : "Request all data in Letter order",
     guides4: selectedLanguage == "Pt-BR" ? "Específico" : "Especific",
     guides4Sub:
       selectedLanguage == "Pt-BR"
@@ -94,11 +94,11 @@ export default function Page() {
       selectedLanguage == "Pt-BR"
         ? "Para começar a utilizar a API do NatureAtoz, o primeiro passo é solicitar uma chave de acesso. Isso pode ser feito através do URL"
         : "To begin using the NatureAtoz API, the first step is to request an access key. This can be done through the URL",
-    textStart2:
-      selectedLanguage == "Pt-BR"
-        ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis.\n Lembrando que a chave por padrão vem com 30 dias de uso."
-        : "With the key in hand, you can incorporate it into your API requests, ensuring the necessary authentication to access the available resources.",
-    text1:
+      textStart2:
+        selectedLanguage == "Pt-BR"
+          ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis.\n Lembrando que a chave por padrão vem com 30 dias de uso."
+          : "With the key in hand, you can embed it in your API requests, ensuring the necessary authentication to access the available resources.\n Remember that the key comes with a default validity period of 30 days.",
+      text1:
       selectedLanguage == "Pt-BR"
         ? "Você pode solicitar uma quantidade de dias de duração da sua chave de acesso maior que o padrão de dias, a quantidade máxima de dias para uso são de 120 dias."
         : "You can request a duration for your access key that is greater than the standard number of days; the maximum allowed duration for usage is 120 days.",
@@ -124,11 +124,27 @@ export default function Page() {
     subTitle2:
       selectedLanguage === "Pt-BR" ? "Com imagens" : "With images",
     text1: selectedLanguage === "Pt-BR" ? "Esse tipo de requisição, consegue lhe fornecer dados abstratos, onde não são fornecidos nenhum tipo de imagem, mas sim toda a informação necessária." : "This request can provide you with abstract data, where no images are provided, but rather all the necessary information is given.",
-    text2: selectedLanguage === "Pt-BR" ? "Já esta requisição você solicita algo tangível, onde é fornecido toda a descrição e uma imagem junto ao dados solicitados." : "In this request, you ask for something tangible, where a complete description and an image are provided along with the requested data.",
+    text2: selectedLanguage === "Pt-BR" ? "Já esta requisição você solicita algo tangível, onde é fornecido toda a descrição e uma imagem junto ao dados solicitados." : "In this request, you search for something tangible, where a complete description and an image are provided along with the requested data.",
 
   };
 
-  const textAlphabetical = {};
+  const textLetter = {
+    title: selectedLanguage === "Pt-BR" ? "Letras" : "Letters",
+    textIntro:
+      selectedLanguage === "Pt-BR"
+      ? "Agora fazendo uma solicitação em que você pode gerenciar as requisições com base na letra que será preenchida na URL da requisição"
+      : "Now making a request in which you can manage the requests based on the letter that will be filled in the URL of the request.",
+    subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
+    textStart:
+      selectedLanguage == "Pt-BR"
+        ? "O modelo por letras contém todas as informações com base na letra, desde que informado a rota utilizando a chave de acesso"
+        : "The letter-based model contains all the information based on the letter, as long as the route is provided using the access key.",
+    text1:
+      selectedLanguage == "Pt-BR"
+        ? "Você pode solicitar qualquer letra, aqui trazemos dois exemplos, acima com a letra A e abaixo com a letra J, os valores retornados são todos com base na letra inicial, exatamente com as páginas de um dicionário"
+        : "You can request any letter; here, we provide two examples, above with the letter A and below with the letter J. The returned values are all based on the initial letter, exactly like the pages of a dictionary.",
+
+  };
 
   const textSpecific = {};
 
@@ -184,39 +200,27 @@ export default function Page() {
         <div className={styles.gridImage}>
           {authors.map((e) => {
             return (
-              <div className={styles.gridItem} key={e.autor}><img className={styles.image} width={190} height={150} src={e.link} alt={e.autor} style={{borderRadius : `${e.styles}`}}/>
+              <div className={styles.gridItem} key={e.autor}><img className={styles.image} width={190} height={150} src={e.link} alt={e.autor} style={{ borderRadius: `${e.styles}` }} />
               </div>
             )
           })}
         </div>
-
       </div>
     </div>
   );
 
-  const alfabetical = (
+  const letter = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>Alphabetical</h1>
-      <p>
-        Bem-vindo à documentação da API A to Z, sua porta de entrada para
-        explorar e interagir com uma vasta gama de informações e serviços
-        relacionados ao meio ambiente, abrangendo desde tópicos que começam com
-        a letra A até aqueles que terminam com a letra Z. Nossa API foi
-        projetada para fornecer acesso fácil e flexível a dados e recursos que
-        podem ser valiosos para pesquisadores, conservacionistas, empresas e
-        qualquer pessoa interessada em proteger e entender o nosso planeta.
-      </p>
+      <h1 className={styles.title}>{textLetter.title}</h1>
+      <p>{textLetter.textIntro}</p>
       <br />
 
-      <h3>Iniciando</h3>
+      <h3>{textLetter.subTitle}</h3>
 
-      <p>
-        Nossa API de A to Z oferece um repositório de informações valiosas que
-        abrange tópicos que vão desde a biodiversidade até as zonas de proteção
-        ambiental. Com recursos acessíveis via HTTP e documentação completa,
-        estamos comprometidos em facilitar a colaboração e o acesso a dados que
-        podem fazer a diferença na conservação de nosso planeta.
-      </p>
+      <p>{textLetter.textStart} <br /></p>
+      <CardCode tabs={true} link="/api/v1/letter/A" method="GET" />
+      <p>{textLetter.text1}</p>
+      <CardCode tabs={true} link="/api/v1/letter/J" method="GET" />
     </div>
   );
 
@@ -299,7 +303,7 @@ export default function Page() {
           <div className={styles.d1}>
             <h4>{textContent.guides3}</h4>
             <p>{textContent.guides3Sub}</p>
-            {labels(alfabetical, 3, textContent.readMore)}
+            {labels(letter, 3, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides4}</h4>
@@ -374,15 +378,15 @@ export default function Page() {
           <li onClick={() => alterContent(random)}>
             <p>/random</p> <span className={styles.get}>GET</span>
           </li>
-          <li onClick={() => alterContent(alfabetical)}>
-            <p>/alphabetical</p> <span className={styles.get}>GET</span>
+          <li onClick={() => alterContent(letter)}>
+            <p>/letter/&#123;X&#125;</p> <span className={styles.get}>GET</span>
           </li>
           <li onClick={() => alterContent(specific)}>
             <p>/specific/&#123;title&#125;</p>{" "}
             <span className={styles.get}>GET</span>
           </li>
           <li onClick={() => alterContent(pagination)}>
-            <p>/pagination</p> <span className={styles.get}>GET</span>
+            <p>/language</p> <span className={styles.get}>GET</span>
           </li>
         </ul>
       </div>
