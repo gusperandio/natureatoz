@@ -15,26 +15,7 @@ export default function Cookies() {
   const { selectedLanguage } = useLanguage();
   const [disp, setDisp] = useState("none");
   const [anime, setAnime] = useState("animate__zoomInUp");
-  const [latitude, setLatitude] = useState<number | null>(null);
-  const [longitude, setLongitude] = useState<number | null>(null);
   const [deviceInfo, setDeviceInfo] = useState<DeviceInfo | null>(null);
- 
-  const saveLocation = () =>{
-    if ('geolocation' in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setLatitude(position.coords.latitude);
-          setLongitude(position.coords.longitude);
-          cookie.set("user_position", `${latitude} ${longitude}`, {expires: 5})
-        },
-        (error) => {
-          cookie.set("user_position", `API Geo Denied`, {expires: 5})
-        }
-      );
-    } else {
-      cookie.set("user_position", `API Geo Denied`, {expires: 5})
-    }
-  }
 
   const getInfo = () => {
     const info = {
@@ -47,25 +28,24 @@ export default function Cookies() {
     cookie.set('deviceInfo', JSON.stringify(deviceInfo), { expires: 5 });
   };
 
-  
+
   const accept = () => {
-    cookie.set('closed', "true", {expires : 5})
+    cookie.set('closed', "true", { expires: 5 })
     setAnime("animate__zoomOutDown");
     setTimeout(() => {
       setDisp("none");
     }, 1000);
-    saveLocation()
     getInfo()
   };
-  
+
   const decline = () => {
-    cookie.set('closed', "true", {expires : 5})
+    cookie.set('closed', "true", { expires: 5 })
     setAnime("animate__zoomOutDown");
     setTimeout(() => {
       setDisp("none");
     }, 1000);
   };
-  
+
   useEffect(() => {
     if (!cookie.get('closed')) {
       setDisp("block");
@@ -94,10 +74,10 @@ export default function Cookies() {
       </p>
       <div className={styles.actions}>
         <button className={styles.decline} onClick={() => decline()}>
-        {selectedLanguage === "Pt-BR" ? "Rejeitar" : "Decline" }
+          {selectedLanguage === "Pt-BR" ? "Rejeitar" : "Decline"}
         </button>
         <button className={styles.accept} onClick={() => accept()}>
-        {selectedLanguage === "Pt-BR" ? "Aceitar" : "Accept" }
+          {selectedLanguage === "Pt-BR" ? "Aceitar" : "Accept"}
         </button>
       </div>
     </div>

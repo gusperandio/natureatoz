@@ -1,53 +1,36 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { generateGuid } from "../../../../lib/guid";
-import { Cache } from "../../../../lib/caching";
 import { KeyDatabase } from "../../../../lib/auth_sqlite";
 import { CountRequest } from "../../../../lib/count_sqlite";
-import middleware from "@/lib/middleware";
+import { generateToken } from "@/lib/JWT";
 
-
-const handler = async (
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse,
-  cached: Cache,
-  url: string
-) => {
+  res: NextApiResponse
+) {
   try {
     const dbKey = new KeyDatabase();
     const newGuid = generateGuid();
     const countSqlite = new CountRequest();
+    countSqlite.addRequestNum();
 
     const { days: queryDays } = req.query;
     let days = queryDays
       ? (Array.isArray(queryDays)
-          ? parseInt(queryDays[0], 10)
-          : parseInt(queryDays, 10)) || 30
+        ? parseInt(queryDays[0], 10)
+        : parseInt(queryDays, 10)) || 30
       : 30;
 
     days = Math.min(120, days);
 
-    countSqlite.addRequestNum();
-    
-    const [key, expireIn] = await dbKey.addNewKey(newGuid, days);
+    const JWT = await generateToken(newGuid, days);
+    const [key, expireIn] = await dbKey.addNewKey(newGuid, JWT, days);
     dbKey.delDisableKey();
-    
-    const keyExists = await dbKey.searchKey(newGuid);
     dbKey.close();
-    
-    cached.save(key, key, 30, "Day");
-    const keyCached = cached.find(key);
-    if (keyExists) {
-      res.status(200).send({ keyCached, expireIn, days });
-    } else {
-      res.status(404).send({ key: "KEY ERROR" });
-    }
+
+    res.status(200).json({ JWT, expireIn, days });
   } catch (error) {
-    res.status(500).send({
-      key:
-        "ERROR IN SERVER, PLEASE ENTER IN CONTACT WITH SUPPORT TEAM \n" + error,
-    });
+    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report \n" + error);
   }
 }
-
-export default middleware(handler);
 

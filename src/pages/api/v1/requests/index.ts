@@ -3,6 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import middleware from "../../../../lib/middleware";
 import { Cache } from "../../../../lib/caching";
 import { CountRequest } from "../../../../lib/count_sqlite";
+import { analytics, log } from "@/lib/firebase";
 
 const handler = async (
   req: NextApiRequest,
@@ -10,14 +11,18 @@ const handler = async (
   cached: Cache,
   url: string
 ) => {
-  const countRequest = new CountRequest();
-  const counter = new Counter();
+  try {
+    const countRequest = new CountRequest();
+    const counter = new Counter();
 
-  const num = await countRequest.findRequests();
-  await counter.updateReqCount(num);
+    const num = await countRequest.findRequests();
+    await counter.updateReqCount(num);
 
-  cached.save(url, { requests: num }, 1, "Hour");
-  res.status(200).json({ requests: num });
+    cached.save(url, { requests: num }, 1, "Hour");
+    res.status(200).json({ requests: num });
+  } catch (error) {
+    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report");
+  }
 };
 
 export default middleware(handler);

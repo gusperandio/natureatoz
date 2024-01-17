@@ -9,13 +9,15 @@ import FloatingButton from "./components/FloatingButton";
 import Cookies from "./components/Cookies";
 import { initGA, logPageView } from "../../config/analytics";
 import { useEffect } from "react";
- 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nature A to Z",
   icons: "icon.png",
 };
+
 declare global {
   interface Window {
     GA_INITIALIZED: boolean;
@@ -27,6 +29,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   
   return (
     <html lang="en">

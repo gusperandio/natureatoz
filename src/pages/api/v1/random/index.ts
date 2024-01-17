@@ -2,6 +2,7 @@ import { Cache } from "../../../../lib/caching";
 import middleware from "../../../../lib/middleware";
 import { NextApiRequest, NextApiResponse } from "next";
 import Item from "../../../../../models/item";
+import { analytics, log } from "@/lib/firebase";
 
 const handler = async (
   req: NextApiRequest,
@@ -9,21 +10,25 @@ const handler = async (
   cached: Cache,
   url: string
 ) => {
-  const items = await Item.aggregate([
-    { $match: {} },
-    { $sample: { size: 1 } }
-  ]).cursor();
+  try {
+    const items = await Item.aggregate([
+      { $match: {} },
+      { $sample: { size: 1 } }
+    ]).cursor();
 
-  const randomItem = await items.next();
+    const randomItem = await items.next();
 
-  if (randomItem.length == 0) {
-    res.status(400).json({ error: "Any item founded" });
+    if (randomItem.length == 0) {
+      res.status(400).json({ error: "Any item founded" });
+    }
+    delete randomItem._id;
+    delete randomItem.__v;
+    delete randomItem.letter;
+
+    res.status(200).json(randomItem);
+  } catch (error) {
+    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report");
   }
-  delete randomItem._id;
-  delete randomItem.__v;
-  delete randomItem.letter;
-  
-  res.status(200).json(randomItem);
 };
 
 export default middleware(handler);

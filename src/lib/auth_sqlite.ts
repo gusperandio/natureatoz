@@ -1,8 +1,10 @@
+import { JwtPayload } from "jsonwebtoken";
 import * as sqlite3 from "sqlite3";
 
 interface RequestKey {
   ID: number;
   Key: string;
+  JWT: string;
   Created_At: Date;
   Expire_At?: string | null;
 }
@@ -20,6 +22,7 @@ export class KeyDatabase {
     CREATE TABLE IF NOT EXISTS TB_Auth (
         ID INTEGER PRIMARY KEY,
         Key VARCHAR(36) NOT NULL,
+        JWT VARCHAR(400) NOT NULL,
         Created_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         Expire_At TIMESTAMP,
         CHECK (length(Key) = 36)
@@ -79,18 +82,17 @@ export class KeyDatabase {
     }
   }
 
-  public async addNewKey(key: string, days: number) {
+  public async addNewKey(key: string, jwt: string, days: number) {
     const date = new Date();
     const expireAt = new Date(date.getTime() + days * 24 * 60 * 60 * 1000);
-
     try {
       await new Promise<void>((resolve, reject) => {
         const insertQuery: string = `
-          INSERT INTO TB_Auth (Key, Expire_At)
-          VALUES (?, ?);
+          INSERT INTO TB_Auth (Key, JWT, Expire_At)
+          VALUES (?, ?, ?);
         `;
 
-        this.db.run(insertQuery, [key, expireAt.toString()], (err) => {
+        this.db.run(insertQuery, [key, jwt, expireAt.toString()], (err) => {
           if (err) {
             console.error("Error to create your key:", err);
             reject(err);

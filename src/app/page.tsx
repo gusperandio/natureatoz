@@ -6,6 +6,9 @@ import req from "../../public/icons/req.svg";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
+import { analytics, log } from "@/lib/firebase";
+
+
 interface RequestData {
   request: number;
 }
@@ -20,6 +23,7 @@ export default function Home() {
       return num.toString();
     }
   };
+  
 
   const [loading, setLoading] = useState(true);
   const [randomData, setRandomData] = useState(0);
@@ -30,11 +34,12 @@ export default function Home() {
         const response = await axios.get(
           "http://localhost:3000/api/v1/requests"
         );
-        console.log(response.data)
         setRandomData(response.data.requests);
         setLoading(false); 
       } catch (error) {
-        console.error("Erro ao obter dados:", error);
+        log(analytics, 'Request Home', {
+          typeError: error,
+        });
         setLoading(false); 
       }
     };

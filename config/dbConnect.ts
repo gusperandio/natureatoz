@@ -17,16 +17,15 @@ export class DB {
 
   connect = async () => {
     try {
-      
       if (mongoose.connection.readyState === 1) {
         console.log("Já conectado ao MongoDB. Pulando a conexão.");
         return;
       }
-      
+
       await mongoose.connect(this.MONGODB_URI, {
         serverSelectionTimeoutMS: 60000
       });
-      
+
       console.log("Conexão com o MongoDB estabelecida com sucesso");
     } catch (error) {
       console.error("Erro ao conectar ao MongoDB:", error);
@@ -35,8 +34,10 @@ export class DB {
 
   disconnect = async () => {
     try {
-      await mongoose.disconnect();
-      console.log("Desconectado");
+      if (mongoose.connection.readyState === 1) {
+        await mongoose.disconnect();
+        console.log("Desconectado");
+      }
     } catch (error) {
       console.log(error);
     }
