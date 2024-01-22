@@ -11,9 +11,12 @@ const handler = async (
   url: string
 ) => {
   try {
+
+    const { size: size } = req.query;
+
     const items = await Item.aggregate([
-      { $match: {} },
-      { $sample: { size: 1 } }
+      { $match: { image: { $exists: false } } },
+      { $sample: { size: size ? Number(size) : 1 } }
     ]).cursor();
 
     const randomItem = await items.next();
@@ -21,9 +24,14 @@ const handler = async (
     if (randomItem.length == 0) {
       res.status(400).json({ error: "Any item founded" });
     }
+
     delete randomItem._id;
     delete randomItem.__v;
     delete randomItem.letter;
+
+    cached.save(url, randomItem, 30, "Day")
+
+    log(analytics, '/random', { page_path: '/api/v1/random' });
 
     res.status(200).json(randomItem);
   } catch (error) {

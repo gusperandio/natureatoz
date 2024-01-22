@@ -3,18 +3,22 @@ import { generateGuid } from "../../../../lib/guid";
 import { KeyDatabase } from "../../../../lib/auth_sqlite";
 import { CountRequest } from "../../../../lib/count_sqlite";
 import { generateToken } from "@/lib/JWT";
+import { analytics, log } from "@/lib/firebase";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
+    const { days: queryDays } = req.query;
     const dbKey = new KeyDatabase();
     const newGuid = generateGuid();
     const countSqlite = new CountRequest();
-    countSqlite.addRequestNum();
 
-    const { days: queryDays } = req.query;
+    countSqlite.addRequestNum();
+    
+    log(analytics, 'auth', { page_path: '/api/v1/auth' });
+    
     let days = queryDays
       ? (Array.isArray(queryDays)
         ? parseInt(queryDays[0], 10)

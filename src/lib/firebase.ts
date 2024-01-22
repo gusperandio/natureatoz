@@ -1,6 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics, logEvent } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import { FirebaseApp, initializeApp } from "firebase/app";
+import { Analytics, AnalyticsCallOptions, getAnalytics, isSupported, logEvent } from "firebase/analytics";
+import { Auth, getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -12,8 +12,26 @@ const firebaseConfig = {
   measurementId: process.env.MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth(app);
+let analytics: Analytics | null = null;
+let auth: Auth | null = null;
 
-export {analytics, logEvent as log}
+const initializeFirebase = async () => {
+  if (typeof window !== "undefined") {
+    const app: FirebaseApp = initializeApp(firebaseConfig);
+    analytics = getAnalytics(app);
+    auth = getAuth(app);
+  }
+};
+
+const log = (analytics: Analytics | null, eventName: string, eventParams?: { [key: string]: any }, options?: AnalyticsCallOptions) => {
+  if (analytics) {
+    logEvent(analytics, eventName, eventParams, options);
+  } else {
+    console.warn("Firebase Analytics is don't available");
+  }
+};
+
+
+initializeFirebase();
+
+export { analytics, auth, log };

@@ -13,6 +13,7 @@ const handler = async (
   url: string
 ) => {
   try {
+    log(analytics, 'dictionary', { page_path: '/api/v1/dictionary' });
     const { letter } = req.query;
 
     const items = await Item.find({ letter: letter }).lean();

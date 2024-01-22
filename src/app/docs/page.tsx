@@ -10,11 +10,15 @@ import Image from "next/image";
 import camera from "../../../public/icons/camera-fill.svg";
 import arrowRight from "../../../public/icons/arrow-right.svg";
 import CardHome from "../components/CardHome";
+import BackIcon from '../../../public/icons/arrow-left.svg'
+import { analytics, log } from "@/lib/firebase";
+
 
 export default function Page() {
   const { selectedLanguage } = useLanguage();
-  const [language, setLanguage] = useState("");
-
+  // const setCard = (method?: "GET" | "POST" | "OPTIONS" | undefined, link?: string, tabs?: boolean, auth?: boolean) => {
+  //   return (<CardCode tabs={tabs ?? true} link={link ?? "/api/v1"} method={method} auth={auth} />)
+  // }
   const authors = [
     {
       autor: "Felix Mittermeier",
@@ -65,16 +69,16 @@ export default function Page() {
       selectedLanguage == "Pt-BR"
         ? "Explore o nossa ampla API de forma aleatória"
         : "Explore our extensive API at random",
-    guides3: selectedLanguage == "Pt-BR" ? "Alfabética" : "Letter",
+    guides3: selectedLanguage == "Pt-BR" ? "Dicionário" : "Dictionary",
     guides3Sub:
       selectedLanguage == "Pt-BR"
         ? "Solicite todos os dados por ordem alfabética"
         : "Request all data in Letter order",
-    guides4: selectedLanguage == "Pt-BR" ? "Específico" : "Especific",
+    guides4: selectedLanguage == "Pt-BR" ? "Busca" : "Search",
     guides4Sub:
       selectedLanguage == "Pt-BR"
-        ? "Solicite um dado específico pelo ID"
-        : "Request specific data by ID",
+        ? "Solicite um dado específico pelo Título"
+        : "Request specific data by Title",
     guides5: selectedLanguage == "Pt-BR" ? "Paginação" : "Pagination",
     guides5Sub:
       selectedLanguage == "Pt-BR"
@@ -94,11 +98,11 @@ export default function Page() {
       selectedLanguage == "Pt-BR"
         ? "Para começar a utilizar a API do NatureAtoz, o primeiro passo é solicitar uma chave de acesso. Isso pode ser feito através do URL"
         : "To begin using the NatureAtoz API, the first step is to request an access key. This can be done through the URL",
-      textStart2:
-        selectedLanguage == "Pt-BR"
-          ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis.\n Lembrando que a chave por padrão vem com 30 dias de uso."
-          : "With the key in hand, you can embed it in your API requests, ensuring the necessary authentication to access the available resources.\n Remember that the key comes with a default validity period of 30 days.",
-      text1:
+    textStart2:
+      selectedLanguage == "Pt-BR"
+        ? "Com a chave em mãos, você poderá incorporá-la em suas requisições à API, garantindo assim a autenticação necessária para acessar os recursos disponíveis.\n Lembrando que a chave por padrão vem com 30 dias de uso."
+        : "With the key in hand, you can embed it in your API requests, ensuring the necessary authentication to access the available resources.\n Remember that the key comes with a default validity period of 30 days.",
+    text1:
       selectedLanguage == "Pt-BR"
         ? "Você pode solicitar uma quantidade de dias de duração da sua chave de acesso maior que o padrão de dias, a quantidade máxima de dias para uso são de 120 dias."
         : "You can request a duration for your access key that is greater than the standard number of days; the maximum allowed duration for usage is 120 days.",
@@ -128,17 +132,17 @@ export default function Page() {
 
   };
 
-  const textLetter = {
-    title: selectedLanguage === "Pt-BR" ? "Letras" : "Letters",
+  const textDictionary = {
+    title: selectedLanguage === "Pt-BR" ? "Dicionário" : "Dictionary",
     textIntro:
       selectedLanguage === "Pt-BR"
-      ? "Agora fazendo uma solicitação em que você pode gerenciar as requisições com base na letra que será preenchida na URL da requisição"
-      : "Now making a request in which you can manage the requests based on the letter that will be filled in the URL of the request.",
+        ? "Essa rota funciona como um dicionário, onde os itens são filtrados de acordo com a letra especificada. Ao fazer uma requisição para essa rota, o servidor da API retorna os itens cujos nomes, palavras-chave ou outros atributos começam com a letra fornecida."
+        : "This route functions as a dictionary, where items are filtered according to the specified letter. When making a request to this route, the API server returns items whose names, keywords, or other attributes start with the provided letter.",
     subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
     textStart:
       selectedLanguage == "Pt-BR"
-        ? "O modelo por letras contém todas as informações com base na letra, desde que informado a rota utilizando a chave de acesso"
-        : "The letter-based model contains all the information based on the letter, as long as the route is provided using the access key.",
+        ? "Essa funcionalidade é útil para explorar e recuperar informações específicas do banco de dados relacionadas à letra indicada, facilitando a navegação e pesquisa de conteúdo na API Nature AtoZ. O modelo é funcional desde que informado na rota utilizando a chave de acesso"
+        : "This functionality is useful for exploring and retrieving specific information from the database related to the indicated letter, facilitating navigation and content search in the Nature AtoZ API. The feature is operational when provided in the route using the access key.",
     text1:
       selectedLanguage == "Pt-BR"
         ? "Você pode solicitar qualquer letra, aqui trazemos dois exemplos, acima com a letra A e abaixo com a letra J, os valores retornados são todos com base na letra inicial, exatamente com as páginas de um dicionário"
@@ -146,11 +150,26 @@ export default function Page() {
 
   };
 
-  const textSpecific = {};
+  const textSearch = {
+    title: selectedLanguage === "Pt-BR" ? "Dados por titulo" : "Search by title",
+    textIntro:
+      selectedLanguage === "Pt-BR"
+        ? "Esta rota oferece a funcionalidade de busca de itens com base no título. Ao enviar uma requisição para esta rota, especifique o título desejado como parâmetro na URL."
+        : "This route provides the functionality to search for items based on their title. When sending a request to this route, specify the desired title as a parameter in the URL.",
+    subTitle: selectedLanguage == "Pt-BR" ? "Iniciando" : "Starting",
+    textStart:
+      selectedLanguage == "Pt-BR"
+        ? "A API retornará uma lista de itens cujos títulos contenham a correspondência com a consulta fornecida. Esta funcionalidade é particularmente útil para recuperar informações específicas relacionadas a um título específico, proporcionando uma maneira eficiente e direta de acessar dados relevantes na sua aplicação."
+        : "The API will return a list of items whose titles contain a match with the provided query. This functionality is particularly useful for retrieving specific information related to a particular title, offering an efficient and direct way to access relevant data in your application.",
+    text1:
+      selectedLanguage == "Pt-BR"
+        ? "Utilize esta rota para facilitar operações de pesquisa e recuperação de conteúdo com base em títulos específicos."
+        : "Use this route to streamline search operations and retrieve content based on specific titles.",
+  };
 
   const textPagination = {};
 
-  const labels = (destiny: React.JSX.Element, n: number, read: string) => {
+  const labels = (destiny: React.JSX.Element, read: string) => {
     return (
       <label onClick={() => alterContent(destiny)}>
         {read} <Image src={arrowRight} width={18} height={18} alt="arrow" style={{ marginTop: "2px" }} />
@@ -158,8 +177,18 @@ export default function Page() {
     );
   };
 
+  const goBack = (
+    <div>
+      <button className={styles.goBack} onClick={() => alterContent(intro)}>
+        <Image src={BackIcon} width={24} height={24} alt="Go back" />
+        <p>{selectedLanguage == "Pt-BR" ? "Voltar" : "Go back"}</p>
+      </button>
+    </div>
+  )
+
   const auth = (
     <div id="content" className={`${styles.content}`}>
+      {goBack}
       <h1 className={styles.title}>{textAuth.title}</h1>
       <p>{textAuth.textIntro}</p>
       <br />
@@ -167,15 +196,16 @@ export default function Page() {
       <h3>{textAuth.subTitle}</h3>
 
       <p>{textAuth.textStart} <br />
-        {textAuth.textStart2}</p>
-      <CardCode tabs={true} link="/api/v1/auth" method="GET" />
-      <p>{textAuth.text1}</p>
-      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" />
-    </div>
+        {textAuth.textStart2}</p><br />
+      <CardCode method="GET" link="/api/v1/auth" tabs={true} auth={false} />
+      <p>{textAuth.text1}</p><br />
+      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" auth={false} />
+    </div >
   );
 
   const random = (
     <div id="content" className={`${styles.content}`}>
+      {goBack}
       <h1 className={styles.title}>
         {textRandom.title}
       </h1>
@@ -189,18 +219,18 @@ export default function Page() {
       <br />
 
       <h3>{textRandom.subTitle}</h3>
-      <p>{textRandom.text1}</p>
-      <CardCode link="/api/v1/random" tabs={true} method="GET" />
+      <p>{textRandom.text1}</p><br />
+      <CardCode link="/api/v1/random" tabs={true} auth={true} method="GET" />
       <br />
 
       <h3>{textRandom.subTitle2}</h3>
-      <p>{textRandom.text2}</p>
+      <p>{textRandom.text2}</p><br />
       <div className={styles.reqWithImg}>
-        <CardCode link="/api/v1/random/image" tabs={true} method="GET" />
+        <CardCode link="/api/v1/random/image" tabs={true} auth={true} method="GET" />
         <div className={styles.gridImage}>
           {authors.map((e) => {
             return (
-              <div className={styles.gridItem} key={e.autor}><img className={styles.image} width={190} height={150} src={e.link} alt={e.autor} style={{ borderRadius: `${e.styles}` }} />
+              <div className={styles.gridItem} key={e.autor}><img className={styles.image} width={150} height={150} src={e.link} alt={e.autor} style={{ borderRadius: `${e.styles}` }} />
               </div>
             )
           })}
@@ -209,70 +239,48 @@ export default function Page() {
     </div>
   );
 
-  const letter = (
+  const dictionary = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>{textLetter.title}</h1>
-      <p>{textLetter.textIntro}</p>
+      {goBack}
+      <h1 className={styles.title}>{textDictionary.title}</h1>
+      <p>{textDictionary.textIntro}</p>
       <br />
 
-      <h3>{textLetter.subTitle}</h3>
+      <h3>{textDictionary.subTitle}</h3>
 
-      <p>{textLetter.textStart} <br /></p>
-      <CardCode tabs={true} link="/api/v1/letter/A" method="GET" />
-      <p>{textLetter.text1}</p>
-      <CardCode tabs={true} link="/api/v1/letter/J" method="GET" />
+      <p>{textDictionary.textStart}</p><br />
+      <CardCode tabs={true} link="/api/v1/dictionary/A" method="GET" auth={true} />
+      <p>{textDictionary.text1}</p><br />
+      <CardCode tabs={true} link="/api/v1/dictionary/J" method="GET" auth={true} />
     </div>
   );
 
-  const specific = (
+  const search = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>Especific</h1>
-      <p>
-        Bem-vindo à documentação da API A to Z, sua porta de entrada para
-        explorar e interagir com uma vasta gama de informações e serviços
-        relacionados ao meio ambiente, abrangendo desde tópicos que começam com
-        a letra A até aqueles que terminam com a letra Z. Nossa API foi
-        projetada para fornecer acesso fácil e flexível a dados e recursos que
-        podem ser valiosos para pesquisadores, conservacionistas, empresas e
-        qualquer pessoa interessada em proteger e entender o nosso planeta.
-      </p>
+      {goBack}
+      <h1 className={styles.title}>{textSearch.title}</h1>
+      <p>{textSearch.textIntro}</p>
       <br />
 
-      <h3>Iniciando</h3>
+      <h3>{textSearch.subTitle}</h3>
 
-      <p>
-        Nossa API de A to Z oferece um repositório de informações valiosas que
-        abrange tópicos que vão desde a biodiversidade até as zonas de proteção
-        ambiental. Com recursos acessíveis via HTTP e documentação completa,
-        estamos comprometidos em facilitar a colaboração e o acesso a dados que
-        podem fazer a diferença na conservação de nosso planeta.
-      </p>
+      <p>{textSearch.textStart} </p><br />
+      <CardCode tabs={true} link="/api/v1/search/title_example" method="GET" auth={true} />
+      <p>{textSearch.text1}</p><br />
+      <CardCode tabs={true} link="/api/v1/search/colina" method="GET" auth={true} />
     </div>
   );
 
   const pagination = (
     <div id="content" className={`${styles.content}`}>
-      <h1 className={styles.title}>Pagination</h1>
-      <p>
-        Bem-vindo à documentação da API A to Z, sua porta de entrada para
-        explorar e interagir com uma vasta gama de informações e serviços
-        relacionados ao meio ambiente, abrangendo desde tópicos que começam com
-        a letra A até aqueles que terminam com a letra Z. Nossa API foi
-        projetada para fornecer acesso fácil e flexível a dados e recursos que
-        podem ser valiosos para pesquisadores, conservacionistas, empresas e
-        qualquer pessoa interessada em proteger e entender o nosso planeta.
-      </p>
+      <h1 className={styles.title}>{textDictionary.title}</h1>
+      <p>{textDictionary.textIntro}</p>
       <br />
 
-      <h3>Iniciando</h3>
+      <h3>{textDictionary.subTitle}</h3>
 
-      <p>
-        Nossa API de A to Z oferece um repositório de informações valiosas que
-        abrange tópicos que vão desde a biodiversidade até as zonas de proteção
-        ambiental. Com recursos acessíveis via HTTP e documentação completa,
-        estamos comprometidos em facilitar a colaboração e o acesso a dados que
-        podem fazer a diferença na conservação de nosso planeta.
-      </p>
+      <p>{textDictionary.textStart} <br /></p>
+      <p>{textDictionary.text1}</p>
     </div>
   );
 
@@ -293,32 +301,34 @@ export default function Page() {
           <div className={styles.d1}>
             <h4>{textContent.guides1}</h4>
             <p>{textContent.guides1Sub}</p>
-            {labels(auth, 1, textContent.readMore)}
+            {labels(auth, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides2}</h4>
             <p>{textContent.guides2Sub}</p>
-            {labels(random, 2, textContent.readMore)}
+            {labels(random, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides3}</h4>
             <p>{textContent.guides3Sub}</p>
-            {labels(letter, 3, textContent.readMore)}
+            {labels(dictionary, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides4}</h4>
             <p>{textContent.guides4Sub}</p>
-            {labels(specific, 4, textContent.readMore)}
+            {labels(search, textContent.readMore)}
           </div>
-          <div className={styles.d1}>
+          {/* <div className={styles.d1}>
             <h4>{textContent.guides5}</h4>
             <p>{textContent.guides5Sub}</p>
-            {labels(pagination, 5, textContent.readMore)}
-          </div>
+            {labels(pagination, textContent.readMore)}
+          </div> */}
         </div>
       </div>
     </div>
   );
+
+  const region = intro;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -327,18 +337,31 @@ export default function Page() {
     });
   };
 
-  const alterContent = (actual: React.JSX.Element) => {
-    setContent(actual);
-
-    scrollToTop();
+  const alterContent = (actual: React.JSX.Element | null) => {
+    if (actual) {
+      setContent(actual)
+      scrollToTop();
+    }
   };
 
   const [content, setContent] = useState(intro);
   const [position, setPosition] = useState("30% 20%");
-
+  const section = [
+    { name: "v1/", section: intro, style: styles.options, req: "OPTIONS" },
+    { name: "/auth", section: auth, style: styles.get, req: "GET" },
+    { name: "/random", section: random, style: styles.get, req: "GET" },
+    { name: "/dictionary/{x}", section: dictionary, style: styles.get, req: "GET" },
+    { name: "/search/{title}", section: search, style: styles.get, req: "GET" },
+    // { name: "/language", section: pagination, style: styles.get, req: "GET" },
+    { name: "/region", section: null, style: styles.delete, req: "Soon ⚠️" }
+  ]
   useEffect(() => {
     setContent(intro);
   }, [selectedLanguage]);
+
+  useEffect(() => {
+    log(analytics, 'page_view', { page_path: '/docs' });
+  }, []);
 
   return (
     <div className={styles.body}>
@@ -349,45 +372,16 @@ export default function Page() {
           backgroundPosition: `${position}`,
         }}
       >
-        {/* <Link href={authors[I].link} legacyBehavior passHref>
-          <a target="_blank" rel="noopener noreferrer">
-            <p className={styles.author}>
-              {selectedLanguage === "Pt-BR" ? "Foto de" : "Photo by"}{" "}
-              {authors[I].autor}{" "}
-              <Image
-                src={camera}
-                width={12}
-                height={12}
-                alt="camera"
-                style={{ marginTop: "2px" }}
-              />
-            </p>
-          </a>
-        </Link> */}
         <br />
-        <div className={styles.intro} onClick={() => alterContent(intro)}>
-          <button role="button" className={styles.button_name}>
-            {" "}
-            DOCS
-          </button>
-        </div>
+
         <ul className={styles.list}>
-          <li onClick={() => alterContent(auth)}>
-            <p>/auth</p> <span className={styles.get}>GET</span>
-          </li>
-          <li onClick={() => alterContent(random)}>
-            <p>/random</p> <span className={styles.get}>GET</span>
-          </li>
-          <li onClick={() => alterContent(letter)}>
-            <p>/letter/&#123;X&#125;</p> <span className={styles.get}>GET</span>
-          </li>
-          <li onClick={() => alterContent(specific)}>
-            <p>/specific/&#123;title&#125;</p>{" "}
-            <span className={styles.get}>GET</span>
-          </li>
-          <li onClick={() => alterContent(pagination)}>
-            <p>/language</p> <span className={styles.get}>GET</span>
-          </li>
+          {section.map((e, i) => {
+            return (
+              <li onClick={() => alterContent(e.section)} key={i}>
+                <p>{e.name}</p> <span className={`${styles.typeReq} ${e.style}`}>{e.req}</span>
+              </li>)
+          })
+          }
         </ul>
       </div>
 

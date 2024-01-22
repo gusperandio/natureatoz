@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import refreshIcon from "../../../../public/icons/refresh-line.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../Loader";
 import { useLanguage } from "@/app/LanguageContext";
@@ -19,20 +19,20 @@ export default function CardHome() {
     "Uma arara é uma ave exótica de grande porte, conhecida por suas cores vibrantes e pela capacidade de imitar sons. "
   );
   const [imgUrl, setImgUrl] = useState(
-    "https://images.dog.ceo/breeds/spaniel-welsh/n02102177_1980.jpg"
+    "https://i.imgur.com/HhYfMwK.jpg"
   );
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const fetchData = () => {
     setLoader(true);
 
     setTimeout(async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/v1/random");
+        const response = await fetch("http://localhost:3000/api/v1/random/image?size=30", { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
         if (response.status === 200) {
-          const data = response.data;
-          setName(data.name);
-          setDesc(data.desc);
-          setImgUrl(data.img);
+          const data = await response.json();
+          setName(data.title);
+          setDesc(data.description);
+          setImgUrl(data.image);
           setLoader(false);
         } else {
           console.error("Erro na requisição");
@@ -44,7 +44,7 @@ export default function CardHome() {
   };
 
   const handleCopyToClipboard = () => {
-    let textToCopy = "https://natureatoz.com.br/api/v1/random/random";
+    let textToCopy = "https://natureatoz.com.br/api/v1/random/image";
 
     copy(textToCopy)
       .then(() => {
@@ -74,8 +74,10 @@ export default function CardHome() {
     </span>
   );
 
-  const first = "{";
-  const second = "}";
+  useEffect(() => {
+    fetchData();
+  }, [])
+
   return (
     <div className={`${styles.mainCards} animate__animated animate__fadeInUp`}>
       <div className={styles.card}>
@@ -94,9 +96,18 @@ export default function CardHome() {
             />
           )}
         </div>
-        <div className={styles.info}>
-          <p className={styles.title}>{name}</p>
-          <p className={styles.desc}>{desc}</p>
+        <div>
+
+          <div className={styles.info} style={{ display: `${loader ? "none" : "block"}` }}>
+            <p className={styles.title}>{name}</p>
+            <p className={styles.desc}>{desc}</p>
+          </div>
+          <div className={styles.is_loading} style={{ display: `${loader ? "block" : "none"}` }}>
+            <div className={styles.content}>
+              <p className={styles.titleSkel}></p>
+              <p className={styles.subSkel}></p>
+            </div>
+          </div>
         </div>
         <div className={styles.footer}>
           <p className={styles.tag}>#ATOZ</p>
@@ -132,7 +143,7 @@ export default function CardHome() {
         </div>
         <div className={styles.cardJson}>
           <pre>
-            {first}
+            &#123;
             <br />
             <div className={styles.notP}>
               <p className={styles.key}>&quot;name&quot;</p>&nbsp;:&nbsp;
@@ -149,7 +160,7 @@ export default function CardHome() {
               <p className={styles.value}>&quot;{imgUrl}&quot;</p>
               <br />
             </div>
-            {second}
+            &#125;
           </pre>
         </div>
       </div>

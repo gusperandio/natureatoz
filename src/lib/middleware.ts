@@ -19,12 +19,12 @@ const middleware = (
   return async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       countSqlite.addRequestNum();
-
+      
       if (req.method === "OPTIONS") {
         res.status(200).json({ status: "ONLINE" });
         return;
       }
-
+      
       const url = req.url ?? "v1";
       if (req.method === "GET") {
         const getCache = cache.find(url);

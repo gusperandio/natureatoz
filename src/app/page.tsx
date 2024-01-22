@@ -6,7 +6,7 @@ import req from "../../public/icons/req.svg";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
-import { analytics, log } from "@/lib/firebase";
+// import { analytics, log } from "@/lib/firebase";
 
 
 interface RequestData {
@@ -31,8 +31,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/requests"
-        );
+          "http://localhost:3000/api/v1/requests", {headers : {'Authorization' : `Bearer ${process.env.TOKEN_CONFIGS}`}});
         setRandomData(response.data.requests);
         setLoading(false);
       } catch (error) {
@@ -43,7 +42,9 @@ export default function Home() {
     fetchData();
   }, []);
 
-
+  useEffect(() => {
+    // log(analytics, 'page_view', { page_path: '/' });
+  }, []);
 
   return (
     <div>

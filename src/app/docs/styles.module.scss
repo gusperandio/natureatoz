@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 .body {
   display: flex;
-  height: 135vh;
+  height: 155vh;
   font-family: "Oxygen";
   background-image: url("/background.png");
+
   ul {
     list-style: none;
     padding: 0;
@@ -46,6 +48,7 @@
     color: #fff;
     padding: 20px;
     height: auto;
+
     .intro {
       display: flex;
       justify-content: center;
@@ -118,21 +121,36 @@
         justify-content: space-between;
         align-items: center;
         transition: 0.15s ease-in;
+
         p {
           padding: 0.5rem 1.2rem;
         }
 
-        .get {
+        .typeReq {
           margin-right: 1rem;
           background: #eafbf5;
-          color: #61affe;
           padding: 6px;
           border-radius: 2.5px;
           font-size: 12px;
           display: flex;
           align-items: center;
           height: 20px;
-          border: 2px solid #76b9fd;
+          font-weight: bold;
+        }
+
+        .get {
+          color: #61affe;
+          border: 2px solid #73b8fe;
+        }
+
+        .options {
+          color: #9012fe;
+          border: 2px solid #9c2dfe;
+        }
+
+        .delete {
+          color: #f93e3e;
+          border: 2px solid #fa5454;
         }
       }
 
@@ -149,6 +167,7 @@
 
         border-radius: 6px;
         cursor: pointer;
+
         p {
           color: #18181b;
           font-weight: bold;
@@ -170,12 +189,16 @@
     height: 100vh;
     font-family: "Manrope";
 
+    .goBack {
+      display: none;
+    }
+
     .title {
       font-size: x-large;
       display: flex;
       align-items: center;
 
-      .version{
+      .version {
         text-align: center;
         color: #777777;
         border: 1px solid #777777;
@@ -184,7 +207,7 @@
         font-weight: lighter;
         padding: 0.2rem 1rem;
         margin-left: 1rem;
-       }
+      }
     }
 
     h1,
@@ -214,6 +237,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+
         p {
           padding: 1rem 0;
           text-align: start;
@@ -240,12 +264,12 @@
       }
     }
 
-    .reqWithImg{
+    .reqWithImg {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      
-      .gridImage{
+
+      .gridImage {
         display: grid;
         grid-template-columns: auto auto;
         margin-left: 2rem;
@@ -284,30 +308,76 @@
     height: 100vh;
     color: #fff;
   }
+
   .active {
     background-color: #555;
   }
 }
 
 
-@media (width <= 580px) {
+@media (width <=580px) {
   .body {
     height: 180vh;
     display: block;
-    .content{
+
+    .content {
       padding: 2rem;
 
-      .steps{
-        .cardStep{
+      .steps {
+        .cardStep {
           height: 50px;
           width: 120px;
         }
       }
+
+      .goBack {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 26px;
+        width: 100px;
+        margin-bottom: 2rem;
+        background-color: #fff;
+        border: none;
+
+        p {
+          padding: 2px 4px 0 0;
+          color: #222;
+
+        }
+
+      }
+
+      .goBack:hover {
+        text-decoration: underline;
+        cursor: pointer;
+
+        p {
+          font-weight: bold;
+        }
+      }
+
+      .reqWithImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .gridImage {
+          margin: 1.3rem;
+          display: grid;
+          grid-template-columns: 150px 120px;
+
+          .gridItem {
+            padding: 0 0;
+          }
+        }
+      }
     }
   }
+
   .sidebar {
     display: none;
   }
 }
-
-

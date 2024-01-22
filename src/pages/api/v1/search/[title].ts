@@ -17,6 +17,8 @@ const handler = async (
       title = title.replace(/[_\-#%]/g, " ");
       const items = await Item.find({ title: new RegExp(title, 'i') }).lean();
       
+      log(analytics, 'search', { page_path: '/api/v1/search' });
+
       if (items.length == 0) {
         res.status(400).json({ error: "Any item founded" });
       }

@@ -15,8 +15,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
-          ? "O Natureatoz.com leva a sua privacidade a sério. Estamos comprometidos em proteger as suas informações pessoais e garantir que a sua experiência no nosso site seja segura e satisfatória. Nossa política de privacidade visa fornecer informações claras sobre como coletamos, usamos e protegemos os seus dados."
-          : "Natureatoz.com takes your privacy seriously. We are committed to protecting your personal information and ensuring that your experience on our website is safe and satisfactory. Our privacy policy aims to provide clear information about how we collect, use and protect your data."}
+          ? "O Natureatoz.com.br leva a sua privacidade a sério. Estamos comprometidos em proteger as suas informações pessoais e garantir que a sua experiência no nosso site seja segura e satisfatória. Nossa política de privacidade visa fornecer informações claras sobre como coletamos, usamos e protegemos os seus dados."
+          : "Natureatoz.com.br takes your privacy seriously. We are committed to protecting your personal information and ensuring that your experience on our website is safe and satisfactory. Our privacy policy aims to provide clear information about how we collect, use and protect your data."}
       </p>
       <br />
       <h2 className={styles.titles}>1. Google Analytics</h2>
@@ -44,8 +44,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       </h2>
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
-          ? "O Natureatoz.com pode conter links para outros sites de terceiros. Esta política de privacidade se aplica apenas ao nosso site, e não somos responsáveis pelas práticas de privacidade de outros sites. Recomendamos que você leia as políticas de privacidade de qualquer site que visitar."
-          : "Natureatoz.com may contain links to other third party websites. This privacy policy applies only to our website, and we are not responsible for the privacy practices of other websites. We recommend that you read the privacy policies of any website you visit."}
+          ? "O Natureatoz.com.br pode conter links para outros sites de terceiros. Esta política de privacidade se aplica apenas ao nosso site, e não somos responsáveis pelas práticas de privacidade de outros sites. Recomendamos que você leia as políticas de privacidade de qualquer site que visitar."
+          : "Natureatoz.com.br may contain links to other third party websites. This privacy policy applies only to our website, and we are not responsible for the privacy practices of other websites. We recommend that you read the privacy policies of any website you visit."}
       </p>
       <br />
       <h2 className={styles.titles}>
@@ -61,8 +61,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
-          ? "Agradecemos por escolher o Natureatoz.com como sua fonte de informações. Continuaremos a proteger sua privacidade e aprimorar nossas práticas à medida que as tecnologias evoluem."
-          : "Thank you for choosing Natureatoz.com as your information source. We will continue to protect your privacy and improve our practices as technologies evolve."}
+          ? "Agradecemos por escolher o Natureatoz.com.br como sua fonte de informações. Continuaremos a proteger sua privacidade e aprimorar nossas práticas à medida que as tecnologias evoluem."
+          : "Thank you for choosing Natureatoz.com.br as your information source. We will continue to protect your privacy and improve our practices as technologies evolve."}
       </p>
       <br />
       <p className={styles.texts}>
@@ -73,8 +73,8 @@ export default function ModalPrivacy(props: PropsPrivacy) {
       <br />
       <p className={styles.texts}>
         {props.selectedLanguage == "Pt-BR"
-          ? "Equipe do Natureatoz.com"
-          : "Natureatoz.com Team"}
+          ? "Equipe do Natureatoz.com.br"
+          : "Natureatoz.com.br Team"}
       </p>
     </div>
   );
