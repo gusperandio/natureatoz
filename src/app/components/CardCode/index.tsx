@@ -31,18 +31,18 @@ export default function CardCode(props: PropsCardCode) {
 
   const cURL = () => (
     <code>curl -i -X {props.method?.toUpperCase()} <span className={styles.g}>&quot;{link}&quot;</span> \
-      <span style={{ display: props.auth ? "block" : "none" }}> -H <span className={styles.g}>&quot;Authorization: Bearer MY_TOKEN_HERE&quot;</span></span>
+      {props.auth && <span style={{ display: props.auth ? "block" : "none" }}> -H <span className={styles.g}>&quot;Authorization: Bearer MY_TOKEN_HERE&quot;</span></span>}
     </code>
   )
 
   const Javascript = () => (
     <code>
       <span className={styles.b}>const</span> apiUrl = <span className={styles.g}>&#34;{link}&#34;</span>; <br />
-      <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.b}>const</span> token = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>; <br /></div><br />
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.b}>const</span> token = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>; <br /></div>}<br />
 
       <span className={styles.bg}>fetch</span>(apiUrl, <span style={{ display: props.auth ? "inline" : "none" }}><br />
         &nbsp;&nbsp;&nbsp;&nbsp; </span>&#123;<span className={styles.r}>method</span>: <span className={styles.g}>&#34;{props.method}&#34;</span>
-      <span style={{ display: props.auth ? "inline" : "none" }}>, <span className={styles.r}>headers</span>: &#123; <span className={styles.g}>&#39;Authorization&#39;</span>: <span className={styles.g}>`Bearer $&#123;token&#125;`</span>&#125;</span>&#125;)<br />
+      <span style={{ display: props.auth ? "inline" : "none" }}> , <span className={styles.r}>headers</span>: &#123; <span className={styles.g}>&#39;Authorization&#39;</span>: <span className={styles.g}>`Bearer $&#123;token&#125;`</span>&#125;</span>&#125;)<br />
       .<span className={styles.bg}>then</span>(response &#61;&#62;  &#123;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.p}>return</span> response; <br />
       &#125;)<br />

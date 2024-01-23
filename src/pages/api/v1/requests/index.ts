@@ -13,11 +13,8 @@ const handler = async (
 ) => {
   try {
     const countRequest = new CountRequest();
-    const counter = new Counter();
-
     const num = await countRequest.findRequests();
-    await counter.updateReqCount(num);
-
+ 
     cached.save(url, { requests: num }, 1, "Hour");
     res.status(200).json({ requests: num });
   } catch (error) {

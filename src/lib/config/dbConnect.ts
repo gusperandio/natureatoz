@@ -17,10 +17,9 @@ export class DB {
 
   connect = async () => {
     try {
-      if (mongoose.connection.readyState === 1) {
-        console.log("Já conectado ao MongoDB. Pulando a conexão.");
+      const state = mongoose.connection.readyState;
+      if (state !== 0)
         return;
-      }
 
       await mongoose.connect(this.MONGODB_URI, {
         serverSelectionTimeoutMS: 60000

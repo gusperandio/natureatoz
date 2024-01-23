@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100svh;
   font-family: 'Oxygen';
   background-image: url('../../../public/arara.png');
   background-size: cover;

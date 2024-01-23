@@ -6,6 +6,7 @@ import req from "../../public/icons/req.svg";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
+import { analytics, log } from "@/lib/firebase";
 // import { analytics, log } from "@/lib/firebase";
 
 
@@ -25,25 +26,54 @@ export default function Home() {
   };
 
   const [loading, setLoading] = useState(true);
+  const [loadingReq, setLoadingReq] = useState(true);
   const [randomData, setRandomData] = useState(0);
+  const [name, setName] = useState("Abastecimento de água");
+  const [desc, setDesc] = useState("Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.");
+  const [imgUrl, setImgUrl] = useState("https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1");
+
+  const requests = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:3000/api/v1/requests", { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+      setRandomData(response.data.requests);
+    } catch (error) {
+      console.error(error)
+    }
+    finally {
+      setLoadingReq(false);
+    }
+  }
+
+  const cardHome = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/api/v1/random/image?size=30", { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+      if (response.data) {
+        const item = response.data[Math.floor(Math.random() * response.data.length)]
+        setName(item.title)
+        setDesc(item.description.substring(0, 90))
+        setImgUrl(item.image)
+      }
+    } catch (error) {
+      console.error(error)
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
+  const prints = () => {
+    setLoading(true)
+    cardHome()
+  }
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:3000/api/v1/requests", {headers : {'Authorization' : `Bearer ${process.env.TOKEN_CONFIGS}`}});
-        setRandomData(response.data.requests);
-        setLoading(false);
-      } catch (error) {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+    log(analytics, 'page_view', { page_path: '/' });
+    requests();
+    cardHome();
   }, []);
 
   useEffect(() => {
-    // log(analytics, 'page_view', { page_path: '/' });
   }, []);
 
   return (
@@ -57,11 +87,11 @@ export default function Home() {
             </span>
 
             <span className={styles.likeCount}>
-              {loading ? (<Loader />) : formatNumber(randomData)}
+              {loadingReq ? (<Loader />) : formatNumber(randomData)}
             </span>
           </button>
         </div>
-        <CardHome />
+        <CardHome loader={loading} name={name} desc={desc} imgUrl={imgUrl} reload={prints} />
       </main>
     </div>
   );

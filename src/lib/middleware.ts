@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { DB } from "../../config/dbConnect";
 import { Cache } from "./caching";
 import { CountRequest } from "./count_sqlite";
 import { verifyToken } from "./JWT";
+import { DB } from "./config/dbConnect";
 
 const database = new DB();
 const cache = new Cache();
@@ -42,7 +42,8 @@ const middleware = (
             message: "Request had invalid authentication credentials. Expected Bearer Token access. See https://natureatoz.com.br/api/v1/auth"
           }
         })
-
+        await database.connect()
+        
       await database.connect();
       await handler(req, res, cache, url);
     } finally {
