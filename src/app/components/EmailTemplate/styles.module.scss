@@ -1,0 +1,25 @@
+.card {
+  width: 700px;
+  height: 400px;
+  background-image: url('../../../../public/arara.png');
+  background-size: cover;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5em;
+  align-items: flex-start;
+  padding: 1em 1.5em;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-icon svg {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card-body {
+  text-align: justify;
+  font-size: smaller;
+}

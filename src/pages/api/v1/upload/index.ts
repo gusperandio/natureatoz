@@ -42,7 +42,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse, cacheado: Cach
       const KEY = process.env.KEY_TO_POST || "";
 
       if (req.headers['keynature'] !== KEY) {
-        return res.status(405).json("GET OUT!");
+        return res.status(401).json("GET OUT!");
       }
 
       const requestData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;

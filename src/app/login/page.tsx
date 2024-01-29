@@ -3,7 +3,6 @@
 
 import styles from "./styles.module.scss";
 import { useState, useEffect } from "react";
-import { redirect } from 'next/navigation';
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import CopyButton from "../components/CopyButton";

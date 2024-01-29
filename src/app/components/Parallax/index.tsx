@@ -22,7 +22,7 @@ export default function Parallax(props: PropsParallax) {
 
   const handleScroll = () => {
     const position = window.scrollY;
-    console.log(position)
+    
     if (position > 200)
       setScrollPosition(true)
 
