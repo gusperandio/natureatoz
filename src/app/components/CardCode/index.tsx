@@ -42,7 +42,7 @@ export default function CardCode(props: PropsCardCode) {
 
       <span className={styles.bg}>fetch</span>(apiUrl, <span style={{ display: props.auth ? "inline" : "none" }}><br />
         &nbsp;&nbsp;&nbsp;&nbsp; </span>&#123;<span className={styles.r}>method</span>: <span className={styles.g}>&#34;{props.method}&#34;</span>
-      <span style={{ display: props.auth ? "inline" : "none" }}> , <span className={styles.r}>headers</span>: &#123; <span className={styles.g}>&#39;Authorization&#39;</span>: <span className={styles.g}>`Bearer $&#123;token&#125;`</span>&#125;</span>&#125;)<br />
+      {props.auth && <span style={{ display: props.auth ? "inline" : "none" }}> , <span className={styles.r}>headers</span>: &#123; <span className={styles.g}>&#39;Authorization&#39;</span>: <span className={styles.g}>`Bearer $&#123;token&#125;`</span>&#125;</span>}&#125;)<br />
       .<span className={styles.bg}>then</span>(response &#61;&#62;  &#123;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.p}>return</span> response; <br />
       &#125;)<br />
@@ -58,22 +58,22 @@ export default function CardCode(props: PropsCardCode) {
 
       url = <span className={styles.g}>&#34;{link}&#34;</span><br />
 
-      <div style={{ display: props.auth ? "block" : "none" }}>headers = &#123;<br />
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}>headers = &#123;<br />
         &nbsp;&nbsp;&nbsp;<span className={styles.g}>&#34;Authorization&#34;</span>: <span className={styles.g}>f&#39;Bearer &#123;MY_TOKEN_HERE&#125;&#39;</span><br />
-        &#125;<br /></div>
+        &#125;<br /></div>}
 
-      response = requests.<span className={styles.b}>{props.method?.toLowerCase()}</span>(url<div style={{ display: props.auth ? "inline" : "none" }}>, headers=headers</div>)
+      response = requests.<span className={styles.b}>{props.method?.toLowerCase()}</span>(url{props.auth && <div style={{ display: props.auth ? "inline" : "none" }}>, headers=headers</div>})
     </code>
   )
 
   const Csharp = () => (
     <code>
       <span className={styles.p}>string</span> url = <span className={styles.g}>&#34;{link}&#34;</span>;<br />
-      <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.p}>string</span> token = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>;<br /></div>
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.p}>string</span> token = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>;<br /></div> }
       <span className={styles.b}>using var</span> client = <span className={styles.b}>new</span>  <span className={styles.p}>HttpClient</span>();<br /><br />
 
-      <div style={{ display: props.auth ? "block" : "none" }}>client.DefaultRequestHeaders.<span className={styles.b}>Add</span>(<span className={styles.g}>&#34;Authorization&#34;, $&#34;Bearer &#123;token&#125;&#34;</span>);<br /></div>
-      <div style={{ display: props.method === "OPTIONS" ? "block" : "none" }}><span className={styles.p}>var</span> request = <span className={styles.b}>new</span> <span className={styles.p}>HttpRequestMessage</span>(HttpMethod.Options, <span className={styles.b}>url</span>);<br /></div>
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}>client.DefaultRequestHeaders.<span className={styles.b}>Add</span>(<span className={styles.g}>&#34;Authorization&#34;, $&#34;Bearer &#123;token&#125;&#34;</span>);<br /></div>}
+      {props.method === "OPTIONS" && <div style={{ display: props.method === "OPTIONS" ? "block" : "none" }}><span className={styles.p}>var</span> request = <span className={styles.b}>new</span> <span className={styles.p}>HttpRequestMessage</span>(HttpMethod.Options, <span className={styles.b}>url</span>);<br /></div>}
       <span className={styles.p}>var</span> response = <span className={styles.r}>await</span> client.<span className={styles.p}>{props.method === "GET" ? "GetAsync" : "SendAsync"}</span>({props.method === "OPTIONS" ? "request" : "url"});<br />
     </code>
   )
@@ -81,15 +81,15 @@ export default function CardCode(props: PropsCardCode) {
   const Php = () => (
     <code>
       <span className={styles.r}>$apiUrl</span> = <span className={styles.g}>&#34;{link}&#34;</span>; <br />
-      <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.r}>$token</span> = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>;</div> <br />
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.r}>$token</span> = <span className={styles.g}>&#34;MY_TOKEN_HERE&#34;</span>;</div>} <br />
 
       <span className={styles.r}>$ch</span> = <span className={styles.bg}>curl_init</span>(<span className={styles.r}>$apiUrl</span>); <br /><br />
 
-      <div style={{ display: props.method === "OPTIONS" ? "block" : "none" }}><span className={styles.bg}>curl_setopt</span>(<span className={styles.r}>$ch</span>, CURLOPT_CUSTOMREQUEST, <span className={styles.g}>&#34;OPTIONS&#34;</span>); <br /></div>
+      {props.method === "OPTIONS" && <div style={{ display: props.method === "OPTIONS" ? "block" : "none" }}><span className={styles.bg}>curl_setopt</span>(<span className={styles.r}>$ch</span>, CURLOPT_CUSTOMREQUEST, <span className={styles.g}>&#34;OPTIONS&#34;</span>); <br /></div>}
       <span className={styles.bg}>curl_setopt</span>(<span className={styles.r}>$ch</span>, CURLOPT_RETURNTRANSFER, <span className={styles.b}>true</span>); <br />
-      <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.bg}>curl_setopt</span>(<span className={styles.r}>$ch</span>, CURLOPT_HTTPHEADER, [<br />
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}><span className={styles.bg}>curl_setopt</span>(<span className={styles.r}>$ch</span>, CURLOPT_HTTPHEADER, [<br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className={styles.g}>&#39;Authorization: Bearer&#39;</span> . <span className={styles.r}>$token</span>,
-        ]);<br /><br /></div>
+        ]);<br /><br /></div> }
 
 
       <span className={styles.r}>$response</span> = <span className={styles.bg}>curl_exec</span>(<span className={styles.r}>$ch</span>); <br />
@@ -105,7 +105,7 @@ export default function CardCode(props: PropsCardCode) {
 
       http = <span className={styles.bg}>Net::HTTP</span>.new(api_url.host, api_url.port)<br />
       req = <span className={styles.bg}>Net::HTTP::{props.method === "OPTIONS" ? "Options" : "Get"}</span>.new(api_url.path)<br />
-      <div style={{ display: props.auth ? "block" : "none" }}>req[<span className={styles.g}>&#39;Authorization&#39;</span>] = <span className={styles.g}>&#39;Bearer MY_TOKEN_HERE&#39;</span><br /></div><br />
+      {props.auth && <div style={{ display: props.auth ? "block" : "none" }}>req[<span className={styles.g}>&#39;Authorization&#39;</span>] = <span className={styles.g}>&#39;Bearer MY_TOKEN_HERE&#39;</span><br /></div>}<br />
       response = http.request(req)<br />
     </code>)
 
@@ -118,6 +118,7 @@ export default function CardCode(props: PropsCardCode) {
       return doc.body.textContent || "";
     };
     const componentString = ReactDomServer.renderToString(templates[index]())
+    console.log(componentString)
     return removeTagsHTML(componentString.replace(/<br\s*\/?>/gi, '\n'));
   }
 
@@ -132,7 +133,7 @@ export default function CardCode(props: PropsCardCode) {
   useEffect(() => {
     setLink('https://natureatoz.com.br' + props.link);
   }, [props.link]);
-  
+
   useEffect(() => {
     setContent(templates[selectedButton]());
     setCopy(tractiveCopy(selectedButton));

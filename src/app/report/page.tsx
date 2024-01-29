@@ -6,6 +6,7 @@ import axios from 'axios';
 import Loader from "../components/Loader";
 import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
+import { IsProd } from '@/lib/config/conifg';
 
 export default function Page() {
   const { selectedLanguage } = useLanguage();
@@ -14,13 +15,16 @@ export default function Page() {
   const [loading, setLoading] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const router = useRouter();
+  const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
   const notify = () => toast.success('Successfully toasted!');
   const sendReport = async () => {
     setLoading(true);
     setDisabled(true);
+    
+    
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/v1/send?email=${email}&description=${desc}`, { headers: { 'keynature': process.env.KEY_TO_POST } });
+        `${URI}api/v1/send?email=${email}&description=${desc}`, { headers: { 'keynature': process.env.KEY_TO_POST } });
 
       if (response.status == 200 || response.status == 500) {
 
@@ -31,8 +35,8 @@ export default function Page() {
     finally {
       setLoading(false);
       notify();
-      setEmail("")
-      setDesc("")
+      setEmail("");
+      setDesc("");
       setTimeout(() => {
         router.push("/");
       }, 2000);

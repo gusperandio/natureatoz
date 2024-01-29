@@ -1,5 +1,5 @@
 import mongoose, { Document, Schema } from "mongoose";
-import Request from "../../models/request";
+import Request from "./models/request";
 
 export class Counter {
   updateReqCount = async (n: number) => {

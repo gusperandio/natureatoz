@@ -32,7 +32,7 @@ export default function Parallax(props: PropsParallax) {
     if (position > 470)
       setScrollPosition2(true)
 
-    if (position > 650)
+    if (position > 600)
       setScrollPosition3(true)
   };
 

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import CopyButton from "../components/CopyButton";
+import { IsProd } from "@/lib/config/conifg";
 
 interface RequestKey {
   ID: number;
@@ -16,7 +17,7 @@ interface RequestKey {
 }
 type RequestArray = Array<RequestKey>;
 export default function Page() {
-  
+  const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
   const [table, setTable] = useState<RequestArray>([]);
     useEffect(() => {
       getKeys();
@@ -32,7 +33,7 @@ export default function Page() {
       }
 
       if (word) {
-        const response = await axios.get("http://localhost:3000/api/v1/keys", {
+        const response = await axios.get(`${URI}api/v1/keys`, {
           headers: {
             'keynature': word,
           },

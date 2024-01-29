@@ -1,7 +1,7 @@
 import { Cache } from "../../../../../lib/caching";
 import middleware from "../../../../../lib/middleware";
 import { NextApiRequest, NextApiResponse } from "next";
-import Item from "../../../../../../models/item";
+import Item from "../../../../../lib/models/item";
 import { analytics, log } from "@/lib/firebase";
 import { filterItems } from "@/lib/filterItems";
 

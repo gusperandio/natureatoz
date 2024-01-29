@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
 import { analytics, log } from "@/lib/firebase";
+import { IsProd } from "@/lib/config/conifg";
 // import { analytics, log } from "@/lib/firebase";
 
 
@@ -31,11 +32,12 @@ export default function Home() {
   const [name, setName] = useState("Abastecimento de água");
   const [desc, setDesc] = useState("Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.");
   const [imgUrl, setImgUrl] = useState("https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1");
-
+  const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
+  console.log(URI)
   const requests = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/v1/requests", { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+        `${URI}api/v1/requests`, { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
       setRandomData(response.data.requests);
     } catch (error) {
       console.error(error)
@@ -47,7 +49,7 @@ export default function Home() {
 
   const cardHome = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/v1/random/image?size=30", { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+      const response = await axios.get(`${URI}api/v1/random/image?size=30`, { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
       if (response.data) {
         const item = response.data[Math.floor(Math.random() * response.data.length)]
         setName(item.title)
