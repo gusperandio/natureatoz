@@ -14,8 +14,11 @@ const handler = async (
   try {
     const { size: size } = req.query;
 
-    const items = await Item.aggregate([{ $match: { image: { $exists: true, $ne: null } } }, { $sample: { size: size ? Number(size) : 1 } }])
-    const filtered = filterItems(items)
+    const items = await Item.aggregate([
+      { $match: { image: { $exists: true, $ne: null } } }, 
+      { $sample: { size: size ? Number(size) : 1 } }
+    ]);
+    const filtered = filterItems(items);
 
     if (filtered.length == 0) {
       res.status(400).json({ error: "Any item founded" });

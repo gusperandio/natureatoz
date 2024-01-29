@@ -10,11 +10,17 @@ import { useState } from "react";
 import ModalPrivacy from "../ModalPrivacy";
 import ModalContact from "../ModalContact";
 import ModalLicense from "../ModalLicense";
+import { useRouter } from "next/navigation";
 
 export function Footer() {
   const { selectedLanguage } = useLanguage();
   const { isOpen, openModal, closeModal, modalConfig } =
     useModal(selectedLanguage);
+  const router = useRouter();
+
+  const report = () => {
+    router.push("/report");
+  }
 
   return (
     <div className={styles.footer}>
@@ -61,6 +67,14 @@ export function Footer() {
                 onClick={() => openModal(4)}
               >
                 {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support Us"}
+              </p>
+            </li>
+            <li className={styles.b}>
+              <p
+                style={{ fontWeight: "bold", cursor: "pointer" }}
+                onClick={() => report()}
+              >
+                {selectedLanguage === "Pt-BR" ? "Reportar" : "Report"}
               </p>
             </li>
           </ul>

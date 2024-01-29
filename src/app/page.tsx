@@ -18,7 +18,7 @@ export default function Home() {
   const formatNumber = (num: number): string => {
     if (num >= 1000000) {
       return (num / 1000000).toFixed(2) + "M";
-    } else if (num >= 100000) {
+    } else if (num >= 10000) {
       return (num / 1000).toFixed(1) + "K";
     } else {
       return num.toString();

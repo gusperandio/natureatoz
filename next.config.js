@@ -13,6 +13,7 @@ const nextConfig = {
     KEY_USER: process.env.KEY_USER,
     JWT_KEY: process.env.JWT_KEY,
     TOKEN_CONFIGS: process.env.TOKEN_CONFIGS,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
     API_KEY: process.env.API_KEY,
     AUTH_DOMAIN: process.env.AUTH_DOMAIN,
     PROJECT_ID: process.env.PROJECT_ID,
