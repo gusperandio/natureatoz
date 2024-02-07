@@ -561,7 +561,8 @@
   },
   {
     "title": "Borboletário",
-    "description": "Trata-se de um local para criação de borboletas, com a finalidade de estudos, ecoturismo, educação ambiental e preservação das espécies muito difundido nos estados unidos, costa rica, brasil e outros países."
+    "description": "Trata-se de um local para criação de borboletas, com a finalidade de estudos, ecoturismo, educação ambiental e preservação das espécies muito difundido nos estados unidos, costa rica, brasil e outros países.",
+    "image" : "https://i.imgur.com/2ZMvhOs.png"
   },
   {
     "title": "Borracha",
@@ -569,11 +570,13 @@
   },
   {
     "title": "Bosque",
-    "description": "Tipo de floresta com a vegetação mais espaçada."
+    "description": "Tipo de floresta com a vegetação mais espaçada.",
+    "image" : "https://i.imgur.com/WFNxPeP.png"
   },
   {
     "title": "Botânica",
-    "description": "Ramo da biologia dedicado às plantas, em que se utilizam os métodos investigativos das outras ciências naturais."
+    "description": "Ramo da biologia dedicado às plantas, em que se utilizam os métodos investigativos das outras ciências naturais.",
+    "image" : "https://i.imgur.com/HBNTIX8.png"
   },
   {
     "title": "Botulismo",
@@ -637,7 +640,8 @@
   },
   {
     "title": "Boto-cor-de-rosa",
-    "description": "O boto-cor-de-rosa (Inia geoffrensis), também conhecido como boto-vermelho, é um cetáceo de água doce encontrado nas bacias dos rios Amazonas e Orinoco na América do Sul. Ele é conhecido por sua coloração rosada distintiva e é um dos golfinhos de rio mais conhecidos. Na mitologia amazônica, o boto-cor-de-rosa é frequentemente associado a lendas e histórias folclóricas, sendo considerado um ser mágico e transformador."
+    "description": "O boto-cor-de-rosa (Inia geoffrensis), também conhecido como boto-vermelho, é um cetáceo de água doce encontrado nas bacias dos rios Amazonas e Orinoco na América do Sul. Ele é conhecido por sua coloração rosada distintiva e é um dos golfinhos de rio mais conhecidos. Na mitologia amazônica, o boto-cor-de-rosa é frequentemente associado a lendas e histórias folclóricas, sendo considerado um ser mágico e transformador.",
+    "image" : "https://i.imgur.com/xezPdXZ.jpg"
   },
   {
     "title": "Bromeliácea",
@@ -657,7 +661,8 @@
   },
   {
     "title": "Beija-flor",
-    "description": "Os beija-flores, também conhecidos como colibris, são pequenos pássaros conhecidos por sua habilidade de pairar no ar e por suas cores vibrantes. Eles se alimentam principalmente de néctar de flores usando seus bicos longos e finos, desempenhando um papel crucial na polinização de muitas plantas. Existem centenas de espécies de beija-flores distribuídas nas Américas, e eles são apreciados por sua beleza e agilidade."
+    "description": "Os beija-flores, também conhecidos como colibris, são pequenos pássaros conhecidos por sua habilidade de pairar no ar e por suas cores vibrantes. Eles se alimentam principalmente de néctar de flores usando seus bicos longos e finos, desempenhando um papel crucial na polinização de muitas plantas. Existem centenas de espécies de beija-flores distribuídas nas Américas, e eles são apreciados por sua beleza e agilidade.",
+    "image" : "https://i.imgur.com/jtWTBKx.png"
   },
   {
     "title": "Bromelioideae",
@@ -669,6 +674,7 @@
   },
   {
     "title": "Bicho-preguiça",
-    "description": "O bicho-preguiça é um mamífero arborícola encontrado nas florestas tropicais das Américas. Conhecido por seu comportamento lento e por passar a maior parte do tempo nas árvores, o bicho-preguiça alimenta-se principalmente de folhas. Sua lentidão é uma adaptação para conservar energia, uma vez que a dieta de folhas é relativamente pobre em nutrientes. Existem diferentes espécies de bicho-preguiça, algumas das quais estão ameaçadas de extinção."
+    "description": "O bicho-preguiça é um mamífero arborícola encontrado nas florestas tropicais das Américas. Conhecido por seu comportamento lento e por passar a maior parte do tempo nas árvores, o bicho-preguiça alimenta-se principalmente de folhas. Sua lentidão é uma adaptação para conservar energia, uma vez que a dieta de folhas é relativamente pobre em nutrientes. Existem diferentes espécies de bicho-preguiça, algumas das quais estão ameaçadas de extinção.",
+    "image" : "https://i.imgur.com/CnhAytm.png"
   }
 ]

@@ -7,9 +7,6 @@ import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./LanguageContext";
 import FloatingButton from "./components/FloatingButton";
 import Cookies from "./components/Cookies";
-import { initGA, logPageView } from "../../config/analytics";
-import { useEffect } from "react";
-
 
 const inter = Inter({ subsets: ["latin"] });
 

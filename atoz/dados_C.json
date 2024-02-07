@@ -185,7 +185,8 @@
   },
   {
     "title": "Câncer",
-    "description": "Denominação genérica que designa tumores malignos. Existem inúmeros tipos de câncer que resultam ou são acentuados por fatores ambientais, tais como: o tabaco, radiação, poluentes químicos, entre outros."
+    "description": "Denominação genérica que designa tumores malignos. Existem inúmeros tipos de câncer que resultam ou são acentuados por fatores ambientais, tais como: o tabaco, radiação, poluentes químicos, entre outros.",
+    "image" : "https://i.imgur.com/nFGDVZ2.png"
   },
   {
     "title": "Câncer ecológico",
@@ -209,7 +210,8 @@
   },
   {
     "title": "Cânions",
-    "description": "Relevo desgastado pela passagem de um rio naquele local durante muito tempo."
+    "description": "Relevo desgastado pela passagem de um rio naquele local durante muito tempo.",
+    "image" : "https://i.imgur.com/nXWApzu.png"
   },
   {
     "title": "Canibalismo",
@@ -397,7 +399,8 @@
   },
   {
     "title": "Caverna",
-    "description": "Toda e qualquer cavidade natural subterrânea penetrável pelo homem, incluindo seu ambiente, seu conteúdo mineral e hídrico, as comunidades animais e vegetais ali agregadas e o corpo rochoso onde se insere (Resolução Conama N.º 005 de 6/8/87)."
+    "description": "Toda e qualquer cavidade natural subterrânea penetrável pelo homem, incluindo seu ambiente, seu conteúdo mineral e hídrico, as comunidades animais e vegetais ali agregadas e o corpo rochoso onde se insere (Resolução Conama N.º 005 de 6/8/87).",
+    "image" : "https://i.imgur.com/8J09Sev.png"
   },
   {
     "title": "Cavidade natural subterrânea",
@@ -501,7 +504,8 @@
   },
   {
     "title": "Chuva",
-    "description": "Precipitação de água das nuvens nas cidades, campos, lagos, rios e oceanos, completando o ciclo da água."
+    "description": "Precipitação de água das nuvens nas cidades, campos, lagos, rios e oceanos, completando o ciclo da água.",
+    "image" : "https://i.imgur.com/2apazjH.png"
   },
   {
     "title": "Chuva ácida",
@@ -853,7 +857,8 @@
   },
   {
     "title": "Combustível fóssil",
-    "description": "Combustível orgânico gerado pela decomposição, tanto de vegetais quanto de animais, acumulados ao longo de milhões de anos na crosta terrestre. é a fonte de energia mais usada na terra e a que apresenta o maior potencial de poluição (petróleo)."
+    "description": "Combustível orgânico gerado pela decomposição, tanto de vegetais quanto de animais, acumulados ao longo de milhões de anos na crosta terrestre. é a fonte de energia mais usada na terra e a que apresenta o maior potencial de poluição (petróleo).",
+    "image" : "https://i.imgur.com/scTZZPV.png"
   },
   {
     "title": "Comensalismo",
@@ -885,7 +890,8 @@
   },
   {
     "title": "Compostagem",
-    "description": "Processo de obtenção de composto por meio de tratamento aeróbio de lodos de esgoto, resíduos agrícolas, industriais e, em especial, dos resíduos urbanos. Esse processo tem como resultado final um produto o composto orgânico — que pode ser aplicado ao solo para melhorar suas características, sem ocasionar riscos ao meio ambiente. Há muito tempo, é praticado no meio rural, utilizando-se restos vegetais e esterco animal. Pode-se, também, utilizar a fração orgânica do lixo domiciliar, mas de forma controlada, em instalações industriais chamadas usinas de triagem e compostagem. No brasil, a compostagem tem grande importância, uma vez que cerca de 50% do lixo municipal é constituído por matéria orgânica. Na compostagem normalmente sobram cerca de 50% de resíduos, os quais devem ser adequadamente dispostos."
+    "description": "Processo de obtenção de composto por meio de tratamento aeróbio de lodos de esgoto, resíduos agrícolas, industriais e, em especial, dos resíduos urbanos. Esse processo tem como resultado final um produto o composto orgânico — que pode ser aplicado ao solo para melhorar suas características, sem ocasionar riscos ao meio ambiente. Há muito tempo, é praticado no meio rural, utilizando-se restos vegetais e esterco animal. Pode-se, também, utilizar a fração orgânica do lixo domiciliar, mas de forma controlada, em instalações industriais chamadas usinas de triagem e compostagem. No brasil, a compostagem tem grande importância, uma vez que cerca de 50% do lixo municipal é constituído por matéria orgânica. Na compostagem normalmente sobram cerca de 50% de resíduos, os quais devem ser adequadamente dispostos.",
+    "image" : "https://i.imgur.com/GLIMa71.png"
   },
   {
     "title": "Comunidade",
@@ -929,7 +935,8 @@
   },
   {
     "title": "CONAMA",
-    "description": "Sigla para conselho nacional de meio ambiente. Criado pela lei N.º 6.938 de 31 de agosto de 1981, que instituiu a política nacional do meio ambiente, o Conama é um órgão colegiado, consultivo e deliberativo, que pertence ao sisnama, sendo composto por plenário (com representantes do mma, de órgãos governamentais, da sociedade civil, de entidades de classe, etc.), pelo comitê de integração de políticas ambientais - cipam, câmaras técnicas, grupos de trabalho e grupos assessores, sendo presidido pelo ministro do meio ambiente."
+    "description": "Sigla para conselho nacional de meio ambiente. Criado pela lei N.º 6.938 de 31 de agosto de 1981, que instituiu a política nacional do meio ambiente, o Conama é um órgão colegiado, consultivo e deliberativo, que pertence ao sisnama, sendo composto por plenário (com representantes do mma, de órgãos governamentais, da sociedade civil, de entidades de classe, etc.), pelo comitê de integração de políticas ambientais - cipam, câmaras técnicas, grupos de trabalho e grupos assessores, sendo presidido pelo ministro do meio ambiente.",
+    "image" : "https://i.imgur.com/W0gIdHT.png"
   },
   {
     "title": "Concentração disponível",
