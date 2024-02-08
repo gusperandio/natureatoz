@@ -19,32 +19,32 @@ const middleware = (
   return async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       countSqlite.addRequestNum();
-      
+
       if (req.method === "OPTIONS") {
         res.status(200).json({ status: "ONLINE" });
         return;
       }
-      
       const url = req.url ?? "v1";
       if (req.method === "GET") {
         const getCache = cache.find(url);
-        
+
         if (getCache) {
           res.status(200).json(getCache);
           return;
         }
       }
 
-      if (!verifyToken(req.headers['authorization'] ?? ""))
+      if (!verifyToken(req.headers["authorization"] ?? ""))
         res.status(401).json({
           error: {
             code: "401",
-            message: "Request had invalid authentication credentials. Expected Bearer Token access. See https://natureatoz.com.br/api/v1/auth"
-          }
-        })
-        await database.connect()
+            message:
+              "Request had invalid authentication credentials. Expected Bearer Token access. See https://natureatoz.com.br/api/v1/auth",
+          },
+        });
         
       await database.connect();
+     
       await handler(req, res, cache, url);
     } finally {
       await database.disconnect();

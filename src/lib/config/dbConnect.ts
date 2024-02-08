@@ -5,7 +5,6 @@ export class DB {
     const templateUri = process.env.PUBLIC_MONGODB_URI || "";
     const user = process.env.USER_MONGODB_URI || "";
     const password = process.env.PASSWORD_MONGODB_URI || "";
-
     this.MONGODB_URI = templateUri
       .replace("<user>", user)
       .replace("<password>", password);
@@ -18,11 +17,10 @@ export class DB {
   connect = async () => {
     try {
       const state = mongoose.connection.readyState;
-      if (state !== 0)
-        return;
+      if (state !== 0) return;
 
       await mongoose.connect(this.MONGODB_URI, {
-        serverSelectionTimeoutMS: 60000
+        serverSelectionTimeoutMS: 60000,
       });
 
       console.log("Conexão com o MongoDB estabelecida com sucesso");

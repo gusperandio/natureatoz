@@ -11,12 +11,11 @@ const handler = async (
   url: string
 ) => {
   try {
-
     const { size: size } = req.query;
 
     const items = await Item.aggregate([
       { $match: { image: { $exists: false } } },
-      { $sample: { size: size ? Number(size) : 1 } }
+      { $sample: { size: size ? Number(size) : 1 } },
     ]).cursor();
 
     const randomItem = await items.next();
@@ -29,13 +28,17 @@ const handler = async (
     delete randomItem.__v;
     delete randomItem.letter;
 
-    cached.save(url, randomItem, 30, "Day")
+    cached.save(url, randomItem, 30, "Day");
 
-    log(analytics, '/random', { page_path: '/api/v1/random' });
+    log(analytics, "/random", { page_path: "/api/v1/random" });
 
     res.status(200).json(randomItem);
   } catch (error) {
-    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report");
+    res
+      .status(500)
+      .send(
+        "Error in system, report please in https://natureatoz.com.br/report"
+      );
   }
 };
 

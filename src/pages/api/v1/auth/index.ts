@@ -14,20 +14,20 @@ export default async function handler(
     const dbKey = new KeyDatabase();
     const newGuid = generateGuid();
     const countSqlite = new CountRequest();
-
+    
     countSqlite.addRequestNum();
     
     log(analytics, 'auth', { page_path: '/api/v1/auth' });
     
     let days = queryDays
-      ? (Array.isArray(queryDays)
-        ? parseInt(queryDays[0], 10)
-        : parseInt(queryDays, 10)) || 30
-      : 30;
-
+    ? (Array.isArray(queryDays)
+    ? parseInt(queryDays[0], 10)
+    : parseInt(queryDays, 10)) || 30
+    : 30;
+    
     days = Math.min(120, days);
-
     const JWT = await generateToken(newGuid, days);
+    
     const [key, expireIn] = await dbKey.addNewKey(newGuid, JWT, days);
     dbKey.delDisableKey();
     dbKey.close();

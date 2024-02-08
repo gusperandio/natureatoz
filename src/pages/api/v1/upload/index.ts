@@ -10,21 +10,15 @@ interface InsertDatas {
   id: number
 }
 
-
 const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
   const uniqueDatas = Array.from(new Set(dados.map(item => item.title))).map(title => dados.find(item => item.title === title)!);
-  let n = 1;
+
   const processedDatas = uniqueDatas
     .sort((a, b) => a.title.localeCompare(b.title))
     .map(item => ({
       ...item,
       letter: removeAccents(item.title.charAt(0).toUpperCase()),
     }));
-
-  // const increment = processedDatas.map((item) => {
-  //   item.id = n++;
-  //   return item;
-  // });
 
   return processedDatas;
 };

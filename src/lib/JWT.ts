@@ -1,4 +1,4 @@
-import { sign, verify, Secret, JwtPayload } from 'jsonwebtoken';
+import { sign, verify, Secret, JwtPayload } from "jsonwebtoken";
 
 const secretKey: Secret = process.env.JWT_KEY ?? "";
 

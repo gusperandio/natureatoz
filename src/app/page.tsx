@@ -33,7 +33,7 @@ export default function Home() {
   const [desc, setDesc] = useState("Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.");
   const [imgUrl, setImgUrl] = useState("https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1");
   const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
-  console.log(URI)
+
   const requests = async () => {
     try {
       const response = await axios.get(

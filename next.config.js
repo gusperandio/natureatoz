@@ -2,18 +2,15 @@
 
 const nextConfig = {
   images: {
-    domains: ["cdn.dribbble.com", "images.pexels.com"]
+    domains: ["cdn.dribbble.com", "images.pexels.com", "i.imgur.com", "imgur.com"]
   },
   env: {
     PUBLIC_MONGODB_URI: process.env.PUBLIC_MONGODB_URI,
     USER_MONGODB_URI: process.env.USER_MONGODB_URI,
     PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI,
-    GA_KEY: process.env.GA_KEY,
     KEY_TO_POST: process.env.KEY_TO_POST,
-    KEY_USER: process.env.KEY_USER,
     JWT_KEY: process.env.JWT_KEY,
     TOKEN_CONFIGS: process.env.TOKEN_CONFIGS,
-    RESEND_API_KEY: process.env.RESEND_API_KEY,
     API_KEY: process.env.API_KEY,
     AUTH_DOMAIN: process.env.AUTH_DOMAIN,
     PROJECT_ID: process.env.PROJECT_ID,
