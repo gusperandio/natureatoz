@@ -1,0 +1,670 @@
+[
+  {
+    "title": "Facultativo",
+    "description": "Capaz de viver sob variadas condições ou de utilizar inúmeras maneiras de nutrição."
+  },
+  {
+    "title": "Fagos",
+    "description": "Denominação de um grupo de vírus que ataca bactérias. O mesmo que bacteriófagos."
+  },
+  {
+    "title": "Falha",
+    "description": "Rachadura ou fenda em uma rocha, provocada por um movimento tectônico."
+  },
+  {
+    "title": "Família",
+    "description": "Em biologia, família é uma das categorias taxonômicas utilizadas pela ciência para classificar os seres vivos. Nessa acepção, a família compreende um conjunto de gêneros que possuem diversas características em comum."
+  },
+  {
+    "title": "Fanerófita",
+    "description": "Planta lenhosa cujas gemas se acham a mais de 25 cm do solo, como a maioria das árvores e arbustos."
+  },
+  {
+    "title": "Fanerógama",
+    "description": "Planta cujos frutos são aparentes."
+  },
+  {
+    "title": "FAO",
+    "description": "sigla para food and agriculture organization organização das nações unidas para a agricultura e alimentação. órgão da onu, a fao atua no sentido de ajudar a construir um mundo sem fome e sem pobreza, promovendo ações que objetivam: a melhoria da produtividade e do desenvolvimento agrícola na área da alimentação humana; a garantia da segurança alimentar e da boa nutrição de todas as populações do planeta para uma vida ativa e saudável; auxiliar no gerenciamento dos recursos naturais de forma socioambientalmente sustentável. Para tanto, a fao cumpre as seguintes funções: atua como fórum neutro para reuniões, discussões e formulações de políticas de cooperação e acordos internacionais entre países; fornece serviços de assessoria independente sobre política e planejamento agrícola, estruturas administrativas e jurídicas aos governos; apoia e presta assistência técnica aos países em desenvolvimento na área agrícola, alimentar, desenvolvimento rural, florestal e pesqueira; e promove a difusão de dados, estatísticas e informações relativas à situação da nutrição, alimentação, agricultura, setor florestal e pesca. No mundo todo."
+  },
+  {
+    "title": "Fase de solo",
+    "description": "Subdivisão de uma série de solos baseada em características que prejudicam o uso e manejo, como a umidade, encosta, entre outros."
+  },
+  {
+    "title": "Fase estacionária de crescimento",
+    "description": "Espaço de tempo em que uma população para de crescer, o que demonstra um nivelamento numa curva de crescimento populacional."
+  },
+  {
+    "title": "Fator abiótico",
+    "description": "Diz-se dos fatores não vivos de um ambiente ou fatores físico- químicos (água, ar, solo, temperatura, umidade, ph, ventos, etc.)."
+  },
+  {
+    "title": "Fator biótico",
+    "description": "Diz-se dos fatores relativos a todos os seres vivos de um ambiente."
+  },
+  {
+    "title": "Fator de emissão",
+    "description": "Poluente contido no material liberado para o ambiente, e que é medido pela sua densidade."
+  },
+  {
+    "title": "Fator limitante",
+    "description": "Fatores que reduzem ou inibem o potencial de crescimento, desenvolvimento e reprodução dos seres vivos."
+  },
+  {
+    "title": "Fatores ambientais",
+    "description": "Elementos ou componentes que influem diretamente no funcionamento do sistema ambiental ou que exercem função específica no mesmo."
+  },
+  {
+    "title": "Fatores de mortalidade",
+    "description": "Variáveis ambientais que interferem (positivamente ou negativamente) no índice de mortalidade de uma população."
+  },
+  {
+    "title": "Fatores estabilizadores",
+    "description": "Propriedades de um ecossistema, de um organismo ou de qualquer sistema, que melhoram sua capacidade de resistir à mudança. Os fatores estabilizadores são as influências dependentes da densidade, que equilibram as mudanças de população e fazem a população voltar ao tamanho original."
+  },
+  {
+    "title": "Fatores físicos",
+    "description": "Circunstâncias ambientais que não incluem espécies vivas, como por exemplo, temperatura, luminosidade, precipitação, tipo de solo."
+  },
+  {
+    "title": "Fauna",
+    "description": "Conjunto das espécies animais características de determinada área (território, país, região, distrito, etc.), época ou meio ambiente específico."
+  },
+  {
+    "title": "Fauna demersal",
+    "description": "É a fauna que habita o fundo das águas. Nutre-se geralmente de animais menores e vegetais. Raramente sobe à superfície à procura de alimentos."
+  },
+  {
+    "title": "Fauna pelágica",
+    "description": "A que vive longe das costas e dos fundos marinhos, em plena água."
+  },
+  {
+    "title": "Fauna silvestre brasileira",
+    "description": "Todos os animais pertencentes às espécies nativas, migratórios e quaisquer outras, aquáticas ou terrestres, reproduzidas ou não em cativeiro, que tenham seu ciclo biológico ou parte dele ocorrendo naturalmente dentro dos limites do território brasi- leiro e suas águas jurisdicionais. (portarias normativas ibama n.º 117/97 e 118/97)."
+  },
+  {
+    "title": "Fazenda de pesca",
+    "description": "Lugar onde existem viveiros, tanques e açudes artificiais ou áreas, em lagos, rios e oceanos, limitados com cercados, onde se criam e reproduzem determinadas espécies de peixes de valor comercial como por exemplo tucunaré, pacu e alguns tipos de camarão."
+  },
+  {
+    "title": "Fazenda florestal",
+    "description": "Reflorestamento com objetivo comercial. Normalmente este tipo de plantio é realizado em terras. Onde, no passado, havia atividade agropecuária ou regiões onde já existiam florestas."
+  },
+  {
+    "title": "Fazenda intensiva",
+    "description": "Fazenda extremamente mecanizada, caracterizada pelo uso de equipamentos de tecnologia de ponta e de fertilizantes."
+  },
+  {
+    "title": "Fecundação",
+    "description": "União do núcleo de um gameta masculino com o de um gameta feminino para formar um zigoto, formando-se um novo organismo."
+  },
+  {
+    "title": "FEEMA",
+    "description": "sigla para fundação estadual de engenharia do meio ambiente do rio de janeiro. órgão da secretaria de estado de meio ambiente e desenvolvimento urbano, a feema é responsável pelo licenciamento, controle e fiscalização das atividades potencialmente poluidoras, bem como pelo monitoramento dos corpos de água do estado do rio de janeiro, englobando o instituto estadual de florestas (ief), a fundação superintendência estadual de rios e lagoas (serla) e a companhia estadual de águas e esgotos (cedae). São atribuições da feema: \\n1) licenciar atividades que possam causar qualquer tipo de poluição; \\n2) conhecer, medir e controlar a poluição, adotando medidas para seu equacionamento e limitação; \\n3) monitorar a qualidade do ar, dos principais corpos de água do estado e da balneabilidade das praia- as; \\n4) fazer a gestão das unidades de conservação do estado; \\n5) promover pesquisas e estudos técnicos, de modo a contribuir para o desenvolvimento de tecnologias nacionais; \\n5) sistematizar e divulgar o conhecimento técnico; \\n6) coordenar esforços entre entidades públicas e/ou privadas que atuem direta ou indiretamente no controle ambiental; 7) planejar, coordenar e supervisionar atividades de combate a vetores transmissores de doenças e pragas."
+  },
+  {
+    "title": "Feição morfológica",
+    "description": "Formas de relevo."
+  },
+  {
+    "title": "Feldspato",
+    "description": "Nome comum a vários silicatos naturais e alumínio, com potássio, sódio, cálcio ou bário."
+  },
+  {
+    "title": "Fenótipo",
+    "description": "Aparência física de um indivíduo, incluindo todas as características observáveis, gerada pela interação de sua herança genética (genótipo) com o seu ambiente."
+  },
+  {
+    "title": "Fermentação",
+    "description": "Processo de degradação de substâncias orgânicas, com liberação de energia na ausência de oxigênio."
+  },
+  {
+    "title": "Feromônio",
+    "description": "Substância química de comunicação entre indivíduos da mesma espécie que pode servir para o controle, orientação, identificação ou atração sexual."
+  },
+  {
+    "title": "Ferro",
+    "description": "Metal não encontrado em estado livre na natureza a não ser nos meteoritos. é o segundo dos metais mais abundantes da crosta terrestre. Geralmente é encontrado no estado de óxido: hematita (sesquióxido de ferro anidro fe 0,); limonita (sesquióxido de ferro hidratado); magnetita (óxido de ferro magnético); goetita (sesquióxido de ferro hidratado); sulfato e carbonato. No brasil, as maiores reservas de minério de ferro estão localizadas nos estados de minas gerais, mato grosso e pará (serra dos carajás), onde existem jazidas com potencial da ordem de 16 bilhões de toneladas e 67% de teor de ferro."
+  },
+  {
+    "title": "Fértil",
+    "description": "O que é capaz de se reproduzir. Termo usado para definir solo rico em nutrientes e matéria orgânica."
+  },
+  {
+    "title": "Fertilidade",
+    "description": "Capacidade de gerar descendentes."
+  },
+  {
+    "title": "Fertilização cruzada",
+    "description": "Reprodução entre indivíduos de raças e variedades diferentes ou entre gametas gerados por diferentes indivíduos da mesma espécie."
+  },
+  {
+    "title": "Fertilizante",
+    "description": "Expressão utilizada para designar substância acrescentada ao solo, com a finalidade de melhorar a fertilidade e, assim, aumentar a produtividade das lavouras ou de outra vegetação."
+  },
+  {
+    "title": "Fertilizante complexo",
+    "description": "Fertilizante contendo dois ou mais nutrientes, resultante de processo tecnológico em que se formam dois ou mais compostos químicos (decreto n.º 86.955/82)."
+  },
+  {
+    "title": "Fertilizante composto",
+    "description": "Fertilizante obtido por processo bioquímico, natural ou controlado com mistura de resíduos de origem vegetal ou animal (decreto n.° 86.955/82)."
+  },
+  {
+    "title": "Fertilizante inorgânico",
+    "description": "Produzido a partir de substâncias inorgânicas ricas em nitrogênio e/ou fósforo."
+  },
+  {
+    "title": "Fertilizante mineral",
+    "description": "Substância sólida, líquida ou gasosa, contendo um ou mais elementos fertilizantes sob forma inorgânica, de ação rápida para a planta."
+  },
+  {
+    "title": "Fertilizante orgânico",
+    "description": "Que resulta de fontes animais ou vegetais, como estrume, farinha de ossos, farinha de mamona, farinha de caroço de algodão, cinzas de madeira."
+  },
+  {
+    "title": "Fertilizante organomineral",
+    "description": "Fertilizante procedente da mistura ou combinação de fertilizantes minerais e orgânicos. (decreto n.° 86.955/82)."
+  },
+  {
+    "title": "Fertilizante simples",
+    "description": "Fertilizante formado de um composto químico, contendo um ou mais nutrientes das plantas (decreto n.° 86.955/82)."
+  },
+  {
+    "title": "Ficologia",
+    "description": "Ciência que estuda as algas. Também denominada de algologia."
+  },
+  {
+    "title": "Filão",
+    "description": "Intrusão de um tipo de rocha num outro tipo."
+  },
+  {
+    "title": "Filito",
+    "description": "Rocha metamórfica de granulação fina, intermediária entre o xisto e a ardósia."
+  },
+  {
+    "title": "Filo",
+    "description": "Em taxonomia, uma das divisões do reino, reunindo classes de indivíduos com características semelhantes. Aparece também como prefixo, com o significado de folha"
+  },
+  {
+    "title": "Filtração",
+    "description": "Passagem de um fluido (líquido ou gás) através de um filtro que retém as impurezas, sendo poroso e permeável ao filtrado."
+  },
+  {
+    "title": "Filtro",
+    "description": "Materiais geralmente porosos e permeáveis ao filtrado dispostos em camadas que permitem a passagem de um fluido retendo as impurezas."
+  },
+  {
+    "title": "Filtro biológico",
+    "description": "Leito de areia, cascalho, pedra britada, ou outro meio pelo qual a água residuária sofre infiltração biológica (aciesp, 1980)."
+  },
+  {
+    "title": "Filtro de gotejamento",
+    "description": "Mecanismo utilizado para tratamento de esgoto secundário. O filtro é composto de um leito de pedra triturado com bactérias aeróbicas. Quando a água de esgoto atravessa as pedras, as bactérias decompõem os detritos orgânicos em substâncias que não agridem o meio ambiente."
+  },
+  {
+    "title": "Filtro de manga",
+    "description": "Equipamento para controle de poluição do ar, utilizado para captação em larga escala de matéria particulada."
+  },
+  {
+    "title": "Filtro eletrostático",
+    "description": "Método de controle de poluição, no qual uma carga elétrica estática é usada num filtro para aprimorar sua eficácia na captura de partículas."
+  },
+  {
+    "title": "Filtro percolante",
+    "description": "Mecanismo que separa um material sólido de um líquido por percolação."
+  },
+  {
+    "title": "Filtro prensa",
+    "description": "Mecanismo que separa o material sólido do líquido da água residuária tratada através de prensagem."
+  },
+  {
+    "title": "Fisionomia",
+    "description": "Feições características no aspecto de uma comunidade vegetal (resolução conama nº. 012/94. Art 1.°)."
+  },
+  {
+    "title": "Fissão nuclear",
+    "description": "Bombardeamento de um núcleo atômico que, atingido, fragmenta- se em núcleos menores, liberando partículas e uma grande quantidade de energia. As aplicações vão desde a geração de energia para fins pacíficos até a bomba nuclear."
+  },
+  {
+    "title": "Fissura",
+    "description": "Termo usado para referir-se a uma profunda fresta na superfície de um corpo ou fratura realizada pela fragmentação das rochas."
+  },
+  {
+    "title": "Fito",
+    "description": "Prefixo de origem grega com significado de planta."
+  },
+  {
+    "title": "Fitobiologia",
+    "description": "O mesmo que botânica; o estudo dos vegetais; às vezes usado em sentido restrito como a distribuição geográfica das plantas, ou seja, como sinônimo de fitogeografia"
+  },
+  {
+    "title": "Fitocenose",
+    "description": "Toda a vegetação existente num determinado espaço homogêneo, ou num ecossistema."
+  },
+  {
+    "title": "Fitogeografia",
+    "description": "Ramo da botânica responsável pela pesquisa e estudo da distribuição das plantas pela terra e das causas dessa distribuição."
+  },
+  {
+    "title": "Fitografia",
+    "description": "Parte da botânica que descreve as plantas."
+  },
+  {
+    "title": "Fitoma",
+    "description": "Comunidade de vegetais."
+  },
+  {
+    "title": "Fitomassa",
+    "description": "Biomassa existente nos vegetais. Foto paleontologia ciência que pesquisa e estuda os fósseis de origem vegetal."
+  },
+  {
+    "title": "Fitopatologia",
+    "description": "Ciência que pesquisa e estuda as doenças dos vegetais."
+  },
+  {
+    "title": "Fitoplàncton",
+    "description": "Organismos vegetais que vivem flutuando, à deriva, na água dos mares, oceanos, lagos e rios."
+  },
+  {
+    "title": "Fitoquímica",
+    "description": "Pesquisa das substâncias químicas dos vegetais. A fitoquímica pesquisa o crescimento e o metabolismo e, principalmente, os produtos secundários, como os alcalóides, que são utilizados na área médica e agregando valor comercial aos mesmos."
+  },
+  {
+    "title": "Fitorremediação",
+    "description": "Utilização de plantas geneticamente modificadas para limpeza de solos contaminados por substâncias danosas ao ser humano, plantas e animais, sendo uma excelente solução em países em desenvolvimento pelo seu baixo custo."
+  },
+  {
+    "title": "Fitossociologia",
+    "description": "Ciência dedicada ao estudo das associações e inter-relações entre as populações de diferentes espécies vegetais."
+  },
+  {
+    "title": "Fitoterapia",
+    "description": "Método de tratamento de doenças por meio de remédios de origem vegetal."
+  },
+  {
+    "title": "Fitotóxico",
+    "description": "Substância tóxica prejudicial aos vegetais, por exemplo os herbicidas."
+  },
+  {
+    "title": "Fitotoxinas",
+    "description": "Elementos gerados pelas plantas que causam danos ou intoxicam outros organismos, normalmente animais."
+  },
+  {
+    "title": "Floculação",
+    "description": "Método empregado nas estações de tratamento de água que consiste em adicionar substâncias especiais para a agregação de partículas sólidas. Neste processo ocorre uma reação química com a matéria sólida suspensa na água, formando flocos, que por sua vez sedimentam e são retirados em outra etapa do tratamento."
+  },
+  {
+    "title": "Floema",
+    "description": "Tecido condutor da seiva elaborada."
+  },
+  {
+    "title": "Flor",
+    "description": "Estrutura reprodutiva das plantas evoluídas, presente nas angiospermas."
+  },
+  {
+    "title": "Flora",
+    "description": "Conjunto das espécies vegetais (incluindo as algas e os fitoplânctons marinhos flutuantes) características de determinada área (território, país, região, distrito, etc.), época ou meio ambiente específicos."
+  },
+  {
+    "title": "Flora e fauna silvestres ameaçadas de extinção",
+    "description": "Espécies constantes das listas oficiais do ibama, acrescidas de outras indicadas nas listas eventualmente elaboradas pelos órgãos ambientais dos roçados, referentes às suas respectivas biotas (resolução conama n.º 10/93)"
+  },
+  {
+    "title": "Floração das algas",
+    "description": "Às vezes ocorre a proliferação excessiva de algas de vários gêneros que formam um tapete sobre a água, impedindo a penetração da luz e do oxigênio. Essa proliferação é consequência do enriquecimento de nutrientes nessa massa líquida, o que causa a morte das algas situadas nas camadas inferiores, que, ao se decomporem, provocam a consumo do oxigênio e consequentemente morte por asfixia dos seres abióticos"
+  },
+  {
+    "title": "Florescimento algáceo",
+    "description": "Reprodução de algas na superfície das águas poluídas, normalmente provocada por um excesso de nutrientes como nitratos e fosfatos."
+  },
+  {
+    "title": "Floresta",
+    "description": "Extensa região recoberta por vegetação fechada, onde vivem inúmeras espécies da flora e da fauna, com predomínio de árvores."
+  },
+  {
+    "title": "Floresta aciculifoliácea",
+    "description": "Mata com árvores com folhas em forma de agulha, finas e alongadas. é uma floresta subtropical mista, homogênea e de fácil penetração. Ocorre na europa e ásia (com o nome de taiga) e na américa do norte (mata de coníferas). No brasil, é chamada de mata de araucária, com predomínio do pinheiro-do- paraná (araucaria angustifolia), distribuindo-se ao longo do planalto meridional."
+  },
+  {
+    "title": "Floresta amazônica",
+    "description": "A floresta amazônica é a maior floresta tropical do mundo, abrangendo uma vasta extensão na américa do sul, que inclui nove países: brasil, peru, colômbia, venezuela, equador, bolívia, guiana, suriname e guiana francesa. Essa região é conhecida pela sua incrível biodiversidade, abrigando milhões de espécies de plantas, animais e microorganismos."
+  },
+  {
+    "title": "Floresta antiga",
+    "description": "Termo usado para se referir à mata virgem; floresta onde as árvores nunca foram cortadas; florestas de segundo crescimento antigo com árvores muito grandes."
+  },
+  {
+    "title": "Floresta atlântica",
+    "description": "Essa floresta tropical é caracterizada por uma diversidade de formações vegetais, que incluem florestas tropicais densas, manguezais, restingas e campos. A mata atlântica também é conhecida por sua elevada taxa de endemismo, ou seja, muitas espécies são encontradas apenas nessa região."
+  },
+  {
+    "title": "Floresta boreal",
+    "description": "A floresta boreal, também conhecida como taiga, é um extenso bioma de floresta caracterizado por coníferas e vegetação de clima frio. Este bioma é encontrado principalmente em latitudes mais elevadas, abrangendo grandes áreas do norte da américa do norte, europa, ásia e algumas regiões do extremo norte do japão."
+  },
+  {
+    "title": "Floresta de araucárias",
+    "description": "A floresta de araucárias é um tipo de ecossistema vegetal predominante em certas regiões do brasil, especialmente nas áreas de planalto do sul do país."
+  },
+  {
+    "title": "Floresta de igapó",
+    "description": "A floresta de igapó é um tipo específico de ecossistema associado aos ambientes inundados das regiões tropicais, especialmente na amazônia. Ela é uma das variações das florestas de várzea, mas difere na frequência e na duração do alagamento do solo."
+  },
+  {
+    "title": "Floresta de pastagem",
+    "description": "Floresta secundária degradada pelo estabelecimento irracional de pecuária impedindo a regeneração."
+  },
+  {
+    "title": "Floresta de pinheiro-do-paraná",
+    "description": "A floresta de pinheiro-do-paraná é um ecossistema caracterizado pela predominância da espécie de árvore conhecida como araucaria angustifolia, também chamada de pinheiro-do-paraná. Este tipo de floresta é encontrado principalmente na região sul do brasil, em áreas que incluem partes dos estados do paraná, santa catarina e rio grande do sul."
+  },
+  {
+    "title": "Floresta de segundo crescimento",
+    "description": "Também denominada de floresta secundária, é o aglomerado de árvores situadas numa região onde aconteceu um desmatamento recente ou que sofreu alguma interferência humana, que passa por sucessão secundária. As espécies de uma floresta, normalmente, são diferentes das florestas primárias e possuem maior complexidade."
+  },
+  {
+    "title": "Floresta de várzea",
+    "description": "Floresta de terrenos baixos, geralmente planos, existente normalmente nas margens dos rios."
+  },
+  {
+    "title": "Floresta decídua temperada",
+    "description": "Ver anexo sobre biomas mundiais: floresta decídua temperada."
+  },
+  {
+    "title": "Floresta estacional",
+    "description": "Floresta que sofre ação climática desfavorável, seca ou fria, com perda de folhas (resolução conama n.º 012/94)."
+  },
+  {
+    "title": "Floresta galeria",
+    "description": "Floresta descontínua que se desenvolve ao longo das margens dos rios, onde a umidade é fator importante para seu desenvolvimento e manutenção. Também chamada mata ciliar."
+  },
+  {
+    "title": "Floresta heterogênea",
+    "description": "Aquela constituída, no seu estrato, por diversas espécies (portaria normativa ibdf n.º 302/84)."
+  },
+  {
+    "title": "floresta homogênea",
+    "description": "aquela constituída, predominantemente, por uma única espécie (portaria normativa ibdf n.° 302/84)."
+  },
+  {
+    "title": "Floresta latifoliada equatorial",
+    "description": "Nas latitudes baixas sob clima superúmido há domínio da floresta latifoliada equatorial com folhas largas, em forma de lâmina, sempre verde, perene, elevada biodiversidade de espécie, árvores de grande porte, recoberta por lianas e epífitas. Necessita de chuvas (no mínimo 1.500 mm/ ano). Ocorrem na américa do sul (região amazônica), na áfrica (bacia do congo) e partes da costa do golfo da guiné."
+  },
+  {
+    "title": "floresta manejada",
+    "description": "floresta explorada pelo ser humano com uso múltiplo, para a obtenção de madeira ou para usos sociais."
+  },
+  {
+    "title": "Floresta mista",
+    "description": "Floresta constituída de coníferas e, também, de árvores decíduas."
+  },
+  {
+    "title": "floresta nacional - FLONA",
+    "description": "unidade de conservação de uso sustentável, estabelecida em uma área com cobertura florestal de espécies predominantemente nativas. Nas flonas são permitidos usos sustentáveis múltiplos dos recursos florestais, bem como a pesquisa científica, com ênfase em métodos para exploração sustentável de florestas nativas. A unidade desta categoria, quando criada pelo estado ou município, será denominada, respectivamente, floresta estadual e floresta municipal (lei federal n° 9.985/00, que instituiu o sistema nacional de unidades de conservação. snuc). Até dezembro de 2006 havia 73 flonas no brasil."
+  },
+  {
+    "title": "Floresta nativa",
+    "description": "Vegetação com grande diversidade biológica, primitiva ou regenerada."
+  },
+  {
+    "title": "Floresta natural",
+    "description": "Floresta composta por espécies típicas de determinada região, com sucessão vegetal própria."
+  },
+  {
+    "title": "Floresta ombrófila.",
+    "description": "Floresta que ocorre em ambientes sombreados onde a umidade é alta e constante ao longo do ano (resolução conama n° 012/94)."
+  },
+  {
+    "title": "Floresta pluvial temperada",
+    "description": "É um bioma constituído predominantemente por coníferas ou árvores de folhas largas permanentes, ou ainda por espécies decíduas."
+  },
+  {
+    "title": "Floresta pluvial tropical",
+    "description": "A floresta pluvial tropical, frequentemente chamada de floresta tropical úmida, é um ecossistema exuberante caracterizado por altos níveis de precipitação ao longo do ano e temperaturas consistentemente elevadas. Esse tipo de floresta é encontrado em regiões próximas ao equador, abrangendo partes da américa central, américa do sul, áfrica, ásia e oceania."
+  },
+  {
+    "title": "Floresta perenifólia de restinga",
+    "description": "Formação relativamente pouco densa, com árvores de porte em torno de 12-15 metros, troncos finos, ramificação geralmente baixa, caules muitas vezes tortuosos e copas irregulares (portaria ibama n° 31-n/91)."
+  },
+  {
+    "title": "Floresta primária",
+    "description": "Vegetação arbórea denominada floresta estacional semidecidual caracterizada pelas florestas aluviais e submontanas. Apresentam-se estruturalmente compostas de árvores altas e fustes normalmente finos e retilíneos. Nessa formação existe uma densa submata de arbustos e uma enorme quantidade de plântulas de regeneração (portaria normativa ibama n° 83/91)."
+  },
+  {
+    "title": "Floresta secundária",
+    "description": "Vegetação com formação de porte e estrutura diversa, onde se constata modificação na sua composição, na maioria das vezes devido à atividade do homem, apresentando-se em processo de degradação ou mesmo em recuperação (portaria normativa ibama nº 83/91)."
+  },
+  {
+    "title": "Floresta semidecídua",
+    "description": "Floresta que perde parte das folhas em determinada época do ano."
+  },
+  {
+    "title": "Floresta tropical",
+    "description": "Florestas em áreas de muita chuva, quentes e úmidas, com uma grande biodiversidade, abrigando mais da metade de todas as espécies de plantas e animais da terra. Localizam-se próximas ao equador na américa do sul, américa central, ásia e áfrica, sendo que a maior delas é a amazônica."
+  },
+  {
+    "title": "Floresta virgem",
+    "description": "Floresta de árvores silvestres, onde não ocorreu atividade humana, e que se conserva pelas forças da natureza."
+  },
+  {
+    "title": "Florestamento",
+    "description": "Plantio de florestas onde elas não existiam anteriormente."
+  },
+  {
+    "title": "Flotação",
+    "description": "Trazer as impurezas à superfície da água a ser depurada através de processo de aplicação de pequenas bolhas de ar."
+  },
+  {
+    "title": "Flúor",
+    "description": "Elemento univalente não-metálico do grupo dos halogênios, de símbolo f. Ocorre na natureza em combinação de minerais como fluorita, criolita e fluorapatita em águas minerais, ossos e dentes."
+  },
+  {
+    "title": "Fluoretação",
+    "description": "Adição de certa quantidade de fluoreto na água potável para a redução dos índices de cárie na população: faz parte dos programas de saúde."
+  },
+  {
+    "title": "Flutuação litorânea",
+    "description": "Nome dado ao movimento de materiais e escombros não consolidados pelas correntes costeiras."
+  },
+  {
+    "title": "Fluvial",
+    "description": "Relativo a rio, que vive nos rios ou produzido pela ação dos rios. Fluxo oriundo de processos naturais de escoamento."
+  },
+  {
+    "title": "Fluxo de energia",
+    "description": "Transferência de energia de uma parte de um sistema para a outra, especialmente numa cadeia ou rede alimentar, de um nível trófico para outro."
+  },
+  {
+    "title": "Fluxo de terra",
+    "description": "Termo que se refere ao movimento descendente em encosta, de material não consolidado e úmido, que não está confinado num canal que pode ser iniciado por crescente pressão de água existente nos poros entre as partículas."
+  },
+  {
+    "title": "Fluxo energético",
+    "description": "Energia que é acumulada e passa através dos componentes de um ecossistema, num determinado momento."
+  },
+  {
+    "title": "Fluxo saturado",
+    "description": "Termo que se refere ao movimento da água nos espaços presentes no solo, totalmente preenchidos com água."
+  },
+  {
+    "title": "Fogo",
+    "description": "Liberação de luz e calor numa reação de combustão."
+  },
+  {
+    "title": "fogo de chão",
+    "description": "fenômeno que ocorre por baixo da superfície do solo, cuja matéria orgânica, como a turfa, incendeia-se."
+  },
+  {
+    "title": "Fogo de copa",
+    "description": "Fogo florestal de grande dimensão, que se dispersa de uma copa de uma árvore às demais."
+  },
+  {
+    "title": "Folívoro",
+    "description": "Seres que se alimentam de folhas."
+  },
+  {
+    "title": "Fomento",
+    "description": "Toda ação é direcionada no sentido de incentivar e promover o desenvolvimento de uma determinada atividade. Ex.: fomento do setor pesqueiro."
+  },
+  {
+    "title": "Fonte",
+    "description": "Nascente; local onde a água brota do solo; lugar onde se origina um rio."
+  },
+  {
+    "title": "Fonte de carbono",
+    "description": "Fonte que gera dióxido de carbono que transita no ciclo de carbono como na respiração aeróbica, por exemplo."
+  },
+  {
+    "title": "Fonte estacionária",
+    "description": "Fonte poluidora fixa, como as chaminés."
+  },
+  {
+    "title": "Fonte fixa",
+    "description": "O mesmo que fonte estacionária."
+  },
+  {
+    "title": "Fonte móvel",
+    "description": "Elementos móveis que são fontes poluidoras, como os carros, aviões, motos etc."
+  },
+  {
+    "title": "Fonte não pontual",
+    "description": "Fonte produtora de poluição de origem indeterminada; como exemplo de fonte não pontual de poluição da água, têm-se os agrotóxicos das lavouras, esgotos que resultam do escoamento de temporais."
+  },
+  {
+    "title": "Fonte poluidora",
+    "description": "A que emite poluentes."
+  },
+  {
+    "title": "Fonte pontual",
+    "description": "Instalação fixa que produz poluição identificável, como usinas elétricas movidas a carvão, fábricas, carvoarias. As fontes pontuais, normalmente, geram grandes concentrações de poluentes hídricos e atmosféricos, mas por serem de fácil identificação, também podem ser, em princípio, controladas."
+  },
+  {
+    "title": "Forar",
+    "description": "Arrendamento da terra."
+  },
+  {
+    "title": "Forçamento radiativo",
+    "description": "O balanço entre a radiação solar incidente do sol e a radiação infravermelha que sai do planeta. sem nenhum forçamento radiativo, a radiação solar incidente que entra na terra permaneceria aproximadamente igual à radiação infravermelha que sai do planeta. Os gases efeito estufa aprisionam essa radiação infravermelha e, desta forma, aquecem o planeta."
+  },
+  {
+    "title": "Forésia",
+    "description": "Animal que se faz transportar por outro sem ser um parasita."
+  },
+  {
+    "title": "Formicida",
+    "description": "Veneno utilizado na zona rural no combate a formigas e saúvas."
+  },
+  {
+    "title": "Fosfato",
+    "description": "Nutriente que pode ser encontrado também em água de despejo que provém, em particular, dos detergentes e fertilizantes químicos utilizados em excesso, assim como dos resíduos da criação intensiva de animais. Os fosfatos constituem um dos fatores principais de poluição dos lagos e rios."
+  },
+  {
+    "title": "Fosfato orgânico",
+    "description": "Sal orgânico de fosfato ou éster do ácido fosfórico (h,po). Fertilizante usado como nutriente essencial do metabolismo vegetal e animal."
+  },
+  {
+    "title": "Fosgênio",
+    "description": "Também denominado de cloreto de carbonila, é um gás extremamente venenoso. Foi utilizado como gás de guerra, provocando irritação pulmonar nos seres humanos. Este gás é usado também como agente de cloração em processos químicos. Fórmula: coci."
+  },
+  {
+    "title": "Fossa séptica",
+    "description": "Poço feito com a finalidade de servir de destino final dos esgotos domésticos. Muito comum em regiões onde não existem redes de esgotos. é preciso tomar muito cuidado na escolha do local para fazer uma fossa, para evitar a contaminação do lençol freático."
+  },
+  {
+    "title": "Fóssil",
+    "description": "Resto ou vestígio preservado de seres que viveram em épocas pré-históricas, há mais de 10 mil anos."
+  },
+  {
+    "title": "Fotólise da água",
+    "description": "Dissociação da água por meio de energia da enzima (nadp) e da energia luminosa na fotossíntese. Esse processo é conhecido como reação hill, pesquisador que descobriu a origem do 0 liberado na fotossíntese."
+  },
+  {
+    "title": "Fotômetro",
+    "description": "Aparelho utilizado para medir a intensidade da luz."
+  },
+  {
+    "title": "Fotoperíodo",
+    "description": "Período de tempo em que uma determinada espécie da flora ou da fauna é exposta à luz diária, especialmente na forma como ela interfere no crescimento ou nas respostas fisiológicas de um animal ou um vegetal."
+  },
+  {
+    "title": "Fotorreatividade",
+    "description": "Qualquer reação química é provocada pela presença da luz."
+  },
+  {
+    "title": "Fotosfera",
+    "description": "Camada que envolve o núcleo solar, o qual emite grande parte das radiações solares."
+  },
+  {
+    "title": "Fotossensível",
+    "description": "Termo utilizado para designar algo que demonstra reação à i luz visível ou a outras maneiras de radiação, como os raios infravermelhos."
+  },
+  {
+    "title": "Fotossíntese",
+    "description": "Série de reações químicas pelas quais as células das plantas transformam a energia da luz em energia química, através da produção de açúcares simples (ou outros compostos energéticos) e em oxigênio a partir do dióxido de carbono e água."
+  },
+  {
+    "title": "Fotossintéticas",
+    "description": "Relativo a moléculas orgânicas abundantes em energia elaboradas durante a fotossíntese, principalmente as de açúcar."
+  },
+  {
+    "title": "Fototaxia",
+    "description": "Movimento de um organismo em resposta à luz e direcionada a ele."
+  },
+  {
+    "title": "Fototrófico",
+    "description": "Termo utilizado para designar os organismos que produzem seu próprio alimento, através da energia do sol pelo processo da fotossíntese. Todos os vegetais são fototróficos."
+  },
+  {
+    "title": "Fototropismo",
+    "description": "Crescimento dos vegetais fixos orientados pela luz. A extremidade do caule cresce em direção à fonte de luz, enquanto que a extremidade da raiz se afasta dela."
+  },
+  {
+    "title": "Foz",
+    "description": "Parte final de um rio, ponto em que deságua. Este desaguamento pode ser feito no mar, num lago, numa lagoa, ou mesmo num outro rio. A forma da foz pode ser classificada em dois tipos: estuário ou delta. A do primeiro tipo é constituída por um longo canal de forma afunilada. A do segundo, quando se verifica o aparecimento da construção de uma série de ilhas, braços e canais, formando intrincada rede fluvial. Ex.: os deltas do nilo, do mississipi, do parnaíba etc. O aparecimento do delta só se torna possível quando se verifica a existência de uma série de condições como grande quantidade de material sólido em suspensão, pouca profundidade na foz, ausência de fortes correntes marinhas etc."
+  },
+  {
+    "title": "Fragilidade ambiental",
+    "description": "Suscetibilidade de ecossistemas a danos, principalmente à poluição, erosão ou degradação."
+  },
+  {
+    "title": "frasco coletor de material particulado",
+    "description": "instrumento, semelhante a uma jarra de boca larga, utilizado para medir e estudar os poluentes presentes no ar."
+  },
+  {
+    "title": "Freon",
+    "description": "Denominação comercial do diclorodifluorometano, o mais comum dos cfcs (clorofluorcarbonetos) que destroem a camada de ozônio. Ainda utilizado em alguns países nos sistemas de refrigeração."
+  },
+  {
+    "title": "Frugívoro",
+    "description": "Diz-se da espécie animal que se alimenta apenas de frutas."
+  },
+  {
+    "title": "Fugaz",
+    "description": "Qualquer folha, flor ou fruto que cai ou perde a vitalidade precocemente, no período de crescimento."
+  },
+  {
+    "title": "Fuligem",
+    "description": "Partículas de carvão geradas pela combustão incompleta de substâncias compostas por carvão, petróleo ou madeira. Podem ser expelidas no ar como matéria particulada, ou constituir um depósito preto em superfícies, como nas chaminés."
+  },
+  {
+    "title": "fuligem fotoquímica",
+    "description": "nome dado aos poluentes no ar que geram uma neblina marrom que pode ser vista, com determinada frequência, sobre as grandes metrópoles. Normalmente, ocorre em dias de sol em áreas com grande volume de tráfego de automóveis, sendo muito aparente quando a luz do sol age com os óxidos de nitrogênio, özônio e hidrocarbonetos, numa série de reações químicas complexas. A fuligem fotoquímica é um produto irritante das vias respiratórias e pode inclusive matar ou alterar os tecidos das plantas."
+  },
+  {
+    "title": "Fumaça",
+    "description": "Partículas muito finas de cinza ou de combustível parcialmente queimado suspensas no ar como nuvens visíveis, sendo, normalmente, o resultado da combustão incompleta de compostos ou substâncias que contêm carbono."
+  },
+  {
+    "title": "Fumigação",
+    "description": "Aplicação de produtos gasosos ou voláteis no tratamento contra pragas como ácaros, insetos e demais parasitas."
+  },
+  {
+    "title": "Fumigante",
+    "description": "Substância utilizada como gás para matar insetos ou outras pragas, como exemplo, o inseticida organofosforado aplicado em estufas para a esterilização do solo."
+  },
+  {
+    "title": "Fundação brasileira para a conservação da natureza",
+    "description": "entidade que abriga a maior biblioteca especializada em ecologia do brasil, de constituição privada, localizada no rio de janeiro."
+  }
+]
