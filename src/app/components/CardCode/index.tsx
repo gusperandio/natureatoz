@@ -114,8 +114,13 @@ export default function CardCode(props: PropsCardCode) {
   const [content, setContent] = useState<JSX.Element>(templates[0]);
   const tractiveCopy = (index: number) => {
     const removeTagsHTML = (htmlString: string) => {
-      const doc = new DOMParser().parseFromString(htmlString, 'text/html');
-      return doc.body.textContent || "";
+      try {
+        const doc = new DOMParser().parseFromString(htmlString, 'text/html');
+        return doc.body.textContent || "";
+      } catch (error) {
+        const auth = props.auth ? `-H "Authorization: Bearer MY_TOKEN_HERE"` : ""
+        return `curl -i -X ${props.method?.toUpperCase()} ${link} ${auth}`
+      } 
     };
     const componentString = ReactDomServer.renderToString(templates[index]())
     console.log(componentString)
