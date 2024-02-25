@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 import CardCode from "../components/CardCode";
 import Link from "next/link";
 import Image from "next/image";
-import camera from "../../../public/icons/camera-fill.svg";
 import arrowRight from "../../../public/icons/arrow-right.svg";
 import CardHome from "../components/CardHome";
 import BackIcon from '../../../public/icons/arrow-left.svg'

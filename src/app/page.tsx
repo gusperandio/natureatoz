@@ -37,7 +37,7 @@ export default function Home() {
   const requests = async () => {
     try {
       const response = await axios.get(
-        `${URI}api/v1/requests`, { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+        `${URI}api/v1/requests`);
       setRandomData(response.data.requests);
     } catch (error) {
       console.error(error)
