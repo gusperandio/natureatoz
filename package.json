@@ -1,6 +1,6 @@
 {
   "name": "natureatoz",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "dev": "npm run open-browser && next dev -p 3000",

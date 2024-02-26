@@ -123,7 +123,7 @@ export default function CardCode(props: PropsCardCode) {
       } 
     };
     const componentString = ReactDomServer.renderToString(templates[index]())
-    console.log(componentString)
+  
     return removeTagsHTML(componentString.replace(/<br\s*\/?>/gi, '\n'));
   }
 
