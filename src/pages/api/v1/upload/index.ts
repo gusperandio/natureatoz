@@ -64,7 +64,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse, cacheado: Cach
 
       const requestData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
       const newItem = await Item.create(processLetter(requestData));
-
+  
       res.status(200).json({ success: true, inserts: newItem });
     } catch (error) {
       console.error("Erro:", error);

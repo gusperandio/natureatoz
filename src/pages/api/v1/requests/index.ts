@@ -4,15 +4,21 @@ import middleware from "../../../../lib/middleware";
 import { Cache } from "../../../../lib/caching";
 import { CountRequest } from "../../../../lib/count_sqlite";
 import { analytics, log } from "@/lib/firebase";
+import NextCors from "nextjs-cors";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
+    await NextCors(req, res, {
+      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+      origin: '*',
+      optionsSuccessStatus: 200, 
+   });
     const countRequest = new CountRequest();
     const num = await countRequest.findRequests();
- 
+
     //cached.save(url, { requests: num }, 1, "Hour");
     res.status(200).json({ requests: num });
   } catch (error) {
