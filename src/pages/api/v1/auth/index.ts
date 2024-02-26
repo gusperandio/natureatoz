@@ -4,18 +4,18 @@ import { KeyDatabase } from "../../../../lib/auth_sqlite";
 import { CountRequest } from "../../../../lib/count_sqlite";
 import { generateToken } from "@/lib/JWT";
 import { analytics, log } from "@/lib/firebase";
-import NextCors from "nextjs-cors";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
-    await NextCors(req, res, {
-      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-      origin: '*',
-      optionsSuccessStatus: 200, 
-   });
+    res.setHeader('Access-Control-Allow-Credentials', "true");
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT');
+    res.setHeader('Access-Control-Allow-Headers',
+      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    );
     const { days: queryDays } = req.query;
     const dbKey = new KeyDatabase();
     const newGuid = generateGuid();

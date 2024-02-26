@@ -3,7 +3,6 @@ import { Cache } from "./caching";
 import { CountRequest } from "./count_sqlite";
 import { verifyToken } from "./JWT";
 import { DB } from "./config/dbConnect";
-import NextCors from 'nextjs-cors';
 
 const database = new DB();
 const cache = new Cache();
@@ -20,18 +19,12 @@ const middleware = (
   return async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       countSqlite.addRequestNum();
-      // res.setHeader('Access-Control-Allow-Credentials', "true");
-      // res.setHeader('Access-Control-Allow-Origin', '*');
-      // res.setHeader('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT');
-      // res.setHeader('Access-Control-Allow-Headers',
-      //   'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-      // );
-      
-      await NextCors(req, res, {
-        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-        origin: '*',
-        optionsSuccessStatus: 200, 
-     });
+      res.setHeader('Access-Control-Allow-Credentials', "true");
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT');
+      res.setHeader('Access-Control-Allow-Headers',
+        'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+      );
 
       if (req.method === "OPTIONS") {
         res.status(200).json({ status: "ONLINE" });

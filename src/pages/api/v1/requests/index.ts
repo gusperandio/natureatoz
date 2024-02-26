@@ -4,18 +4,18 @@ import middleware from "../../../../lib/middleware";
 import { Cache } from "../../../../lib/caching";
 import { CountRequest } from "../../../../lib/count_sqlite";
 import { analytics, log } from "@/lib/firebase";
-import NextCors from "nextjs-cors";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
-    await NextCors(req, res, {
-      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-      origin: '*',
-      optionsSuccessStatus: 200, 
-   });
+    res.setHeader('Access-Control-Allow-Credentials', "true");
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,DELETE,PATCH,POST,PUT');
+    res.setHeader('Access-Control-Allow-Headers',
+      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    );
     const countRequest = new CountRequest();
     const num = await countRequest.findRequests();
 
