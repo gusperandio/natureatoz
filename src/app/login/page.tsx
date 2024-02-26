@@ -31,14 +31,13 @@ export default function Page() {
       if (word !== process.env.KEY_TO_POST && table.length > 0 || !word) {
         router.push("/");
       }
-
+      
       if (word) {
         const response = await axios.get(`${URI}api/v1/keys`, {
           headers: {
             'keynature': word,
           },
         });
-
         setTable(response.data);
       }
     } catch (e) {

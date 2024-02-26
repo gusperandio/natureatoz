@@ -2,6 +2,7 @@
   height: 12rem;
   border-bottom: 3px solid var(--yellow-500);
   background: var(--gray-700);
+
 }
 
 .headerContext {
@@ -20,7 +21,7 @@
     color: var(--white);
     transition: color 0.2s;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    
    
 
     &:hover {

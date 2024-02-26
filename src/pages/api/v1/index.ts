@@ -11,7 +11,6 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    
     if (req.method === "OPTIONS") {
       res.status(202).end();
     } else {

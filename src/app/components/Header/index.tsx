@@ -70,7 +70,7 @@ export function Header() {
         <Link href="/" legacyBehavior>
           <Image src={logo} alt="Nature A to Z" height={200} priority style={{cursor: "pointer"}} />
         </Link>
-        <nav>
+        <nav style={{fontFamily : "Roboto"}}>
           <Link href="/" legacyBehavior>
             {aa}
           </Link>

@@ -217,11 +217,12 @@
       color: #18181b;
     }
 
-    p {
+    .paragraph {
       font-weight: 400;
       padding: 1rem;
       text-align: justify;
       color: #47474d;
+      font-family: "Manrope";
     }
 
     .guides {
@@ -314,7 +315,6 @@
   }
 }
 
-
 @media (width <=580px) {
   .body {
     height: 180vh;
@@ -381,3 +381,5 @@
     display: none;
   }
 }
+
+

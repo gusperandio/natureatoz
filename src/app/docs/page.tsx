@@ -180,7 +180,7 @@ export default function Page() {
     <div>
       <button className={styles.goBack} onClick={() => alterContent(intro)}>
         <Image src={BackIcon} width={24} height={24} alt="Go back" />
-        <p>{selectedLanguage == "Pt-BR" ? "Voltar" : "Go back"}</p>
+        <p className={styles.paragraph}>{selectedLanguage == "Pt-BR" ? "Voltar" : "Go back"}</p>
       </button>
     </div>
   )
@@ -189,15 +189,15 @@ export default function Page() {
     <div id="content" className={`${styles.content}`}>
       {goBack}
       <h1 className={styles.title}>{textAuth.title}</h1>
-      <p>{textAuth.textIntro}</p>
+      <p className={styles.paragraph}>{textAuth.textIntro}</p>
       <br />
 
       <h3>{textAuth.subTitle}</h3>
 
-      <p>{textAuth.textStart} <br />
+      <p className={styles.paragraph}>{textAuth.textStart} <br />
         {textAuth.textStart2}</p><br />
       <CardCode method="GET" link="/api/v1/auth" tabs={true} auth={false} />
-      <p>{textAuth.text1}</p><br />
+      <p className={styles.paragraph}>{textAuth.text1}</p><br />
       <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" auth={false} />
     </div >
   );
@@ -208,22 +208,22 @@ export default function Page() {
       <h1 className={styles.title}>
         {textRandom.title}
       </h1>
-      <p>
+      <p className={styles.paragraph}>
         {textRandom.textIntro}&nbsp;
         {textRandom.textIntro2}
       </p>
-      <p>
+      <p className={styles.paragraph}>
         {textRandom.textStart}
       </p>
       <br />
 
       <h3>{textRandom.subTitle}</h3>
-      <p>{textRandom.text1}</p><br />
+      <p className={styles.paragraph}>{textRandom.text1}</p><br />
       <CardCode link="/api/v1/random" tabs={true} auth={true} method="GET" />
       <br />
 
       <h3>{textRandom.subTitle2}</h3>
-      <p>{textRandom.text2}</p><br />
+      <p className={styles.paragraph}>{textRandom.text2}</p><br />
       <div className={styles.reqWithImg}>
         <CardCode link="/api/v1/random/image" tabs={true} auth={true} method="GET" />
         <div className={styles.gridImage}>
@@ -242,14 +242,14 @@ export default function Page() {
     <div id="content" className={`${styles.content}`}>
       {goBack}
       <h1 className={styles.title}>{textDictionary.title}</h1>
-      <p>{textDictionary.textIntro}</p>
+      <p className={styles.paragraph}>{textDictionary.textIntro}</p>
       <br />
 
       <h3>{textDictionary.subTitle}</h3>
 
-      <p>{textDictionary.textStart}</p><br />
+      <p className={styles.paragraph}>{textDictionary.textStart}</p><br />
       <CardCode tabs={true} link="/api/v1/dictionary/A" method="GET" auth={true} />
-      <p>{textDictionary.text1}</p><br />
+      <p className={styles.paragraph}>{textDictionary.text1}</p><br />
       <CardCode tabs={true} link="/api/v1/dictionary/J" method="GET" auth={true} />
     </div>
   );
@@ -258,14 +258,14 @@ export default function Page() {
     <div id="content" className={`${styles.content}`}>
       {goBack}
       <h1 className={styles.title}>{textSearch.title}</h1>
-      <p>{textSearch.textIntro}</p>
+      <p className={styles.paragraph}>{textSearch.textIntro}</p>
       <br />
 
       <h3>{textSearch.subTitle}</h3>
 
-      <p>{textSearch.textStart} </p><br />
+      <p className={styles.paragraph}>{textSearch.textStart} </p><br />
       <CardCode tabs={true} link="/api/v1/search/title_example" method="GET" auth={true} />
-      <p>{textSearch.text1}</p><br />
+      <p className={styles.paragraph}>{textSearch.text1}</p><br />
       <CardCode tabs={true} link="/api/v1/search/colina" method="GET" auth={true} />
     </div>
   );
@@ -273,25 +273,25 @@ export default function Page() {
   const pagination = (
     <div id="content" className={`${styles.content}`}>
       <h1 className={styles.title}>{textDictionary.title}</h1>
-      <p>{textDictionary.textIntro}</p>
+      <p className={styles.paragraph}>{textDictionary.textIntro}</p>
       <br />
 
       <h3>{textDictionary.subTitle}</h3>
 
-      <p>{textDictionary.textStart} <br /></p>
-      <p>{textDictionary.text1}</p>
+      <p className={styles.paragraph}>{textDictionary.textStart} <br /></p>
+      <p className={styles.paragraph}>{textDictionary.text1}</p>
     </div>
   );
 
   const intro = (
     <div id="content" className={`${styles.content}`}>
       <h1 className={styles.title}>{textContent.title} <span className={styles.version}>v 1.0</span></h1>
-      <p>{textContent.textIntro}</p>
+      <p className={styles.paragraph}>{textContent.textIntro}</p>
       <br />
 
       <h3>{textContent.subTitle}</h3>
 
-      <p>{textContent.textStart}</p>
+      <p className={styles.paragraph}>{textContent.textStart}</p>
 
       <CardCode tabs={true} link="/api/v1" method={"OPTIONS"} />
       <div className={styles.guides}>
@@ -299,27 +299,27 @@ export default function Page() {
         <div className={styles.subGuides}>
           <div className={styles.d1}>
             <h4>{textContent.guides1}</h4>
-            <p>{textContent.guides1Sub}</p>
+            <p className={styles.paragraph}>{textContent.guides1Sub}</p>
             {labels(auth, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides2}</h4>
-            <p>{textContent.guides2Sub}</p>
+            <p className={styles.paragraph}>{textContent.guides2Sub}</p>
             {labels(random, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides3}</h4>
-            <p>{textContent.guides3Sub}</p>
+            <p className={styles.paragraph}>{textContent.guides3Sub}</p>
             {labels(dictionary, textContent.readMore)}
           </div>
           <div className={styles.d1}>
             <h4>{textContent.guides4}</h4>
-            <p>{textContent.guides4Sub}</p>
+            <p className={styles.paragraph}>{textContent.guides4Sub}</p>
             {labels(search, textContent.readMore)}
           </div>
           {/* <div className={styles.d1}>
             <h4>{textContent.guides5}</h4>
-            <p>{textContent.guides5Sub}</p>
+            <p className={styles.paragraph}>{textContent.guides5Sub}</p>
             {labels(pagination, textContent.readMore)}
           </div> */}
         </div>
@@ -377,14 +377,16 @@ export default function Page() {
           {section.map((e, i) => {
             return (
               <li onClick={() => alterContent(e.section)} key={i}>
-                <p>{e.name}</p> <span className={`${styles.typeReq} ${e.style}`}>{e.req}</span>
+                <p className={styles.paragraph}>{e.name}</p> <span className={`${styles.typeReq} ${e.style}`}>{e.req}</span>
               </li>)
           })
           }
         </ul>
       </div>
-
+    
+    {/* <div style={{fontFamily: "Manrope"}}> */}
       {content}
+    {/* </div> */}
     </div>
   );
 }

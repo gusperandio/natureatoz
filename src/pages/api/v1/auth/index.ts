@@ -34,7 +34,7 @@ export default async function handler(
 
     res.status(200).json({ JWT, expireIn, days });
   } catch (error) {
-    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report \n" + error);
+    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report \n");
   }
 }
 

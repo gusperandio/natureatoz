@@ -32,7 +32,7 @@ const handler = async (
       res.status(400).send("Incorrect query")
     }
   } catch (error) {
-    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report \n" + error);
+    res.status(500).send("Error in system, report please in https://natureatoz.com.br/report \n");
   }
 };
 
