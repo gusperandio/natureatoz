@@ -16,7 +16,7 @@ export default function Page() {
   const [disabled, setDisabled] = useState(false);
   const router = useRouter();
   const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
-  const notify = () => toast.success('Successfully toasted!');
+  const notify = () => toast.success(selectedLanguage === "Pt-BR" ? 'Report send!' : "Reporte enviado!");
   const sendReport = async () => {
     setLoading(true);
     setDisabled(true);
