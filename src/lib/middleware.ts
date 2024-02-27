@@ -3,6 +3,7 @@ import { Cache } from "./caching";
 import { CountRequest } from "./count_sqlite";
 import { verifyToken } from "./JWT";
 import { DB } from "./config/dbConnect";
+import NextCors from 'nextjs-cors';
 
 const database = new DB();
 const cache = new Cache();

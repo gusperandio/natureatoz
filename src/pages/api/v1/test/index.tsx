@@ -1,3 +1,4 @@
+import { CountRequest } from "@/lib/count_sqlite";
 import { analytics, log } from "@/lib/firebase";
 import type { NextApiRequest, NextApiResponse } from "next";
 import unorm from "unorm";
@@ -34,7 +35,7 @@ function correctDot(texto: string): string {
   const regex: RegExp = /[.]\s([a-z])/g;
 
   function sub(match: string, letra: string): string {
-      return ". " + letra.toUpperCase();
+    return ". " + letra.toUpperCase();
   }
   return texto.replace(regex, sub);
 }
@@ -53,11 +54,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const requestData =
-      typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+    const countRequest = new CountRequest();
+    const num = await countRequest.findRequests();
+
     res
       .status(200)
-      .json({ success: true, inserts: processLetter(requestData) });
+      .json({ success: true, num: num });
   } catch (error) {
     res
       .status(500)
