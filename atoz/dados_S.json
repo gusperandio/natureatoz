@@ -1,0 +1,522 @@
+[
+  {
+    "title": "safras de cobertura",
+    "description": "Técnica de agricultura que se baseia no cultivo de vegetais entre as safras comerciais, ou no período de dormência, para preservar a terra do fenômeno da erosão."
+  },
+  {
+    "title": "saibro",
+    "description": "Argila misturada com areia e pedras."
+  },
+  {
+    "title": "sal-gema",
+    "description": "Depósito terrestre de sal comum. Cloreto de sódio."
+  },
+  {
+    "title": "salinas",
+    "description": "Regiões litorâneas de obtenção artesanal da retirada do sal marinho para consumo humano, animal e refino industrial."
+  },
+  {
+    "title": "salinidade",
+    "description": "Existência de sais nos solos e nas águas de regiões áridas, semiáridas e costeiras. A atividade da agricultura convive com o problema da salinidade nos terrenos irrigados, já que a água se evapora e os sais permanecem acumulando-se a um nível que torna impossível o crescimento de quaisquer tipos de lavouras."
+  },
+  {
+    "title": "salinização",
+    "description": "Aumento do teor de substâncias salinas no solo, tornando-os impróprios para a agricultura. Pode ser provocada por drenagem deficiente das culturas e pela elevação do lençol freático até o nível do solo."
+  },
+  {
+    "title": "salobra",
+    "description": "Termo utilizado para designar as águas que apresentam um grau de salinidade entre a água doce e a água do mar."
+  },
+  {
+    "title": "sambaquis",
+    "description": "Agregados de conchas de moluscos ou concheiros com interesse arqueológico."
+  },
+  {
+    "title": "saneamento",
+    "description": "Controle de todos os fatores do meio físico do homem que exercem ou podem exercer efeitos nocivos sobre seu bem-estar físico, mental e social."
+  },
+  {
+    "title": "saneamento ambiental",
+    "description": "Medidas de conservação e de melhorias ambientais para assegurar às populações e aos seres vivos em geral, a melhoria da qualidade de vida e de sobrevivência."
+  },
+  {
+    "title": "saneamento básico",
+    "description": "Medidas relacionadas à manutenção do escoamento de resíduos e esgotos na irrigação da água potável, na prevenção e na profilaxia de doenças ocasionadas pela contaminação das águas."
+  },
+  {
+    "title": "sanga",
+    "description": "Escavação profunda devido à ação erosiva das águas pluviais ou das águas subterrâneas."
+  },
+  {
+    "title": "sapal",
+    "description": "Terra alagadiça junto a cursos de água."
+  },
+  {
+    "title": "saprofágico",
+    "description": "Organismo que se nutre de compostos em putrefação."
+  },
+  {
+    "title": "saprófago",
+    "description": "O mesmo que saprofágico."
+  },
+  {
+    "title": "saprófito",
+    "description": "Vegetal que se nutre a expensas de animais ou plantas mortas e S de toda espécie de restos orgânicos em decomposição."
+  },
+  {
+    "title": "sapropel",
+    "description": "Restos orgânicos derivados de plantas ou animais aquáticos quese sedimentam em lago, estuário ou mar."
+  },
+  {
+    "title": "sargaço",
+    "description": "Alga parda (Phaeophyta); alguns exemplares atingem grande porte (70m) e formam uma massa flutuante nos mares (mar dos Sargaços)."
+  },
+  {
+    "title": "saturnismo",
+    "description": "Expressão utilizada para designar envenenamento por chumbo."
+  },
+  {
+    "title": "saúde",
+    "description": "Condição de equilíbrio e harmonia de todas as funções orgânicas (físicas e mentais). Segundo a OMS (Organização Mundial da Saúde) define-se como o estado de completo bem-estar físico, mental e social do indivíduo."
+  },
+  {
+    "title": "savana",
+    "description": "Tipo de ecossistema complexo formado por planícies de gramíneas, arbustos, árvores esparsas de porte variado cujo clima apresenta basicamente a estação das secas e das chuvas, com duração prolongada da estação seca, com duração média de 6 a 8 meses. Temos este tipo de vegetação ao sul da Floresta Amazônica (conhecida como cerrados), ao norte do México e no Sudão."
+  },
+  {
+    "title": "sazonal",
+    "description": "Relativo às estações do ano."
+  },
+  {
+    "title": "seara",
+    "description": "Terra onde se cultiva trigo ou outros cereais."
+  },
+  {
+    "title": "sebes",
+    "description": "Conjunto de taboca protetora de uma determinada área; cerca; tapume."
+  },
+  {
+    "title": "seca",
+    "description": "O mesmo que estiagem. Espaço de tempo em que a precipitação de chuva em determinada região e em certo período de tempo é baixa ou não ocorre."
+  },
+  {
+    "title": "seca contingente",
+    "description": "Trata-se de uma irregularidade de chuvas numa estação normalmente chuvosa, constituindo-se em risco para a agropecuária pela sua imprevisibilidade."
+  },
+  {
+    "title": "seca fisiológica",
+    "description": "Economia de água em sua estrutura por plantas de cerrado. É o fenômeno pelo qual uma planta apesar de estar junto da água, encontra-se murcha."
+  },
+  {
+    "title": "seca sazonal",
+    "description": "Seca previsível em determinados períodos do ano, com duração aproximada de seis meses, podendo chegar até oito meses em algumas áreas. Ocorre em áreas com estações seca e úmida bem definidas, na maior parte dos trópicos, como é o caso da savana."
+  },
+  {
+    "title": "seca verde",
+    "description": "Diz-se quando num prolongado período sem chuvas, a vegetação ainda não apresenta sintomas de grave deficiência hídrica."
+  },
+  {
+    "title": "sedimentação",
+    "description": "Formação de sedimentos numa fase em que os flocos, com seu tamanho relativamente aumentado, tendem a decantar. Em geologia, é o processo pelo qual se verifica a deposição de sedimentos ou de substâncias que podem ser de origem orgânica ou inorgânica."
+  },
+  {
+    "title": "sedimento",
+    "description": "Depósito que se forma num líquido em que há substâncias em suspensão; em geologia, camada de sedimentos que as águas deixaram ao se retirar."
+  },
+  {
+    "title": "segregar",
+    "description": "Ato de pôr de lado, separar."
+  },
+  {
+    "title": "seixo rolado",
+    "description": "Pedras desgastadas pela ação da água, assumindo formas variadas, principalmente arredondadas, alterando a cor da água devido à pigmentação da rocha e em acúmulo nos leitos e nas margens de rios."
+  },
+  {
+    "title": "seleção artificial",
+    "description": "Processo artificial realizado pelos seres humanos com o objetivo de gerar características específicas, ou melhorar a produção da geração de descendentes de determinadas espécies, vegetais ou animais."
+  },
+  {
+    "title": "seleção de hábitat",
+    "description": "Característica de um organismo de selecionar, dentre uma grande variedade de hábitats existentes, uma região para viver."
+  },
+  {
+    "title": "seleção K",
+    "description": "Fatores (pressão de seleção) que beneficiam as espécies.com ta- xas mais baixas de crescimento populacional, além de uma maior habilidade para competir com outras espécies em comunidades mais populosas; características de estágios posteriores da sucessão ecológica."
+  },
+  {
+    "title": "seleção natural",
+    "description": "Teoria proposta pelo naturalista inglês Charles Darwin (1809- 1882) em seu livro pioneiro \"A origem das espécies\". Nele, descreve o mecanismo evolutivo pelo qual os indivíduos menos adaptados são naturalmente eliminados do ambiente, afirmando que a evolução das espécies é determinada por um processo chamado \"seleção natural\" ou \"sobrevivência dos mais aptos\". Segundo Darwin alguns grupos ou comunidades de indivíduos, pertencentes a uma dada espécie, apresentam certas características hereditárias que lhes dão mais chances de sobreviver e de se reproduzir num determinado meio físico e biológico. Tais características acabam se tornando comuns naquela população à medida que ela se reproduz. Seus descendentes, também portadores das características vencedoras, sobrevivem com vantagem aos demais. Assim, ao longo do tempo, geração após geração, a chamada seleção natural atua no sentido de criar uma população adaptada ao lugar onde vive e, ao mesmo tempo, capaz de se adequar a mudanças no meio ambiente."
+  },
+  {
+    "title": "selvagem",
+    "description": "Espécie não-domesticada."
+  },
+  {
+    "title": "semente",
+    "description": "Estrutura de reprodução que contém o embrião de uma determinada espécie, sendo também um elemento de propagação. Óvulo fecundado e desenvolvido, formado de duas partes, o tegumento e a amêndoa."
+  },
+  {
+    "title": "semente certificada",
+    "description": "Semente biotecnológica que contém no seu interior genes manipulados de outras espécies e que esteja registrada ou certificada de acordo com as normas estabelecidas pela entidade certificadora."
+  },
+  {
+    "title": "semente genética",
+    "description": "Produzidas pela seleção dos melhores genes para se obter a melhor resposta de pureza da espécie; \"melhoramento genético das gerações\"."
+  },
+  {
+    "title": "semiaquático",
+    "description": "Ser que vive em hábitat próximo à região com água."
+  },
+  {
+    "title": "semiárido",
+    "description": "Termo utilizado para designar climas secos, não tanto quanto os que existem no deserto, pois apresentam pouca precipitação."
+  },
+  {
+    "title": "semideserto",
+    "description": "Tipo de ecossistema que existe em regiões que possuem climas semiáridos, pode ser encontrado entre uma pastagem e uma vegetação de deserto."
+  },
+  {
+    "title": "senescência",
+    "description": "Período próximo ao fim do ciclo de vida pelo processo natural de envelhecimento de um organismo ou parte dele."
+  },
+  {
+    "title": "sensoriamento",
+    "description": "Uso de recursos tecnológicos como satélites, rastreadores, mapeadores, programas de gerenciamento a fim de elaborar relatórios sobre acidentes ou mapas geológicos."
+  },
+  {
+    "title": "separação na fonte",
+    "description": "Tipo de reciclagem onde o material a ser reciclado já é separado do lixo no local onde é gerado. Por exemplo, a divisão do lixo feita em casa, em que o papel, o vidro, o alumínio, o plástico, entre outros materiais, são colocados em um recipiente diferente do dos demais resíduos."
+  },
+  {
+    "title": "separador balístico",
+    "description": "Instrumento utilizado na compostagem para retirar a matéria inorgânica, que não se decompõe, da matéria orgânica."
+  },
+  {
+    "title": "sequestro de carbono",
+    "description": "Mecanismo através do qual o dióxido de carbono é aproveitado para as atividades metabólicas como a fotossíntese exercida pelas florestas. Tal procedimento reduz consideravelmente a atividade poluente nos continentes e nos biomas. O sequestro de carbono foi consagrado desde 1997, pela Conferência de Kyoto, como um dos principais meios de reduzir e reverter o acúmulo de CO2 na atmosfera, visando à diminuição do Efeito Estufa. Ocorre com o plantio e crescimento de árvores e outros vegetais, favorecido por programas de reposição florestal e recuperação de áreas degradadas. Note-se que o sequestro de carbono ocorre incorporando o carbono à biomassa do vegetal e, portanto, só acontece durante as fases de crescimento das plantas."
+  },
+  {
+    "title": "serapilheira",
+    "description": "Camadas de folhas, galhos e matéria orgânica morta que cobre o solo das matas (Resolução Conama n.º 012/94, art. 1.9)."
+  },
+  {
+    "title": "serra",
+    "description": "Vocábulo usado de maneira ampla para terrenos acidentados com fortes desníveis, frequentemente aplicado a escarpas assimétricas, possuindo uma vertente abrupta e outra menos inclinada (Resolução CONAMA n.° 004/85)."
+  },
+  {
+    "title": "serviços ambientais",
+    "description": "Conjunto de benefícios gerados por ecossistemas naturais ou cultivados que, frequentemente, não têm valor de mercado."
+  },
+  {
+    "title": "servidão florestal",
+    "description": "Direito dos habitantes de uma comunidade de se abastecer de lenha numa floresta. O direito de servidão existe nas ferrovias, com relação ao eixo das faixas laterais, nas linhas de transmissão de energia elétrica em alta tensão, nos oleodutos, aquedutos, etc."
+  },
+  {
+    "title": "sevin",
+    "description": "Inseticida do grupo dos carbamatos, também chamado Carbaril, desenvolvido para substituir o DDT. É considerado de pequena toxidez; no entanto, tem forte ação contra abelhas e organismos aquáticos."
+  },
+  {
+    "title": "siderito",
+    "description": "Meteorito constituído essencialmente de ferro e níquel sem silicatos." 
+  },
+  {
+    "title": "siderose de siderúrgicas",
+    "description": "Doença do pulmão típica de operários e moradores oriunda da inalação do pó de ferro."
+  }, 
+  {
+    "title": "sienito",
+    "description": "Mineral magmático com composição química apresentando semelhanças com o granito."
+  },
+  {
+    "title": "silicose",
+    "description": "Enfermidade provocada pela inalação prolongada de sílica. Normalmente é uma doença profissional que afeta os pulmões de quem respira pó de quartzo em trabalhos com martelos de ar comprimido, assopradores de jatos de areia e esmerilhadeiras. Provoca tosse, enfisema e afeta o coração."
+  },
+  {
+    "title": "silte",
+    "description": "Partículas de minerais diversos, de material sedimentar, formando grãos que entram na formação de um solo ou de uma rocha sedimentar, cujos diâmetros variam entre 0,02 mm e 0,002 mm."
+  },
+  {
+    "title": "silvestre",
+    "description": "Relacionado com a floresta; que é próprio da floresta. Usa-se também para indicar espécie animal não domesticada e espécie vegetal não cultivada."
+  },
+  {
+    "title": "silvícola",
+    "description": "Relativo a quem ou o que nasce ou vive nas selvas, também usado no sentido de selvagem e, no passado, como sinônimo para indígena."
+  },
+  {
+    "title": "silvicultura",
+    "description": "Exploração orientada de recursos florestais, com cultivo de monoculturas com espécies arbóreas para fins de exploração e ciência que tem por finalidade o estudo e a exploração de essências florestais."
+  },
+  {
+    "title": "simbionte",
+    "description": "Ser vivo que vive em associação com outro."
+  },
+  {
+    "title": "simbiose",
+    "description": "Qualquer tipo de relação existente entre organismos de diferentes espécies, animal ou vegetal. Frequentemente usado para o caso de benefício para ambos os organismos envolvidos."
+  },
+  {
+    "title": "simpatria",
+    "description": "Ocorrência de duas ou mais espécies em uma determinada área geográfica, com superposição parcial ou total de suas distribuições."
+  },
+  {
+    "title": "sinantropia",
+    "description": "Capacidade dos animais de utilizarem condições ecológicas favoráveis criadas pelo homem."
+  },
+  {
+    "title": "sinantropo",
+    "description": "Organismos capazes de viver em lugares comuns com os seres humanos, como por exemplo os pardais, os ratos, bananeiras."
+  },
+  {
+    "title": "Síndrome da China",
+    "description": "Termo popular para qualificar o risco potencial de um acidente nuclear: imagina-se que o combustível de um reator nuclear seria tão quente que poderia atravessar o globo terrestre, dos Estados Unidos até a China."
+  },
+  {
+    "title": "sinecologia",
+    "description": "Estudo da ecologia e dos relacionamentos das comunidades vegetais, animais e o meio ambiente em sua totalidade."
+  },
+  {
+    "title": "sismógrafo",
+    "description": "Instrumento utilizado para registrar ondas sísmicas."
+  },
+  {
+    "title": "sismologia",
+    "description": "Ramo da ciência, especificamente da geologia, que estuda os terremotos."
+  },
+  {
+    "title": "SISNAMA",
+    "description": "Sigla para Sistema Nacional do Meio Ambiente. Instituído pela Lei n.o 6.938, de 31 de agosto de 1981, que também dispõe sobre a Política Nacional do Meio Ambiente, o SISNAMA reúne os órgãos e entidades da União, dos estados, do Distrito Federal, dos territórios e dos municípios que estejam envolvidos com o uso dos recursos ambientais ou que sejam responsáveis pela proteção e melhoria da qualidade ambiental."
+  },
+  {
+    "title": "sistema",
+    "description": "Porção limitada do Universo, definida para efeito de estudo."
+  },
+  {
+    "title": "sistema aberto",
+    "description": "Sistema em que ocorre fluxo de energia ou de matéria, que se desloca dentro ou fora deste."
+  },
+  {
+    "title": "sistema ambiental",
+    "description": "Conjunto dos processos e interações dos elementos que compõem o meio ambiente, incluindo, além dos fatores físicos e bióticos, os de natureza antrópica (socioeconômica, política, institucional e ética) (FEEMA, 1997)."
+  },
+  {
+    "title": "sistema combinado de esgoto",
+    "description": "Série de instalações de engenharia de drenagem construídas para captar a vazão tanto do escoamento superficial, como das fontes de esgoto. Esse antigo projeto de esgoto provoca inúmeros problemas ambientais, entre os quais, a poluição das águas quando ocorrem enchentes."
+  },
+  {
+    "title": "sistema de aquecimento solar ativo",
+    "description": "Instalações projetadas com o objetivo de aproveitar a energia solar para aquecer água ou o ambiente. É composto de dispositivos ativos como ventoinhas e bombas. Os coletores solares instalados nos tetos das residências são normalmente sistemas ativos."
+  },
+  {
+    "title": "sistema de aquecimento solar passivo",
+    "description": "Instalações projetadas com o objetivo de gerar calor diretamente dos raios solares. É composto por enormes extensões de janelas que têm a função de coletores. Não possui dispositivos ativos como ventiladores e bombas."
+  },
+  {
+    "title": "sistema de informação geográfica - SIG",
+    "description": "Tecnologias de geoprocessamento que lidam com informação geográfica na forma de dados que permitem que se conheça a estrutura geométrica de objetos, sua posição no espaço geográfico e seus atributos; alguns SIGS possuem ainda a capacidade de manipular relacionamentos espaciais, como proximidade e adjacências. Em inglês a sigla é GIS."
+  },
+  {
+    "title": "sistema fechado",
+    "description": "Sistema no qual existe uma troca de energia com o ambiente, mas não de matéria."
+  },
+  {
+    "title": "Sistema Solar",
+    "description": "Conjunto de oito planetas, satélites naturais, asteroides, meteoritos, cometas, além de gás e poeira, que gravitam ao redor do Sol. Os planetas do Sistema Solar são Júpiter, Marte, Mercúrio, Netuno, Saturno, Terra, Urano e Vênus. Plutão deixou recentemente (2006), de ser considerado planeta."
+  },
+  {
+    "title": "sítio",
+    "description": "Termo que se refere à combinação de condições ambientais que podem alterar o tipo de vegetação nativa. Inclui o tipo de solo, drenagem, inclinação e clima, mas não a cobertura vegetal existente."
+  },
+  {
+    "title": "sítio arqueológico estadual",
+    "description": "Área de domínio público esta- dual, destinada a proteger vestígios de ocupação pré-his- histórica humana, contra quaisquer alterações e onde as atividades são disciplinadas e controladas de modo a não prejudicar os valores a serem preservados (FEEMA/PRONOL NT 1107)."
+  },
+  {
+    "title": "smog",
+    "description": "Termo que corresponde à névoa seca acinzentada, ácida, composta de substâncias poluentes que ocorre nas grandes cidades. A ação das radiações solares sobre os poluentes expelidos pelos veículos a diesel e a gasolina são os responsáveis por este fenômeno."
+  },
+  {
+    "title": "sobrepesca",
+    "description": "Situação em que a atividade pesqueira em uma determinada região ou voltada para a captura de uma espécie específica deixa de ser sustentável. Isto quer dizer que, quando se observa o fenômeno da sobrepesca, o esforço de pesca daquele recurso ultrapassou o limite biológico S necessário para que aquela espécie continue a se reproduzir naturalmente, correndo o risco de se extinguir naquele local."
+  },
+  {
+    "title": "sociedade",
+    "description": "Associação de seres de mesma espécie, na qual há algum grau de cooperação entre os indivíduos."
+  },
+  {
+    "title": "socioambientalismo",
+    "description": "Filosofia ambientalista que, baseada no conceito de socioambiental, preconiza a adoção de soluções aos problemas e conflitos ambientais integrando suas dimensões sociais e ambientais (físicas e naturais), buscando a defesa dos bens e direitos sociais, coletivos e difusos, em relação ao meio ambiente, ao patrimônio cultural e aos direitos humanos e dos povos. Com sua maneira genuína de pensar e atuar, resumida no slogan \"socioambiental se escreve junto\", o socioambientalismo é uma criação brasileira única no cenário do ambientalismo internacional."
+  },
+  {
+    "title": "socioambiente",
+    "description": "Conceito presente nas ações e movimentos ambientalistas que considera que as dimensões sociais, físicas e naturais dos ambientes são indissociáveis, devendo ser abordadas de forma íntegra."
+  },
+  {
+    "title": "sociobiologia",
+    "description": "Estudo das bases biológicas do comportamento social de uma espécie e de sua evolução."
+  },
+  {
+    "title": "sociodiversidade",
+    "description": "Diversidade de povos, sociedades e culturas existentes em todo o planeta. O Brasil possui uma rica sociodiversidade representada por mais de 200 povos indígenas distintos e grande diversidade de comunidades locais (quilombolas, caiçaras, seringueiros, ribeirinhos, praieiros, etc.) que reúnem um grande acervo de conhecimentos e sabedorias tradicionais sobre a conservação e uso da biodiversidade."
+  },
+  {
+    "title": "sódio (Na)",
+    "description": "Metal extremamente reativo com água. Seus sais têm ampla utilização na dieta (cloreto de sódio - NaCl), nas indústrias de papel, vidro, sabão, têxtil, petróleo, química, metalúrgica e farmacêutica. É encontrado no corpo humano, no sangue e nos fluidos que rodeiam as células."
+  },
+  {
+    "title": "Sol",
+    "description": "Corpo celeste estelar, o Sol é estrela amarela do tipo G de acordo com a sua posição na escala astrofísica das estrelas. Situado perto da porta da galáxia Via Láctea, o Sol é o centro do sistema de gravitação do conjunto de planetas que constitui o Sistema Solar. A luz e o calor irradiados pelo Sol derivam de uma reação nuclear que transforma dois átomos de hidrogênio (H) em um átomo de hélio (He), com liberação de energia por meio da fusão nuclear."
+  },
+  {
+    "title": "sólidos dissolvidos",
+    "description": "Quantidade total de substâncias dissolvidas em água e efluentes, incluindo matéria orgânica, minerais e outras substâncias inorgânicas."
+  },
+  {
+    "title": "sólidos filtráveis",
+    "description": "Ou matéria sólida dissolvida são aqueles que atravessam um filtro que possa reter sólidos de diâmetro maior ou igual a 1 micrômetro."
+  },
+  {
+    "title": "sólidos fixos",
+    "description": "Sólidos não voláteis."
+  },
+  {
+    "title": "sólidos suspensos",
+    "description": "Pequenas partículas de poluentes sólidos nos despejos, que contribuem para a turbidez e que resistem à separação pelos meios convencionais."
+  },
+  {
+    "title": "sólidos voláteis",
+    "description": "Aqueles que se volatilizam a uma temperatura de 600°C."
+  },
+  {
+    "title": "solo",
+    "description": "Porção da superfície terrestre constituída por partículas minerais, matéria orgânica e organismos vivos. Origina-se do desgaste das rochas, que leva vários milhares de anos para se constituir."
+  },
+  {
+    "title": "solo de brejo",
+    "description": "Solo formado de camadas de argila e ardósia impermeáveis, que possui rochas perto da superfície. Nos brejos acumula-se água, ficando a camada superior do solo permanentemente úmida, propícia para certas culturas ou atividades (ranário)."
+  },
+  {
+    "title": "solo de cerrado",
+    "description": "É arenoso e ligeiramente seco. Sua fina camada de restos vegetais é quase sempre ácida, com decomposição lenta, o que torna esse solo pobre em nutrientes."
+  },
+  {
+    "title": "solo de jardim e horta",
+    "description": "Solo geralmente muito fértil, bem drenado e arejado, pois na maioria das vezes recebe adubação orgânica, geralmente com uma grande população de minhocas."
+  },
+  {
+    "title": "solos aluvials",
+    "description": "Resultantes do transporte e acumulação de sedimentos pelos rios."
+  },
+  {
+    "title": "solos eluviais",
+    "description": "Solos formados no próprio local a partir da desagregação e decomposição."
+  },
+  {
+    "title": "solos lateríticos",
+    "description": "São solos ricos em hidróxido de ferro e alumínio."
+  },
+  {
+    "title": "solstício",
+    "description": "Época em que o Sol sofre sua maior declinação boreal ou austral e durante a qual cessa de se afastar do equador. Os solstícios situam-se respectivamente nos dias 22 e 23 de junho, época de maior declinação e nos dias 22 e 23 de dezembro para maior declinação austral do Sol. No hemisfério sul a primeira data se denomina solstício de inverno e a segunda, solstício de verão, e como as estações são opostas nos dois hemisférios, essas denominações se invertem no hemisfério norte."
+  },
+  {
+    "title": "solubilidade em água",
+    "description": "Quantidade máxima que um soluto sólido, líquido ou gasoso é capaz de dissolver em água para formar uma solução."
+  },
+  {
+    "title": "solvente",
+    "description": "Líquido no qual uma ou mais substâncias se dissolvem para formar uma solução (Decreto n.° 98.816/90)."
+  },
+  {
+    "title": "sopé",
+    "description": "Parte inferior de uma encosta."
+  },
+  {
+    "title": "Soₓ",
+    "description": "Símbolo do grupo de poluentes atmosféricos de óxido de enxofre, como o dióxido de enxofre (SO₂) e trióxido de enxofre (SO₃). Esses poluentes, em contato com o vapor d'água da atmosfera, formam alguns dos ácidos presentes na chuva ácida."
+  },
+  {
+    "title": "subsolo",
+    "description": "Camada que se localiza logo abaixo do solo, entre o solo arável e uma camada de rochas; possui menor quantidade de material orgânico que o solo."
+  },
+  {
+    "title": "substâncias abióticas",
+    "description": "Compostos básicos inorgânicos e orgânicos do meio."
+  },
+  {
+    "title": "substâncias nocivas ou perigosas",
+    "description": "Qualquer substância que, se descarregada nas águas, é capaz de gerar riscos ou causar danos à saúde humana, ao ecossistema aquático ou prejudicar o uso da água e de seu entorno (Lei n.º 9966/00)."
+  },
+  {
+    "title": "substâncias radioativas",
+    "description": "Materiais que apresentam radioatividade, natural ou induzida artificialmente."
+  },
+  {
+    "title": "sucata",
+    "description": "Matéria-prima das empresas produtoras de aço que não contam com o processo de redução, e que são responsáveis por cerca de 20% da produção nacional de aço. A sucata representa cerca de 40% do total de aço consumido no país, valor próximo aos valores de outros países, como os Estados Unidos, onde atinge 50% do total da produção. Ressalte-se que o Brasil exporta cerca de 40% da sua produção de aço. É importante, ainda, observar que a sucata pode, sem maiores problemas, ser reciclada, mesmo quando enferrujada. Sua reciclagem é, também, facilitada pela sua simples identificação e separação, principalmente no caso da sucata ferrosa, em que se empregam eletroímãs, devido às suas propriedades magnéticas. Através deste processo é possível retirar até 90% do metal ferroso existente no lixo (IBS, 1994)."
+  },
+  {
+    "title": "sucessão",
+    "description": "Mudança gradual entre tipos de comunidades ou ecossistemas transitórios, que envolvem mudanças na composição das espécies vegetais e animais."
+  },
+  {
+    "title": "sucessão alogênica",
+    "description": "Alterações na espécie numa comunidade de um determinado lugar, provocadas por influência externa à região que modificam as condições locais dentro do ambiente."
+  },
+  {
+    "title": "sucessão autogênica",
+    "description": "Alterações progressivas numa comunidade de animais e de vegetais. É o efeito natural de modificações ambientais provocadas pelos membros de uma comunidade biótica."
+  },
+  {
+    "title": "sucessão autotrófica",
+    "description": "Formação do ecossistema no qual o índice total combinado de fotossíntese é superior ao índice combinado de respiração para os membros da comunidade ecológica. A sucessão autotrófica destaca-se pela produção de matéria orgânica autóctone, isto é, gerada dentro do ecossistema."
+  },
+  {
+    "title": "sucessão ecológica",
+    "description": "Sequência de estágios de desenvolvimento gradual de espécies tanto da fauna quanto da flora de uma comunidade biótica, englobando desde os primeiros exemplares de espécies animais e vegetais, denominados de espécies pioneiras, até o clímax."
+  },
+  {
+    "title": "sucessão halárquica",
+    "description": "Também denominada de halossere; é a formação de um ambiente ecológico que tem origem num ambiente salino."
+  },
+  {
+    "title": "sucessão hidrárquica",
+    "description": "Formação de uma comunidade ecológica que se origina em água doce ou numa área úmida como num lago."
+  },
+  {
+    "title": "sucessão primária",
+    "description": "Sucessão de formação de comunidades numa região que nunca tinha sido povoada por quaisquer espécies de organismos como, por exemplo, a cratera de um vulcão que cessa suas atividades."
+  },
+  {
+    "title": "sucessão secundária",
+    "description": "Sucessão ecológica numa região onde, no passado, havia existido um hábitat natural, mas do qual foram eliminados os seres vivos por alterações climáticas, fenômeno natural ou por interferência do homem."
+  },
+  {
+    "title": "sumidouro",
+    "description": "Cavidade em forma de funil, na superfície do solo, que se comunica com o sistema de drenagem subterrânea, em regiões calcárias, causada pela dissolução da rocha (DNAEE, 1976), ou poço destinado a receber o efluente da fossa séptica e a permitir sua infiltração subterrânea (ACIESP, 1980)."
+  },
+  {
+    "title": "superexploração",
+    "description": "Uso irracional de recursos renováveis, cuja exploração é realizada numa proporção maior do que a suportada pelo ambiente, o qual não consegue se recompor e, consequentemente, resulta em prejuízos aos ecossistemas envolvidos, diminuindo a produção a curto ou longo prazo."
+  },
+  {
+    "title": "superorganismo",
+    "description": "Associação de indivíduos na qual o funcionamento de cada um promove o bem-estar do sistema inteiro."
+  },
+  {
+    "title": "supressão",
+    "description": "Termo que se refere à condição, por um prolongado período de tempo, que têm determinadas árvores da camada inferior ou as pequenas árvores que se desenvolvem em locais muito sombreados, de apresentar pouco crescimento sem que, no entanto, venham a morrer."
+  },
+  {
+    "title": "surto",
+    "description": "Aparecimento repentino de vários casos de uma determinada doença, ou um crescimento extraordinário de certa espécie de praga."
+  },
+  {
+    "title": "sustentabilidade",
+    "description": "Diz-se da qualidade de um empreendimento humano que, nas suas interações com o universo socioambiental, fundamenta sua viabilidade econômica, simultaneamente, em critérios de respeito à justiça social, aos valores e à diversidade das culturas envolvidas, à distribuição equitativa e democrática das riquezas materiais e não materiais, e à correção ecológica. Pode ser definida como a capacidade de desenvolver processos produtivos e de gerar riquezas a partir da apropriação de recursos naturais, sem provocar o esgotamento da natureza ou a degradação socioambiental. A sustentabilidade alcança sua plenitude com a coletivização das ações individuais e comunitárias sobre o meio ambiente e suas consequências, gerando sociedades sustentáveis. O debate sobre a sustentabilidade emergiu durante a segunda metade do século XX, tendo se desdobrado na formulação de várias propostas de ação, tais como: vidas e sociedades sustentáveis, desenvolvimento sustentável, consumo consciente, entre outras."
+  },
+  {
+    "title": "sustentabilidade ambiental",
+    "description": "Termo relativo ao desenvolvimento sustentável e que se refere ao uso racional dos recursos naturais ao longo dos anos. Processo de sustentabilidade que une o crescimento econômico à justiça social e à conservação da Natureza, imprescindível para o desenvolvimento sustentado, garantindo às gerações futuras a possibilidade de satisfazer suas próprias necessidades."
+  }
+]

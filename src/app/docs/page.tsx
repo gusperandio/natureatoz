@@ -11,7 +11,9 @@ import arrowRight from "../../../public/icons/arrow-right.svg";
 import CardHome from "../components/CardHome";
 import BackIcon from '../../../public/icons/arrow-left.svg'
 import { analytics, log } from "@/lib/firebase";
+import { Oxygen } from "next/font/google";
 
+const font = Oxygen({weight: "400", subsets: ['latin'], });
 
 export default function Page() {
   const { selectedLanguage } = useLanguage();
@@ -186,7 +188,7 @@ export default function Page() {
   )
 
   const auth = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       {goBack}
       <h1 className={styles.title}>{textAuth.title}</h1>
       <p className={styles.paragraph}>{textAuth.textIntro}</p>
@@ -203,7 +205,7 @@ export default function Page() {
   );
 
   const random = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       {goBack}
       <h1 className={styles.title}>
         {textRandom.title}
@@ -239,7 +241,7 @@ export default function Page() {
   );
 
   const dictionary = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       {goBack}
       <h1 className={styles.title}>{textDictionary.title}</h1>
       <p className={styles.paragraph}>{textDictionary.textIntro}</p>
@@ -255,7 +257,7 @@ export default function Page() {
   );
 
   const search = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       {goBack}
       <h1 className={styles.title}>{textSearch.title}</h1>
       <p className={styles.paragraph}>{textSearch.textIntro}</p>
@@ -271,7 +273,7 @@ export default function Page() {
   );
 
   const pagination = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       <h1 className={styles.title}>{textDictionary.title}</h1>
       <p className={styles.paragraph}>{textDictionary.textIntro}</p>
       <br />
@@ -284,7 +286,7 @@ export default function Page() {
   );
 
   const intro = (
-    <div id="content" className={`${styles.content}`}>
+    <div id="content" className={`${styles.content} ${font.className}`}>
       <h1 className={styles.title}>{textContent.title} <span className={styles.version}>v 1.0</span></h1>
       <p className={styles.paragraph}>{textContent.textIntro}</p>
       <br />
@@ -327,12 +329,10 @@ export default function Page() {
     </div>
   );
 
-  const region = intro;
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Adiciona um efeito de rolagem suave
+      behavior: "smooth",
     });
   };
 
@@ -344,7 +344,6 @@ export default function Page() {
   };
 
   const [content, setContent] = useState(intro);
-  const [position, setPosition] = useState("30% 20%");
   const section = [
     { name: "v1/", section: intro, style: styles.options, req: "OPTIONS" },
     { name: "/auth", section: auth, style: styles.get, req: "GET" },
@@ -363,12 +362,12 @@ export default function Page() {
   }, []);
 
   return (
-    <div className={styles.body}>
+    <div className={`${styles.body} ${font.className}`}>
       <div
         id="sidebar"
         className={styles.sidebar}
         style={{
-          backgroundPosition: `${position}`,
+          backgroundPosition: "30% 20%",
         }}
       >
         <br />
@@ -384,9 +383,9 @@ export default function Page() {
         </ul>
       </div>
     
-    {/* <div style={{fontFamily: "Manrope"}}> */}
+    <div className={font.className}>
       {content}
-    {/* </div> */}
+    </div>
     </div>
   );
 }

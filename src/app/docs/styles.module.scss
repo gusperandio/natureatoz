@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 .body {
   display: flex;
   height: 155vh;
-  font-family: "Oxygen";
   background-image: url("/background.png");
 
   ul {
@@ -33,7 +31,6 @@
     width: auto;
     border-radius: 3px;
     text-align: center;
-    font-family: "Gill Sans MT";
     padding: 3px;
   }
 
@@ -65,7 +62,6 @@
         color: #36395a;
         cursor: pointer;
         display: inline-flex;
-        font-family: "JetBrains Mono", monospace;
         height: 48px;
         justify-content: center;
         line-height: 1;
@@ -187,7 +183,6 @@
     flex-direction: column;
     padding: 2rem 10rem 2rem 2rem;
     height: 100vh;
-    font-family: "Manrope";
 
     .goBack {
       display: none;
@@ -197,7 +192,6 @@
       font-size: x-large;
       display: flex;
       align-items: center;
-
       .version {
         text-align: center;
         color: #777777;
@@ -222,7 +216,6 @@
       padding: 1rem;
       text-align: justify;
       color: #47474d;
-      font-family: "Manrope";
     }
 
     .guides {

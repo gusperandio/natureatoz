@@ -1,6 +1,31 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'x-custom-header',
+            value: 'custom-value-for-test-route',
+          },
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "*",
+          },
+          {
+            key: "Access-Control-Allow-Methods",
+            value: "GET, POST, PUT, DELETE, OPTIONS",
+          },
+          {
+            key: "Access-Control-Allow-Headers",
+            value: "Content-Type, Authorization",
+          },
+        ],
+      },
+    ]
+  },
   images: {
     domains: ["cdn.dribbble.com", "images.pexels.com", "i.imgur.com", "imgur.com"]
   },
@@ -9,6 +34,7 @@ const nextConfig = {
     USER_MONGODB_URI: process.env.USER_MONGODB_URI,
     PASSWORD_MONGODB_URI: process.env.PASSWORD_MONGODB_URI,
     KEY_TO_POST: process.env.KEY_TO_POST,
+    SEND_API_KEY: process.env.SEND_API_KEY,
     JWT_KEY: process.env.JWT_KEY,
     TOKEN_CONFIGS: process.env.TOKEN_CONFIGS,
     API_KEY: process.env.API_KEY,
@@ -22,19 +48,7 @@ const nextConfig = {
     URI_DEV: process.env.URI_DEV,
   },
   reactStrictMode: false,
-  async headers() {
-    return [
-      {
-        source: "/api/:path*",
-        headers: [
-          { key: "Access-Control-Allow-Credentials", value: "true" },
-          { key: "Access-Control-Allow-Origin", value: "*" },
-          { key: "Access-Control-Allow-Methods", value: "GET,DELETE,PATCH,POST,PUT" },
-          { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
-        ]
-      }
-    ]
-  }
+
 };
 
 module.exports = nextConfig;

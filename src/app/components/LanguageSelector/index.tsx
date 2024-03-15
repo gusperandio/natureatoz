@@ -5,6 +5,8 @@ import brazil from "../../../../public/icons/brazil.svg";
 import eua from "../../../../public/icons/eua.svg";
 import Image from "next/image";
 import { useLanguage } from '../../LanguageContext';
+import { Roboto } from "next/font/google";
+const font = Roboto({weight: "500", subsets: ["latin"],  display: 'swap', });
 
 export default function LanguageSelector() {
   
@@ -34,14 +36,14 @@ export default function LanguageSelector() {
       <label className={styles.labelSelect}>
         <select
           id="languageSelect"
-          className={styles.selected}
+          className={`${styles.selected} ${font.className}`}
           value={selectedLanguage}
           onChange={handleLanguageChange}
         >
-          <option value="En-US" className={styles.opt}>
+          <option value="En-US" className={`${styles.opt} ${font.className}`}>
             En-US
           </option>
-          <option value="Pt-BR" className={styles.opt}>
+          <option value="Pt-BR" className={`${styles.opt} ${font.className}`}>
             Pt-BR
           </option>
         </select>

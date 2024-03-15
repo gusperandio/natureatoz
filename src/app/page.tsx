@@ -8,13 +8,12 @@ import axios from "axios";
 import Loader from "./components/Loader";
 import { analytics, log } from "@/lib/firebase";
 import { IsProd } from "@/lib/config/conifg";
-// import { analytics, log } from "@/lib/firebase";
-
-
+import snake from '../../public/arara.png'
 interface RequestData {
   request: number;
 }
 
+console.log(snake)
 export default function Home() {
   const formatNumber = (num: number): string => {
     if (num >= 1000000) {
@@ -30,53 +29,62 @@ export default function Home() {
   const [loadingReq, setLoadingReq] = useState(true);
   const [randomData, setRandomData] = useState(0);
   const [name, setName] = useState("Abastecimento de água");
-  const [desc, setDesc] = useState("Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.");
-  const [imgUrl, setImgUrl] = useState("https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1");
+  const [desc, setDesc] = useState(
+    "Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano."
+  );
+  const [imgUrl, setImgUrl] = useState(
+    "https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1"
+  );
   const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
 
-  const requests = async () => {
+  const apis = async () => {
     try {
-      const response = await axios.get(
-        `${URI}api/v1/requests`);
-      setRandomData(response.data.requests);
+      const reqs = axios.get(`${URI}api/v1/requests`);
+      const cards = axios.get(`${URI}api/v1/random/image`, {
+        headers: { Authorization: `Bearer ${process.env.TOKEN_CONFIGS}` },
+      });
+      const [resultado1, resultado2] = await Promise.all([reqs, cards]);
+      console.log(resultado2.data)
+      setRandomData(resultado1.data.requests);
+      setName(resultado2.data.title);
+      setDesc(resultado2.data.description);
+      setImgUrl(resultado2.data.image);
     } catch (error) {
-      console.error(error)
-    }
-    finally {
+      console.error(error);
+    } finally {
       setLoadingReq(false);
+      setLoading(false);
     }
-  }
+  };
 
   const cardHome = async () => {
     try {
-      const response = await axios.get(`${URI}api/v1/random/image?size=30`, { headers: { 'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}` } });
+      const response = await axios.get(`${URI}api/v1/random/image?size=30`, {
+        headers: { Authorization: `Bearer ${process.env.TOKEN_CONFIGS}` },
+      });
       if (response.data) {
-        const item = response.data[Math.floor(Math.random() * response.data.length)]
-        setName(item.title)
-        setDesc(item.description.substring(0, 90))
-        setImgUrl(item.image)
+        setName(response.data.title);
+      setDesc(response.data.description);
+      setImgUrl(response.data.image);
       }
     } catch (error) {
-      console.error(error)
+      console.error(error);
     } finally {
       setLoading(false);
     }
   };
 
-
   const prints = () => {
-    setLoading(true)
-    cardHome()
-  }
-
-  useEffect(() => {
-    log(analytics, 'page_view', { page_path: '/' });
-    requests();
+    setLoading(true);
     cardHome();
-  }, []);
+  };
 
   useEffect(() => {
+    log(analytics, "page_view", { page_path: "/" });
+    apis();
   }, []);
+
+  useEffect(() => {}, []);
 
   return (
     <div>
@@ -89,11 +97,17 @@ export default function Home() {
             </span>
 
             <span className={styles.likeCount}>
-              {loadingReq ? (<Loader />) : formatNumber(randomData)}
+              {loadingReq ? <Loader /> : formatNumber(randomData)}
             </span>
           </button>
         </div>
-        <CardHome loader={loading} name={name} desc={desc} imgUrl={imgUrl} reload={prints} />
+        <CardHome
+          loader={loading}
+          name={name}
+          desc={desc}
+          imgUrl={imgUrl}
+          reload={prints}
+        />
       </main>
     </div>
   );

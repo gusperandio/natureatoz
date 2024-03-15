@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { FC } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
+import { Roboto, Oxygen } from "next/font/google";
+const fontOxygen = Oxygen({weight: "400", subsets: ['latin'], display : "swap"});
+const font = Roboto({weight: "400", subsets: ['latin'], display : "swap"});
 
 interface PropsParallax {
   selectedLanguage: string;
@@ -59,7 +62,7 @@ export default function Parallax(props: PropsParallax) {
       <section
         className={`${styles.banner}`}
       >
-        <div className={styles.divButtons}>
+        <div className={`${styles.divButtons} ${font.className}`}>
           <button onClick={scrollToIntroduction}>{props.selectedLanguage == "Pt-BR"
             ? "Introdução"
             : "Introduction"}</button>
@@ -70,8 +73,8 @@ export default function Parallax(props: PropsParallax) {
           </Link>
         </div>
       </section>
-      <section className={`${styles.container} `} id="introduction-section">
-        <div >
+      <section className={`${styles.container} ${fontOxygen.className}`} id="introduction-section">
+        <div>
           <h2 style={{ opacity: scrollAnimation ? 1 : 0, transition: 'opacity 0.5s ease-in-out', }}>
             {props.selectedLanguage == "Pt-BR"
               ? "Introdução"

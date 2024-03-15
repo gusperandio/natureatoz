@@ -11,11 +11,15 @@ import ModalPrivacy from "../ModalPrivacy";
 import ModalContact from "../ModalContact";
 import ModalLicense from "../ModalLicense";
 import { useRouter } from "next/navigation";
+import { Roboto } from "next/font/google";
+
+const font = Roboto({weight : "400", subsets: ["latin"]})
+
 
 export function Footer() {
   const { selectedLanguage } = useLanguage();
   const { isOpen, openModal, closeModal, modalConfig } =
-    useModal(selectedLanguage);
+  useModal(selectedLanguage);
   const router = useRouter();
 
   const report = () => {
@@ -23,7 +27,7 @@ export function Footer() {
   }
 
   return (
-    <div className={styles.footer}>
+    <div className={`${styles.footer} ${font.className}`}>
       <div className={styles.footerfooter}>
         <div>
           <ul className={styles.modalLista}>
@@ -33,16 +37,6 @@ export function Footer() {
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <Image src={logo} alt="Nature A to Z" height={90} />
-              </Link>
-            </li>
-            <li className={styles.g}>
-              <Link
-                href="/"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  {selectedLanguage === "Pt-BR" ? "Início" : "Home"}
-                </p>
               </Link>
             </li>
             <li className={styles.b}>

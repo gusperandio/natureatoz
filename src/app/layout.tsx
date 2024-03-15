@@ -7,8 +7,7 @@ import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./LanguageContext";
 import FloatingButton from "./components/FloatingButton";
 import Cookies from "./components/Cookies";
-
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({weight: "400", subsets: ["latin"], display: "swap"})
 
 export const metadata: Metadata = {
   title: "Nature A to Z",
@@ -36,14 +35,9 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/images/icon.png" type="image/x-icon" />
+         <link rel="icon" href="/images/icon.png" type="image/x-icon" />
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <LanguageProvider>
           <Header />
           <Cookies />

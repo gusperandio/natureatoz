@@ -6,14 +6,15 @@ import Link from "next/link";
 import LanguageSelector from "../LanguageSelector";
 import { useState } from "react";
 import { useLanguage } from "@/app/LanguageContext";
-
+import { Roboto } from "next/font/google";
 import Modal from "../Modal";
 import ModalSup from "../ModalSup";
 
+const font = Roboto({ weight: "500", subsets: ["latin"], display: "swap" });
 export function Header() {
   const { selectedLanguage } = useLanguage();
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  
+
   const openModal = () => {
     setModalIsOpen(true);
   };
@@ -21,70 +22,51 @@ export function Header() {
   const closeModal = () => {
     setModalIsOpen(false);
   };
-  
-  
-  const aa =
-    selectedLanguage === "Pt-BR" ? (
-      <a className={styles.aa}>Inicio</a>
-    ) : (
-      <a className={styles.aa}>Home</a>
-    );
-
-  const dc =
-    selectedLanguage === "Pt-BR" ? (
-      <a className={styles.aa}>Documentos</a>
-    ) : (
-      <a className={styles.aa}>Documents</a>
-    );
-
-  const sup =
-    selectedLanguage === "Pt-BR" ? (
-      <a
-        id="textSupport"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={openModal}
-        style={{ cursor: "pointer" }}
-        className={styles.aa}
-      >
-        Apoiar
-      </a>
-    ) : (
-      <a
-        id="textSupport"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={openModal}
-        style={{ cursor: "pointer" }}
-        className={styles.aa}
-      >
-        Support us
-      </a>
-    );
-
- 
 
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContext}>
         <Link href="/" legacyBehavior>
-          <Image src={logo} alt="Nature A to Z" height={200} priority style={{cursor: "pointer"}} />
+          <Image
+            src={logo}
+            alt="Nature A to Z"
+            height={200}
+            priority
+            style={{ cursor: "pointer" }}
+          />
         </Link>
-        <nav style={{fontFamily : "Roboto"}}>
+        <nav style={{ fontFamily: "Roboto" }}>
           <Link href="/" legacyBehavior>
-            {aa}
+            <a className={`${styles.aa} ${font.className}`}>
+              {selectedLanguage === "PtBR" ? "Inicio" : "Home"}
+            </a>
           </Link>
           <Link href="/intro" legacyBehavior>
-            {dc}
+            <a className={`${styles.aa} ${font.className}`}>
+              {selectedLanguage === "PtBR" ? "Documentos" : "Documents"}
+            </a>
           </Link>
-          {sup}
+          <a
+            id="textSupport"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={openModal}
+            style={{ cursor: "pointer" }}
+            className={`${styles.aa} ${font.className}`}
+          >
+            {selectedLanguage === "Pt-BR" ? "Apoiar" : "Support us"}
+          </a>
           <a style={{ backgroundColor: "#15171b" }} className={styles.aa}>
             <LanguageSelector />
           </a>
         </nav>
 
-        <Modal isOpen={modalIsOpen} onClose={closeModal} classToUse="modal_support">
-          <ModalSup selectedLanguage={selectedLanguage}/>
+        <Modal
+          isOpen={modalIsOpen}
+          onClose={closeModal}
+          classToUse="modal_support"
+        >
+          <ModalSup selectedLanguage={selectedLanguage} />
         </Modal>
       </div>
     </header>

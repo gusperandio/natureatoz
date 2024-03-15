@@ -1,11 +1,13 @@
-import { CountRequest } from "@/lib/count_sqlite";
-import { analytics, log } from "@/lib/firebase";
 import type { NextApiRequest, NextApiResponse } from "next";
-import unorm from "unorm";
+import Item from "../../../../lib/models/item";
+import unorm from 'unorm';
+import { NextResponse } from "next/server";
+import { DB } from "@/lib/config/dbConnect";
 
 interface InsertDatas {
   title: string;
   description: string;
+  id: number
 }
 
 const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
@@ -34,7 +36,7 @@ function correctDot(texto: string): string {
 
   const regex: RegExp = /[.]\s([a-z])/g;
 
-  function sub(match: string, letra: string): string {
+  function sub(_: string, letra: string): string {
     return ". " + letra.toUpperCase();
   }
   return texto.replace(regex, sub);
@@ -49,22 +51,40 @@ const removeAccents = (input: string): string => {
   return normalized.replace(/[\u0300-\u036F]/g, "");
 };
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+const database = new DB();
+export async function POST(request: Request) {
   try {
-    const countRequest = new CountRequest();
-    const num = await countRequest.findRequests();
+    const KEY = process.env.KEY_TO_POST || "";
 
-    res
-      .status(200)
-      .json({ success: true, num: num });
+    if (request.headers.get('keynature') !== KEY) {
+      return new NextResponse("GET OUT!", {
+        status: 401,
+        headers: {
+          'Content-Type': 'text/plain'
+        }
+      });
+    }
+
+    const requestData = typeof request.body === 'string' ? JSON.parse(request.body) : request.body;
+
+    await database.connect();
+    const newItem = await Item.create(processLetter(requestData));
+
+    return new NextResponse(JSON.stringify({ success: true, inserts: newItem }), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
   } catch (error) {
-    res
-      .status(500)
-      .send(
-        "Error in system, report please in https://natureatoz.com.br/report"
-      );
+    console.error("Erro:", error);
+    return new NextResponse("Error to process items \n" + error, {
+      status: 500,
+      headers: {
+        'Content-Type': 'text/plain'
+      }
+    });
+  } finally {
+    await database.disconnect();
   }
-}
+};

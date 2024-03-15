@@ -9,6 +9,7 @@ import { useLanguage } from "@/app/LanguageContext";
 import fileTypeIcon from "../../../../public/icons/file-copy.svg";
 import copy from "clipboard-copy";
 import checkIcon from "../../../../public/icons/check.svg";
+import { JetBrains_Mono, Oxygen, Roboto_Mono } from "next/font/google";
 
 interface PropsCardHome {
   name?: string;
@@ -18,13 +19,14 @@ interface PropsCardHome {
   reload: () => void;
 }
 
+const font = Oxygen({ weight: "400", subsets: ["latin"] });
+const fontJson = Roboto_Mono({ weight: "100", subsets: ["latin"] });
 export default function CardHome(props: PropsCardHome) {
   const { selectedLanguage } = useLanguage();
   const [isCopied, setIsCopied] = useState(false);
   const handleButtonClick = () => {
     props.reload();
   };
-
 
   const handleCopyToClipboard = () => {
     let textToCopy = "https://natureatoz.com.br/api/v1/random/image";
@@ -42,7 +44,6 @@ export default function CardHome(props: PropsCardHome) {
       });
   };
 
-
   const copyClip = (
     <span className={styles.tooltiptext} id="myTooltip">
       {isCopied ? (
@@ -50,14 +51,18 @@ export default function CardHome(props: PropsCardHome) {
           {selectedLanguage === "Pt-BR" ? "Copiado" : "Copied"}{" "}
           <Image src={checkIcon} width={16} height={16} alt="check" />
         </p>
+      ) : selectedLanguage === "Pt-BR" ? (
+        "Copiar"
       ) : (
-        selectedLanguage === "Pt-BR" ? "Copiar" : "Copy to clipboard"
+        "Copy to clipboard"
       )}
     </span>
   );
 
   return (
-    <div className={`${styles.mainCards} animate__animated animate__fadeInUp`}>
+    <div
+      className={`${styles.mainCards} ${font.className} animate__animated animate__fadeInUp`}
+    >
       <div className={styles.card}>
         <div className={styles.header}>
           {props.loader ? (
@@ -75,12 +80,21 @@ export default function CardHome(props: PropsCardHome) {
           )}
         </div>
         <div>
-
-          <div className={styles.info} style={{ display: `${props.loader ? "none" : "block"}` }}>
+          <div
+            className={styles.info}
+            style={{ display: `${props.loader ? "none" : "block"}` }}
+          >
             <p className={styles.title}>{props.name}</p>
-            <p className={styles.desc}>{props.desc}</p>
+            <p className={styles.desc}>
+              {props.desc && props.desc.length > 90
+                ? `${props.desc.substring(0, 90)}...`
+                : props.desc}
+            </p>
           </div>
-          <div className={styles.is_loading} style={{ display: `${props.loader ? "block" : "none"}` }}>
+          <div
+            className={styles.is_loading}
+            style={{ display: `${props.loader ? "block" : "none"}` }}
+          >
             <div className={styles.content}>
               <p className={styles.titleSkel}></p>
               <p className={styles.subSkel}></p>
@@ -89,7 +103,11 @@ export default function CardHome(props: PropsCardHome) {
         </div>
         <div className={styles.footer}>
           <p className={styles.tag}>#ATOZ</p>
-          <button type="button" className={styles.action} onClick={handleButtonClick}>
+          <button
+            type="button"
+            className={styles.action}
+            onClick={handleButtonClick}
+          >
             <Image
               src={refreshIcon}
               width={14}
@@ -119,27 +137,46 @@ export default function CardHome(props: PropsCardHome) {
             </div>
           </button>
         </div>
+
         <div className={styles.cardJson}>
-          <pre>
-            &#123;
-            <br />
-            <div className={styles.notP}>
-              <p className={styles.key}>&quot;name&quot;</p>&nbsp;:&nbsp;
-              <p className={styles.value}>&quot;{props.name}&quot;</p>&#44;
-              <br />
+          <div className={styles.tools}>
+            <div className={styles.circle}>
+              <span className={`${styles.red} ${styles.box}`}></span>
             </div>
-            <div className={styles.notP}>
-              <p className={styles.key}>&quot;description&quot;</p>&nbsp;:&nbsp;
-              <p className={styles.value}>&quot;{props.desc}&quot;</p>&#44;
-              <br />
+            <div className={`${styles.circle}`}>
+              <span className={`${styles.yellow} ${styles.box}`}></span>
             </div>
-            <div className={styles.notP}>
-              <p className={styles.key}>&quot;image&quot;</p>&nbsp;:&nbsp;
-              <p className={styles.value}>&quot;{props.imgUrl}&quot;</p>
-              <br />
+            <div className={styles.circle}>
+              <span className={`${styles.green} ${styles.box}`}></span>
             </div>
-            &#125;
-          </pre>
+          </div>
+          <div className={styles.card__content}>
+            {props.loader ? (
+              <div style={{ height: "100px" }}>
+                <Loader />
+              </div>
+            ) : (
+              <div className={fontJson.className}>
+                <span style={{ color: "dodgerblue" }}>&#123;</span>
+                <div className={styles.notP}>
+                  <b className={styles.key}>&quot;name&quot;</b>&nbsp;:&nbsp;
+                  <b className={styles.value}>&quot;{props.name}&quot;</b>
+                  &#44;
+                </div>
+                <div className={styles.notP}>
+                  <b className={styles.key}>&quot;description&quot;</b>
+                  &nbsp;:&nbsp;
+                  <b className={styles.value}>&quot;{props.desc}&quot;</b>
+                  &#44;
+                </div>
+                <div className={styles.notP}>
+                  <b className={styles.key}>&quot;image&quot;</b>&nbsp;:&nbsp;
+                  <b className={styles.value}>&quot;{props.imgUrl}&quot;</b>
+                </div>
+                <span style={{ color: "dodgerblue" }}>&#125;</span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

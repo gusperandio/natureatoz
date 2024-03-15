@@ -7,6 +7,9 @@ import Loader from "../components/Loader";
 import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
 import { IsProd } from '@/lib/config/conifg';
+import { Roboto } from 'next/font/google';
+
+const font = Roboto({weight: "400", subsets: ["latin"], display : "swap"})
 
 export default function Page() {
   const { selectedLanguage } = useLanguage();
@@ -62,7 +65,7 @@ export default function Page() {
     scrollToPosition();
   }, []);
 
-  return (<div className={styles.content}>
+  return (<div className={`${styles.content} ${font.className}`}>
     <div className={styles.container}>
       <form className={styles.modal} onSubmit={handleSubmit}>
         <div className={styles.modal__header}>

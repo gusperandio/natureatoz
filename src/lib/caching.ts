@@ -47,7 +47,8 @@ export class Cache {
     | { title: string; description: string }[]
     | { requests: number }
     | string
-    | undefined {
+    | undefined
+    | any[]  {
     const cacheValue = this.cache.get(key) as CacheValue | undefined;
     if (cacheValue && cacheValue.timestamp > Date.now()) {
       return cacheValue.data;

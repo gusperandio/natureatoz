@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Manrope:wght@200;300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
 .cardCode {
   width: 600px;
   height: auto;
@@ -27,7 +25,6 @@
       background-color: transparent;
       color: #a1a1aa;
       border: none;
-      font-family: "JetBrains Mono";
     }
 
     button:hover {
@@ -50,7 +47,7 @@
     flex-direction: row;
     align-items: center;
     padding-top: 4px;
-    font-family: "Fira Code", "Roboto";
+    font-weight: 900;
     span {
       color: var(--gray-100);
       padding-left: 6px;
@@ -89,13 +86,14 @@
       font-weight: 400;
       padding-left: 6px;
       color: var(--gray-100);
+       font-weight: bold;
     }
   }
 
   .codeContent {
     color: var(--whiteCode);
     padding: 1.2rem;
-    //font-family: "JetBrains Mono";
+   
     border-top: 1px solid #35353b;
     font-size: 12px;
 

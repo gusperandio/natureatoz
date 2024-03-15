@@ -26,8 +26,6 @@ const initializeFirebase = async () => {
 const log = (analytics: Analytics | null, eventName: string, eventParams?: { [key: string]: any }, options?: AnalyticsCallOptions) => {
   if (analytics) {
     logEvent(analytics, eventName, eventParams, options);
-  } else {
-    console.warn("Firebase Analytics is don't available");
   }
 };
 

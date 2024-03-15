@@ -57,10 +57,10 @@ export default function ModalContact(props: PropsContact) {
           </button>
         </a>
       </Link>
-      <Link href="mailto:gustavo.sperandio25@gmail.com" legacyBehavior passHref>
+      <Link href="/report" legacyBehavior passHref>
         <a target="_blank" rel="noopener noreferrer">
           <button className={`${styles.btn} ${styles.btnEmail}`}>
-            gustavo.sperandio25@gmail.com
+            E-mail
             <span className={styles.spanEmail}>
               <svg
                 fill="#ffffff"
