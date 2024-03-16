@@ -40,19 +40,19 @@ export default function Home() {
         },
       });
 
-      const cards = axios.get(`${URI}api/v1/random/image`, {
-        headers: {
-          Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
-          "Access-Control-Allow-Origin": "*",
-        },
-      });
+      // const cards = axios.get(`${URI}api/v1/random/image`, {
+      //   headers: {
+      //     Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
+      //     "Access-Control-Allow-Origin": "*",
+      //   },
+      // });
 
-      const [reqResult, cardResult] = await Promise.all([reqs, cards]);
+      const [reqResult] = await Promise.all([reqs]);
 
       setRandomData(reqResult.data.requests);
-      setName(cardResult.data.title);
-      setDesc(cardResult.data.description);
-      setImgUrl(cardResult.data.image);
+      // setName(cardResult.data.title);
+      // setDesc(cardResult.data.description);
+      // setImgUrl(cardResult.data.image);
     } catch (error) {
       console.error(error);
     } finally {
