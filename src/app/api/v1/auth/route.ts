@@ -14,6 +14,7 @@ export async function GET(
   request: Request,
 ) {
   try {
+    const origin = request.headers.get('origin');
     const { searchParams } = new URL(request.url)
     const queryDays = searchParams.get('days');
     countSqlite.addReq();

@@ -14,6 +14,7 @@ const countSqlite = new CountRequest();
 
 export async function GET(request: Request) {
   try {
+    const origin = request.headers.get('origin');
     const remaining = await limiter.removeTokens(1);
 
     if (remaining < 0) {
@@ -55,7 +56,7 @@ export async function GET(request: Request) {
           status: 400,
           headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': "*"
+            'Access-Control-Allow-Origin':  "*"
           }
         });
       }
@@ -68,7 +69,7 @@ export async function GET(request: Request) {
         status: 200,
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': "*"
+          'Access-Control-Allow-Origin':  "*"
         }
       });
     } else {

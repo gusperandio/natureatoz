@@ -9,31 +9,34 @@ const countSqlite = new CountRequest();
 
 export async function GET(request: Request) {
   try {
+    const origin = request.headers.get('origin');
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
-
     if (getCache) {
       return new NextResponse(JSON.stringify(getCache), {
         status: 200,
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': "*"
         },
       });
     }
-
+    
     countSqlite.addReq();
     const num = await countSqlite.getReq();
     cached.save(url.pathname, { requests: num }, 30, "Min");
-
+    
     return new NextResponse(JSON.stringify({ requests: num }), {
       status: 200,
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': "*"
       },
     });
+    
   } catch (error) {
     return new NextResponse(
-      "Error in system, report please in https://natureatoz.com.br/report",
+      "Error in system, report please in https://natureatoz.com.br/report" + error,
       {
         status: 500,
         headers: {

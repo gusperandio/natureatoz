@@ -1,13 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Item from "../../../../lib/models/item";
-import unorm from 'unorm';
+import unorm from "unorm";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 
 interface InsertDatas {
   title: string;
   description: string;
-  id: number
+  id: number;
 }
 
 const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
@@ -33,7 +33,6 @@ const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
 };
 
 function correctDot(texto: string): string {
-
   const regex: RegExp = /[.]\s([a-z])/g;
 
   function sub(_: string, letra: string): string {
@@ -54,38 +53,45 @@ const removeAccents = (input: string): string => {
 const database = new DB();
 export async function POST(request: Request) {
   try {
+    const origin = request.headers.get("origin");
     const KEY = process.env.KEY_TO_POST || "";
 
-    if (request.headers.get('keynature') !== KEY) {
+    if (request.headers.get("keynature") !== KEY) {
       return new NextResponse("GET OUT!", {
         status: 401,
         headers: {
-          'Content-Type': 'text/plain'
-        }
+          "Content-Type": "text/plain",
+        },
       });
     }
 
-    const requestData = typeof request.body === 'string' ? JSON.parse(request.body) : request.body;
+    const requestData =
+      typeof request.body === "string"
+        ? JSON.parse(request.body)
+        : request.body;
 
     await database.connect();
     const newItem = await Item.create(processLetter(requestData));
 
-    return new NextResponse(JSON.stringify({ success: true, inserts: newItem }), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': "*"
+    return new NextResponse(
+      JSON.stringify({ success: true, inserts: newItem }),
+      {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
-    });
+    );
   } catch (error) {
     console.error("Erro:", error);
     return new NextResponse("Error to process items \n" + error, {
       status: 500,
       headers: {
-        'Content-Type': 'text/plain'
-      }
+        "Content-Type": "text/plain",
+      },
     });
   } finally {
     await database.disconnect();
   }
-};
+}

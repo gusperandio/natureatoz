@@ -17,6 +17,7 @@ function random(min: number, max: number) {
 
 export async function GET(request: Request) {
   try {
+    const origin = request.headers.get('origin');
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
     
@@ -71,7 +72,7 @@ export async function GET(request: Request) {
       status: 200,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': "*"
+        'Access-Control-Allow-Origin':  "*"
       }
     });
 

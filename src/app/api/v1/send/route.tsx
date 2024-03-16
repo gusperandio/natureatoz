@@ -8,8 +8,8 @@ const countSqlite = new CountRequest();
 export async function POST(request: Request) {
 
   try {
+    const origin = request.headers.get('origin');
     const KEY = process.env.KEY_TO_POST || "";
-
     if (request.headers.get('keynature') !== KEY) {
       return new NextResponse("GET OUT!", {
         status: 401,
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
       status: 200,
       headers: {
         'Content-Type': 'text/plain',
-        'Access-Control-Allow-Origin': "*"
+        'Access-Control-Allow-Origin':  "*"
       }
     });
   } catch (error) {

@@ -13,6 +13,7 @@ const countSqlite = new CountRequest();
 
 export async function GET(request: Request, { params }: { params: { letter: string } }) {
   try {
+    const origin = request.headers.get('origin');
     const remaining = await limiter.removeTokens(1);
 
     if (remaining < 0) {
