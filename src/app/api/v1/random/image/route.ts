@@ -78,9 +78,10 @@ export async function GET(request: Request) {
 
   } catch (error) {
     return new NextResponse("Error in system, report please in https://natureatoz.com.br/report", {
-      status: 500,
+      status: 200,
       headers: {
-        'Content-Type': 'text/plain'
+        'Content-Type': 'text/plain',
+        'Access-Control-Allow-Origin':  "*"
       }
     });
   } finally {
