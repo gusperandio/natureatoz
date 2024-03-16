@@ -9,7 +9,6 @@ const countSqlite = new CountRequest();
 
 export async function GET(request: Request) {
   try {
-
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
 
@@ -17,26 +16,30 @@ export async function GET(request: Request) {
       return new NextResponse(JSON.stringify(getCache), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json'
-        }
+          "Content-Type": "application/json",
+        },
       });
     }
 
+    countSqlite.addReq();
     const num = await countSqlite.getReq();
     cached.save(url.pathname, { requests: num }, 30, "Min");
 
     return new NextResponse(JSON.stringify({ requests: num }), {
       status: 200,
       headers: {
-        'Content-Type': 'application/json'
-      }
+        "Content-Type": "application/json",
+      },
     });
   } catch (error) {
-    return new NextResponse("Error in system, report please in https://natureatoz.com.br/report", {
-      status: 500,
-      headers: {
-        'Content-Type': 'text/plain'
+    return new NextResponse(
+      "Error in system, report please in https://natureatoz.com.br/report",
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "text/plain",
+        },
       }
-    });
+    );
   }
 }

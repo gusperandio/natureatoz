@@ -4,30 +4,30 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/api/:path*',
+        source: "/api/v1/:path*",
         headers: [
-          {
-            key: 'x-custom-header',
-            value: 'custom-value-for-test-route',
-          },
-          {
-            key: "Access-Control-Allow-Origin",
-            value: "*",
-          },
+          { key: "Access-Control-Allow-Credentials", value: "true" },
+          { key: "Access-Control-Allow-Origin", value: "*" },
           {
             key: "Access-Control-Allow-Methods",
-            value: "GET, POST, PUT, DELETE, OPTIONS",
+            value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
           },
           {
             key: "Access-Control-Allow-Headers",
-            value: "Content-Type, Authorization",
+            value:
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization",
           },
         ],
       },
-    ]
+    ];
   },
   images: {
-    domains: ["cdn.dribbble.com", "images.pexels.com", "i.imgur.com", "imgur.com"]
+    domains: [
+      "cdn.dribbble.com",
+      "images.pexels.com",
+      "i.imgur.com",
+      "imgur.com",
+    ],
   },
   env: {
     PUBLIC_MONGODB_URI: process.env.PUBLIC_MONGODB_URI,
@@ -48,7 +48,6 @@ const nextConfig = {
     URI_DEV: process.env.URI_DEV,
   },
   reactStrictMode: false,
-
 };
 
 module.exports = nextConfig;

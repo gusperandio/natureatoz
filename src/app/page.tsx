@@ -7,13 +7,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
 import { analytics, log } from "@/lib/firebase";
-import { IsProd } from "@/lib/config/conifg";
-import snake from '../../public/arara.png'
-interface RequestData {
-  request: number;
-}
+import { IsProd } from "../lib/config/conifg";
 
-console.log(snake)
 export default function Home() {
   const formatNumber = (num: number): string => {
     if (num >= 1000000) {
@@ -43,12 +38,13 @@ export default function Home() {
       const cards = axios.get(`${URI}api/v1/random/image`, {
         headers: { Authorization: `Bearer ${process.env.TOKEN_CONFIGS}` },
       });
-      const [resultado1, resultado2] = await Promise.all([reqs, cards]);
-      console.log(resultado2.data)
-      setRandomData(resultado1.data.requests);
-      setName(resultado2.data.title);
-      setDesc(resultado2.data.description);
-      setImgUrl(resultado2.data.image);
+
+      const [reqResult, cardResult] = await Promise.all([reqs, cards]);
+
+      setRandomData(reqResult.data.requests);
+      setName(cardResult.data.title);
+      setDesc(cardResult.data.description);
+      setImgUrl(cardResult.data.image);
     } catch (error) {
       console.error(error);
     } finally {
@@ -64,8 +60,8 @@ export default function Home() {
       });
       if (response.data) {
         setName(response.data.title);
-      setDesc(response.data.description);
-      setImgUrl(response.data.image);
+        setDesc(response.data.description);
+        setImgUrl(response.data.image);
       }
     } catch (error) {
       console.error(error);

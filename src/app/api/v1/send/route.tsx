@@ -48,13 +48,14 @@ export async function POST(request: Request) {
 
     sgMail
       .send(msg)
-      .then((resp)=>{ console.log('Email sent...', resp)})
-      .catch((error: any)=>{ console.log(error.message)})
+      .then((resp)=>{ })
+      .catch((error: any)=>{})
 
     return new NextResponse(null, {
       status: 200,
       headers: {
-        'Content-Type': 'text/plain'
+        'Content-Type': 'text/plain',
+        'Access-Control-Allow-Origin': "*"
       }
     });
   } catch (error) {

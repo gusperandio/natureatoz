@@ -28,7 +28,8 @@ export async function GET(request: Request) {
       return new NextResponse(JSON.stringify(getCache[random(0, getCache.length - 1)]), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': "*"
         }
       });
     }
@@ -54,7 +55,7 @@ export async function GET(request: Request) {
       { $sample: { size: 200 } }
     ]);
     const filtered = filterItems(items);
-    console.log(filtered)
+    
     if (filtered.length == 0) {
       return new NextResponse(JSON.stringify({ error: "Any item founded" }), {
         status: 400,
@@ -69,7 +70,8 @@ export async function GET(request: Request) {
     return new NextResponse(JSON.stringify(filtered[random(0, filtered.length - 1)]), {
       status: 200,
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': "*"
       }
     });
 

@@ -37,7 +37,8 @@ export async function GET(request: Request, { params }: { params: { letter: stri
       return new NextResponse(JSON.stringify(getCache), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': "*"
         }
       });
     }
@@ -49,7 +50,8 @@ export async function GET(request: Request, { params }: { params: { letter: stri
       return new NextResponse(JSON.stringify({ error: "Any item founded" }), {
         status: 400,
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': "*"
         }
       });
     }

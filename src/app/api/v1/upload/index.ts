@@ -73,7 +73,8 @@ export async function POST(request: Request) {
     return new NextResponse(JSON.stringify({ success: true, inserts: newItem }), {
       status: 200,
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': "*"
       }
     });
   } catch (error) {

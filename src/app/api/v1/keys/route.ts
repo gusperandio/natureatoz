@@ -40,7 +40,8 @@ export async function GET(request: Request) {
     return new NextResponse(JSON.stringify(allKeys), {
       status: 200,
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': "*"
       }
     });
   } catch (error) {

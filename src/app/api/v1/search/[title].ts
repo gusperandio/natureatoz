@@ -54,7 +54,8 @@ export async function GET(request: Request) {
         return new NextResponse(JSON.stringify({ error: "Any item founded" }), {
           status: 400,
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': "*"
           }
         });
       }
@@ -66,14 +67,16 @@ export async function GET(request: Request) {
       return new NextResponse(JSON.stringify(itemsWithoutData), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': "*"
         }
       });
     } else {
       return new NextResponse("Incorrect query", {
         status: 400,
         headers: {
-          'Content-Type': 'text/plain'
+          'Content-Type': 'text/plain',
+          'Access-Control-Allow-Origin': "*"
         }
       });
     }
