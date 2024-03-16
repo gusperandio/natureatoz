@@ -20,7 +20,7 @@ export async function GET(request: Request) {
     const origin = request.headers.get('origin');
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
-    
+   
     //const size = url.searchParams.get('size') ? Number(url.searchParams.get('size')) : 1;
 
     log(analytics, "/random/image", { page_path: url.pathname });
