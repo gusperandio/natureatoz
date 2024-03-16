@@ -34,9 +34,17 @@ export default function Home() {
 
   const apis = async () => {
     try {
-      const reqs = axios.get(`${URI}api/v1/requests`);
+      const reqs = axios.get(`${URI}api/v1/requests`, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+      
       const cards = axios.get(`${URI}api/v1/random/image`, {
-        headers: { Authorization: `Bearer ${process.env.TOKEN_CONFIGS}` },
+        headers: {
+          Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
+          "Access-Control-Allow-Origin": "*",
+        },
       });
 
       const [reqResult, cardResult] = await Promise.all([reqs, cards]);
