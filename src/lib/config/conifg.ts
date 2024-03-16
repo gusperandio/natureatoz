@@ -1,1 +1,1 @@
-export const IsProd = false;
+export const IsProd = true;
