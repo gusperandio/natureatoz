@@ -19,7 +19,14 @@ export default function Home() {
       return num.toString();
     }
   };
-
+  const config = {
+    headers: {
+      'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}`,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+    }
+  };
   const [loading, setLoading] = useState(true);
   const [loadingReq, setLoadingReq] = useState(true);
   const [randomData, setRandomData] = useState(0);
@@ -34,13 +41,9 @@ export default function Home() {
 
   const apis = async () => {
     try {
-      const reqs = axios.get(`${URI}api/v1/requests`);
+      const reqs = axios.get(`${URI}api/v1/requests`, config);
 
-      const cards = axios.get(`${URI}api/v1/random/image`, {
-        headers: {
-          Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`
-        },
-      });
+      const cards = axios.get(`${URI}api/v1/random/image`, config);
 
       const [reqResult, cardResult] = await Promise.all([reqs, cards]);
 
