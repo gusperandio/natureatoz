@@ -6,6 +6,7 @@ import { NextResponse } from "next/server";
 import { Counter } from "@/lib/count";
 import { Key } from "@/lib/keys";
 import { DB } from "@/lib/config/dbConnect";
+import { cors } from "../../middlewares/cors";
 export const dynamic = "force-dynamic";
 
 const dbKey = new Key();
@@ -15,6 +16,9 @@ const database = new DB();
 export async function GET(request: Request) {
   try {
     await database.connect();
+
+    // Apply cors in route
+    cors();
 
     const { searchParams } = new URL(request.url);
     const queryDays = searchParams.get("days");
@@ -34,10 +38,6 @@ export async function GET(request: Request) {
 
     return new NextResponse(JSON.stringify({ JWT, expireIn, days }), {
       status: 200,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
     });
   } catch (error) {
     return new NextResponse(

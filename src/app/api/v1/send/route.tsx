@@ -1,20 +1,22 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { limiterEmail } from '@/lib/config/limiter_email';
-import { NextResponse } from 'next/server';
-import sgMail from '@sendgrid/mail';
-import { Counter } from '@/lib/count';
+import { limiterEmail } from "@/lib/config/limiter_email";
+import { NextResponse } from "next/server";
+import sgMail from "@sendgrid/mail";
+import { Counter } from "@/lib/count";
+import { cors } from "../../middlewares/cors";
 const countMongoDB = new Counter();
 export async function POST(request: Request) {
-
   try {
-    const origin = request.headers.get('origin');
+    // Apply cors in route
+    cors();
+
     const KEY = process.env.KEY_TO_POST || "";
-    if (request.headers.get('keynature') !== KEY) {
+    if (request.headers.get("keynature") !== KEY) {
       return new NextResponse("GET OUT!", {
         status: 401,
         headers: {
-          'Content-Type': 'text/plain'
-        }
+          "Content-Type": "text/plain",
+        },
       });
     }
 
@@ -25,43 +27,43 @@ export async function POST(request: Request) {
         status: 429,
         statusText: "Too Many Requests",
         headers: {
-          'Content-Type': 'text/plain'
-        }
+          "Content-Type": "text/plain",
+        },
       });
     } else {
       await countMongoDB.updateReqCount();
     }
 
     const { searchParams } = new URL(request.url);
-    const keySendGrid = process.env.SEND_API_KEY || ""
+    const keySendGrid = process.env.SEND_API_KEY || "";
     sgMail.setApiKey(keySendGrid);
-    const description = searchParams.get('description');
-    const email = searchParams.get('email');
+    const description = searchParams.get("description");
+    const email = searchParams.get("email");
     const msg = {
-      to: 'gustavo.sperandio25@gmail.com',
-      from: 'gustavo.sperandio25@gmail.com', 
-      subject: 'Sending with Twilio SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
+      to: "gustavo.sperandio25@gmail.com",
+      from: "gustavo.sperandio25@gmail.com",
+      subject: "Sending with Twilio SendGrid is Fun",
+      text: "and easy to do anywhere, even with Node.js",
       html: `<h1>HELLO</h1>`,
     };
 
     sgMail
       .send(msg)
-      .then((resp)=>{ })
-      .catch((error: any)=>{})
+      .then((resp) => {})
+      .catch((error: any) => {});
 
     return new NextResponse(null, {
       status: 200,
       headers: {
-        'Content-Type': 'text/plain',
-      }
+        "Content-Type": "text/plain",
+      },
     });
   } catch (error) {
     return new NextResponse("Error in system, report please in https://natureatoz.com.br/report", {
-      status: 500,
-      headers: {
-        'Content-Type': 'text/plain'
-      }
-    });
+        status: 500,
+        headers: {
+          "Content-Type": "text/plain",
+        },
+      });
   }
-};
+}

@@ -3,6 +3,7 @@ import Item from "../../../../lib/models/item";
 import unorm from "unorm";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
+import { cors } from "../../middlewares/cors";
 
 interface InsertDatas {
   title: string;
@@ -53,7 +54,8 @@ const removeAccents = (input: string): string => {
 const database = new DB();
 export async function POST(request: Request) {
   try {
-    const origin = request.headers.get("origin");
+    // Apply cors in route
+    cors();
 
     await database.connect();
     const requestData =

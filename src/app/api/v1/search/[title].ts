@@ -6,6 +6,7 @@ import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
+import { cors } from "../../middlewares/cors";
 
 const database = new DB();
 const cached = new Cache();
@@ -13,7 +14,8 @@ const countMongoDB = new Counter();
 
 export async function GET(request: Request) {
   try {
-    const origin = request.headers.get("origin");
+    // Apply cors in route
+    cors();
 
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
@@ -44,7 +46,6 @@ export async function GET(request: Request) {
       await countMongoDB.updateReqCount();
     }
 
-
     const { searchParams } = new URL(request.url);
     let title = searchParams.get("title");
 
@@ -55,10 +56,6 @@ export async function GET(request: Request) {
       if (items.length == 0) {
         return new NextResponse(JSON.stringify({ error: "Any item founded" }), {
           status: 400,
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-          },
         });
       }
 
@@ -75,10 +72,6 @@ export async function GET(request: Request) {
     } else {
       return new NextResponse("Incorrect query", {
         status: 400,
-        headers: {
-          "Content-Type": "text/plain",
-          "Access-Control-Allow-Origin": "*",
-        },
       });
     }
   } catch (error) {
@@ -91,5 +84,5 @@ export async function GET(request: Request) {
         },
       }
     );
-  } 
+  }
 }

@@ -2,12 +2,16 @@ import { Cache } from "@/lib/caching";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
 import { NextResponse } from "next/server";
+import { cors } from "../../middlewares/cors";
 
 const cached = new Cache();
 const database = new DB();
 const countMongoDB = new Counter();
 export async function GET(request: Request) {
   try {
+    // Apply cors in route
+    cors();
+
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
     if (getCache) {
@@ -18,7 +22,7 @@ export async function GET(request: Request) {
         },
       });
     }
-    
+
     await database.connect();
     await countMongoDB.updateReqCount();
 
@@ -32,7 +36,6 @@ export async function GET(request: Request) {
         "Content-Type": "application/json",
       },
     });
-
   } catch (error) {
     return new NextResponse(
       "Error in system, report please in https://natureatoz.com.br/report" +
