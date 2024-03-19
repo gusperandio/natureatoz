@@ -6,7 +6,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./LanguageContext";
 import FloatingButton from "./components/FloatingButton";
-import Cookies from "./components/Cookies";
+import { Analytics } from '@vercel/analytics/react';
 const font = Inter({weight: "400", subsets: ["latin"], display: "swap"})
 
 export const metadata: Metadata = {
@@ -40,10 +40,11 @@ export default function RootLayout({
       <body className={font.className}>
         <LanguageProvider>
           <Header />
-          <Cookies />
+          {/* <Cookies /> */}
           <FloatingButton />
           {children}
           <Footer />
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>

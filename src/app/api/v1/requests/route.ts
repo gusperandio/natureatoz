@@ -1,8 +1,6 @@
 import { Cache } from "@/lib/caching";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
-import { CountRequest } from "@/lib/database/requests";
-import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 
 const cached = new Cache();
@@ -17,6 +15,7 @@ export async function GET(request: Request) {
         status: 200,
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin" : "*"
         },
       });
     }
@@ -32,6 +31,7 @@ export async function GET(request: Request) {
       status: 200,
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin" : "*"
       },
     });
 
