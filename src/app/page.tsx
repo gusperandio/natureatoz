@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./components/Loader";
 import { analytics, log } from "@/lib/firebase";
-import { IsProd } from "../lib/config/conifg";
+import { IsProd } from "../lib/config/config";
 
 export default function Home() {
   const formatNumber = (num: number): string => {
@@ -34,25 +34,20 @@ export default function Home() {
 
   const apis = async () => {
     try {
-      const reqs = axios.get(`${URI}api/v1/test`, {
+      const reqs = axios.get(`${URI}api/v1/requests`);
+
+      const cards = axios.get(`${URI}api/v1/random/image`, {
         headers: {
-          "Access-Control-Allow-Origin": "*",
+          Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`
         },
       });
 
-      // const cards = axios.get(`${URI}api/v1/random/image`, {
-      //   headers: {
-      //     Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
-      //     "Access-Control-Allow-Origin": "*",
-      //   },
-      // });
-
-      const [reqResult] = await Promise.all([reqs]);
+      const [reqResult, cardResult] = await Promise.all([reqs, cards]);
 
       setRandomData(reqResult.data.requests);
-      // setName(cardResult.data.title);
-      // setDesc(cardResult.data.description);
-      // setImgUrl(cardResult.data.image);
+      setName(cardResult.data.title);
+      setDesc(cardResult.data.description);
+      setImgUrl(cardResult.data.image);
     } catch (error) {
       console.error(error);
     } finally {

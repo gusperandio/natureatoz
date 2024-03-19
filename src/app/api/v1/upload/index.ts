@@ -54,23 +54,13 @@ const database = new DB();
 export async function POST(request: Request) {
   try {
     const origin = request.headers.get("origin");
-    const KEY = process.env.KEY_TO_POST || "";
 
-    if (request.headers.get("keynature") !== KEY) {
-      return new NextResponse("GET OUT!", {
-        status: 401,
-        headers: {
-          "Content-Type": "text/plain",
-        },
-      });
-    }
-
+    await database.connect();
     const requestData =
       typeof request.body === "string"
         ? JSON.parse(request.body)
         : request.body;
 
-    await database.connect();
     const newItem = await Item.create(processLetter(requestData));
 
     return new NextResponse(
@@ -84,14 +74,11 @@ export async function POST(request: Request) {
       }
     );
   } catch (error) {
-    console.error("Erro:", error);
     return new NextResponse("Error to process items \n" + error, {
       status: 500,
       headers: {
         "Content-Type": "text/plain",
       },
     });
-  } finally {
-    await database.disconnect();
   }
 }

@@ -1,10 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { EmailTemplate } from '@/app/components/EmailTemplate';
 import { limiterEmail } from '@/lib/config/limiter_email';
-import { CountRequest } from '@/lib/database/requests';
 import { NextResponse } from 'next/server';
 import sgMail from '@sendgrid/mail';
-const countSqlite = new CountRequest();
+import { Counter } from '@/lib/count';
+const countMongoDB = new Counter();
 export async function POST(request: Request) {
 
   try {
@@ -30,7 +29,7 @@ export async function POST(request: Request) {
         }
       });
     } else {
-      countSqlite.addReq();
+      await countMongoDB.updateReqCount();
     }
 
     const { searchParams } = new URL(request.url);

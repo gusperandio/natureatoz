@@ -5,14 +5,15 @@ import { filterItems } from "@/lib/filterItems";
 import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
-import { CountRequest } from "@/lib/database/requests";
+import { Counter } from "@/lib/count";
 
-const database = new DB();
 const cached = new Cache();
-const countSqlite = new CountRequest();
+const database = new DB();
+const countMongoDB = new Counter();
 
 export async function GET(request: Request, { params }: { params: { letter: string } }) {
   try {
+    await database.connect();
     const origin = request.headers.get('origin');
     const remaining = await limiter.removeTokens(1);
 
@@ -25,7 +26,7 @@ export async function GET(request: Request, { params }: { params: { letter: stri
         }
       });
     } else {
-      countSqlite.addReq()
+      await countMongoDB.updateReqCount()
     }
     const { letter } = params;
     
@@ -43,8 +44,7 @@ export async function GET(request: Request, { params }: { params: { letter: stri
         }
       });
     }
-    
-    await database.connect();
+  
     const items = await Item.find({ letter: letter }).lean();
 
     if (items.length == 0) {
@@ -74,7 +74,5 @@ export async function GET(request: Request, { params }: { params: { letter: stri
         'Content-Type': 'text/plain'
       }
     });
-  } finally {
-    await database.disconnect();
   }
 };

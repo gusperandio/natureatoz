@@ -6,7 +6,7 @@ import axios from 'axios';
 import Loader from "../components/Loader";
 import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
-import { IsProd } from '@/lib/config/conifg';
+import { IsProd } from '@/lib/config/config';
 import { Roboto } from 'next/font/google';
 
 const font = Roboto({weight: "400", subsets: ["latin"], display : "swap"})

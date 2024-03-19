@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(req: Request) {
+export async function middleware(req: Request) {
   if (req.method === "OPTIONS") {
     return new NextResponse(null, {
       status: 202,
@@ -11,7 +11,7 @@ export function middleware(req: Request) {
       },
     });
   }
-
+  
   return NextResponse.next();
 }
 

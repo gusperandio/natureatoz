@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import CopyButton from "../components/CopyButton";
-import { IsProd } from "@/lib/config/conifg";
+import { IsProd } from "@/lib/config/config";
 
 interface RequestKey {
   ID: number;

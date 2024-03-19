@@ -2,17 +2,18 @@ import mongoose, { Document, Schema } from "mongoose";
 import Request from "./models/request";
 
 export class Counter {
-  updateReqCount = async (n: number) => {
+  updateReqCount = async () => {
     try {
       const request = await Request.findOne();
+
       if (request) {
-        await Request.updateOne({}, { counter: n });
+        await Request.updateOne({}, { $inc: { counter: 1 } });
       } else {
-        const newRequest = new Request();
+        const newRequest = new Request({ counter: 1 });
         await newRequest.save();
       }
     } catch (error) {
-      console.error("Error to search and update values:", error);
+      console.error("Erro ao pesquisar e atualizar valores:", error);
     }
   };
 

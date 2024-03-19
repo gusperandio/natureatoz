@@ -3,13 +3,13 @@ import { limiterToken as limiter } from "@/lib/config/limiter";
 import Item from "../../../../../lib/models/item";
 import { analytics, log } from "@/lib/firebase";
 import { DB } from "@/lib/config/dbConnect";
-import { CountRequest } from "@/lib/database/requests";
 import { NextResponse } from "next/server";
 import { filterItems } from "@/lib/filterItems";
+import { Counter } from "@/lib/count";
 
 const database = new DB();
 const cached = new Cache();
-const countSqlite = new CountRequest();
+const countMongoDB = new Counter();
 
 function random(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -20,11 +20,10 @@ export async function GET(request: Request) {
     const origin = request.headers.get('origin');
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
-   
+    
     //const size = url.searchParams.get('size') ? Number(url.searchParams.get('size')) : 1;
-
     log(analytics, "/random/image", { page_path: url.pathname });
-
+    
     if (Array.isArray(getCache) && getCache.length > 0) {
       return new NextResponse(JSON.stringify(getCache[random(0, getCache.length - 1)]), {
         status: 200,
@@ -34,9 +33,9 @@ export async function GET(request: Request) {
         }
       });
     }
-
+    
     const remaining = await limiter.removeTokens(1);
-
+    
     if (remaining < 0) {
       return new NextResponse(null, {
         status: 429,
@@ -46,10 +45,9 @@ export async function GET(request: Request) {
         }
       });
     } else {
-      countSqlite.addReq()
+      await database.connect();
+      await countMongoDB.updateReqCount()
     }
-
-    await database.connect();
 
     const items = await Item.aggregate([
       { $match: { image: { $exists: true, $ne: null } } },
@@ -84,8 +82,6 @@ export async function GET(request: Request) {
         'Access-Control-Allow-Origin':  "*"
       }
     });
-  } finally {
-    await database.disconnect();
   }
 };
 

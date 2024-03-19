@@ -1,46 +1,50 @@
-import { Counter } from "@/lib/count";
 import { Cache } from "@/lib/caching";
+import { DB } from "@/lib/config/dbConnect";
+import { Counter } from "@/lib/count";
 import { CountRequest } from "@/lib/database/requests";
 import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 
 const cached = new Cache();
-const countSqlite = new CountRequest();
-
+const database = new DB();
+const countMongoDB = new Counter();
 export async function GET(request: Request) {
   try {
-    const origin = request.headers.get('origin');
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
     if (getCache) {
       return new NextResponse(JSON.stringify(getCache), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': "*"
+          "Content-Type": "application/json",
         },
       });
     }
     
-    countSqlite.addReq();
-    const num = await countSqlite.getReq();
-    cached.save(url.pathname, { requests: num }, 30, "Min");
-    
+    await database.connect();
+    await countMongoDB.updateReqCount();
+
+    const num = await countMongoDB.getReqCount();
+
+    cached.save(url.pathname, { requests: num }, 1, "Min");
+
     return new NextResponse(JSON.stringify({ requests: num }), {
       status: 200,
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': "*"
+        "Content-Type": "application/json",
       },
     });
-    
+
   } catch (error) {
-    return new NextResponse(JSON.stringify({ requests: 250000 }), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': "*"
-      },
-    });
+    return new NextResponse(
+      "Error in system, report please in https://natureatoz.com.br/report" +
+        error,
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "text/plain",
+        },
+      }
+    );
   }
 }

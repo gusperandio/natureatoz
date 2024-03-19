@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "config/dbConnect.ts", "src/app/teste.jsx", "src/lib/database/db.js", "src/lib/database/seeds.js", "src/lib/database/requests.js", "src/lib/database/keys.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "config/dbConnect.ts", "src/app/teste.jsx", "src/lib/database/db.js", "src/lib/database/seeds.js", "src/lib/database/requests.js", "src/lib/keys.ts"],
   "exclude": ["node_modules"]
 }
