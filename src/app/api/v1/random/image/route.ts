@@ -29,7 +29,6 @@ export async function GET(request: Request) {
         status: 200,
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': "*"
         }
       });
     }
@@ -70,13 +69,12 @@ export async function GET(request: Request) {
       status: 200,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin':  "*"
       }
     });
 
   } catch (error) {
     return new NextResponse("Error in system, report please in https://natureatoz.com.br/report", {
-      status: 200,
+      status: 400,
       headers: {
         'Content-Type': 'text/plain',
         'Access-Control-Allow-Origin':  "*"

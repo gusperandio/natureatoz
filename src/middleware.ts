@@ -1,7 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server"
 
-export async function middleware(req: Request) {
-  if (req.method === "OPTIONS") {
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+}
+
+export function middleware(request: NextRequest) {
+  if (request.method === "OPTIONS") {
     return new NextResponse(null, {
       status: 202,
       statusText: "Online",
@@ -11,23 +17,14 @@ export async function middleware(req: Request) {
       },
     });
   }
+  const response = NextResponse.next()
+  Object.entries(corsHeaders).forEach(([key, value]) => {
+    response.headers.append(key, value)
+  })
 
-  const res = NextResponse.next();
-
-  res.headers.append("Access-Control-Allow-Credentials", "true");
-  res.headers.append("Access-Control-Allow-Origin", "*");
-  res.headers.append(
-    "Access-Control-Allow-Methods",
-    "GET,DELETE,PATCH,POST,PUT"
-  );
-  res.headers.append(
-    "Access-Control-Allow-Headers",
-    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-  );
-
-  return res;
+  return response
 }
 
 export const config = {
-  matcher: "/api/v1/:path*",
-};
+  matcher: "/api/:path*",
+}
