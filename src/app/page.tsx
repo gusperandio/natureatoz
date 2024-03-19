@@ -39,36 +39,15 @@ export default function Home() {
   );
   const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
 
-  const apis = async () => {
-    try {
-      const reqs = axios.get(`${URI}api/v1/requests`, config);
-
-      const cards = axios.get(`${URI}api/v1/random/image`, config);
-
-      const [reqResult, cardResult] = await Promise.all([reqs, cards]);
-
-      setRandomData(reqResult.data.requests);
-      setName(cardResult.data.title);
-      setDesc(cardResult.data.description);
-      setImgUrl(cardResult.data.image);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoadingReq(false);
-      setLoading(false);
-    }
-  };
-
   const cardHome = async () => {
     try {
-      const response = await axios.get(`${URI}api/v1/random/image?size=30`, {
-        headers: { Authorization: `Bearer ${process.env.TOKEN_CONFIGS}` },
-      });
-      if (response.data) {
-        setName(response.data.title);
-        setDesc(response.data.description);
-        setImgUrl(response.data.image);
-      }
+      fetch('/api/v1/random/image')
+      .then((res) => res.json())
+      .then((response) => {
+        setName(response.title);
+        setDesc(response.description);
+        setImgUrl(response.image);
+      })
     } catch (error) {
       console.error(error);
     } finally {
@@ -80,10 +59,31 @@ export default function Home() {
     setLoading(true);
     cardHome();
   };
-
+  
   useEffect(() => {
     log(analytics, "page_view", { page_path: "/" });
-    apis();
+    const fetchData = async () => {
+      try {
+        const reqs = fetch(`/api/v1/requests`, config);
+        const cards = fetch(`api/v1/random/image`, config);
+
+        const [reqResult, cardResult] = await Promise.all([reqs, cards]);
+        const reqData = await reqResult.json();
+        const cardData = await cardResult.json();
+
+        setRandomData(reqData.requests);
+        setName(cardData.title);
+        setDesc(cardData.description);
+        setImgUrl(cardData.image);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+        setLoadingReq(false)
+      }
+    };
+
+    fetchData();
   }, []);
 
   useEffect(() => {}, []);
