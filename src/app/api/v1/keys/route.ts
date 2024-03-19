@@ -5,14 +5,16 @@ import { CountRequest } from "@/lib/database/requests";
 import { Key } from "@/lib/keys";
 import { Counter } from "@/lib/count";
 import { DB } from "@/lib/config/dbConnect";
+import { cors } from "../../middlewares/cors";
 
 const database = new DB();
 const countMongoDB = new Counter();
 const dbKey = new Key();
 export async function GET(request: Request) {
   try {
-
     await database.connect();
+    // Apply cors in route
+    cors();
 
     const remaining = await limiter.removeTokens(1);
 
@@ -43,10 +45,6 @@ export async function GET(request: Request) {
     const allKeys = await dbKey.getAllKeys();
     return new NextResponse(JSON.stringify(allKeys), {
       status: 200,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
     });
   } catch (error) {
     return new NextResponse(
