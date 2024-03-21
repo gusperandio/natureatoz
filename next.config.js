@@ -825,6 +825,7 @@ const nextConfig = {
     KEY_TO_POST: process.env.KEY_TO_POST,
     SEND_API_KEY: process.env.SEND_API_KEY,
     JWT_KEY: process.env.JWT_KEY,
+    EMAIL_LOGIN: process.env.EMAIL_LOGIN,
     TOKEN_CONFIGS: process.env.TOKEN_CONFIGS,
     API_KEY: process.env.API_KEY,
     AUTH_DOMAIN: process.env.AUTH_DOMAIN,

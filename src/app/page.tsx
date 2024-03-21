@@ -43,6 +43,7 @@ export default function Home() {
         .then((response) => {
           if (
             !response.title.includes("Plástico") ||
+            !response.title.includes("IBAMA") ||
             !response.title.includes("Reciclagem")
           ) {
             setName(response.title);

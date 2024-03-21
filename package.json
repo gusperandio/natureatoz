@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coreui/coreui": "^4.3.2",
+    "@coreui/react": "^4.11.1",
     "@sendgrid/mail": "^8.1.1",
     "@types/mongoose-auto-increment": "^5.0.38",
     "@types/react-ga": "^2.3.0",

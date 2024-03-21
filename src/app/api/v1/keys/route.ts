@@ -52,6 +52,9 @@ export async function GET(request: Request) {
     const allKeys = await dbKey.getAllKeys();
     return new NextResponse(JSON.stringify(allKeys), {
       status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      }
     });
   } catch (error) {
     return new NextResponse(

@@ -79,7 +79,7 @@ export default function CardHome(props: PropsCardHome) {
               <Loader />
             </div>
           ) : (
-            <Image
+            <img
               src={props.imgUrl}
               height={150}
               width={270}
@@ -169,7 +169,8 @@ export default function CardHome(props: PropsCardHome) {
               <div className={fontJson.className}>
                 <span style={{ color: "dodgerblue" }}>&#123;</span>
                 <div className={styles.notP}>
-                  <b className={styles.key}>&quot;name&quot;</b>&nbsp;<span style={{fontWeight: "900"}}>:</span>&nbsp;
+                  <b className={styles.key}>&quot;title&quot;</b>&nbsp;
+                  <span style={{ fontWeight: "900" }}>:</span>&nbsp;
                   <b className={styles.value}>&quot;{props.name}&quot;</b>
                   &#44;
                 </div>
@@ -180,7 +181,8 @@ export default function CardHome(props: PropsCardHome) {
                   &#44;
                 </div>
                 <div className={styles.notP}>
-                  <b className={styles.key}>&quot;image&quot;</b>&nbsp;<span style={{fontWeight: "900"}}>:</span>&nbsp;
+                  <b className={styles.key}>&quot;image&quot;</b>&nbsp;
+                  <span style={{ fontWeight: "900" }}>:</span>&nbsp;
                   <b className={styles.value}>
                     {props.imgUrl && props.imgUrl.length > 25 ? (
                       <React.Fragment>
@@ -189,7 +191,7 @@ export default function CardHome(props: PropsCardHome) {
                         &quot;
                       </React.Fragment>
                     ) : (
-                      props.imgUrl 
+                      props.imgUrl
                     )}
                   </b>
                 </div>
