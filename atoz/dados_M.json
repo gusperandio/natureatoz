@@ -101,7 +101,8 @@
   },
   {
     "title": "Magma",
-    "description": "Rocha fundida, em estado líquido, guardada em depósitos existentes sob a superfície terrestre. o magma pode ser mais ou menos denso e viscoso, dependendo de sua composição química. é formado basicamente de oxigênio, presente em óxidos metálicos, principalmente de silício ou sílica, além de outros elementos químicos como alumínio, ferro, magnésio, sódio, potássio, cálcio, titânio e enxofre. quando resfriado, o magma solidifica-se dando origem às rochas ígneas."
+    "description": "Rocha fundida, em estado líquido, guardada em depósitos existentes sob a superfície terrestre. o magma pode ser mais ou menos denso e viscoso, dependendo de sua composição química. é formado basicamente de oxigênio, presente em óxidos metálicos, principalmente de silício ou sílica, além de outros elementos químicos como alumínio, ferro, magnésio, sódio, potássio, cálcio, titânio e enxofre. quando resfriado, o magma solidifica-se dando origem às rochas ígneas.",
+    "image": "https://natureatoz.com.br/images/magma"
   },
   {
     "title": "Magmática",
@@ -141,7 +142,8 @@
   },
   {
     "title": "Malation",
-    "description": "Inseticida tóxico organofosforado, solúvel em água até uma concentração de 145 mg/l a 25°c.malvinas (falklands)arquipélago formado por treze ilhas localizado no atlântico sul, é considerado um paraíso ecológico. tem 12.173 km², abriga pinguins, leões-marinhos e albatrozes."
+    "description": "Inseticida tóxico organofosforado, solúvel em água até uma concentração de 145 mg/l a 25°c.malvinas (falklands)arquipélago formado por treze ilhas localizado no atlântico sul, é considerado um paraíso ecológico. tem 12.173 km², abriga pinguins, leões-marinhos e albatrozes.",
+    "image": "https://natureatoz.com.br/images/malation"
   },
   {
     "title": "Mameluco",
@@ -149,7 +151,8 @@
   },
   {
     "title": "Mamífero",
-    "description": "Classe de vertebrados cujos representantes têm glândulas mamárias e pelos corporais."
+    "description": "Classe de vertebrados cujos representantes têm glândulas mamárias e pelos corporais.",
+    "image": "https://natureatoz.com.br/images/mamiferos"
   },
   {
     "title": "Manancial",
@@ -157,7 +160,8 @@
   },
   {
     "title": "Mancha de petróleo",
-    "description": "Película de petróleo que, por ser menos densa, flutua na superfície de um corpo de água. é formada por vazamento de petróleo em navios petroleiros ou oleodutos. hoje é um dos principais responsáveis por graves desastres ecológicos."
+    "description": "Película de petróleo que, por ser menos densa, flutua na superfície de um corpo de água. é formada por vazamento de petróleo em navios petroleiros ou oleodutos. hoje é um dos principais responsáveis por graves desastres ecológicos.",
+    "image": "https://natureatoz.com.br/images/manchapetroleo"
   },
   {
     "title": "Manejo",
@@ -221,7 +225,8 @@
   },
   {
     "title": "Mar",
-    "description": "Bioma marinho formado por água salgada com uma dimensão menor que um oceano."
+    "description": "Bioma marinho formado por água salgada com uma dimensão menor que um oceano.",
+    "image": "https://natureatoz.com.br/images/mar"
   },
   {
     "title": "Mar aberto",
@@ -265,7 +270,8 @@
   },
   {
     "title": "Marina",
-    "description": "Equipamentos e instalações destinados a acomodar pequenas embarcações, formando um pequeno porto."
+    "description": "Equipamentos e instalações destinados a acomodar pequenas embarcações, formando um pequeno porto.",
+    "image": "https://natureatoz.com.br/images/marina"
   },
   {
     "title": "Margem",
@@ -465,7 +471,8 @@
   },
   {
     "title": "Micróbio",
-    "description": "Organismo microscópico animal ou vegetal, causador de fermentações e doenças infecciosas. bacilo ou bactéria."
+    "description": "Organismo microscópico animal ou vegetal, causador de fermentações e doenças infecciosas. bacilo ou bactéria.",
+    "image": "https://natureatoz.com.br/images/microbio"
   },
   {
     "title": "Microbiologia",
@@ -505,11 +512,13 @@
   },
   {
     "title": "Mina",
-    "description": "Depósito mineral (jazida) em exploração pelo homem."
+    "description": "Depósito mineral (jazida) em exploração pelo homem.",
+    "image": "https://natureatoz.com.br/images/mina"
   },
   {
     "title": "Mineração",
-    "description": "Extração seletiva de minerais e outros materiais que existem na crosta; com exceção de materiais orgânicos de constituição recente."
+    "description": "Extração seletiva de minerais e outros materiais que existem na crosta; com exceção de materiais orgânicos de constituição recente.",
+    "image": "https://natureatoz.com.br/images/mineracao"
   },
   {
     "title": "Mineral",
@@ -521,7 +530,8 @@
   },
   {
     "title": "Minério",
-    "description": "Minério é um mineral que contém um metal na sua composição química, com um fator de concentração economicamente significativo e explorado, por mineração, para uma finalidade utilitária."
+    "description": "Minério é um mineral que contém um metal na sua composição química, com um fator de concentração economicamente significativo e explorado, por mineração, para uma finalidade utilitária.",
+    "image": "https://natureatoz.com.br/images/minerio"
   },
   {
     "title": "Minério nuclear",
@@ -529,7 +539,8 @@
   },
   {
     "title": "Minhoca",
-    "description": "Verme da classe dos anelídeos (lombricus terrestris). existem cerca de 1,8 mil espécies. em território brasileiro as mais comuns são a minhoca-do-brejo (pheretima hawayana) e a minhoca-da-noite (lumbricus terrestris). vive subterraneamente em lugares úmidos do solo. muito útil para a aeração da terra de hortas, jardins e plantações."
+    "description": "Verme da classe dos anelídeos (lombricus terrestris). existem cerca de 1,8 mil espécies. em território brasileiro as mais comuns são a minhoca-do-brejo (pheretima hawayana) e a minhoca-da-noite (lumbricus terrestris). vive subterraneamente em lugares úmidos do solo. muito útil para a aeração da terra de hortas, jardins e plantações.",
+    "image": "https://natureatoz.com.br/images/minhoca"
   },
   {
     "title": "Minhocário",
@@ -568,7 +579,7 @@
     "description": "São as que alteram o regime das chuvas, provocando tempestades e furacões mais frequentes e violentos e temperaturas mais altas."
   },
   {
-    "title": " molibdênio (Mo)",
+    "title": "molibdênio (Mo)",
     "description": "metal constituinte de compostos essenciais à vida (elemento- traço), é também utilizado na indústria nuclear, eletroeletrônica do aço e de catalisadores, bem como na construção de mísseis e de aviões. quando em excesso no organismo, leva à redução de apetite e favorece o câncer de pele."
   },
   {
@@ -613,7 +624,8 @@
   },
   {
     "title": "Montanha",
-    "description": "Em geografia, montanha é uma elevação da crosta terrestre de base relativamente extensa, que pode apresentar encostas mais ou menos íngremes, com altitudes superiores a cerca de 300 m. a maior montanha da américa do sul é o pico do aconcágua, localizado na cordilheira dos andes, na argentina; tem 6.959 metros de altura."
+    "description": "Em geografia, montanha é uma elevação da crosta terrestre de base relativamente extensa, que pode apresentar encostas mais ou menos íngremes, com altitudes superiores a cerca de 300 m. a maior montanha da américa do sul é o pico do aconcágua, localizado na cordilheira dos andes, na argentina; tem 6.959 metros de altura.",
+    "image": "https://natureatoz.com.br/images/motanha"
   },
   {
     "title": "Montano",
@@ -658,6 +670,7 @@
   {
     "title": "Motosserra",
     "description": "Aparelho muito utilizado nas regiões de florestas, para a derrubada de árvores, em pequenas áreas. a partir da regulamentação em 1989, os proprietários e o comércio das motoserras dependem de registros no ibama. a falta de registro constitui crime contra o meio ambiente, sujeito a pena de detenção, multa e apreensão da motosserra."
+    ,"image": "https://natureatoz.com.br/images/motoserra"
   },
   {
     "title": "Movimento ecológico",

@@ -287,7 +287,7 @@ export default function Page() {
 
   const intro = (
     <div id="content" className={`${styles.content} ${font.className}`}>
-      <h1 className={styles.title}>{textContent.title} <span className={styles.version}>v 1.0</span></h1>
+      <h1 className={styles.title}>{textContent.title} <span className={styles.version}>v 1.1</span></h1>
       <p className={styles.paragraph}>{textContent.textIntro}</p>
       <br />
 

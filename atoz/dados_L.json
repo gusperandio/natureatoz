@@ -19,7 +19,6 @@
     "title": "lago mesotrófico",
     "description": "lago que contém quantidades moderadas de nutrientes (níveis normais num lago saudável). lagos mesotróficos superam o estágio oligotrófico de falta de nutrientes, mas ainda não atingiram o estado eutrófico superenriquecido."
   },
-  
   {
     "title": "Lago oligotrónico",
     "description": "Lago que se caracteriza por ser muito fundo. a temperatura do fundo é baixa, apresenta uma baixa quantidade de oxigênio e a decomposição da matéria é demorada. normalmente é a primeira fase de evolução de um lago."
@@ -34,7 +33,7 @@
   },
   {
     "title": "Lagoa de esfriamento",
-    "description": "Na produção de energia elétrica, ou nos processos industriais, a água é utilizada como agente de esfriamento. após a água circular por um equipamento, resfriando-o, esta fica quente, então é preciso deixá-la esfriando antes de reutilizá-la ou de liberá-la num curso de água ou rio. esse lugar é chamado de lagoa de esfriamento." 
+    "description": "Na produção de energia elétrica, ou nos processos industriais, a água é utilizada como agente de esfriamento. após a água circular por um equipamento, resfriando-o, esta fica quente, então é preciso deixá-la esfriando antes de reutilizá-la ou de liberá-la num curso de água ou rio. esse lugar é chamado de lagoa de esfriamento."
   },
   {
     "title": "lagoa de estabilização",
@@ -78,7 +77,8 @@
   },
   {
     "title": "Lava",
-    "description": "Termo usado para designar o magma depois que ele atinge a superfície terrestre, escorrendo pela encosta dos vulcões como rios de fogo. durante uma erupção vulcânica, a matéria sólida fundida do magma, carrega junto uma série de vapores e gases (dióxido de carbono, hidrogênio, monóxido de carbono e dióxido de enxofre, entre outros) que escapam continuamente da lava por meio de explosões. por esse motivo, sobre um vulcão em atividade, forma-se uma densa e poderosa nuvem composta de gases e partículas em suspensão. erupção vulcânica, magma e vulcão."
+    "description": "Termo usado para designar o magma depois que ele atinge a superfície terrestre, escorrendo pela encosta dos vulcões como rios de fogo. durante uma erupção vulcânica, a matéria sólida fundida do magma, carrega junto uma série de vapores e gases (dióxido de carbono, hidrogênio, monóxido de carbono e dióxido de enxofre, entre outros) que escapam continuamente da lava por meio de explosões. por esse motivo, sobre um vulcão em atividade, forma-se uma densa e poderosa nuvem composta de gases e partículas em suspensão. erupção vulcânica, magma e vulcão.",
+    "image": "https://natureatoz.com.br/images/lava"
   },
   {
     "title": "Lavador de gases",
@@ -114,7 +114,8 @@
   },
   {
     "title": "Lenha",
-    "description": "Madeira cortada em pedaços, passível de ser utilizada para queima como combustível ou transformada em carvão (instrução normativa ibdf 1/80)."
+    "description": "Madeira cortada em pedaços, passível de ser utilizada para queima como combustível ou transformada em carvão (instrução normativa ibdf 1/80).",
+    "image": "https://natureatoz.com.br/images/lenha"
   },
   {
     "title": "Lêntico",
@@ -202,7 +203,8 @@
   },
   {
     "title": "Lixão",
-    "description": "Ao contrário dos aterros sanitários, os lixões são gigantescos depósitos a céu aberto de lixo e resíduos de toda natureza, não atendendo a nenhuma norma sanitária de controle. em geral, são locais afastados das áreas urbanas centrais, para onde o lixo coletado é transportado e disposto de qualquer maneira, sem nenhum tratamento, causando inúmeros problemas ambientais. entre eles, destacam-se: a contaminação do solo e dos lençóis freáticos pela ação do chorume, a proliferação de animais pestilentos como urubus, insetos e ratos, que têm a sua capacidade reprodutiva multiplicada em virtude da disponibilidade abundante de alimentos; e o consequente aumento dos vetores transmissores de doenças como raiva, meningite, leptospirose e peste bubônica. outro sério problema decorrente da existência dos lixões é a sua utilização por populações carentes, que sobrevivem dos alimentos e da venda de materiais recicláveis ou entulhos descartados e ali depositados, correndo sérios riscos de saúde."
+    "description": "Ao contrário dos aterros sanitários, os lixões são gigantescos depósitos a céu aberto de lixo e resíduos de toda natureza, não atendendo a nenhuma norma sanitária de controle. em geral, são locais afastados das áreas urbanas centrais, para onde o lixo coletado é transportado e disposto de qualquer maneira, sem nenhum tratamento, causando inúmeros problemas ambientais. entre eles, destacam-se: a contaminação do solo e dos lençóis freáticos pela ação do chorume, a proliferação de animais pestilentos como urubus, insetos e ratos, que têm a sua capacidade reprodutiva multiplicada em virtude da disponibilidade abundante de alimentos; e o consequente aumento dos vetores transmissores de doenças como raiva, meningite, leptospirose e peste bubônica. outro sério problema decorrente da existência dos lixões é a sua utilização por populações carentes, que sobrevivem dos alimentos e da venda de materiais recicláveis ou entulhos descartados e ali depositados, correndo sérios riscos de saúde.",
+    "image": "https://natureatoz.com.br/images/lixao"
   },
   {
     "title": "Lixo",
@@ -282,7 +284,8 @@
   },
   {
     "title": "Looping",
-    "description": "Forma de dispersão de poluentes atmosféricos na qual a fumaça emitida na saída da chaminé (denominada pluma de emissão) é carregada por correntes de ar para o nível do solo antes de se elevar novamente."
+    "description": "Forma de dispersão de poluentes atmosféricos na qual a fumaça emitida na saída da chaminé (denominada pluma de emissão) é carregada por correntes de ar para o nível do solo antes de se elevar novamente.",
+    "image": "https://natureatoz.com.br/images/looping"
   },
   {
     "title": "Lótico",
@@ -290,10 +293,12 @@
   },
   {
     "title": "Luz",
-    "description": "Radiação eletromagnética visível; radiação com comprimento de onda entre cerca de 4.000 e 7.000 angstroms (400 a 700 nm), região compreendida entre o violeta e o vermelho."
+    "description": "Radiação eletromagnética visível; radiação com comprimento de onda entre cerca de 4.000 e 7.000 angstroms (400 a 700 nm), região compreendida entre o violeta e o vermelho.",
+    "image": "https://natureatoz.com.br/images/luz"
   },
   {
     "title": "Luz ultravioleta",
-    "description": "A radiação ultravioleta pode dar início a muitas reações químicas, e é uma das causas do câncer de pele. felizmente, grande parte dos raios uv do sol é bloqueada, antes de alcançar a superfície terrestre, pela camada de ozônio na atmosfera."
+    "description": "A radiação ultravioleta pode dar início a muitas reações químicas, e é uma das causas do câncer de pele. felizmente, grande parte dos raios uv do sol é bloqueada, antes de alcançar a superfície terrestre, pela camada de ozônio na atmosfera.",
+    "image": "https://natureatoz.com.br/images/luz-ultravioleta"
   }
 ]

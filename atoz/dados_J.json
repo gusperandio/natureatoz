@@ -96,16 +96,9 @@
     "description": "Planta utilizada na culinária amazônica, conhecida por causar sensação de dormência na boca."
   },
   {
-    "title": "Jacinto-do-Nilo",
-    "description": "Planta aquática com florescência azul-violeta originária da África."
-  },
-  {
-    "title": "Jaú",
-    "description": "Peixe de água doce encontrado em rios da América do Sul, conhecido por seu tamanho imponente."
-  },
-  {
     "title": "Javali",
-    "description": "Mamífero da família dos suínos, encontrado em diversas regiões do mundo."
+    "description": "Mamífero da família dos suínos, encontrado em diversas regiões do mundo.",
+    "image": "https://natureatoz.com.br/images/javali"
   },
   {
     "title": "Jandaia",

@@ -1,7 +1,6 @@
 import { generateGuid } from "../../../../lib/guid";
 import { CountRequest } from "@/lib/database/requests";
 import { generateToken } from "@/lib/JWT";
-import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 import { Counter } from "@/lib/count";
 import { Key } from "@/lib/keys";
@@ -17,13 +16,11 @@ export async function GET(request: Request) {
   try {
     await database.connect();
 
-    // Apply cors in route
     cors();
 
     const { searchParams } = new URL(request.url);
     const queryDays = searchParams.get("days");
     await countMongoDB.updateReqCount();
-    log(analytics, "auth", { page_path: "/api/v1/auth" });
 
     let days = queryDays
       ? (Array.isArray(queryDays)
@@ -38,6 +35,9 @@ export async function GET(request: Request) {
 
     return new NextResponse(JSON.stringify({ JWT, expireIn, days }), {
       status: 200,
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
   } catch (error) {
     return new NextResponse(

@@ -1,7 +1,8 @@
 [
   {
     "title": "Ebulição",
-    "description": "Vaporização rápida e agitada resultante do aquecimento que envolve toda a massa líquida."
+    "description": "Vaporização rápida e agitada resultante do aquecimento que envolve toda a massa líquida.",
+    "image": "https://natureatoz.com.br/images/ebulicao"
   },
   {
     "title": "Eclusa",
@@ -77,11 +78,13 @@
   },
   {
     "title": "Ecossistema",
-    "description": "Complexo dinâmico de comunidades biológicas (vegetais, animais e de microrganismos) que interagem como uma unidade funcional com os fatores abióticos do meio, também chamado de biogeocenose."
+    "description": "Complexo dinâmico de comunidades biológicas (vegetais, animais e de microrganismos) que interagem como uma unidade funcional com os fatores abióticos do meio, também chamado de biogeocenose.",
+    "image": "https://natureatoz.com.br/images/ecossistema"
   },
   {
     "title": "Ecossistemas agrícolas",
-    "description": "São ecossistemas que dependem da energia solar, com subsídios antropogênicos. exemplo: agricultura e aquacultura ou aquicultura. são sistemas produtores de fibras e alimentos, sustentados por combustíveis auxiliares, insumos agrícolas e outras formas fornecidas pelo homem."
+    "description": "São ecossistemas que dependem da energia solar, com subsídios antropogênicos. exemplo: agricultura e aquacultura ou aquicultura. são sistemas produtores de fibras e alimentos, sustentados por combustíveis auxiliares, insumos agrícolas e outras formas fornecidas pelo homem.",
+    "image": "https://natureatoz.com.br/images/ecossistemas%20agricolas"
   },
   {
     "title": "Ecossistemas de água doce (dulciaquáticos)",
@@ -93,7 +96,8 @@
   },
   {
     "title": "Ecossistemas marinhos",
-    "description": "Compreendem 70% da superfície da terra, em distribuição contínua, cuja água está em constante circulação, dependentes das marés, com baixa concentração de nutrientes dissolvidos, sendo a temperatura e salinidade os dois maiores fatores limitantes."
+    "description": "Compreendem 70% da superfície da terra, em distribuição contínua, cuja água está em constante circulação, dependentes das marés, com baixa concentração de nutrientes dissolvidos, sendo a temperatura e salinidade os dois maiores fatores limitantes.",
+    "image": "https://natureatoz.com.br/images/ecossistemas%20marinhos"
   },
   {
     "title": "Ecossistemas terrestres",
@@ -297,7 +301,8 @@
   },
   {
     "title": "Energia atômica",
-    "description": "O mesmo que energia nuclear."
+    "description": "O mesmo que energia nuclear.",
+    "image": "https://natureatoz.com.br/images/energia%20atomica"
   },
   {
     "title": "Energia de biomassa",
@@ -309,11 +314,13 @@
   },
   {
     "title": "Energia eólica",
-    "description": "Energia gerada pela força do vento."
+    "description": "Energia gerada pela força do vento.",
+    "image": "https://natureatoz.com.br/images/energia%20eolica"
   },
   {
     "title": "Energia geotérmica",
-    "description": "Energia gerada pelo calor do interior do planeta terra."
+    "description": "Energia gerada pelo calor do interior do planeta terra.",
+    "image": "https://natureatoz.com.br/images/energia%20geotermica"
   },
   {
     "title": "Energia hidráulica",
@@ -325,7 +332,8 @@
   },
   {
     "title": "Energia hidrelétrica",
-    "description": "Energia gerada por turbinas movidas por água."
+    "description": "Energia gerada por turbinas movidas por água.",
+    "image": "https://natureatoz.com.br/images/energia%20hidreletrica"
   },
   {
     "title": "energia maremotriz",
@@ -349,7 +357,8 @@
   },
   {
     "title": "Energia solar",
-    "description": "Proporcionado pelo sol na forma de radiação eletromagnética."
+    "description": "Proporcionado pelo sol na forma de radiação eletromagnética.",
+    "image": "https://natureatoz.com.br/images/energia%20solar"
   },
   {
     "title": "Engenharia ambiental",
@@ -437,11 +446,12 @@
   },
   {
     "title": "Erosão",
-    "description": "Fenômeno que resulta no desgaste do solo provocado por agentes naturais (vento, água, chuva, ondas, etc.) e, também, pela atividade humana como desmatamento, poluição, exaustão do solo provocados por por técnicas inadequadas aplicadas na agricultura e pecuária."
+    "description": "Fenômeno que resulta no desgaste do solo provocado por agentes naturais (vento, água, chuva, ondas, etc.) e, também, pela atividade humana como desmatamento, poluição, exaustão do solo provocados por por técnicas inadequadas aplicadas na agricultura e pecuária.",
+    "image": "https://natureatoz.com.br/images/erosao"
   },
   {
     "title": "Erosão antrópica",
-    "description": "Erosão nas camadas superiores do solo em consequência de impactos ambientais como desflorestamentos, construção de estradas, etc." 
+    "description": "Erosão nas camadas superiores do solo em consequência de impactos ambientais como desflorestamentos, construção de estradas, etc."
   },
   {
     "title": "erosão fluvial",
@@ -465,11 +475,13 @@
   },
   {
     "title": "Erupção vulcânica",
-    "description": "Designa o momento da explosão do fluxo de lava, gás ou material expelido por um vulcão. numa erupção vulcânica, quando a matéria incandescente atinge a superfície da terra, porções de lava são lançadas para o alto na forma de gotículas e fragmentos incandescentes. essas partículas podem cair fora do cone do vulcão ou dentro da própria cratera, de onde são novamente lançadas. pouco a pouco, a lava vai subindo até ultrapassar a borda da cratera, descendo cone abaixo como uma massa pastosa em brasa, carregando e destruindo tudo o que encontra à sua frente. outras vezes, em vez de sair por uma fenda central, a lava escorre ao longo de fissuras verticais existentes na superfície, podendo se estender por vários quilômetros. a composição do magma também interfere no tipo de erupção de um vulcão: quando ele é menos viscoso, é frequente a liberação de contínuos rios de lava, sem maiores explosões; quando o magma é mais viscoso, ele não flui tão facilmente e, por esse motivo, por força da pressão, ocorrem violentas explosões."
+    "description": "Designa o momento da explosão do fluxo de lava, gás ou material expelido por um vulcão. numa erupção vulcânica, quando a matéria incandescente atinge a superfície da terra, porções de lava são lançadas para o alto na forma de gotículas e fragmentos incandescentes. essas partículas podem cair fora do cone do vulcão ou dentro da própria cratera, de onde são novamente lançadas. pouco a pouco, a lava vai subindo até ultrapassar a borda da cratera, descendo cone abaixo como uma massa pastosa em brasa, carregando e destruindo tudo o que encontra à sua frente. outras vezes, em vez de sair por uma fenda central, a lava escorre ao longo de fissuras verticais existentes na superfície, podendo se estender por vários quilômetros. a composição do magma também interfere no tipo de erupção de um vulcão: quando ele é menos viscoso, é frequente a liberação de contínuos rios de lava, sem maiores explosões; quando o magma é mais viscoso, ele não flui tão facilmente e, por esse motivo, por força da pressão, ocorrem violentas explosões.",
+    "image": "https://natureatoz.com.br/images/erupcao%20vulcanica"
   },
   {
     "title": "escala richter",
-    "description": "escala utilizada para registrar a magnitude de terremotos, criada pelos sismologistas charles francis richter e beno gutenberg, e que varia desde 1 até 9, embora não exista limite superior. um terremoto de até 4 graus não causa danos significativos. os terremotos acima de 8 causam enormes danos a uma grande área."
+    "description": "escala utilizada para registrar a magnitude de terremotos, criada pelos sismologistas charles francis richter e beno gutenberg, e que varia desde 1 até 9, embora não exista limite superior. um terremoto de até 4 graus não causa danos significativos. os terremotos acima de 8 causam enormes danos a uma grande área.",
+    "image": "https://natureatoz.com.br/images/escala%20richter"
   },
   {
     "title": "escoamento urbano",
@@ -477,7 +489,8 @@
   },
   {
     "title": "Esgoto",
-    "description": "Toda água usada, em todas as atividades, nas residências e indústrias. é classificado em quatro tipos: esgotos domésticos; despejos ou efluentes industriais; águas pluviais (da chuva) e águas do subsolo."
+    "description": "Toda água usada, em todas as atividades, nas residências e indústrias. é classificado em quatro tipos: esgotos domésticos; despejos ou efluentes industriais; águas pluviais (da chuva) e águas do subsolo.",
+    "image": "https://natureatoz.com.br/images/esgoto"
   },
   {
     "title": "Esgoto doméstico",
@@ -553,7 +566,7 @@
   },
   {
     "title": "Espécie oligofaga",
-    "description": "Parasitas ou predadores que vivem às custas de reduzido número de outras espécies." 
+    "description": "Parasitas ou predadores que vivem às custas de reduzido número de outras espécies."
   },
   {
     "title": "espécie oportunista",
@@ -749,7 +762,8 @@
   },
   {
     "title": "Etanol",
-    "description": "Substância pertencente à classe dos álcoois, obtida a partir da cana-de-açúcar e também de cereais, sendo um excelente combustível automotivo sob a forma hidratada e também adicionada à gasolina na forma anidro (sem água) com a vantagem de ser pouco poluente. trata-se do álcool comercial comum."
+    "description": "Substância pertencente à classe dos álcoois, obtida a partir da cana-de-açúcar e também de cereais, sendo um excelente combustível automotivo sob a forma hidratada e também adicionada à gasolina na forma anidro (sem água) com a vantagem de ser pouco poluente. trata-se do álcool comercial comum.",
+    "image": "https://natureatoz.com.br/images/etanol"
   },
   {
     "title": "Ética ambiental",
@@ -833,7 +847,7 @@
   },
   {
     "title": "Exotérmico",
-    "description": "Sistema físico-químico que libera calor do sistema para a vizinhança." 
+    "description": "Sistema físico-químico que libera calor do sistema para a vizinhança."
   },
   {
     "title": "exótico",

@@ -41,9 +41,9 @@ export class Key {
   async delDisableKey() {
     try {
       await Keys.deleteMany({ Expire_At: { $lte: new Date() } });
-      console.log("Chaves expiradas removidas com sucesso.");
+      //console.log("Chaves expiradas removidas com sucesso.");
     } catch (error) {
-      console.error("Erro ao remover chaves expiradas:", error);
+      //console.error("Erro ao remover chaves expiradas:", error);
     }
   }
 }

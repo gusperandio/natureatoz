@@ -1,11 +1,11 @@
 [
   {
     "title": "Qualidade ambiental",
-    "description": "Padrão mínimo requerido ao conjunto de fatores indispensáveis à preservação de um ecossistema." 
+    "description": "Padrão mínimo requerido ao conjunto de fatores indispensáveis à preservação de um ecossistema."
   },
   {
-    "title" : "qualidade da água",
-    "description" : "características químicas, físicas e biológicas exigidas para o uso da água para determinado fim."
+    "title": "qualidade da água",
+    "description": "características químicas, físicas e biológicas exigidas para o uso da água para determinado fim."
   },
   {
     "title": "Qualidade de vida",
@@ -44,8 +44,8 @@
     "description": "Ato criminoso realizado pelo homem, com a finalidade tanto de limpar o terreno para o cultivo de roças e pastos, quanto para a utilização da madeira com a finalidade de gerar carvão."
   },
   {
-    "title" : "Quênia",
-    "description" : "república da áfrica oriental, famoso por seus parques nacionais e reservas de caça, em cuja capital nairobi está sediado o unep, ou seja, o pnuma."
+    "title": "Quênia",
+    "description": "república da áfrica oriental, famoso por seus parques nacionais e reservas de caça, em cuja capital nairobi está sediado o unep, ou seja, o pnuma."
   },
   {
     "title": "Querosene",
@@ -53,7 +53,8 @@
   },
   {
     "title": "Química",
-    "description": "Ramo das ciências naturais que estuda as propriedades, transformações e aplicações da matéria."
+    "description": "Ramo das ciências naturais que estuda as propriedades, transformações e aplicações da matéria.",
+    "image": "https://natureatoz.com.br/images/quimica"
   },
   {
     "title": "Química agrária",

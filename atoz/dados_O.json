@@ -17,19 +17,20 @@
   },
   {
     "title": "Oceanógrafo",
-    "description": "Estudioso em oceanografia. o oceanógrafo francês jacques-yves cousteau (1910-1997), foi o primeiro pesquisador a advertir as autoridades competentes sobre o perigo da poluição dos mares. ver poluição das águas." 
+    "description": "Estudioso em oceanografia. o oceanógrafo francês jacques-yves cousteau (1910-1997), foi o primeiro pesquisador a advertir as autoridades competentes sobre o perigo da poluição dos mares. ver poluição das águas."
   },
   {
-    "title" : "ocupação do solo",
-    "description" : "posse física do solo, para desenvolver atividades produtivas ou outras."
+    "title": "ocupação do solo",
+    "description": "posse física do solo, para desenvolver atividades produtivas ou outras."
   },
   {
-    "title" : "OD",
-    "description" : "oxigênio é disponibilizado em meio líquido, expresso em miligramas por litro."
+    "title": "OD",
+    "description": "oxigênio é disponibilizado em meio líquido, expresso em miligramas por litro."
   },
   {
     "title": "Óleo",
-    "description": "Qualquer forma de hidrocarboneto (petróleo e seus derivados), incluindo combustível, borra, óleo cru, resíduos de petróleo e produtos refinados (lei n° 9966/00)."
+    "description": "Qualquer forma de hidrocarboneto (petróleo e seus derivados), incluindo combustível, borra, óleo cru, resíduos de petróleo e produtos refinados (lei n° 9966/00).",
+    "image": "https://natureatoz.com.br/images/oleo"
   },
   {
     "title": "Olho d'água",
@@ -41,15 +42,16 @@
   },
   {
     "title": "Ondas",
-    "description": "Movimentos de vai-e-vem das águas na costa que resultam dos ventos que sopram constantemente sobre os mares. fenômenos naturais como vulcões e maremotos podem provocar imensas ondas."
+    "description": "Movimentos de vai-e-vem das águas na costa que resultam dos ventos que sopram constantemente sobre os mares. fenômenos naturais como vulcões e maremotos podem provocar imensas ondas.",
+    "image": "https://natureatoz.com.br/images/ondas"
   },
   {
     "title": "Ontogênese",
     "description": "Estudo do ciclo de vida de um organismo."
   },
   {
-    "title" : "ONG",
-    "description" : "sigla para organização não-governamental (em inglês non-governmental organization ngo) as ongs são organizações independentes da sociedade civil, que congregam pessoas em torno de objetivos sociais e/ou humanitários comuns. as ongs podem atuar em áreas distintas e não exclusivas: socioambiental, cultura e arte, assistência médico-sanitária, inclusão social, educação popular, comunicação, consumo responsável, economia solidária, direitos humanos, minorias, entre tantas outras. seus objetivos podem ser alcançados tanto através de ações diretas no campo social, como através do exercício de influência junto aos governos e meios de comunicação. muitas ongs possuem grande estrutura, atuando em âmbito nacional e internacional (cruz vermelha internacional, médicos sem fronteiras, greenpeace, wwf, wwi, instituto socioambiental isa, entre outras)."
+    "title": "ONG",
+    "description": "sigla para organização não-governamental (em inglês non-governmental organization ngo) as ongs são organizações independentes da sociedade civil, que congregam pessoas em torno de objetivos sociais e/ou humanitários comuns. as ongs podem atuar em áreas distintas e não exclusivas: socioambiental, cultura e arte, assistência médico-sanitária, inclusão social, educação popular, comunicação, consumo responsável, economia solidária, direitos humanos, minorias, entre tantas outras. seus objetivos podem ser alcançados tanto através de ações diretas no campo social, como através do exercício de influência junto aos governos e meios de comunicação. muitas ongs possuem grande estrutura, atuando em âmbito nacional e internacional (cruz vermelha internacional, médicos sem fronteiras, greenpeace, wwf, wwi, instituto socioambiental isa, entre outras)."
   },
   {
     "title": "Onívora",
@@ -76,16 +78,16 @@
     "description": "Organismo que deve ser exterminado com a utilização de um praguicida."
   },
   {
-    "title" : "organismo geneticamente modificado - OGM",
-    "description" : "o mesmo organismo transgênico. é aquele que recebeu genes de outra espécie não aparentada. esta transmissão não foi por via sexuada, ou seja, foi obtida empregando-se a biotecnologia moderna."
+    "title": "organismo geneticamente modificado - OGM",
+    "description": "o mesmo organismo transgênico. é aquele que recebeu genes de outra espécie não aparentada. esta transmissão não foi por via sexuada, ou seja, foi obtida empregando-se a biotecnologia moderna."
   },
   {
     "title": "Organismo xilófago marinho",
     "description": "Moluscos e crustáceos que atacam madeiras que se encontram em contato com a água do mar."
   },
   {
-    "title" : "organismos patogênicos",
-    "description" : "microrganismos que podem causar doenças. ver pandêmico."
+    "title": "organismos patogênicos",
+    "description": "microrganismos que podem causar doenças. ver pandêmico."
   },
   {
     "title": "Organoclorados - inseticidas",
@@ -101,7 +103,8 @@
   },
   {
     "title": "Orla",
-    "description": "Borda, beira, margem. são as linhas traçadas em planta, definidoras das margens de um o curso d'água ou lagoa e das respectivas faixas marginais de servidão, determinadas nos projetos de alinhamento de riopar, projetos de alinhamento de lagoa-pal e faixas marginais de proteção fmp (portaria serla n° 67 de 26/07/1977)."
+    "description": "Borda, beira, margem. são as linhas traçadas em planta, definidoras das margens de um o curso d'água ou lagoa e das respectivas faixas marginais de servidão, determinadas nos projetos de alinhamento de riopar, projetos de alinhamento de lagoa-pal e faixas marginais de proteção fmp (portaria serla n° 67 de 26/07/1977).",
+    "image": "https://natureatoz.com.br/images/orla"
   },
   {
     "title": "Orogenia",
@@ -117,19 +120,21 @@
   },
   {
     "title": "Orvalho",
-    "description": "Fenômeno natural que ocorre normalmente à noite ou madrugada de céu limpo, pouco teor de umidade e velocidade de vento. formado por vapor de água que há no ar e que se condensa em gotículas de água, ao atingir a superfície fria dos corpos expostos ao ar livre."
+    "description": "Fenômeno natural que ocorre normalmente à noite ou madrugada de céu limpo, pouco teor de umidade e velocidade de vento. formado por vapor de água que há no ar e que se condensa em gotículas de água, ao atingir a superfície fria dos corpos expostos ao ar livre.",
+    "image": "https://natureatoz.com.br/images/orvalho"
   },
   {
-    "title" : "os 5Rs",
-    "description" : "repensar nossos hábitos de consumo; \n recusar produtos que causem danos ao meio ambiente ou a nossa saúde; \n reduzir a geração de lixo;  \n reutilizar, sempre que possível;  \n reciclar, ou seja, transformar em um novo produto."
+    "title": "os 5Rs",
+    "description": "repensar nossos hábitos de consumo; \n recusar produtos que causem danos ao meio ambiente ou a nossa saúde; \n reduzir a geração de lixo;  \n reutilizar, sempre que possível;  \n reciclar, ou seja, transformar em um novo produto."
   },
   {
-    "title" : "OSCIP",
-    "description" : "sigla para organização da sociedade civil de interesse público. figura jurídica, instituída pela lei N.º 9790/99 e regulamentada pelo decreto N.º 3.100/99 que qualifica pessoas jurídicas de direito privado, sem fins lucrativos, para a criação de oscips. a qualificação instituída por essa lei somente será conferida se a instituição tiver objetivos sociais com pelo menos uma das seguintes finalidades:\n 1) promoção da assistência social;\n 2) promoção da cultura, defesa e conservação do patrimônio histórico e artístico;\n 3) promoção gratuita da educação;\n 4) promoção gratuita da saúde;\n 5) promoção da segurança alimentar e nutricional;\n 6) defesa, preservação e conservação do meio ambiente e promoção do desenvolvimento sustentável;\n 7) promoção do voluntariado;\n 8) promoção do desenvolvimento econômico e social e combate à pobreza;\n 9) experimentação, não lucrativa, de novos modelos socioprodutivos e de sistemas alternativos de produção, comércio, emprego e crédito; \n10) promoção de direitos estabelecidos, construção de novos direitos e assessoria jurídica gratuita de interesse suplementar; \n11) promoção da ética, da paz, da cidadania, dos direitos humanos, da democracia e de outros valores universais; \n12) estudos e pesquisas, desenvolvimento de tecnologias alternativas, produção e divulgação de informações e conhecimentos técnicos e científicos que digam respeito às atividades mencionadas neste artigo."
+    "title": "OSCIP",
+    "description": "sigla para organização da sociedade civil de interesse público. figura jurídica, instituída pela lei N.º 9790/99 e regulamentada pelo decreto N.º 3.100/99 que qualifica pessoas jurídicas de direito privado, sem fins lucrativos, para a criação de oscips. a qualificação instituída por essa lei somente será conferida se a instituição tiver objetivos sociais com pelo menos uma das seguintes finalidades:\n 1) promoção da assistência social;\n 2) promoção da cultura, defesa e conservação do patrimônio histórico e artístico;\n 3) promoção gratuita da educação;\n 4) promoção gratuita da saúde;\n 5) promoção da segurança alimentar e nutricional;\n 6) defesa, preservação e conservação do meio ambiente e promoção do desenvolvimento sustentável;\n 7) promoção do voluntariado;\n 8) promoção do desenvolvimento econômico e social e combate à pobreza;\n 9) experimentação, não lucrativa, de novos modelos socioprodutivos e de sistemas alternativos de produção, comércio, emprego e crédito; \n10) promoção de direitos estabelecidos, construção de novos direitos e assessoria jurídica gratuita de interesse suplementar; \n11) promoção da ética, da paz, da cidadania, dos direitos humanos, da democracia e de outros valores universais; \n12) estudos e pesquisas, desenvolvimento de tecnologias alternativas, produção e divulgação de informações e conhecimentos técnicos e científicos que digam respeito às atividades mencionadas neste artigo."
   },
   {
     "title": "Outono",
-    "description": "Estação do ano de clima ameno, que sucede o verão e precede o inverno e que, no hemisfério sul, inicia-se no equinócio de março (20 ou 21).e finda no solstício de junho (21 ou 22). no hemisfério norte começa no equinócio de setembro (22 ou 23) e finda no solstício de dezembro (21 ou 22)."
+    "description": "Estação do ano de clima ameno, que sucede o verão e precede o inverno e que, no hemisfério sul, inicia-se no equinócio de março (20 ou 21).e finda no solstício de junho (21 ou 22). no hemisfério norte começa no equinócio de setembro (22 ou 23) e finda no solstício de dezembro (21 ou 22).",
+    "image": "https://natureatoz.com.br/images/outono"
   },
   {
     "title": "Ovíparo",

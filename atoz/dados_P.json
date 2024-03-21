@@ -37,11 +37,13 @@
   },
   {
     "title": "País",
-    "description": "Região, terra. a nação em que se nasceu, a pátria. território habitado por um grande conjunto de famílias, que constituem determinada nação."
+    "description": "Região, terra. a nação em que se nasceu, a pátria. território habitado por um grande conjunto de famílias, que constituem determinada nação.",
+    "image": "https://natureatoz.com.br/images/pais"
   },
   {
     "title": "Paisagem",
-    "description": "Conjunto visível dos diversos elementos de um lugar no espaço terrestre, podendo ser natural ou humanizada."
+    "description": "Conjunto visível dos diversos elementos de um lugar no espaço terrestre, podendo ser natural ou humanizada.",
+    "image": "https://natureatoz.com.br/images/paisagem"
   },
   {
     "title": "Paisagem humanizada",
@@ -85,11 +87,13 @@
   },
   {
     "title": "Pantano",
-    "description": "Terra alagadiça, brejo."
+    "description": "Terra alagadiça, brejo.",
+    "image": "https://natureatoz.com.br/images/pantano"
   },
   {
     "title": "Papel",
-    "description": "É fabricado com a polpa da celulose extraída da madeira, matéria-prima vegetal mais utilizada, embora outras também possam ser empregadas. essas matérias-primas são, geralmente, processadas química ou mecanicamente ou, também, por uma combinação dos dois modos, gerando como produto o que se denomina de pasta celulósica, que pode ainda ser branqueada, caso se deseje uma pasta de cor branca. a pasta celulósica, branqueada ou não, nada mais é do que as fibras celulósicas liberadas, prontas para serem empregadas na fabricação do papel. a pasta celulósica também pode ser obtida a partir do processamento do papel, ou seja, da reciclagem do papel."
+    "description": "É fabricado com a polpa da celulose extraída da madeira, matéria-prima vegetal mais utilizada, embora outras também possam ser empregadas. essas matérias-primas são, geralmente, processadas química ou mecanicamente ou, também, por uma combinação dos dois modos, gerando como produto o que se denomina de pasta celulósica, que pode ainda ser branqueada, caso se deseje uma pasta de cor branca. a pasta celulósica, branqueada ou não, nada mais é do que as fibras celulósicas liberadas, prontas para serem empregadas na fabricação do papel. a pasta celulósica também pode ser obtida a partir do processamento do papel, ou seja, da reciclagem do papel.",
+    "image": "https://natureatoz.com.br/images/papel"
   },
   {
     "title": "Paralelos",
@@ -161,7 +165,8 @@
   },
   {
     "title": "Pasto",
-    "description": "Terreno onde abunda vegetação gramínea, utilizada como alimento de gado."
+    "description": "Terreno onde abunda vegetação gramínea, utilizada como alimento de gado.",
+    "image": "https://natureatoz.com.br/images/pasto"
   },
   {
     "title": "Patogenicidade",
@@ -233,7 +238,8 @@
   },
   {
     "title": "Pesca",
-    "description": "Ato tendente a capturar ou extrair elementos animais ou vegetais que tenham na água seu meio de vida normal ou mais frequente, podendo efetuar-se com fins desportivos ou científicos (decreto-lei n° 221/67)."
+    "description": "Ato tendente a capturar ou extrair elementos animais ou vegetais que tenham na água seu meio de vida normal ou mais frequente, podendo efetuar-se com fins desportivos ou científicos (decreto-lei n° 221/67).",
+    "image": "https://natureatoz.com.br/images/pesca"
   },
   {
     "title": "Pesca amadora",
@@ -389,7 +395,8 @@
   },
   {
     "title": "Planeta",
-    "description": "Corpo celeste que existe no universo, sem luz própria, que gira ao redor de uma estrela. a terra é um planeta que gira ao redor de uma estrela (sol), recebendo dele luz e calor. ver sistema solar."
+    "description": "Corpo celeste que existe no universo, sem luz própria, que gira ao redor de uma estrela. a terra é um planeta que gira ao redor de uma estrela (sol), recebendo dele luz e calor. ver sistema solar.",
+    "image": "https://natureatoz.com.br/images/planeta"
   },
   {
     "title": "Planície",
@@ -397,7 +404,7 @@
   },
   {
     "title": "planície aluvião",
-    "description": ""
+    "description": "As planícies aluviais são formações geológicas que se caracterizam por serem planas ou muito pouco inclinadas. Formam-se pela deposição ao longo do tempo de sedimentos trazidos por um ou mais rios, criando um solo aluvionar constituído de argila, silte e areia. "
   },
   {
     "title": "planície de inundação",
@@ -445,7 +452,8 @@
   },
   {
     "title": "planta aquática",
-    "description": "planta que habita o meio marinho ou de água doce."
+    "description": "planta que habita o meio marinho ou de água doce.",
+    "image": "https://natureatoz.com.br/images/planta-aquatica"
   },
   {
     "title": "Planta bienal",
@@ -457,7 +465,8 @@
   },
   {
     "title": "Planta carnívora",
-    "description": "Também denominada como planta insetívora, obtém a maioria dos nutrientes de que necessita através da captura e consequente digestão de insetos."
+    "description": "Também denominada como planta insetívora, obtém a maioria dos nutrientes de que necessita através da captura e consequente digestão de insetos.",
+    "image": "https://natureatoz.com.br/images/planta-carnivora"
   },
   {
     "title": "Planta de dia curto",
@@ -485,7 +494,8 @@
   },
   {
     "title": "Plástico",
-    "description": "Qualquer substância de um conjunto de compostos sintetizados do petróleo através da polimerização. são fortes e resistentes à maioria das formas de deterioração, o que lhes garante uma longa duração no meio ambiente, sendo muito úteis como recipientes. \ndivisão: os plásticos são divididos em duas categorias importantes: \ntermofixos: representam cerca de 20% do total consumido no país; são plásticos que, uma vez moldados por um dos processos usuais de transformação, não podem sofrer novos ciclos de processamento, pois não se fundem novamente, o que impede nova moldagem. \ntermoplásticos: mais largamente utilizados, são materiais que podem ser reprocessados várias vezes pelo mesmo ou por outro processo de transformação. quando submetidos ao aquecimento a temperaturas adequadas, esses plásticos amolecem, fundem e podem ser novamente moldados, como o polietileno de baixa densidade (pebd), polietileno de alta densidade (pead), policloreto de vinila (pvc), poliestireno (ps), polipropileno (pp), poli (tereftalato de etileno) (pet), poliamidas (náilon) e outros."
+    "description": "Qualquer substância de um conjunto de compostos sintetizados do petróleo através da polimerização. são fortes e resistentes à maioria das formas de deterioração, o que lhes garante uma longa duração no meio ambiente, sendo muito úteis como recipientes. \ndivisão: os plásticos são divididos em duas categorias importantes: \ntermofixos: representam cerca de 20% do total consumido no país; são plásticos que, uma vez moldados por um dos processos usuais de transformação, não podem sofrer novos ciclos de processamento, pois não se fundem novamente, o que impede nova moldagem. \ntermoplásticos: mais largamente utilizados, são materiais que podem ser reprocessados várias vezes pelo mesmo ou por outro processo de transformação. quando submetidos ao aquecimento a temperaturas adequadas, esses plásticos amolecem, fundem e podem ser novamente moldados, como o polietileno de baixa densidade (pebd), polietileno de alta densidade (pead), policloreto de vinila (pvc), poliestireno (ps), polipropileno (pp), poli (tereftalato de etileno) (pet), poliamidas (náilon) e outros.",
+    "image": "https://natureatoz.com.br/images/plastico"
   },
   {
     "title": "plataforma continental do Brasil",
@@ -569,7 +579,8 @@
   },
   {
     "title": "Poeira",
-    "description": "Partículas extremamente finas, capazes de permanecerem suspensas no ar."
+    "description": "Partículas extremamente finas, capazes de permanecerem suspensas no ar.",
+    "image": "https://natureatoz.com.br/images/poeira"
   },
   {
     "title": "Poeira vulcânica",
@@ -592,7 +603,7 @@
     "description": "Ocorrência de vários embriões na mesma semente, sendo bastante comum em fruteiras temperadas e tropicais, como os citros em geral, a manga, o mangostão, a jaca e a pitanga."
   },
   {
-    "title": " polígono das secas",
+    "title": "polígono das secas",
     "description": "área que abrange 1.880.000 km2, existente no nordeste do brasil, sujeita a secas prolongadas, assim denominada quando foi realizado o mapeamento das áreas ou municípios que se encontram na zona semiárida e que, se encontram no interior do polígono formado."
   },
   {
@@ -628,12 +639,12 @@
     "description": "a partir do decreto N.º 6.040 de 7 de fevereiro de 2007, o governo brasileiro formalizou o reconhecimento da existência de todas as chamadas populações \"tradicionais\" habitantes do país. a constituição de 1988 reconheceu como pertencentes a estas populações apenas indígenas e quilombolas. assim, com o novo decreto, além destes, passam a ser reconhecidas como populações tradicionais. os faxinalenses (que plantam mate e criam porcos), os geraizeiros (habitantes do sertão), os pantaneiros, os caiçaras (pescadores do mar), os ribeirinhos, os seringueiros, os castanheiros, as quebradeiras de coco de babaçu, os ciganos, entre outras. a pnpct será desenvolvida pela comissão nacional de desenvolvimento sustentável dos povos e comunidades tradicionais - cnpct, tendo como objetivo central promover o desenvolvimento sustentável com ênfase na garantia dos direitos territoriais, sociais, ambientais, econômicos e culturais dessas populações, além da valorização e do respeito às suas identidades, formas de organização e instituições."
   },
   {
-    "title" : " política Nacional de Educação Ambiental - PNEA",
-    "description" : "a lei federal N.º 9.795, de 27 de abril de 1999, instituiu a política nacional de educação ambiental tendo como presupuestos filosóficos básicos: o enfoque humanista; a concepção do meio ambiente em sua totalidade; o pluralismo de idéias e concepções pedagógicas; o respeito à pluralidade e à diversidade individual e cultural; a continuidade e avaliação crítica do processo educativo; a vinculação entre a ética, a educação, o trabalho e as práticas sociais; e a abordagem articulada das questões ambientais locais, regionais, nacionais e globais."
+    "title": "política Nacional de Educação Ambiental - PNEA",
+    "description": "a lei federal N.º 9.795, de 27 de abril de 1999, instituiu a política nacional de educação ambiental tendo como presupuestos filosóficos básicos: o enfoque humanista; a concepção do meio ambiente em sua totalidade; o pluralismo de idéias e concepções pedagógicas; o respeito à pluralidade e à diversidade individual e cultural; a continuidade e avaliação crítica do processo educativo; a vinculação entre a ética, a educação, o trabalho e as práticas sociais; e a abordagem articulada das questões ambientais locais, regionais, nacionais e globais."
   },
   {
-    "title" : "Política Nacional do Meio Ambiente",
-    "description" : "instituída pela lei N.º 6.938, de 31 de agosto de 1981, que também instituiu o sisnama, através da política nacional do meio ambiente, o governo federal estabelece as diretrizes e os instrumentos jurídico-programáticos relativos ao meio ambiente para o país."
+    "title": "Política Nacional do Meio Ambiente",
+    "description": "instituída pela lei N.º 6.938, de 31 de agosto de 1981, que também instituiu o sisnama, através da política nacional do meio ambiente, o governo federal estabelece as diretrizes e os instrumentos jurídico-programáticos relativos ao meio ambiente para o país."
   },
   {
     "title": "Políticas públicas",
@@ -662,9 +673,10 @@
   {
     "title": "Poluentes críticos",
     "description": "Termo relativo aos sete compostos responsáveis pela maior parte da poluição atmosférica. também denominados poluentes atmosféricos convencionais. são eles: o monóxido de carbono, o dióxido de enxofre, os particulados, os hidrocarbonetos, os óxidos de nitrogênio, o ozônio e o chumbo."
-  },{
-    "title" : "poluentes orgânicos persistentes - POPs",
-    "description" : "compostos orgânicos altamente tóxicos e que não se decompõem facilmente. causam danos à saúde humana com consequências muito graves, atingindo sistema nervoso central, sistema renal, etc."
+  },
+  {
+    "title": "poluentes orgânicos persistentes - POPs",
+    "description": "compostos orgânicos altamente tóxicos e que não se decompõem facilmente. causam danos à saúde humana com consequências muito graves, atingindo sistema nervoso central, sistema renal, etc."
   },
   {
     "title": "Poluentes primários",
@@ -676,7 +688,8 @@
   },
   {
     "title": "Poluição",
-    "description": "Ato ou efeito de poluir. podem existir diversas formas de poluição, como: visual, auditiva, do ar, entre outras."
+    "description": "Ato ou efeito de poluir. podem existir diversas formas de poluição, como: visual, auditiva, do ar, entre outras.",
+    "image": "https://natureatoz.com.br/images/poluicao"
   },
   {
     "title": "Poluição ambiental",
@@ -688,7 +701,8 @@
   },
   {
     "title": "Poluição das águas",
-    "description": "Ocorre quando as águas poluídas não satisfazem os padrões estabelecidos em normas administrativas, não importando por qual tipo de poluente, que tanto pode ser orgânico como inorgânico."
+    "description": "Ocorre quando as águas poluídas não satisfazem os padrões estabelecidos em normas administrativas, não importando por qual tipo de poluente, que tanto pode ser orgânico como inorgânico.",
+    "image": "https://natureatoz.com.br/images/poluicao-das-aguas"
   },
   {
     "title": "Poluição do ar",
@@ -720,11 +734,11 @@
   },
   {
     "title": "População",
-    "description": "Conjunto de organismos da mesma espécie, que mantêm inter relações e habitam um determinado território, normalmente delimitado pela biocenose da qual esta espécie faz parte." 
+    "description": "Conjunto de organismos da mesma espécie, que mantêm inter relações e habitam um determinado território, normalmente delimitado pela biocenose da qual esta espécie faz parte."
   },
   {
-    "title" : "população biológica",
-    "description" : "conjunto de seres de mesma espécie que habitam uma determinada região geográfica."
+    "title": "população biológica",
+    "description": "conjunto de seres de mesma espécie que habitam uma determinada região geográfica."
   },
   {
     "title": "População viável mínima",
@@ -743,16 +757,16 @@
     "description": "Porto construído e aparelhado para atender às necessidades da navegação e da movimentação e armazenagem de mercadorias, concedido ou explorado pela união, cujo tráfego e operações portuárias estejam sob a jurisdição de uma autoridade portuária (lei N.º 9966/00)."
   },
   {
-    "title" : "potássio - K",
-    "description" : "elemento químico metálico que se oxida com facilidade e reage violentamente com água. seu uso principal é na composição dos fertilizantes (npk), pois é elemento vital no crescimento das plantas. disponível na banana, principalmente, ajuda a evitar cãibras."
+    "title": "potássio - K",
+    "description": "elemento químico metálico que se oxida com facilidade e reage violentamente com água. seu uso principal é na composição dos fertilizantes (npk), pois é elemento vital no crescimento das plantas. disponível na banana, principalmente, ajuda a evitar cãibras."
   },
   {
     "title": "Potencial biótico",
     "description": "Capacidade de crescimento de uma população biológica."
   },
   {
-    "title" : "potencial de aquecimento global (GWP)",
-    "description" : "o potencial de aquecimento global (gwp global warming potencial) é o índice utilizado para possibilitar a comparação de emissões de vários gases de efeito estufa. toma como base o forçamento radiativo, comparando-se este dado do gás em questão com o co, durante determinado período de tempo."
+    "title": "potencial de aquecimento global (GWP)",
+    "description": "o potencial de aquecimento global (gwp global warming potencial) é o índice utilizado para possibilitar a comparação de emissões de vários gases de efeito estufa. toma como base o forçamento radiativo, comparando-se este dado do gás em questão com o co, durante determinado período de tempo."
   },
   {
     "title": "Povoamento florestal",
@@ -788,7 +802,8 @@
   },
   {
     "title": "Predador",
-    "description": "Animal que ataca, mata e se alimenta de outros animais."
+    "description": "Animal que ataca, mata e se alimenta de outros animais.",
+    "image": "https://natureatoz.com.br/images/predador"
   },
   {
     "title": "Predatismo",
@@ -804,7 +819,8 @@
   },
   {
     "title": "Primavera",
-    "description": "Estação do ano de clima ameno, que precede o verão e sucede ao inverno. no hemisfério norte vai do equinócio de março (20 ou 21) ao solstício de junho (21 ou 22). no hemisfério sul, começa o equinócio de setembro (21 ou 22) e termina no solstício dezembro (21 ou 22)."
+    "description": "Estação do ano de clima ameno, que precede o verão e sucede ao inverno. no hemisfério norte vai do equinócio de março (20 ou 21) ao solstício de junho (21 ou 22). no hemisfério sul, começa o equinócio de setembro (21 ou 22) e termina no solstício dezembro (21 ou 22).",
+    "image": "https://natureatoz.com.br/images/primavera"
   },
   {
     "title": "Princípio ativo de agrotóxicos",
@@ -815,28 +831,28 @@
     "description": "De acordo com o instituto akatu, ong que milita em prol do consumo consciente, são 12 os princípios que devem orientar a ação dos indivíduos engajados na questão do consumo consciente: \n1) planejar as compras, pois não agindo por impulso é possível comprar menos e melhor. \n2) avaliar os impactos do consumo no meio ambiente e na sociedade. \n3) consumir apenas o necessário, procurando viver com menos. \n4) reutilizar produtos e embalagens: a ideia é consertar, transformar e reutilizar. \n5) separar o próprio lixo: reciclar é contribuir para a economia de recursos naturais, a redução da degradação ambiental e a geração de empregos. \n6) usar o crédito consciente- mente: sempre considerar se uma compra a crédito é necessária e pode esperar. \n7) conhecer e valorizar práticas de responsabilidade social das empresas: além do preço e da qualidade, é preciso valorizar as empresas em função de sua responsabilidade para com os funcionários, a sociedade e o meio ambiente. \n8) não comprar produtos piratas ou contrabandeados, contribuindo para a geração de empregos estáveis e para combater o crime organizado e a violência. \n9) contribuir para a melhoria de produtos e serviços, adotando uma postura ativa, com sugestões e críticas construtivas para as empresas. \n10) divulgar o consumo consciente: militar pela causa, sensibilize outros consumidores e dissemine informações, valores e práticas do consumo consciente. \n11) cobrar de políticos, partidos, candidatos e governantes propostas e ações que viabilizem e aprofundem a prática do consumo consciente. \n12) refletir constantemente sobre seus valores, escolhas e hábitos de consumo."
   },
   {
-    "title" : "PROBIO",
-    "description" : "sigla para projeto de conservação e utilização sustentável da diversidade biológica brasileira. o probio objetiva identificar ações prioritárias e estimular a elaboração de subprojetos que promovam parcerias entre os setores públicos e privados, gerando e divulgando informações e reconhecimentos sobre a biodiversidade no território nacional. "
+    "title": "PROBIO",
+    "description": "sigla para projeto de conservação e utilização sustentável da diversidade biológica brasileira. o probio objetiva identificar ações prioritárias e estimular a elaboração de subprojetos que promovam parcerias entre os setores públicos e privados, gerando e divulgando informações e reconhecimentos sobre a biodiversidade no território nacional. "
   },
   {
-    "title" : "PROCEL",
-    "description" : "sigla para programa nacional de conservação de energia elétrica."
+    "title": "PROCEL",
+    "description": "sigla para programa nacional de conservação de energia elétrica."
   },
   {
     "title": "Processo de argila seca",
     "description": "Também chamado de purificador seco. é um método utilizado no controle da poluição atmosférica por óxidos de enxofre (dessulfurização do gás liquefeito). caracteriza-se pelo uso de argila, sobre a qual passam colunas de fumo sulfúrico e, nesse processo, o composto é neutralizado e convertido em compostos menos perigosos."
   },
   {
-    "title" : "PROCONOVE",
-    "description" : "sigla para programa nacional de controle da poluição do ar por veículos."
+    "title": "PROCONOVE",
+    "description": "sigla para programa nacional de controle da poluição do ar por veículos."
   },
   {
     "title": "Produção",
     "description": "Fenômeno através do qual um determinado nível trófico cria biomassa numa região ou ecossistema. a taxa de produção por período de tempo é denominada de produtividade. apesar disto, ambos os termos são aplicados, muitas vezes, de forma intercambiável."
   },
   {
-    "title" : "produção máxima sustentável - PMS",
-    "description" : "diz-se do maior índice possível de consumo de um recurso renovável."
+    "title": "produção máxima sustentável - PMS",
+    "description": "diz-se do maior índice possível de consumo de um recurso renovável."
   },
   {
     "title": "Produção sustentada",
@@ -883,8 +899,8 @@
     "description": "Origem ou descendência."
   },
   {
-    "title" : "programa nacional de educação ambiental - ProNEA",
-    "description" : "o programa nacional de educação ambiental, aprovado em 21 de dezembro de 1994, em uma ação conjunta do ministério da educação e o ministério do meio ambiente, objetiva capacitar o sistema de educação formal e não formal, em todos os seus níveis, para o desenvolvimento da educação ambiental. através da transversalidade, da interdisciplinaridade, da descentralização espacial e institucional, o pronea busca incentivar e promover ações para a sensibilização, mobilização, conscientização e capacitação dos diversos segmentos da sociedade brasileira para o enfrentamento dos problemas ambientais visando a construção de um futuro sustentável."
+    "title": "programa nacional de educação ambiental - ProNEA",
+    "description": "o programa nacional de educação ambiental, aprovado em 21 de dezembro de 1994, em uma ação conjunta do ministério da educação e o ministério do meio ambiente, objetiva capacitar o sistema de educação formal e não formal, em todos os seus níveis, para o desenvolvimento da educação ambiental. através da transversalidade, da interdisciplinaridade, da descentralização espacial e institucional, o pronea busca incentivar e promover ações para a sensibilização, mobilização, conscientização e capacitação dos diversos segmentos da sociedade brasileira para o enfrentamento dos problemas ambientais visando a construção de um futuro sustentável."
   },
   {
     "title": "Programas de saúde",
@@ -904,15 +920,15 @@
   },
   {
     "title": "Proteína",
-    "description": "Classe de macromoléculas orgânicas de carbono, nitrogênio e hidrogênio que existe em todos os tecidos dos organismos vivos." 
+    "description": "Classe de macromoléculas orgânicas de carbono, nitrogênio e hidrogênio que existe em todos os tecidos dos organismos vivos."
   },
   {
-    "title" : "protocolo de montreal",
-    "description" : "este protocolo sobre substâncias que destroem a camada de ozônio foi assinado por 46 países em 16 de setembro de 1987 e desde 1995 a assembléia geral das nações unidas declarou o dia 16 de setembro como o dia internacional para a preservação da camada de ozônio para comemorar a sua assinatura."
+    "title": "protocolo de montreal",
+    "description": "este protocolo sobre substâncias que destroem a camada de ozônio foi assinado por 46 países em 16 de setembro de 1987 e desde 1995 a assembléia geral das nações unidas declarou o dia 16 de setembro como o dia internacional para a preservação da camada de ozônio para comemorar a sua assinatura."
   },
   {
-    "title" : "Protocolo de Kyoto",
-    "description" : "instrumento produzido na convenção sobre mudanças climáticas em 1.992, em que foram criadas regras para reduzir os níveis de emissão de gases de efeito estufa. o protocolo estipula a criação de um fundo anual de quase us$ 500 milhões, formado pelos países industrializados, para facilitar a adaptação das nações pobres às exigências do protocolo e, também, determina regras para a compra e venda de créditos obtidos por cortes nas emissões de dióxido de carbono."
+    "title": "Protocolo de Kyoto",
+    "description": "instrumento produzido na convenção sobre mudanças climáticas em 1.992, em que foram criadas regras para reduzir os níveis de emissão de gases de efeito estufa. o protocolo estipula a criação de um fundo anual de quase us$ 500 milhões, formado pelos países industrializados, para facilitar a adaptação das nações pobres às exigências do protocolo e, também, determina regras para a compra e venda de créditos obtidos por cortes nas emissões de dióxido de carbono."
   },
   {
     "title": "Protocooperação",

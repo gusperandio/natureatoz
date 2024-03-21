@@ -97,7 +97,8 @@
   },
   {
     "title": "seca",
-    "description": "O mesmo que estiagem. Espaço de tempo em que a precipitação de chuva em determinada região e em certo período de tempo é baixa ou não ocorre."
+    "description": "O mesmo que estiagem. Espaço de tempo em que a precipitação de chuva em determinada região e em certo período de tempo é baixa ou não ocorre.",
+    "image": "https://natureatoz.com.br/images/seca"
   },
   {
     "title": "seca contingente",
@@ -149,11 +150,13 @@
   },
   {
     "title": "selvagem",
-    "description": "Espécie não-domesticada."
+    "description": "Espécie não-domesticada.",
+    "image": "https://natureatoz.com.br/images/selvagem"
   },
   {
     "title": "semente",
-    "description": "Estrutura de reprodução que contém o embrião de uma determinada espécie, sendo também um elemento de propagação. Óvulo fecundado e desenvolvido, formado de duas partes, o tegumento e a amêndoa."
+    "description": "Estrutura de reprodução que contém o embrião de uma determinada espécie, sendo também um elemento de propagação. Óvulo fecundado e desenvolvido, formado de duas partes, o tegumento e a amêndoa.",
+    "image": "https://natureatoz.com.br/images/semente"
   },
   {
     "title": "semente certificada",
@@ -217,12 +220,12 @@
   },
   {
     "title": "siderito",
-    "description": "Meteorito constituído essencialmente de ferro e níquel sem silicatos." 
+    "description": "Meteorito constituído essencialmente de ferro e níquel sem silicatos."
   },
   {
     "title": "siderose de siderúrgicas",
     "description": "Doença do pulmão típica de operários e moradores oriunda da inalação do pó de ferro."
-  }, 
+  },
   {
     "title": "sienito",
     "description": "Mineral magmático com composição química apresentando semelhanças com o granito."
@@ -321,7 +324,8 @@
   },
   {
     "title": "Sistema Solar",
-    "description": "Conjunto de oito planetas, satélites naturais, asteroides, meteoritos, cometas, além de gás e poeira, que gravitam ao redor do Sol. Os planetas do Sistema Solar são Júpiter, Marte, Mercúrio, Netuno, Saturno, Terra, Urano e Vênus. Plutão deixou recentemente (2006), de ser considerado planeta."
+    "description": "Conjunto de oito planetas, satélites naturais, asteroides, meteoritos, cometas, além de gás e poeira, que gravitam ao redor do Sol. Os planetas do Sistema Solar são Júpiter, Marte, Mercúrio, Netuno, Saturno, Terra, Urano e Vênus. Plutão deixou recentemente (2006), de ser considerado planeta.",
+    "image": "https://natureatoz.com.br/images/sistemasolar"
   },
   {
     "title": "sítio",
@@ -361,11 +365,13 @@
   },
   {
     "title": "sódio (Na)",
-    "description": "Metal extremamente reativo com água. Seus sais têm ampla utilização na dieta (cloreto de sódio - NaCl), nas indústrias de papel, vidro, sabão, têxtil, petróleo, química, metalúrgica e farmacêutica. É encontrado no corpo humano, no sangue e nos fluidos que rodeiam as células."
+    "description": "Metal extremamente reativo com água. Seus sais têm ampla utilização na dieta (cloreto de sódio - NaCl), nas indústrias de papel, vidro, sabão, têxtil, petróleo, química, metalúrgica e farmacêutica. É encontrado no corpo humano, no sangue e nos fluidos que rodeiam as células.",
+    "image": "https://natureatoz.com.br/images/sodio"
   },
   {
     "title": "Sol",
-    "description": "Corpo celeste estelar, o Sol é estrela amarela do tipo G de acordo com a sua posição na escala astrofísica das estrelas. Situado perto da porta da galáxia Via Láctea, o Sol é o centro do sistema de gravitação do conjunto de planetas que constitui o Sistema Solar. A luz e o calor irradiados pelo Sol derivam de uma reação nuclear que transforma dois átomos de hidrogênio (H) em um átomo de hélio (He), com liberação de energia por meio da fusão nuclear."
+    "description": "Corpo celeste estelar, o Sol é estrela amarela do tipo G de acordo com a sua posição na escala astrofísica das estrelas. Situado perto da porta da galáxia Via Láctea, o Sol é o centro do sistema de gravitação do conjunto de planetas que constitui o Sistema Solar. A luz e o calor irradiados pelo Sol derivam de uma reação nuclear que transforma dois átomos de hidrogênio (H) em um átomo de hélio (He), com liberação de energia por meio da fusão nuclear.",
+    "image": "https://natureatoz.com.br/images/sol"
   },
   {
     "title": "sólidos dissolvidos",
@@ -389,7 +395,8 @@
   },
   {
     "title": "solo",
-    "description": "Porção da superfície terrestre constituída por partículas minerais, matéria orgânica e organismos vivos. Origina-se do desgaste das rochas, que leva vários milhares de anos para se constituir."
+    "description": "Porção da superfície terrestre constituída por partículas minerais, matéria orgânica e organismos vivos. Origina-se do desgaste das rochas, que leva vários milhares de anos para se constituir.",
+    "image": "https://natureatoz.com.br/images/solo"
   },
   {
     "title": "solo de brejo",
@@ -453,7 +460,8 @@
   },
   {
     "title": "sucata",
-    "description": "Matéria-prima das empresas produtoras de aço que não contam com o processo de redução, e que são responsáveis por cerca de 20% da produção nacional de aço. A sucata representa cerca de 40% do total de aço consumido no país, valor próximo aos valores de outros países, como os Estados Unidos, onde atinge 50% do total da produção. Ressalte-se que o Brasil exporta cerca de 40% da sua produção de aço. É importante, ainda, observar que a sucata pode, sem maiores problemas, ser reciclada, mesmo quando enferrujada. Sua reciclagem é, também, facilitada pela sua simples identificação e separação, principalmente no caso da sucata ferrosa, em que se empregam eletroímãs, devido às suas propriedades magnéticas. Através deste processo é possível retirar até 90% do metal ferroso existente no lixo (IBS, 1994)."
+    "description": "Matéria-prima das empresas produtoras de aço que não contam com o processo de redução, e que são responsáveis por cerca de 20% da produção nacional de aço. A sucata representa cerca de 40% do total de aço consumido no país, valor próximo aos valores de outros países, como os Estados Unidos, onde atinge 50% do total da produção. Ressalte-se que o Brasil exporta cerca de 40% da sua produção de aço. É importante, ainda, observar que a sucata pode, sem maiores problemas, ser reciclada, mesmo quando enferrujada. Sua reciclagem é, também, facilitada pela sua simples identificação e separação, principalmente no caso da sucata ferrosa, em que se empregam eletroímãs, devido às suas propriedades magnéticas. Através deste processo é possível retirar até 90% do metal ferroso existente no lixo (IBS, 1994).",
+    "image": "https://natureatoz.com.br/images/sucata"
   },
   {
     "title": "sucessão",

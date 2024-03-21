@@ -4,6 +4,7 @@ import unorm from "unorm";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 import { cors } from "../../middlewares/cors";
+import { verifyToken } from "@/lib/JWT";
 
 interface InsertDatas {
   title: string;
@@ -28,7 +29,6 @@ const processLetter = (dados: InsertDatas[]): InsertDatas[] => {
 
     return processedDatas;
   } catch (error) {
-    console.log(error);
     return [];
   }
 };
@@ -54,16 +54,19 @@ const removeAccents = (input: string): string => {
 const database = new DB();
 export async function POST(request: Request) {
   try {
+    const auth = request.headers.get("authorization") ?? "";
+    if (!verifyToken(auth))
+      return new NextResponse(null, {
+        status: 401,
+        statusText: "Unauthorized",
+      });
     // Apply cors in route
     cors();
 
     await database.connect();
-    const requestData =
-      typeof request.body === "string"
-        ? JSON.parse(request.body)
-        : request.body;
+    const body = await request.json();
 
-    const newItem = await Item.create(processLetter(requestData));
+    const newItem = await Item.create(processLetter(body));
 
     return new NextResponse(
       JSON.stringify({ success: true, inserts: newItem }),

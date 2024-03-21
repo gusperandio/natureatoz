@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 115vh;
+  height: 120vh;
   font-family: 'Oxygen';
   background-image: url('../../../public/arara.png');
   background-size: cover;
@@ -90,5 +90,7 @@
 @media (width <= 518px) {
   .main {
     background-position: -340px center;
+    height: auto;
+    padding-bottom: 2rem;
   }
 }

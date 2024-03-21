@@ -6,12 +6,19 @@ import { Key } from "@/lib/keys";
 import { Counter } from "@/lib/count";
 import { DB } from "@/lib/config/dbConnect";
 import { cors } from "../../middlewares/cors";
+import { verifyToken } from "@/lib/JWT";
 
 const database = new DB();
 const countMongoDB = new Counter();
 const dbKey = new Key();
 export async function GET(request: Request) {
   try {
+    const auth = request.headers.get("authorization") ?? "";
+    if (!verifyToken(auth))
+      return new NextResponse(null, {
+        status: 401,
+        statusText: "Unauthorized",
+      });
     await database.connect();
     // Apply cors in route
     cors();

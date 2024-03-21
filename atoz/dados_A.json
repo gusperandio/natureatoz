@@ -14,7 +14,7 @@
   {
     "title": "Abastecimento de água",
     "description": "Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano.",
-    "image": "https://i.imgur.com/eIk8cUB.png"
+    "image": "https://natureatoz.com.br/images/AbastecimentoAgua"
   },
   {
     "title": "Abastecimento nacional de carvão",
@@ -87,7 +87,7 @@
   {
     "title": "Absorção da calota polar",
     "description": "Fenômeno natural que ocorre na atmosfera, especificamente na camada da ionosfera (região 80 km acima da troposfera) acima dos polos da terra, quando as manchas solares estão ativas. Sigla ACP.",
-    "image" : "https://i.imgur.com/NA0a0Tp.jpg"
+    "image": "https://i.imgur.com/NA0a0Tp.jpg"
   },
   {
     "title": "Absorção passiva de calor",
@@ -335,7 +335,8 @@
   },
   {
     "title": "Aeração do solo",
-    "description": "Relacionado ao grau de circulação do ar através da porosidade do solo. Troca de gases entre o solo e o ar atmosférico."
+    "description": "Relacionado ao grau de circulação do ar através da porosidade do solo. Troca de gases entre o solo e o ar atmosférico.",
+    "image": "https://natureatoz.com.br/images/aeracao%20do%20solo"
   },
   {
     "title": "Aeróbico",
@@ -556,6 +557,7 @@
   {
     "title": "Água",
     "description": "Recurso natural insípido, incolor e inodoro. Líquido mineral essencial para a vida na terra. Cerca de 70% da superfície terrestre está coberta por água. Uma molécula de água é constituída por dois átomos de hidrogênio e um de oxigênio, de fórmula h2o. A água é considerada o \"solvente universal \", pois consegue dissolver um grande número de substâncias e, exatamente por isso, ela tende a se poluir com grande facilidade. Na terra, é encontrada em três estados físicos: sólido (gelo), líquido (água) e gasoso (vapor d'água). Estatisticamente, a distribuição da água em volume no planeta, é de aproximadamente:\\n97,5% ....... Nos mares e oceanos;\\n1,979% ....... Em geleiras e calotas polares;\\n0,514% ....... Em regiões subterrâneas;\\n0,006% ....... Em lagos e rios;\\n0,001% ....... Na umidade atmosférica."
+    ,"image": "https://natureatoz.com.br/images/agua"
   },
   {
     "title": "Água bruta",
@@ -608,6 +610,7 @@
   {
     "title": "Água freática",
     "description": "Água subterrânea localizada na camada mais próxima da superfície."
+    , "image": "https://natureatoz.com.br/images/agua%20freatica"
   },
   {
     "title": "Água higroscópica",
@@ -844,6 +847,7 @@
   {
     "title": "Amazônia",
     "description": "Região que se estende desde o maciço das guianas até o planalto brasileiro como, também, desde o atlântico até os andes. Possui uma superfície extensa, com cerca de 7 milhões de km2, clima predominantemente equatorial, solo pouco profundo, sendo atravessada pelo rio amazonas e seus inúmeros afluentes. É um ecossistema sustentável que está situado em 9 países: guiana francesa, suriname, guiaņa, venezuela, colômbia, equador, peru, bolívia e brasil. Neste último, possui uma área com cerca de 40% de seu território espalhado por 7 estados: acre, pará, amazonas, rondônia, amapá, roraima e tocantins. Nesta região se encontra a maior floresta tropical úmida do mundo em torno da mais extensa rede fluvial e com o maior volume de água doce do planeta."
+    ,"image": "https://natureatoz.com.br/images/amazonia"
   },
   {
     "title": "Amazônia Legal",
@@ -1123,7 +1127,8 @@
   },
   {
     "title": "Apicultura",
-    "description": "Criação de abelhas através de técnicas racionais para a produção de mel e derivados."
+    "description": "Criação de abelhas através de técnicas racionais para a produção de mel e derivados.",
+    "image": "https://natureatoz.com.br/images/Apicultura"
   },
   {
     "title": "Apicum",
@@ -1335,7 +1340,8 @@
   },
   {
     "title": "Areia",
-    "description": "Massa formada por milhões de pequenos fragmentos de rocha, frequentemente constituídos por quartzo, proveniente, em sua grande maioria, de erosões rochosas."
+    "description": "Massa formada por milhões de pequenos fragmentos de rocha, frequentemente constituídos por quartzo, proveniente, em sua grande maioria, de erosões rochosas.",
+    "image": "https://natureatoz.com.br/images/Areia"
   },
   {
     "title": "Areia movediça",
@@ -1720,7 +1726,7 @@
   {
     "title": "Abelha",
     "description": "Inseto polinizador crucial para a reprodução de muitas plantas.",
-    "image" : "https://i.imgur.com/W6agfp3.jpg"
+    "image": "https://natureatoz.com.br/images/abelha"
   },
   {
     "title": "Ananás",

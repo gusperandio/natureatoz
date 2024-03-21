@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-
 import styles from "./styles.module.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";

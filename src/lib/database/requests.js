@@ -16,7 +16,7 @@ export class CountRequest {
       db.close();
       return num[0].req_number;
     } catch (error) {
-      console.log(error);
+      //console.log(error);
     }
   }
 

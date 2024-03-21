@@ -9,7 +9,7 @@ const database = new DB();
 const countMongoDB = new Counter();
 export async function GET(request: Request) {
   try {
-    // Apply cors in route
+    
     cors();
 
     const url = new URL(request.url);
@@ -28,7 +28,7 @@ export async function GET(request: Request) {
 
     const num = await countMongoDB.getReqCount();
 
-    cached.save(url.pathname, { requests: num }, 1, "Min");
+    cached.save(url.pathname, { requests: num }, 10, "Min");
 
     return new NextResponse(JSON.stringify({ requests: num }), {
       status: 200,

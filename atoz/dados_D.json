@@ -265,7 +265,8 @@
   },
   {
     "title": "Deserto",
-    "description": "Região de pouca chuva, com precipitação inferior a 250 mm/ ano considerando que, eventualmente, onde essa precipitação é maior, ela é distribuída de forma heterogênea; sua vegetação característica é xerófila ou anual e não possui árvores; tem dias muito quentes e noites muito frias; solo muito árido, geralmente arenoso ou rochoso, embora possam existir diversos tipos de fauna e flora adaptados a esta região. Apresenta baixa densidade populacional. Temos o deserto temperado (mongólia), o deserto frio (antártida) e o deserto quente (saara), que é o maior de todos."
+    "description": "Região de pouca chuva, com precipitação inferior a 250 mm/ ano considerando que, eventualmente, onde essa precipitação é maior, ela é distribuída de forma heterogênea; sua vegetação característica é xerófila ou anual e não possui árvores; tem dias muito quentes e noites muito frias; solo muito árido, geralmente arenoso ou rochoso, embora possam existir diversos tipos de fauna e flora adaptados a esta região. Apresenta baixa densidade populacional. Temos o deserto temperado (mongólia), o deserto frio (antártida) e o deserto quente (saara), que é o maior de todos.",
+    "image": "https://natureatoz.com.br/images/Deserto"
   },
   {
     "title": "Desfolhação",
@@ -281,7 +282,8 @@
   },
   {
     "title": "Desmatamento",
-    "description": "Destruição de florestas e de outros tipos de vegetação natural de uma região. Esta prática objetiva, principalmente, utilizar a terra para atividades agropecuárias, o que resulta em desequilíbrio ambiental."
+    "description": "Destruição de florestas e de outros tipos de vegetação natural de uma região. Esta prática objetiva, principalmente, utilizar a terra para atividades agropecuárias, o que resulta em desequilíbrio ambiental.",
+    "image": "https://natureatoz.com.br/images/Desmatamento"
   },
   {
     "title": "Desmoronamento",
@@ -558,6 +560,7 @@
   {
     "title": "Dragão-de-komodo",
     "description": "Lagarto gigante nativo das ilhas Komodo, na Indonésia, conhecido por sua ferocidade e tamanho impressionante."
+    ,"image": "https://natureatoz.com.br/images/Drag%C3%A3oKomodo"
   },
   {
     "title": "Dente-de-leão",

@@ -34,6 +34,7 @@
   {
     "title": "Neblina",
     "description": "Condensação de vapor d'água em gotículas, que flutuam no ar semelhantes a nuvens próximas ao solo, também denominadas fog."
+    ,"image": "https://natureatoz.com.br/images/neblina"
   },
   {
     "title": "Necromassa",
@@ -78,6 +79,7 @@
   {
     "title": "Neve",
     "description": "Cristais de gelo de formas variadas, ocasionados pela condensação da água da atmosfera a uma temperatura menor que 0°c, que se precipitam em flocos brancos para o solo. quando acumuladas no topo das montanhas e nos polos, de forma permanente, não ocorrendo degelo no verão, são denominadas neves eternas."
+    , "image": "https://natureatoz.com.br/images/neve"
   },
   {
     "title": "Névoa",
@@ -186,6 +188,7 @@
   {
     "title": "Nuvem",
     "description": "Conjunto de partículas de água, pequenas, na forma sólida (cristais de gelo), localizadas acima da superfície terrestre. as nuvens são formadas, principalmente, pelo movimento vertical do ar úmido."
+    , "image": "https://natureatoz.com.br/images/nuvem"
   },
   {
     "title": "Nuvem negra",

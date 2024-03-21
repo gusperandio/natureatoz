@@ -1,6 +1,22 @@
-import { FirebaseApp, initializeApp } from "firebase/app";
-import { Analytics, AnalyticsCallOptions, getAnalytics, isSupported, logEvent } from "firebase/analytics";
-import { Auth, getAuth } from "firebase/auth";
+import {
+  Analytics,
+  AnalyticsCallOptions,
+  getAnalytics,
+  logEvent,
+} from "firebase/analytics";
+import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
+
+const log = (
+  analytics: Analytics | null,
+  eventName: string,
+  eventParams?: { [key: string]: any },
+  options?: AnalyticsCallOptions
+) => {
+  if (analytics) {
+    logEvent(analytics, eventName, eventParams, options);
+  }
+};
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -11,25 +27,8 @@ const firebaseConfig = {
   appId: process.env.APP_ID,
   measurementId: process.env.MEASUREMENT_ID,
 };
-
-let analytics: Analytics | null = null;
-let auth: Auth | null = null;
-
-const initializeFirebase = async () => {
-  if (typeof window !== "undefined") {
-    const app: FirebaseApp = initializeApp(firebaseConfig);
-    analytics = getAnalytics(app);
-    auth = getAuth(app);
-  }
-};
-
-const log = (analytics: Analytics | null, eventName: string, eventParams?: { [key: string]: any }, options?: AnalyticsCallOptions) => {
-  if (analytics) {
-    logEvent(analytics, eventName, eventParams, options);
-  }
-};
-
-
-initializeFirebase();
-
-export { analytics, auth, log };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+// const analytics = getAnalytics(app);
+export { log, storage };

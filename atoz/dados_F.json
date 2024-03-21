@@ -69,7 +69,8 @@
   },
   {
     "title": "Fauna",
-    "description": "Conjunto das espécies animais características de determinada área (território, país, região, distrito, etc.), época ou meio ambiente específico."
+    "description": "Conjunto das espécies animais características de determinada área (território, país, região, distrito, etc.), época ou meio ambiente específico.",
+    "image": "https://natureatoz.com.br/images/fauna"
   },
   {
     "title": "Fauna demersal",
@@ -85,7 +86,8 @@
   },
   {
     "title": "Fazenda de pesca",
-    "description": "Lugar onde existem viveiros, tanques e açudes artificiais ou áreas, em lagos, rios e oceanos, limitados com cercados, onde se criam e reproduzem determinadas espécies de peixes de valor comercial como por exemplo tucunaré, pacu e alguns tipos de camarão."
+    "description": "Lugar onde existem viveiros, tanques e açudes artificiais ou áreas, em lagos, rios e oceanos, limitados com cercados, onde se criam e reproduzem determinadas espécies de peixes de valor comercial como por exemplo tucunaré, pacu e alguns tipos de camarão.",
+    "image": "https://natureatoz.com.br/images/fazenda%20de%20pesca"
   },
   {
     "title": "Fazenda florestal",
@@ -126,6 +128,7 @@
   {
     "title": "Ferro",
     "description": "Metal não encontrado em estado livre na natureza a não ser nos meteoritos. é o segundo dos metais mais abundantes da crosta terrestre. Geralmente é encontrado no estado de óxido: hematita (sesquióxido de ferro anidro fe 0,); limonita (sesquióxido de ferro hidratado); magnetita (óxido de ferro magnético); goetita (sesquióxido de ferro hidratado); sulfato e carbonato. No brasil, as maiores reservas de minério de ferro estão localizadas nos estados de minas gerais, mato grosso e pará (serra dos carajás), onde existem jazidas com potencial da ordem de 16 bilhões de toneladas e 67% de teor de ferro."
+    ,"image": "https://natureatoz.com.br/images/ferro"
   },
   {
     "title": "Fértil",
@@ -302,6 +305,7 @@
   {
     "title": "Flor",
     "description": "Estrutura reprodutiva das plantas evoluídas, presente nas angiospermas."
+    ,"image": "https://natureatoz.com.br/images/flor"
   },
   {
     "title": "Flora",
@@ -314,6 +318,7 @@
   {
     "title": "Floração das algas",
     "description": "Às vezes ocorre a proliferação excessiva de algas de vários gêneros que formam um tapete sobre a água, impedindo a penetração da luz e do oxigênio. Essa proliferação é consequência do enriquecimento de nutrientes nessa massa líquida, o que causa a morte das algas situadas nas camadas inferiores, que, ao se decomporem, provocam a consumo do oxigênio e consequentemente morte por asfixia dos seres abióticos"
+    ,"image": "https://natureatoz.com.br/images/floracao%20de%20algas"
   },
   {
     "title": "Florescimento algáceo",
@@ -322,6 +327,7 @@
   {
     "title": "Floresta",
     "description": "Extensa região recoberta por vegetação fechada, onde vivem inúmeras espécies da flora e da fauna, com predomínio de árvores."
+    ,"image": "https://natureatoz.com.br/images/floresta"
   },
   {
     "title": "Floresta aciculifoliácea",
@@ -346,6 +352,7 @@
   {
     "title": "Floresta de araucárias",
     "description": "A floresta de araucárias é um tipo de ecossistema vegetal predominante em certas regiões do brasil, especialmente nas áreas de planalto do sul do país."
+    ,"image": "https://natureatoz.com.br/images/floresta%20de%20araucarias"
   },
   {
     "title": "Floresta de igapó",
@@ -490,6 +497,7 @@
   {
     "title": "Fogo",
     "description": "Liberação de luz e calor numa reação de combustão."
+    ,"image": "https://natureatoz.com.br/images/fogo"
   },
   {
     "title": "fogo de chão",
@@ -558,6 +566,7 @@
   {
     "title": "Fosfato",
     "description": "Nutriente que pode ser encontrado também em água de despejo que provém, em particular, dos detergentes e fertilizantes químicos utilizados em excesso, assim como dos resíduos da criação intensiva de animais. Os fosfatos constituem um dos fatores principais de poluição dos lagos e rios."
+    ,"image": "https://natureatoz.com.br/images/fosfato"
   },
   {
     "title": "Fosfato orgânico",
@@ -574,6 +583,7 @@
   {
     "title": "Fóssil",
     "description": "Resto ou vestígio preservado de seres que viveram em épocas pré-históricas, há mais de 10 mil anos."
+    , "image": "https://natureatoz.com.br/images/f%C3%B3ssil"
   },
   {
     "title": "Fotólise da água",
@@ -654,6 +664,7 @@
   {
     "title": "Fumaça",
     "description": "Partículas muito finas de cinza ou de combustível parcialmente queimado suspensas no ar como nuvens visíveis, sendo, normalmente, o resultado da combustão incompleta de compostos ou substâncias que contêm carbono."
+    , "image": "https://natureatoz.com.br/images/fuma%C3%A7a"
   },
   {
     "title": "Fumigação",

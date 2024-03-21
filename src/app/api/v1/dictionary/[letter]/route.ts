@@ -2,11 +2,11 @@ import { Cache } from "../../../../../lib/caching";
 import { limiterToken as limiter } from "@/lib/config/limiter";
 import Item from "../../../../../lib/models/item";
 import { filterItems } from "@/lib/filterItems";
-import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
 import { cors } from "@/app/api/middlewares/cors";
+import { verifyToken } from "@/lib/JWT";
 
 const cached = new Cache();
 const database = new DB();
@@ -17,10 +17,16 @@ export async function GET(
   { params }: { params: { letter: string } }
 ) {
   try {
+    const auth = request.headers.get("authorization") ?? "";
+    if (!verifyToken(auth))
+      return new NextResponse(null, {
+        status: 401,
+        statusText: "Unauthorized",
+      });
+
     await database.connect();
     const remaining = await limiter.removeTokens(1);
 
-    // Apply cors in route
     cors();
 
     if (remaining < 0) {
@@ -38,8 +44,6 @@ export async function GET(
 
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
-
-    log(analytics, "dictionary", { page_path: url.pathname });
 
     if (getCache) {
       return new NextResponse(JSON.stringify(getCache), {

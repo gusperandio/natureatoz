@@ -81,7 +81,8 @@
   },
   {
     "title": "Calota glacial",
-    "description": "Parte das regiões polares coberta de gelo, particularmente na groenlândia e na antártida. Pode também ser chamada de geleira continental ou inlandsis."
+    "description": "Parte das regiões polares coberta de gelo, particularmente na groenlândia e na antártida. Pode também ser chamada de geleira continental ou inlandsis.",
+    "image": "https://natureatoz.com.br/images/calotaGlacial"
   },
   {
     "title": "Calota insular",
@@ -186,7 +187,7 @@
   {
     "title": "Câncer",
     "description": "Denominação genérica que designa tumores malignos. Existem inúmeros tipos de câncer que resultam ou são acentuados por fatores ambientais, tais como: o tabaco, radiação, poluentes químicos, entre outros.",
-    "image" : "https://i.imgur.com/nFGDVZ2.png"
+    "image": "https://natureatoz.com.br/images/Cancer"
   },
   {
     "title": "Câncer ecológico",
@@ -211,11 +212,12 @@
   {
     "title": "Cânions",
     "description": "Relevo desgastado pela passagem de um rio naquele local durante muito tempo.",
-    "image" : "https://i.imgur.com/nXWApzu.png"
+    "image": "https://natureatoz.com.br/images/Canion"
   },
   {
     "title": "Canibalismo",
-    "description": "Variante de predação em que o indivíduo mata e come outro da mesma espécie."
+    "description": "Variante de predação em que o indivíduo mata e come outro da mesma espécie.",
+    "image": "https://natureatoz.com.br/images/Canibalismo"
   },
   {
     "title": "Capacidade assimilativa",
@@ -363,7 +365,8 @@
   },
   {
     "title": "Cascata",
-    "description": "Queda de água, que despenca pela parede rochosa de grutas e que assim é chamada devido a sua forma, que normalmente é lisa e de cor alvíssima, constituindo um depósito uniforme da parede até o chão da gruta, mas também pode terminar em estalactites formadas a partir das bordas."
+    "description": "Queda de água, que despenca pela parede rochosa de grutas e que assim é chamada devido a sua forma, que normalmente é lisa e de cor alvíssima, constituindo um depósito uniforme da parede até o chão da gruta, mas também pode terminar em estalactites formadas a partir das bordas.",
+    "image": "https://natureatoz.com.br/images/Cascata"
   },
   {
     "title": "Cassiterita",
@@ -400,7 +403,7 @@
   {
     "title": "Caverna",
     "description": "Toda e qualquer cavidade natural subterrânea penetrável pelo homem, incluindo seu ambiente, seu conteúdo mineral e hídrico, as comunidades animais e vegetais ali agregadas e o corpo rochoso onde se insere (Resolução Conama N.º 005 de 6/8/87).",
-    "image" : "https://i.imgur.com/8J09Sev.png"
+    "image": "https://natureatoz.com.br/images/Caverna"
   },
   {
     "title": "Cavidade natural subterrânea",
@@ -505,7 +508,7 @@
   {
     "title": "Chuva",
     "description": "Precipitação de água das nuvens nas cidades, campos, lagos, rios e oceanos, completando o ciclo da água.",
-    "image" : "https://i.imgur.com/2apazjH.png"
+    "image": "https://natureatoz.com.br/images/Chuva"
   },
   {
     "title": "Chuva ácida",
@@ -805,7 +808,8 @@
   },
   {
     "title": "Colina",
-    "description": "Pequeno monte ou elevação do terreno que apresenta encostas suaves com declividade inferior a 15% e altitude inferior a 100 m."
+    "description": "Pequeno monte ou elevação do terreno que apresenta encostas suaves com declividade inferior a 15% e altitude inferior a 100 m.",
+    "image": "https://natureatoz.com.br/images/Colina"
   },
   {
     "title": "Colmatagem",
@@ -858,7 +862,7 @@
   {
     "title": "Combustível fóssil",
     "description": "Combustível orgânico gerado pela decomposição, tanto de vegetais quanto de animais, acumulados ao longo de milhões de anos na crosta terrestre. é a fonte de energia mais usada na terra e a que apresenta o maior potencial de poluição (petróleo).",
-    "image" : "https://i.imgur.com/scTZZPV.png"
+    "image": "https://natureatoz.com.br/images/CombustivelFossil"
   },
   {
     "title": "Comensalismo",
@@ -891,7 +895,7 @@
   {
     "title": "Compostagem",
     "description": "Processo de obtenção de composto por meio de tratamento aeróbio de lodos de esgoto, resíduos agrícolas, industriais e, em especial, dos resíduos urbanos. Esse processo tem como resultado final um produto o composto orgânico — que pode ser aplicado ao solo para melhorar suas características, sem ocasionar riscos ao meio ambiente. Há muito tempo, é praticado no meio rural, utilizando-se restos vegetais e esterco animal. Pode-se, também, utilizar a fração orgânica do lixo domiciliar, mas de forma controlada, em instalações industriais chamadas usinas de triagem e compostagem. No brasil, a compostagem tem grande importância, uma vez que cerca de 50% do lixo municipal é constituído por matéria orgânica. Na compostagem normalmente sobram cerca de 50% de resíduos, os quais devem ser adequadamente dispostos.",
-    "image" : "https://i.imgur.com/GLIMa71.png"
+    "image": "https://natureatoz.com.br/images/Compostagem"
   },
   {
     "title": "Comunidade",
@@ -936,7 +940,7 @@
   {
     "title": "CONAMA",
     "description": "Sigla para conselho nacional de meio ambiente. Criado pela lei N.º 6.938 de 31 de agosto de 1981, que instituiu a política nacional do meio ambiente, o Conama é um órgão colegiado, consultivo e deliberativo, que pertence ao sisnama, sendo composto por plenário (com representantes do mma, de órgãos governamentais, da sociedade civil, de entidades de classe, etc.), pelo comitê de integração de políticas ambientais - cipam, câmaras técnicas, grupos de trabalho e grupos assessores, sendo presidido pelo ministro do meio ambiente.",
-    "image" : "https://i.imgur.com/W0gIdHT.png"
+    "image": "https://natureatoz.com.br/images/conama"
   },
   {
     "title": "Concentração disponível",
@@ -1104,7 +1108,8 @@
   },
   {
     "title": "Contaminação",
-    "description": "Quaisquer tipos de elementos em concentrações nocivas à saúde humana no meio ambiente."
+    "description": "Quaisquer tipos de elementos em concentrações nocivas à saúde humana no meio ambiente.",
+    "image": "https://natureatoz.com.br/images/Contaminacao"
   },
   {
     "title": "Contaminação atmosférica",
@@ -1276,7 +1281,8 @@
   },
   {
     "title": "Cratera",
-    "description": "Termo que se refere a um buraco grande, normalmente circular, por onde saem as lavas vulcânicas, mas também se refere a formações tanto vulcânicas quanto meteoríticas semelhantes a uma depressão, que variam de pequenas a gigantescas proporções."
+    "description": "Termo que se refere a um buraco grande, normalmente circular, por onde saem as lavas vulcânicas, mas também se refere a formações tanto vulcânicas quanto meteoríticas semelhantes a uma depressão, que variam de pequenas a gigantescas proporções.",
+    "image": "https://natureatoz.com.br/images/Cratera"
   },
   {
     "title": "Créditos de carbono",
@@ -1304,7 +1310,8 @@
   },
   {
     "title": "Criogenia",
-    "description": "Processo de submeter a matéria a temperaturas muito baixas."
+    "description": "Processo de submeter a matéria a temperaturas muito baixas.",
+    "image": "https://natureatoz.com.br/images/Criogenia"
   },
   {
     "title": "Criopreservação",
@@ -1396,7 +1403,8 @@
   },
   {
     "title": "Coruja",
-    "description": "Ave de rapina noturna conhecida por sua visão aguçada e vocalizações distintivas."
+    "description": "Ave de rapina noturna conhecida por sua visão aguçada e vocalizações distintivas.",
+    "image": "https://natureatoz.com.br/images/Coruja"
   },
   {
     "title": "Cipó",
@@ -1412,7 +1420,8 @@
   },
   {
     "title": "Café",
-    "description": "Bebida popular feita a partir dos grãos torrados da planta de café, originária da Etiópia."
+    "description": "Bebida popular feita a partir dos grãos torrados da planta de café, originária da Etiópia.",
+    "image": "https://natureatoz.com.br/images/Caf%C3%A9"
   },
   {
     "title": "Cedro",
@@ -1424,7 +1433,8 @@
   },
   {
     "title": "Cerejeira",
-    "description": "Árvore frutífera que produz cerejas, apreciadas por seu sabor doce e aroma."
+    "description": "Árvore frutífera que produz cerejas, apreciadas por seu sabor doce e aroma.",
+    "image": "https://natureatoz.com.br/images/Cerejeira"
   },
   {
     "title": "Cascavel",
@@ -1436,7 +1446,8 @@
   },
   {
     "title": "Camarão",
-    "description": "Crustáceo marinho amplamente consumido, com diversas espécies utilizadas na culinária."
+    "description": "Crustáceo marinho amplamente consumido, com diversas espécies utilizadas na culinária.",
+    "image": "https://natureatoz.com.br/images/Camarao"
   },
   {
     "title": "Cipó-de-são-joão",
@@ -1444,11 +1455,13 @@
   },
   {
     "title": "Cavalo-marinho",
-    "description": "Peixe marinho de corpo alongado e cabeça em formato de cavalo, pertencente à família Syngnathidae."
+    "description": "Peixe marinho de corpo alongado e cabeça em formato de cavalo, pertencente à família Syngnathidae.",
+    "image": "https://natureatoz.com.br/images/Cavalo"
   },
   {
     "title": "Coqueiro",
-    "description": "Árvore tropical conhecida por produzir cocos, com utilidade em diversos produtos e alimentos."
+    "description": "Árvore tropical conhecida por produzir cocos, com utilidade em diversos produtos e alimentos.",
+    "image": "https://natureatoz.com.br/images/Coqueiro"
   },
   {
     "title": "Cobra-coral",

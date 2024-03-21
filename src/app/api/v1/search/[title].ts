@@ -2,11 +2,11 @@ import { Cache } from "../../../../lib/caching";
 import { limiterToken as limiter } from "@/lib/config/limiter";
 import Item from "../../../../lib/models/item";
 import { filterItems } from "@/lib/filterItems";
-import { analytics, log } from "@/lib/firebase";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
 import { cors } from "../../middlewares/cors";
+import { verifyToken } from "@/lib/JWT";
 
 const database = new DB();
 const cached = new Cache();
@@ -14,13 +14,17 @@ const countMongoDB = new Counter();
 
 export async function GET(request: Request) {
   try {
-    // Apply cors in route
+    const auth = request.headers.get("authorization") ?? "";
+    if (verifyToken(auth))
+      return new NextResponse(null, {
+        status: 401,
+        statusText: "Unauthorized",
+      });
+
     cors();
 
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
-
-    log(analytics, "search", { page_path: "/api/v1/search" });
 
     if (getCache) {
       return new NextResponse(JSON.stringify(getCache), {

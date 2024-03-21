@@ -80,7 +80,6 @@ export default function CardCode(props: PropsCardCode) {
       <span className={styles.bg}>fetch</span>(apiUrl,{" "}
       <span style={{ display: props.auth ? "inline" : "none" }}>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;{" "}
       </span>
       &#123;<span className={styles.r}>method</span>:{" "}
       <span className={styles.g}>&#34;{props.method}&#34;</span>
@@ -95,13 +94,11 @@ export default function CardCode(props: PropsCardCode) {
       &#125;)
       <br />.<span className={styles.bg}>then</span>(response &#61;&#62; &#123;
       <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.p}>
-        return
-      </span> response; <br />
+      <span className={styles.p}>return</span> response; <br />
       &#125;)
       <br />.<span className={styles.bg}>then</span>(data &#61;&#62; &#123;{" "}
       <br />
-      &nbsp;&nbsp;&nbsp;<span className={styles.r}>console</span>.
+      <span className={styles.r}>console</span>.
       <span className={styles.bg}>log</span>(
       <span className={styles.g}>&#34;Response:&#34;</span>, data); <br />
       &#125;) <br />
@@ -284,6 +281,7 @@ export default function CardCode(props: PropsCardCode) {
   const alterContent = (i: number) => {
     setSelectedButton(i);
     setContent(templates[i]());
+    console.log(tractiveCopy(i));
     setCopy(tractiveCopy(i));
   };
 

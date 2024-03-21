@@ -1,7 +1,8 @@
 [
   {
     "title": "Vacinação",
-    "description": "Ação com a qual se previnem doenças infecciosas, através da inoculação no organismo de um ser vivo, um antígeno, criando-lhe imunidade."
+    "description": "Ação com a qual se previnem doenças infecciosas, através da inoculação no organismo de um ser vivo, um antígeno, criando-lhe imunidade.",
+    "image": "https://natureatoz.com.br/images/vacinacao"
   },
   {
     "title": "Vale",
@@ -20,8 +21,8 @@
     "description": "Capacidade que uma espécie possui de habitar lugares diferentes, caracterizados por enormes variações dos fatores abióticos."
   },
   {
-    "title" : "valor da Natureza",
-    "description" : "cálculo que procura converter em valores monetários os serviços prestados gratuitamente pela natureza."
+    "title": "valor da Natureza",
+    "description": "cálculo que procura converter em valores monetários os serviços prestados gratuitamente pela natureza."
   },
   {
     "title": "Valor original das florestas",
@@ -51,7 +52,6 @@
     "title": "Variedade",
     "description": "Expressão utilizada para definir qualquer variação numa espécie animal ou vegetal. o termo é, também, usado para se referir a tais espécimes de organismos semelhantes."
   },
-  
   {
     "title": "variedade de alta rentabilidade - VAR",
     "description": "vegetais, principalmente híbridos, gerados para produzir safras maiores"
@@ -73,16 +73,16 @@
     "description": "Quantidade de água jorrada de uma fonte por unidade de tempo."
   },
   {
-    "title" : "vegetação aquática submersa - VAS",
-    "description" : "vegetais que constituem os sedimentos do fundo de massa de água, como no fundo do mar, lagos e rios."
+    "title": "vegetação aquática submersa - VAS",
+    "description": "vegetais que constituem os sedimentos do fundo de massa de água, como no fundo do mar, lagos e rios."
   },
   {
     "title": "Vegetação de excepcional valor paisagístico",
     "description": "Vegetação existente nos sítios considerados de excepcional valor paisagístico em legislação do poder público federal, estadual ou municipal (resolução conama N.º 010/93)."
   },
   {
-    "title" : "vegetação em regeneração",
-    "description" : "o mesmo que vegetação secundária (resolução conama N.º 010/93)."
+    "title": "vegetação em regeneração",
+    "description": "o mesmo que vegetação secundária (resolução conama N.º 010/93)."
   },
   {
     "title": "Vegetação nativa no estágio avançado de regeneração",
@@ -122,7 +122,8 @@
   },
   {
     "title": "Veneno",
-    "description": "Substância que, ao ser tocada, consumida ou inalada, pode ser letal ou provocar sérios problemas de saúde."
+    "description": "Substância que, ao ser tocada, consumida ou inalada, pode ser letal ou provocar sérios problemas de saúde.",
+    "image": "https://natureatoz.com.br/images/veneno"
   },
   {
     "title": "Vento",
@@ -134,7 +135,8 @@
   },
   {
     "title": "Verão",
-    "description": "A mais quente das quatro estações do ano. ocorre entre a primavera e o outono. no hemisfério norte vai do solstício de junho (21 ou 22) ao equinócio de setembro (22 ou 23). no hemisfério sul vai do solstício de dezembro (21 ou 22) ao equinócio de março (20 ou 21)."
+    "description": "A mais quente das quatro estações do ano. ocorre entre a primavera e o outono. no hemisfério norte vai do solstício de junho (21 ou 22) ao equinócio de setembro (22 ou 23). no hemisfério sul vai do solstício de dezembro (21 ou 22) ao equinócio de março (20 ou 21).",
+    "image": "https://natureatoz.com.br/images/verao"
   },
   {
     "title": "Vereda",
@@ -178,7 +180,8 @@
   },
   {
     "title": "Vírus",
-    "description": "Organismos microscópicos que são parasitas obrigatórios do interior celular. tipicamente carregam uma molécula de ácido nucleico (dna ou rna) protegida por uma cápsula protéica, e podem causar inúmeras doenças aos animais e às plantas. existem cerca de 3.600 espécies de vírus conhecidas."
+    "description": "Organismos microscópicos que são parasitas obrigatórios do interior celular. tipicamente carregam uma molécula de ácido nucleico (dna ou rna) protegida por uma cápsula protéica, e podem causar inúmeras doenças aos animais e às plantas. existem cerca de 3.600 espécies de vírus conhecidas.",
+    "image": "https://natureatoz.com.br/images/virus"
   },
   {
     "title": "Viscosidade",
@@ -190,15 +193,16 @@
   },
   {
     "title": "Viveiro",
-    "description": "Espaço adaptado e adequado para a atividade de criação e reprodução de plantas ou animais."
+    "description": "Espaço adaptado e adequado para a atividade de criação e reprodução de plantas ou animais.",
+    "image": "https://natureatoz.com.br/images/viveiro"
   },
   {
     "title": "Viveiro florestal",
     "description": "Espaço especialmente organizado para a germinação e a reprodução de espécies vegetais em condições adequadas, segundo as exigências e necessidades essenciais e específicas de cada espécie. um viveiro florestal destina-se à produção, proteção e manejo de mudas até que estas tenham idade e tamanho suficientes para resistirem às condições adversas do meio e terem um crescimento satisfatório, quando plantadas em seus locais definitivos. existem viveiros destinados à produção comercial ou para o consumo próprio; eles também podem ser parte de projetos de inclusão social, ter caráter técnico científico ou ter finalidades educativas, tanto para a formação de educadores ambientais como de técnicos e profissionais."
   },
   {
-    "title" : "viveiros educadores",
-    "description" : "desenvolvido pela diretoria de educação ambiental do ministério do meio ambiente, o projeto viveiros educadores visa valorizar, promover, orientar e apoiar a implementação de viveiros florestais com finalidade educadora, bem como estimular os viveiros já existentes a incorporarem a dimensão educadora em suas atividades cotidianas. além de servirem para a produção de mudas, os viveiros educadores têm por finalidade formar cidadãs e cidadãos que contribuam para a construção de sociedades sustentáveis por meio de processos educadores: educomunicação socioambiental, formação de educadores ambientais, constituição e fortalecimento de coletivos e utilização de estruturas educadoras. são espaços privilegiados para a construção de conhecimento e a reflexão sobre temas extremamente relevantes, tais como: a responsabilidade socioambiental, a segurança alimentar, a inclusão social, a geração de renda, a ética, a solidariedade, a recuperação de áreas degradadas, entre outros. nesse sentido, os viveiros educadores têm um importante papel em processos de educação ambiental que tenham uma perspectiva crítica e emancipatória, bem como na recuperação dos ambientes naturais, condição necessária para o resgate da qualidade de vida e do bem-estar humano na sociedade contemporânea. ver viveiro florestal."
+    "title": "viveiros educadores",
+    "description": "desenvolvido pela diretoria de educação ambiental do ministério do meio ambiente, o projeto viveiros educadores visa valorizar, promover, orientar e apoiar a implementação de viveiros florestais com finalidade educadora, bem como estimular os viveiros já existentes a incorporarem a dimensão educadora em suas atividades cotidianas. além de servirem para a produção de mudas, os viveiros educadores têm por finalidade formar cidadãs e cidadãos que contribuam para a construção de sociedades sustentáveis por meio de processos educadores: educomunicação socioambiental, formação de educadores ambientais, constituição e fortalecimento de coletivos e utilização de estruturas educadoras. são espaços privilegiados para a construção de conhecimento e a reflexão sobre temas extremamente relevantes, tais como: a responsabilidade socioambiental, a segurança alimentar, a inclusão social, a geração de renda, a ética, a solidariedade, a recuperação de áreas degradadas, entre outros. nesse sentido, os viveiros educadores têm um importante papel em processos de educação ambiental que tenham uma perspectiva crítica e emancipatória, bem como na recuperação dos ambientes naturais, condição necessária para o resgate da qualidade de vida e do bem-estar humano na sociedade contemporânea. ver viveiro florestal."
   },
   {
     "title": "Voçorosa",
@@ -222,7 +226,8 @@
   },
   {
     "title": "Vulcão",
-    "description": "Vulcões são fissuras existentes na crosta terrestre, sobre as quais se acumula a matéria lançada do interior da terra através de uma cratera. sua forma, muitas vezes cônica, é resultado da deposição de material vulcânico solidificado, composto de lava e cinzas, podendo ocorrer tanto em terra firme quanto no mar. a existência e a atividade dos vulcões está associada ao movimento das placas tectônicas que formam a camada superficial da terra. dependendo do movimento dessas placas, podem se formar vulcões e erupções com características bem diferentes. a maior concentração de vulcões na terra acontece no litoral do oceano pacífico. ver erupção vulcânica, lava e magma."
+    "description": "Vulcões são fissuras existentes na crosta terrestre, sobre as quais se acumula a matéria lançada do interior da terra através de uma cratera. sua forma, muitas vezes cônica, é resultado da deposição de material vulcânico solidificado, composto de lava e cinzas, podendo ocorrer tanto em terra firme quanto no mar. a existência e a atividade dos vulcões está associada ao movimento das placas tectônicas que formam a camada superficial da terra. dependendo do movimento dessas placas, podem se formar vulcões e erupções com características bem diferentes. a maior concentração de vulcões na terra acontece no litoral do oceano pacífico. ver erupção vulcânica, lava e magma.",
+    "image": "https://natureatoz.com.br/images/vulcao"
   },
   {
     "title": "Vulnerabilidade genética",

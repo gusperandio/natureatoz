@@ -241,8 +241,9 @@
   },
   {
     "title": "zoo",
-    "description": "prefixo que se refere a animal (animais)."
- },
+    "description": "prefixo que se refere a animal (animais).",
+    "image": "https://natureatoz.com.br/images/zoo"
+  },
   {
     "title": "Zoobia",
     "description": "Funcionamento dos órgãos vitais."
@@ -258,7 +259,7 @@
   {
     "title": "zoocoria",
     "description": "ato de espalhar frutos e sementes, realizado por animais."
- },
+  },
   {
     "title": "Zooética",
     "description": "Tratado sobre os costumes dos animais."
@@ -270,7 +271,7 @@
   {
     "title": "zootantelas",
     "description": "trata-se de algas amarelas ou verdes, fotossintéticas, simbióticas, que vivem em associação com colônias de corais e actinópodes."
- },
+  },
   {
     "title": "Zootecnia",
     "description": "Ciência que estuda criação e aperfeiçoamento de animais domésticos, técnicas, manejos, melhoramento genético do gado bovino, suíno, caprino, etc., escolhas de reprodutores, inseminação artificial, entre outros."
@@ -300,51 +301,51 @@
     "description": "Nutrição dos animais."
   },
   {
-    "title" : "zoofágico",
-    "description" : "Ser carnívoro; que tem o hábito de se alimentar de suas presas."
+    "title": "zoofágico",
+    "description": "Ser carnívoro; que tem o hábito de se alimentar de suas presas."
   },
   {
-    "title" : "zoofilia",
-    "description" : "Polinização efetuada pelos animais, em geral pelos insetos."
+    "title": "zoofilia",
+    "description": "Polinização efetuada pelos animais, em geral pelos insetos."
   },
   {
-    "title" : "zoofítico",
-    "description" : "Trata-se de um animal parasita de um vegetal, como é o caso dos insetos."
+    "title": "zoofítico",
+    "description": "Trata-se de um animal parasita de um vegetal, como é o caso dos insetos."
   },
   {
-    "title" : "zoófito",
-    "description" : "Relativo aos animais em que as formas se parecem com as das plantas. Exs.: o coral, a esponja, a medusa."
+    "title": "zoófito",
+    "description": "Relativo aos animais em que as formas se parecem com as das plantas. Exs.: o coral, a esponja, a medusa."
   },
   {
-    "title" : "zoofobia",
-    "description" : "Medo, aversão a qualquer animal."
+    "title": "zoofobia",
+    "description": "Medo, aversão a qualquer animal."
   },
   {
-    "title" : "zoogamia",
-    "description" : "Reprodução sexuada dos animais. "
+    "title": "zoogamia",
+    "description": "Reprodução sexuada dos animais. "
   },
   {
-    "title" : "zoógamo",
-    "description" : "Refere-se à planta cujo pólen é transportado por animais."
+    "title": "zoógamo",
+    "description": "Refere-se à planta cujo pólen é transportado por animais."
   },
   {
-    "title" : "zoogenia",
-    "description" : "Formação ou geração de animais, parte da zoologia que trata do desenvolvimento progressivo dos animais."
+    "title": "zoogenia",
+    "description": "Formação ou geração de animais, parte da zoologia que trata do desenvolvimento progressivo dos animais."
   },
   {
-    "title" : "zoógeno",
-    "description" : "Diz-se de rocha sedimentar que tem origem animal, seja pela construção (corais) ou agregação (restos de conchas). "
+    "title": "zoógeno",
+    "description": "Diz-se de rocha sedimentar que tem origem animal, seja pela construção (corais) ou agregação (restos de conchas). "
   },
   {
-    "title" : "zoogeografia",
-    "description" : "Ciência que se ocupa da distribuição geográfica dos animais; descrição da fauna de determinadas regiões. "
+    "title": "zoogeografia",
+    "description": "Ciência que se ocupa da distribuição geográfica dos animais; descrição da fauna de determinadas regiões. "
   },
   {
-    "title" : "zoogleia",
-    "description" : "Substância gelatinosa desenvolvida por bactérias ou algas (mucilagem). Constitui uma grande parte de flocos do lodo ativado e do limo do filtro biológico (ACIESP, 1980)."
+    "title": "zoogleia",
+    "description": "Substância gelatinosa desenvolvida por bactérias ou algas (mucilagem). Constitui uma grande parte de flocos do lodo ativado e do limo do filtro biológico (ACIESP, 1980)."
   },
   {
-    "title" : "zooglifito",
-    "description" : "Marca deixada por animal fóssil numa rocha."
+    "title": "zooglifito",
+    "description": "Marca deixada por animal fóssil numa rocha."
   }
 ]
