@@ -10,7 +10,6 @@ import Image from "next/image";
 import arrowRight from "../../../public/icons/arrow-right.svg";
 import CardHome from "../components/CardHome";
 import BackIcon from '../../../public/icons/arrow-left.svg'
-import { analytics, log } from "@/lib/firebase";
 import { Oxygen } from "next/font/google";
 
 const font = Oxygen({weight: "400", subsets: ['latin'], });
@@ -356,10 +355,6 @@ export default function Page() {
   useEffect(() => {
     setContent(intro);
   }, [selectedLanguage]);
-
-  useEffect(() => {
-    log(analytics, 'page_view', { page_path: '/docs' });
-  }, []);
 
   return (
     <div className={`${styles.body} ${font.className}`}>
