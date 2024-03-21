@@ -281,7 +281,6 @@ export default function CardCode(props: PropsCardCode) {
   const alterContent = (i: number) => {
     setSelectedButton(i);
     setContent(templates[i]());
-    console.log(tractiveCopy(i));
     setCopy(tractiveCopy(i));
   };
 

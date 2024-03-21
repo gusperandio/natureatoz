@@ -20,51 +20,54 @@ export default function Home() {
   };
   const config = {
     headers: {
-      'Authorization': `Bearer ${process.env.TOKEN_CONFIGS}`,
-    }
+      Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
+    },
   };
+
   const [loading, setLoading] = useState(true);
   const [loadingReq, setLoadingReq] = useState(true);
   const [randomData, setRandomData] = useState(0);
-  const [name, setName] = useState("Abastecimento de água");
+  const [name, setName] = useState("Orvalho");
   const [desc, setDesc] = useState(
-    "Sistema caracterizado pelo conjunto de obras e equipamentos para captar, tratar, armazenar e `distribuir água potável para o consumo humano."
+    "Fenômeno natural que ocorre normalmente à noite ou madrugada de céu limpo, pouco teor de umidade e velocidade de vento. Formado por vapor de água que há no ar e que se condensa em gotículas de água, ao atingir a superfície fria dos corpos expostos ao ar livre."
   );
-  const [imgUrl, setImgUrl] = useState(
-    "https://i0.wp.com/alfacomp.net/wp-content/uploads/2019/04/Abastecimento-de-agua.jpg?fit=735%2C448&ssl=1"
-  );
-  const apiUrl = "https://natureatoz.com.br/api/v1/auth"; 
 
-  fetch(apiUrl, 
-       {method: "GET"})
-  .then(response => {
-      return response; 
-  })
-  .then(data => { 
-     console.log("Response:", data); 
-  }) 
-  
+  const [imgUrl, setImgUrl] = useState(
+    "https://natureatoz.com.br/images/orvalho"
+  );
+
   const cardHome = async () => {
     try {
-      fetch('/api/v1/random/image', config)
-      .then((res) => res.json())
-      .then((response) => {
-        setName(response.title);
-        setDesc(response.description);
-        setImgUrl(response.image);
-      })
+      fetch("/api/v1/random/image", config)
+        .then((res) => res.json())
+        .then((response) => {
+          if (
+            !response.title.includes("Plástico") ||
+            !response.title.includes("Reciclagem")
+          ) {
+            setName(response.title);
+            setDesc(response.description);
+            setImgUrl(response.image);
+          } else {
+            cardHome();
+          }
+        });
     } catch (error) {
       console.error(error);
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 350);
     }
   };
 
   const prints = () => {
     setLoading(true);
-    cardHome();
+    setTimeout(() => {
+      cardHome();
+    }, 1000);
   };
-  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -74,7 +77,7 @@ export default function Home() {
         const [reqResult, cardResult] = await Promise.all([reqs, cards]);
         const reqData = await reqResult.json();
         const cardData = await cardResult.json();
-        
+
         setRandomData(reqData.requests);
         setName(cardData.title);
         setDesc(cardData.description);
@@ -83,7 +86,7 @@ export default function Home() {
         console.error(error);
       } finally {
         setLoading(false);
-        setLoadingReq(false)
+        setLoadingReq(false);
       }
     };
 

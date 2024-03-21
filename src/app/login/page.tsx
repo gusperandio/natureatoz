@@ -6,6 +6,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import CopyButton from "../components/CopyButton";
 import { IsProd } from "@/lib/config/config";
+import { FormLogin } from "../components/FormLogin";
 
 interface RequestKey {
   ID: number;
@@ -18,35 +19,35 @@ type RequestArray = Array<RequestKey>;
 export default function Page() {
   const URI = IsProd ? process.env.URI_PROD : process.env.URI_DEV;
   const [table, setTable] = useState<RequestArray>([]);
-  useEffect(() => {
-    getKeys();
-  }, []);
+  // useEffect(() => {
+  //   getKeys();
+  // }, []);
 
   const router = useRouter();
 
-  async function getKeys() {
-    try {
-      let word = prompt("Secret Word:", "");
-      if ((word !== process.env.KEY_TO_POST && table.length > 0) || !word) {
-        router.push("/");
-      }
+  // async function getKeys() {
+  //   try {
+  //     let word = prompt("Secret Word:", "");
+  //     if ((word !== process.env.KEY_TO_POST && table.length > 0) || !word) {
+  //       router.push("/");
+  //     }
 
-      if (word) {
-        const response = await axios.get(`${URI}api/v1/keys`, {
-          headers: {
-            keynature: word,
-          },
-        });
-        if (response.status == 405) {
-          router.push("/");
-          return; 
-        }
-        setTable(response.data);
-      }
-    } catch (e) {
-      console.error("Erro na requisição:", e);
-    }
-  }
+  //     if (word) {
+  //       const response = await axios.get(`${URI}api/v1/keys`, {
+  //         headers: {
+  //           keynature: word,
+  //         },
+  //       });
+  //       if (response.status == 405) {
+  //         router.push("/");
+  //         return; 
+  //       }
+  //       setTable(response.data);
+  //     }
+  //   } catch (e) {
+  //     console.error("Erro na requisição:", e);
+  //   }
+  // }
 
   const eye = (
     <svg
@@ -64,7 +65,7 @@ export default function Page() {
 
   return (
     <div className={styles.main}>
-      <h2>Tabela de Chaves</h2>
+      {/* <h2>Tabela de Chaves</h2>
       <table className={styles.styled_table}>
         <thead>
           <tr className={styles.tr}>
@@ -131,7 +132,9 @@ export default function Page() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
+
+      <FormLogin />
     </div>
   );
 }

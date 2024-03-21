@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import refreshIcon from "../../../../public/icons/refresh-line.svg";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loader from "../Loader";
 import { useLanguage } from "@/app/LanguageContext";
 import fileTypeIcon from "../../../../public/icons/file-copy.svg";
@@ -12,20 +12,29 @@ import checkIcon from "../../../../public/icons/check.svg";
 import { JetBrains_Mono, Oxygen, Roboto_Mono } from "next/font/google";
 
 interface PropsCardHome {
-  name?: string;
-  desc?: string;
-  imgUrl?: string;
+  name: string;
+  desc: string;
+  imgUrl: string;
   loader: boolean;
   reload: () => void;
 }
 
 const font = Oxygen({ weight: "400", subsets: ["latin"] });
-const fontJson = Roboto_Mono({ weight: "100", subsets: ["latin"] });
+const fontJson = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 export default function CardHome(props: PropsCardHome) {
   const { selectedLanguage } = useLanguage();
   const [isCopied, setIsCopied] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(false);
+
   const handleButtonClick = () => {
-    props.reload();
+    try {
+      setBtnDisabled(true);
+      props.reload();
+    } finally {
+      setTimeout(() => {
+        setBtnDisabled(false);
+      }, 3000);
+    }
   };
 
   const handleCopyToClipboard = () => {
@@ -70,7 +79,7 @@ export default function CardHome(props: PropsCardHome) {
               <Loader />
             </div>
           ) : (
-            <img
+            <Image
               src={props.imgUrl}
               height={150}
               width={270}
@@ -107,6 +116,7 @@ export default function CardHome(props: PropsCardHome) {
             type="button"
             className={styles.action}
             onClick={handleButtonClick}
+            disabled={btnDisabled}
           >
             <Image
               src={refreshIcon}
@@ -159,7 +169,7 @@ export default function CardHome(props: PropsCardHome) {
               <div className={fontJson.className}>
                 <span style={{ color: "dodgerblue" }}>&#123;</span>
                 <div className={styles.notP}>
-                  <b className={styles.key}>&quot;name&quot;</b>&nbsp;:&nbsp;
+                  <b className={styles.key}>&quot;name&quot;</b>&nbsp;<span style={{fontWeight: "900"}}>:</span>&nbsp;
                   <b className={styles.value}>&quot;{props.name}&quot;</b>
                   &#44;
                 </div>
@@ -170,8 +180,18 @@ export default function CardHome(props: PropsCardHome) {
                   &#44;
                 </div>
                 <div className={styles.notP}>
-                  <b className={styles.key}>&quot;image&quot;</b>&nbsp;:&nbsp;
-                  <b className={styles.value}>&quot;{props.imgUrl}&quot;</b>
+                  <b className={styles.key}>&quot;image&quot;</b>&nbsp;<span style={{fontWeight: "900"}}>:</span>&nbsp;
+                  <b className={styles.value}>
+                    {props.imgUrl && props.imgUrl.length > 25 ? (
+                      <React.Fragment>
+                        &nbsp; &nbsp; &nbsp; &quot;
+                        {props.imgUrl}
+                        &quot;
+                      </React.Fragment>
+                    ) : (
+                      props.imgUrl 
+                    )}
+                  </b>
                 </div>
                 <span style={{ color: "dodgerblue" }}>&#125;</span>
               </div>
