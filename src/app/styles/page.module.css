@@ -90,7 +90,15 @@
 @media (width <= 518px) {
   .main {
     background-position: -340px center;
-    height: auto;
+    height: 150vh;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (width <= 420px) {
+  .main {
+    background-position: -340px center;
+    height: 190vh;
     padding-bottom: 2rem;
   }
 }

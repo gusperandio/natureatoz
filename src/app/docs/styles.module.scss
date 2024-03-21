@@ -332,6 +332,73 @@
         height: 26px;
         width: 100px;
         margin-bottom: 2rem;
+        background-color: whitesmoke;
+        border: none;
+
+        p {
+          padding: 2px 4px 0 0;
+          color: #222;
+
+        }
+
+      }
+
+      .goBack:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: rgb(225, 223, 223);
+        p {
+          font-weight: bold;
+        }
+      }
+
+      .reqWithImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .gridImage {
+          margin: 1.3rem;
+          display: grid;
+          grid-template-columns: 150px 120px;
+
+          .gridItem {
+            padding: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (width <=420px) {
+  .body {
+    height: 250vh;
+    display: block;
+
+    .content {
+      padding: 2rem;
+
+      .steps {
+        .cardStep {
+          height: 50px;
+          width: 120px;
+        }
+      }
+
+      .goBack {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 26px;
+        width: 100px;
+        margin-bottom: 2rem;
         background-color: #fff;
         border: none;
 

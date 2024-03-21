@@ -178,8 +178,8 @@ export default function Page() {
   };
 
   const goBack = (
-    <div>
-      <button className={styles.goBack} onClick={() => alterContent(intro)}>
+    <div >
+      <button className={styles.goBack} onClick={() => alterContent(intro)} style={{backgroundColor: "whitesmoke"}}>
         <Image src={BackIcon} width={24} height={24} alt="Go back" />
         <p className={styles.paragraph}>{selectedLanguage == "Pt-BR" ? "Voltar" : "Go back"}</p>
       </button>
