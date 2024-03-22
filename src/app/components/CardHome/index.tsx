@@ -20,6 +20,7 @@ interface PropsCardHome {
 }
 
 const font = Oxygen({ weight: "400", subsets: ["latin"] });
+const fontJet = JetBrains_Mono({ weight: "400", subsets: ["latin"] });
 const fontJson = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 export default function CardHome(props: PropsCardHome) {
   const { selectedLanguage } = useLanguage();
@@ -150,14 +151,19 @@ export default function CardHome(props: PropsCardHome) {
 
         <div className={styles.cardJson}>
           <div className={styles.tools}>
-            <div className={styles.circle}>
-              <span className={`${styles.red} ${styles.box}`}></span>
+            <div className={styles.circles}>
+              <div className={styles.circle}>
+                <span className={`${styles.red} ${styles.box}`}></span>
+              </div>
+              <div className={styles.circle}>
+                <span className={`${styles.yellow} ${styles.box}`}></span>
+              </div>
+              <div className={styles.circle}>
+                <span className={`${styles.green} ${styles.box}`}></span>
+              </div>
             </div>
-            <div className={`${styles.circle}`}>
-              <span className={`${styles.yellow} ${styles.box}`}></span>
-            </div>
-            <div className={styles.circle}>
-              <span className={`${styles.green} ${styles.box}`}></span>
+            <div className={styles.json}>
+              <p className={fontJet.className}>JSON</p>
             </div>
           </div>
           <div className={styles.card__content}>
@@ -177,22 +183,20 @@ export default function CardHome(props: PropsCardHome) {
                 <div className={styles.notP}>
                   <b className={styles.key}>&quot;description&quot;</b>
                   &nbsp;:&nbsp;
-                  <b className={styles.value}>&quot;{props.desc}&quot;</b>
+                  <b className={styles.value}>
+                    &quot;
+                    {props.desc && props.desc.length > 250
+                      ? `${props.desc.substring(0, 250)}...`
+                      : props.desc}
+                    &quot;
+                  </b>
                   &#44;
                 </div>
                 <div className={styles.notP}>
                   <b className={styles.key}>&quot;image&quot;</b>&nbsp;
                   <span style={{ fontWeight: "900" }}>:</span>&nbsp;
                   <b className={styles.value}>
-                    {props.imgUrl && props.imgUrl.length > 25 ? (
-                      <React.Fragment>
-                        &nbsp; &nbsp; &nbsp; &quot;
-                        {props.imgUrl}
-                        &quot;
-                      </React.Fragment>
-                    ) : (
-                      props.imgUrl
-                    )}
+                    {`${props.imgUrl.replace("https://natureatoz.com.br", "")}`}
                   </b>
                 </div>
                 <span style={{ color: "dodgerblue" }}>&#125;</span>

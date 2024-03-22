@@ -176,11 +176,26 @@
   .tools {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0.5rem;
+  }
+
+  .circles {
+    display: flex;
+    flex-direction: row;
   }
 
   .circle {
     padding: 0 4px;
+  }
+
+  .json {
+    padding: 0.3rem;
+    font-size: 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #555;
+    margin-right: 6px;
   }
 
   .box {
@@ -292,17 +307,17 @@
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
         0 2px 4px -2px rgba(0, 0, 0, 0.1);
     }
-  
+
     .tools {
       display: flex;
       align-items: center;
       padding: 0.5rem;
     }
-  
+
     .circle {
       padding: 0 4px;
     }
-  
+
     .box {
       display: inline-block;
       align-items: center;
@@ -311,25 +326,25 @@
       padding: 1px;
       border-radius: 50%;
     }
-  
+
     .red {
       background-color: #ff605c;
     }
-  
+
     .yellow {
       background-color: #ffbd44;
     }
-  
+
     .green {
       background-color: #00ca4e;
     }
-  
+
     .card__content {
       margin-left: 0.5rem;
       padding: 6px;
       margin-bottom: 1rem;
     }
-  
+
     .notP {
       font-size: 8px;
       margin-left: 1rem;

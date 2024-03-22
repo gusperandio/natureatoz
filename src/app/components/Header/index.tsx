@@ -9,7 +9,7 @@ import { useLanguage } from "@/app/LanguageContext";
 import { Roboto } from "next/font/google";
 import Modal from "../Modal";
 import ModalSup from "../ModalSup";
-
+import GitIcon from '../../../../public/icons/github-fill.svg'
 const font = Roboto({ weight: "500", subsets: ["latin"], display: "swap" });
 export function Header() {
   const { selectedLanguage } = useLanguage();
@@ -35,12 +35,29 @@ export function Header() {
             style={{ cursor: "pointer" }}
           />
         </Link>
-        <nav style={{ fontFamily: "Roboto" }}>
-          <Link href="/" legacyBehavior>
-            <a className={`${styles.aa} ${font.className}`}>
-              {selectedLanguage === "PtBR" ? "Inicio" : "Home"}
-            </a>
-          </Link>
+        <nav className={font.className}>
+          <span className={styles.home}>
+            <Link href="/" legacyBehavior>
+              <a className={`${styles.aa} ${font.className}`}>
+                {selectedLanguage === "PtBR" ? "Inicio" : "Home"}
+              </a>
+            </Link>
+          </span>
+          <span className={styles.github}>
+            <Link
+              href="https://github.com/gusperandio/natureatoz"
+              legacyBehavior
+              passHref
+            >
+              <a
+                className={`${styles.aa} ${font.className} ${styles.aagit}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github <Image src={GitIcon} alt="github" width={16} height={16}/>
+              </a>
+            </Link>
+          </span>
           <Link href="/intro" legacyBehavior>
             <a className={`${styles.aa} ${font.className}`}>
               {selectedLanguage === "PtBR" ? "Documentos" : "Documents"}
