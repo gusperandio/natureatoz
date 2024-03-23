@@ -49,7 +49,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### Return the status of API ⚡
 
-```http
+```code
   /api/v1
 ```
 
@@ -61,7 +61,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### TOKEN Authorization 📋
 
-```http
+```code
   /api/v1/auth - /api/v1/auth?days=120
 ```
 
@@ -73,7 +73,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### Search random 📋
 
-```http
+```code
    /api/v1/random
 ```
 
@@ -85,7 +85,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### Search random with IMG 📋
 
-```http
+```code
    /api/v1/random/image
 ```
 
@@ -109,7 +109,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### Search specific item with base on title 📋
 
-```http
+```code
    /api/v1/search/{title}
 ```
 
