@@ -97,7 +97,7 @@ The Nature and Environment API is designed to serve as a versatile tool for acce
 
 #### Search complete list about specific letter 📋
 
-```http
+```code
    /api/v1/dictionary/{x}
 ```
 
