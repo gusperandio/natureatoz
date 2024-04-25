@@ -14,12 +14,12 @@ const countMongoDB = new Counter();
 
 export async function GET(request: Request) {
   try {
-    const auth = request.headers.get("authorization") ?? "";
-    if (verifyToken(auth))
-      return new NextResponse(null, {
-        status: 401,
-        statusText: "Unauthorized",
-      });
+    // const auth = request.headers.get("authorization") ?? "";
+    // if (verifyToken(auth))
+    //   return new NextResponse(null, {
+    //     status: 401,
+    //     statusText: "Unauthorized",
+    //   });
 
     cors();
 

@@ -18,12 +18,12 @@ function random(min: number, max: number) {
 
 export async function GET(request: Request) {
   try {
-    const auth = request.headers.get("authorization") ?? "";
-    if (!verifyToken(auth))
-      return new NextResponse(null, {
-        status: 401,
-        statusText: "Unauthorized",
-      });
+    // const auth = request.headers.get("authorization") ?? "";
+    // if (!verifyToken(auth))
+    //   return new NextResponse(null, {
+    //     status: 401,
+    //     statusText: "Unauthorized",
+    //   });
     const url = new URL(request.url);
     const getCache = cached.find(url.pathname);
 

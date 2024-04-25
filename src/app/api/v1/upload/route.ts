@@ -54,12 +54,12 @@ const removeAccents = (input: string): string => {
 const database = new DB();
 export async function POST(request: Request) {
   try {
-    const auth = request.headers.get("authorization") ?? "";
-    if (!verifyToken(auth))
-      return new NextResponse(null, {
-        status: 401,
-        statusText: "Unauthorized",
-      });
+    // const auth = request.headers.get("authorization") ?? "";
+    // if (!verifyToken(auth))
+    //   return new NextResponse(null, {
+    //     status: 401,
+    //     statusText: "Unauthorized",
+    //   });
     // Apply cors in route
     cors();
 

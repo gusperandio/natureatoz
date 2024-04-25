@@ -186,22 +186,22 @@ export default function Page() {
     </div>
   )
 
-  const auth = (
-    <div id="content" className={`${styles.content} ${font.className}`}>
-      {goBack}
-      <h1 className={styles.title}>{textAuth.title}</h1>
-      <p className={styles.paragraph}>{textAuth.textIntro}</p>
-      <br />
+  // const auth = (
+  //   <div id="content" className={`${styles.content} ${font.className}`}>
+  //     {goBack}
+  //     <h1 className={styles.title}>{textAuth.title}</h1>
+  //     <p className={styles.paragraph}>{textAuth.textIntro}</p>
+  //     <br />
 
-      <h3>{textAuth.subTitle}</h3>
+  //     <h3>{textAuth.subTitle}</h3>
 
-      <p className={styles.paragraph}>{textAuth.textStart} <br />
-        {textAuth.textStart2}</p><br />
-      <CardCode method="GET" link="/api/v1/auth" tabs={true} auth={false} />
-      <p className={styles.paragraph}>{textAuth.text1}</p><br />
-      <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" auth={false} />
-    </div >
-  );
+  //     <p className={styles.paragraph}>{textAuth.textStart} <br />
+  //       {textAuth.textStart2}</p><br />
+  //     <CardCode method="GET" link="/api/v1/auth" tabs={true} auth={false} />
+  //     <p className={styles.paragraph}>{textAuth.text1}</p><br />
+  //     <CardCode tabs={true} link="/api/v1/auth?days=120" method="GET" auth={false} />
+  //   </div >
+  // );
 
   const random = (
     <div id="content" className={`${styles.content} ${font.className}`}>
@@ -220,13 +220,13 @@ export default function Page() {
 
       <h3>{textRandom.subTitle}</h3>
       <p className={styles.paragraph}>{textRandom.text1}</p><br />
-      <CardCode link="/api/v1/random" tabs={true} auth={true} method="GET" />
+      <CardCode link="/api/v1/random" tabs={true} auth={false} method="GET" />
       <br />
 
       <h3>{textRandom.subTitle2}</h3>
       <p className={styles.paragraph}>{textRandom.text2}</p><br />
       <div className={styles.reqWithImg}>
-        <CardCode link="/api/v1/random/image" tabs={true} auth={true} method="GET" />
+        <CardCode link="/api/v1/random/image" tabs={true} auth={false} method="GET" />
         <div className={styles.gridImage}>
           {authors.map((e) => {
             return (
@@ -249,9 +249,9 @@ export default function Page() {
       <h3>{textDictionary.subTitle}</h3>
 
       <p className={styles.paragraph}>{textDictionary.textStart}</p><br />
-      <CardCode tabs={true} link="/api/v1/dictionary/A" method="GET" auth={true} />
+      <CardCode tabs={true} link="/api/v1/dictionary/A" method="GET" auth={false} />
       <p className={styles.paragraph}>{textDictionary.text1}</p><br />
-      <CardCode tabs={true} link="/api/v1/dictionary/J" method="GET" auth={true} />
+      <CardCode tabs={true} link="/api/v1/dictionary/J" method="GET" auth={false} />
     </div>
   );
 
@@ -265,9 +265,9 @@ export default function Page() {
       <h3>{textSearch.subTitle}</h3>
 
       <p className={styles.paragraph}>{textSearch.textStart} </p><br />
-      <CardCode tabs={true} link="/api/v1/search/title_example" method="GET" auth={true} />
+      <CardCode tabs={true} link="/api/v1/search/title_example" method="GET" auth={false} />
       <p className={styles.paragraph}>{textSearch.text1}</p><br />
-      <CardCode tabs={true} link="/api/v1/search/colina" method="GET" auth={true} />
+      <CardCode tabs={true} link="/api/v1/search/colina" method="GET" auth={false} />
     </div>
   );
 
@@ -298,11 +298,11 @@ export default function Page() {
       <div className={styles.guides}>
         <h3>{textContent.guides}</h3>
         <div className={styles.subGuides}>
-          <div className={styles.d1}>
+          {/* <div className={styles.d1}>
             <h4>{textContent.guides1}</h4>
             <p className={styles.paragraph}>{textContent.guides1Sub}</p>
             {labels(auth, textContent.readMore)}
-          </div>
+          </div> */}
           <div className={styles.d1}>
             <h4>{textContent.guides2}</h4>
             <p className={styles.paragraph}>{textContent.guides2Sub}</p>
@@ -345,7 +345,7 @@ export default function Page() {
   const [content, setContent] = useState(intro);
   const section = [
     { name: "v1/", section: intro, style: styles.options, req: "OPTIONS" },
-    { name: "/auth", section: auth, style: styles.get, req: "GET" },
+    // { name: "/auth", section: auth, style: styles.get, req: "GET" },
     { name: "/random", section: random, style: styles.get, req: "GET" },
     { name: "/dictionary/{x}", section: dictionary, style: styles.get, req: "GET" },
     { name: "/search/{title}", section: search, style: styles.get, req: "GET" },

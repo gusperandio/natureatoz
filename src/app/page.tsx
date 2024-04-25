@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import Image from "next/image";
 import styles from "./styles/page.module.css";
@@ -9,20 +10,17 @@ import Loader from "./components/Loader";
 import { IsProd } from "../lib/config/config";
 
 export default function Home() {
-  const formatNumber = (num: number): string => {
-    if (num >= 1000000) {
-      return (num / 1000000).toFixed(2) + "M";
-    } else if (num >= 10000) {
-      return (num / 1000).toFixed(1) + "K";
-    } else {
-      return num.toString();
-    }
-  };
-  const config = {
-    headers: {
-      Authorization: `Bearer ${process.env.TOKEN_CONFIGS}`,
-    },
-  };
+   const formatNumber = (num: number): string => {
+     if (num >= 1000000) {
+       return (num / 1000000).toFixed(0) + "M";
+     } else if (num >= 10000) {
+       return (num / 1000).toFixed(0) + "K";
+     } else if (num >= 1000) {
+       return (num / 1000).toFixed(1) + "K";
+     } else {
+       return num.toString();
+     }
+   };
 
   const [loading, setLoading] = useState(true);
   const [loadingReq, setLoadingReq] = useState(true);
@@ -38,13 +36,13 @@ export default function Home() {
 
   const cardHome = async () => {
     try {
-      fetch("/api/v1/random/image", config)
+      fetch("/api/v1/random/image")
         .then((res) => res.json())
         .then((response) => {
           if (
-            !response.title.includes("Plástico") ||
-            !response.title.includes("IBAMA") ||
-            !response.title.includes("Reciclagem")
+            response.title !== "Plástico" ||
+            response.title !== "IBAMA" ||
+            response.title !== "Reciclagem"
           ) {
             setName(response.title);
             setDesc(response.description);
@@ -72,8 +70,8 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const reqs = fetch(`/api/v1/requests`, config);
-        const cards = fetch(`api/v1/random/image`, config);
+        const reqs = fetch(`/api/v1/requests`);
+        const cards = fetch(`api/v1/random/image`);
 
         const [reqResult, cardResult] = await Promise.all([reqs, cards]);
         const reqData = await reqResult.json();

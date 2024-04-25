@@ -17,12 +17,12 @@ export async function GET(
   { params }: { params: { letter: string } }
 ) {
   try {
-    const auth = request.headers.get("authorization") ?? "";
-    if (!verifyToken(auth))
-      return new NextResponse(null, {
-        status: 401,
-        statusText: "Unauthorized",
-      });
+    // const auth = request.headers.get("authorization") ?? "";
+    // if (!verifyToken(auth))
+    //   return new NextResponse(null, {
+    //     status: 401,
+    //     statusText: "Unauthorized",
+    //   });
 
     await database.connect();
     const remaining = await limiter.removeTokens(1);
