@@ -33,6 +33,7 @@ export default function CardCode(props: PropsCardCode) {
   const [link, setLink] = useState<string>(
     "https://natureatoz.com.br" + props.link
   );
+
   const methods: Types = {
     GET: () => (
       <p
