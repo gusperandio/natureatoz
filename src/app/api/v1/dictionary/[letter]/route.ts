@@ -51,7 +51,10 @@ export async function GET(
       });
     }
 
-    const items = await Item.find({ letter: letter }).lean();
+    const items = await Item.find({ letter: letter })
+      .collation({ locale: "en", strength: 1 })
+      .sort({ title: 1 })
+      .lean();
 
     if (items.length == 0) {
       return new NextResponse(JSON.stringify({ error: "Any item founded" }), {
