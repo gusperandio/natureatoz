@@ -1,18 +1,19 @@
-import { Cache } from "../../../../lib/caching";
+import { Cache } from "../../../../../lib/caching";
 import { limiterToken as limiter } from "@/lib/config/limiter";
-import Item from "../../../../lib/models/item";
+import Item from "../../../../../lib/models/item";
 import { filterItems } from "@/lib/filterItems";
 import { NextResponse } from "next/server";
 import { DB } from "@/lib/config/dbConnect";
 import { Counter } from "@/lib/count";
-import { cors } from "../../middlewares/cors";
+import { cors } from "../../../middlewares/cors";
 import { verifyToken } from "@/lib/JWT";
 
 const database = new DB();
 const cached = new Cache();
 const countMongoDB = new Counter();
 
-export async function GET(request: Request) {
+export async function GET(request: Request,
+  { params }: { params: { title: string } }) {
   try {
     // const auth = request.headers.get("authorization") ?? "";
     // if (verifyToken(auth))
@@ -50,8 +51,7 @@ export async function GET(request: Request) {
       await countMongoDB.updateReqCount();
     }
 
-    const { searchParams } = new URL(request.url);
-    let title = searchParams.get("title");
+    let { title } = params;
 
     if (title && typeof title === "string") {
       title = title.replace(/[_\-#%]/g, " ");
